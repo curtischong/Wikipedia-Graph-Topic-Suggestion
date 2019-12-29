@@ -1,0 +1,1440 @@
+In mathematics, Hodge theory, named after William Vallance Douglas Hodge, is a method for studying the cohomology groups of a smooth manifold M using partial differential equations.  The key observation is that, given a Riemannian metric on M, every cohomology class has a canonical representative, a differential form which vanishes under the Laplacian operator of the metric.  Such forms are called harmonic.
+The theory was developed by Hodge in the 1930s to study algebraic geometry, and it built on the work of Georges de Rham on de Rham cohomology.  It has major applications in two settings: Riemannian manifolds and Kähler manifolds.  Hodge's primary motivation, the study of complex projective varieties, is encompassed by the latter case.  Hodge theory has become an important tool in algebraic geometry, particularly through its connection to the study of algebraic cycles.
+While Hodge theory is intrinsically dependent upon the real and complex numbers, it can be applied to questions in number theory.  In arithmetic situations, the tools of p-adic Hodge theory have given alternative proofs of, or analogous results to, classical Hodge theory.
+
+
+== History ==
+The field of algebraic topology was still nascent in the 1920s.  It had not yet developed the notion of cohomology, and the interaction between differential forms and topology was poorly understood.  In 1928, Élie Cartan published a note entitled Sur les nombres de Betti des espaces de groupes clos in which he suggested, but did not prove, that differential forms and topology should be linked.  Upon reading it, Georges de Rham, then a student, was immediately struck by inspiration.  In his 1931 thesis, he proved a spectacular result now called de Rham's theorem.  By Stokes' theorem, integration of differential forms along singular chains induces, for any compact smooth manifold M, a bilinear pairing
+
+  
+    
+      
+        
+          H
+          
+            k
+          
+        
+        (
+        M
+        ;
+        
+          R
+        
+        )
+        ×
+        
+          H
+          
+            dR
+          
+          
+            k
+          
+        
+        (
+        M
+        ;
+        
+          R
+        
+        )
+        →
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle H_{k}(M;\mathbf {R} )\times H_{\text{dR}}^{k}(M;\mathbf {R} )\to \mathbf {R} .}
+  As originally stated, de Rham's theorem asserts that this is a perfect pairing, and that therefore each of the terms on the left-hand side are vector space duals of one another.  In contemporary language, de Rham's theorem is more often phrased as the statement that singular cohomology with real coefficients is isomorphic to de Rham cohomology:
+
+  
+    
+      
+        
+          H
+          
+            sing
+          
+          
+            k
+          
+        
+        (
+        M
+        ;
+        
+          R
+        
+        )
+        ≅
+        
+          H
+          
+            dR
+          
+          
+            k
+          
+        
+        (
+        M
+        ;
+        
+          R
+        
+        )
+        .
+      
+    
+    {\displaystyle H_{\text{sing}}^{k}(M;\mathbf {R} )\cong H_{\text{dR}}^{k}(M;\mathbf {R} ).}
+  De Rham's original statement is then a consequence of Poincaré duality.Separately, a 1927 paper of Solomon Lefschetz used topological methods to reprove theorems of Riemann. In modern language, if ω1 and ω2 are holomorphic differentials on an algebraic curve C, then their wedge product is necessarily zero because C has only one complex dimension; consequently, the cup product of their cohomology classes is zero, and when made explicit, this gave Lefschetz a new proof of the Riemann relations.  Additionally, if ω is a non-zero holomorphic differential, then 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+        
+        ω
+        ∧
+        
+          
+            
+              ω
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}\,\omega \wedge {\bar {\omega }}}
+   is a positive volume form, from which Lefschetz was able to rederive Riemann's inequalities.  In 1929, W. V. D. Hodge learned of Lefschetz's paper.  He immediately observed that similar principles applied to algebraic surfaces.  More precisely, if ω is a non-zero holomorphic form on an algebraic surface, then 
+  
+    
+      
+        
+          
+            −
+            1
+          
+        
+        
+        ω
+        ∧
+        
+          
+            
+              ω
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\sqrt {-1}}\,\omega \wedge {\bar {\omega }}}
+   is positive, so the cup product of 
+  
+    
+      
+        ω
+      
+    
+    {\displaystyle \omega }
+   and 
+  
+    
+      
+        
+          
+            
+              ω
+              ¯
+            
+          
+        
+      
+    
+    {\displaystyle {\bar {\omega }}}
+   must be non-zero.  It follows that ω itself must represent a non-zero cohomology class, so its periods cannot all be zero.  This resolved a question of Severi.Hodge felt that these techniques should be applicable to higher dimensional varieties as well.  His colleague Peter Fraser recommended de Rham's thesis to him.  In reading de Rham's thesis, Hodge realized that the real and imaginary parts of a holomorphic 1-form on a Riemann surface were in some sense dual to each other.  He suspected that there should be a similar duality in higher dimensions; this duality is now known as the Hodge star operator.  He further conjectured that each cohomology class should have a distinguished representative with the property that both it and its dual vanish under the exterior derivative operator; these are now called harmonic forms.  Hodge devoted most of the 1930s to this problem.  His earliest published attempt at a proof appeared in 1933, but he considered it "crude in the extreme".  Hermann Weyl, one of the most brilliant mathematicians of the era, found himself unable to determine whether Hodge's proof was correct or not.  In 1936, Hodge published a new proof. While Hodge considered the new proof much superior, a serious flaw was discovered by Bohnenblust.  Independently, Hermann Weyl and Kunihiko Kodaira modified Hodge's proof to repair the error.  This established Hodge's sought-for isomorphism between harmonic forms and cohomology classes.
+
+In retrospect it is clear that the technical difficulties in the existence theorem did not really require any significant new ideas, but merely a careful extension of classical methods. The real novelty, which was Hodge’s major contribution, was in the conception of harmonic integrals and their relevance to algebraic geometry. This triumph of concept over technique is reminiscent of a similar episode in the work of Hodge’s great predecessor Bernhard Riemann.
+—Michael Atiyah, William Vallance Douglas Hodge, 17 June 1903 – 7 July 1975, Biogr. Mems Fell. R. Soc., 1976, vol. 22, p. 179
+
+
+== Hodge theory for real manifolds ==
+
+
+=== De Rham cohomology ===
+The Hodge theory references the de Rham complex. Let M be a smooth manifold. For a natural number k, let Ωk(M) be the real vector space of smooth differential forms of degree k on M. The de Rham complex is the sequence of differential operators
+
+  
+    
+      
+        0
+        →
+        
+          Ω
+          
+            0
+          
+        
+        (
+        M
+        )
+        
+          
+            →
+            
+              
+                d
+                
+                  0
+                
+              
+            
+          
+        
+        
+          Ω
+          
+            1
+          
+        
+        (
+        M
+        )
+        
+          
+            →
+            
+              
+                d
+                
+                  1
+                
+              
+            
+          
+        
+        ⋯
+        
+          
+            →
+            
+              
+                d
+                
+                  n
+                  −
+                  1
+                
+              
+            
+          
+        
+        
+          Ω
+          
+            n
+          
+        
+        (
+        M
+        )
+        
+          
+            →
+            
+              
+                d
+                
+                  n
+                
+              
+            
+          
+        
+        0
+        ,
+      
+    
+    {\displaystyle 0\rightarrow \Omega ^{0}(M){\xrightarrow {d_{0}}}\Omega ^{1}(M){\xrightarrow {d_{1}}}\cdots {\xrightarrow {d_{n-1}}}\Omega ^{n}(M){\xrightarrow {d_{n}}}0,}
+  where dk denotes the exterior derivative on Ωk(M). This is a cochain complex in the sense that dk+1 ∘ dk = 0 (also written d2 = 0). De Rham's theorem says that the singular cohomology of M with real coefficients is computed by the de Rham complex:
+
+  
+    
+      
+        
+          H
+          
+            k
+          
+        
+        (
+        M
+        ,
+        
+          R
+        
+        )
+        ≅
+        
+          
+            
+              ker
+              ⁡
+              
+                d
+                
+                  k
+                
+              
+            
+            
+              im
+              ⁡
+              
+                d
+                
+                  k
+                  −
+                  1
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle H^{k}(M,\mathbf {R} )\cong {\frac {\ker d_{k}}{\operatorname {im} d_{k-1}}}.}
+  
+
+
+=== Operators in Hodge theory ===
+Now choose a Riemannian metric g on M. Recalling that 
+  
+    
+      
+        
+          Ω
+          
+            k
+          
+        
+        (
+        M
+        )
+        =
+        Γ
+        (
+        
+          ⋀
+          
+            k
+          
+        
+        
+          T
+          
+            ∗
+          
+        
+        (
+        M
+        )
+        )
+      
+    
+    {\displaystyle \Omega ^{k}(M)=\Gamma (\bigwedge ^{k}T^{*}(M))}
+  , we note the metric yields an inner product on each fiber 
+  
+    
+      
+        
+          ⋀
+          
+            k
+          
+        
+        (
+        
+          T
+          
+            p
+          
+          
+            ∗
+          
+        
+        (
+        M
+        )
+        )
+      
+    
+    {\displaystyle \bigwedge ^{k}(T_{p}^{*}(M))}
+    by extending (see Gramian matrix) the inner product induced by g from each cotangent fiber 
+  
+    
+      
+        
+          T
+          
+            p
+          
+          
+            ∗
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle T_{p}^{*}(M)}
+   to its 
+  
+    
+      
+        
+          k
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle k^{th}}
+   exterior product: 
+  
+    
+      
+        
+          ⋀
+          
+            k
+          
+        
+        (
+        
+          T
+          
+            p
+          
+          
+            ∗
+          
+        
+        (
+        M
+        )
+        )
+      
+    
+    {\displaystyle \bigwedge ^{k}(T_{p}^{*}(M))}
+  . The 
+  
+    
+      
+        
+          Ω
+          
+            k
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle \Omega ^{k}(M)}
+   inner product is then defined as the integral of the pointwise inner product of a given pair of k-forms over M with respect to the volume form 
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+   associated with g. Explicitly, given some 
+  
+    
+      
+        ω
+        ,
+        τ
+        ∈
+        
+          Ω
+          
+            k
+          
+        
+        (
+        M
+        )
+      
+    
+    {\displaystyle \omega ,\tau \in \Omega ^{k}(M)}
+   we have
+
+  
+    
+      
+        ⟨
+        ω
+        ,
+        τ
+        ⟩
+        ↦
+        
+          ∫
+          
+            M
+          
+        
+        ⟨
+        ω
+        (
+        p
+        )
+        ,
+        τ
+        (
+        p
+        )
+        
+          ⟩
+          
+            p
+          
+        
+        σ
+        .
+      
+    
+    {\displaystyle \langle \omega ,\tau \rangle \mapsto \int _{M}\langle \omega (p),\tau (p)\rangle _{p}\sigma .}
+   
+Naturally the above inner product induces a norm, when that norm is finite on some fixed k-form:
+
+  
+    
+      
+        ⟨
+        ω
+        ,
+        ω
+        ⟩
+        =
+        |
+        |
+        Ω
+        |
+        
+          |
+          
+            2
+          
+        
+        <
+        ∞
+        ,
+      
+    
+    {\displaystyle \langle \omega ,\omega \rangle =\vert \vert \Omega \vert \vert ^{2}<\infty ,}
+   then the integrand is a real valued, square integrable function on M, evaluated at a given point via its point-wise norms,
+
+  
+    
+      
+        |
+        |
+        ω
+        (
+        p
+        )
+        |
+        
+          |
+          
+            p
+          
+        
+        :
+        M
+        →
+        
+          R
+        
+        ∈
+        
+          L
+          
+            2
+          
+        
+        (
+        M
+        )
+        .
+      
+    
+    {\displaystyle \vert \vert \omega (p)\vert \vert _{p}:M\to \mathbb {R} \in L^{2}(M).}
+  
+
+Let δ : Ωk+1(M) → Ωk(M) be the adjoint operator of d with respect to these inner products. Then the Laplacian on forms is defined by
+
+  
+    
+      
+        Δ
+        =
+        d
+        δ
+        +
+        δ
+        d
+        .
+      
+    
+    {\displaystyle \Delta =d\delta +\delta d.}
+  This is a second-order linear differential operator, generalizing the Laplacian for functions on Rn. By definition, a form on M is harmonic if its Laplacian is zero:
+
+  
+    
+      
+        
+          
+            
+              H
+            
+          
+          
+            Δ
+          
+          
+            k
+          
+        
+        (
+        M
+        )
+        =
+        {
+        α
+        ∈
+        
+          Ω
+          
+            k
+          
+        
+        (
+        M
+        )
+        ∣
+        Δ
+        α
+        =
+        0
+        }
+        .
+      
+    
+    {\displaystyle {\mathcal {H}}_{\Delta }^{k}(M)=\{\alpha \in \Omega ^{k}(M)\mid \Delta \alpha =0\}.}
+  The Laplacian appeared first in mathematical physics. In particular, Maxwell's equations say that the electromagnetic potential in a vacuum is a 1-form A which has exterior derivative  dA =  F, a  2-form representing the electromagnetic field such that ΔA = 0 on spacetime, viewed as Minkowski space of dimension 4.
+Every harmonic form α on a closed Riemannian manifold is closed, meaning that dα = 0. As a result, there is a canonical mapping 
+  
+    
+      
+        φ
+        :
+        
+          
+            
+              H
+            
+          
+          
+            Δ
+          
+          
+            k
+          
+        
+        (
+        M
+        )
+        →
+        
+          H
+          
+            k
+          
+        
+        (
+        M
+        ,
+        
+          R
+        
+        )
+      
+    
+    {\displaystyle \varphi :{\mathcal {H}}_{\Delta }^{k}(M)\rightarrow H^{k}(M,\mathbf {R} )}
+  . The Hodge theorem states that 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+   is an isomorphism of vector spaces. In other words, each real cohomology class on M has a unique harmonic representative. Concretely, the harmonic representative is the unique closed form of minimum L2 norm that represents a given cohomology class. The Hodge theorem was proved using the theory of elliptic partial differential equations, with Hodge's initial arguments completed by Kodaira and others in the 1940s.
+For example, the Hodge theorem implies that the cohomology groups with real coefficients of a closed manifold are finite-dimensional. (Admittedly, there are other ways to prove this.) Indeed, the operators Δ are elliptic, and the kernel of an elliptic operator on a closed manifold is always a finite-dimensional vector space. Another consequence of the Hodge theorem is that a Riemannian metric on a closed manifold M determines a real-valued inner product on the integral cohomology of M modulo torsion. It follows, for example, that the image of the isometry group of M in the general linear group GL(H∗(M, Z)) is finite (because the group of isometries of a lattice is finite).
+A variant of the Hodge theorem is the Hodge decomposition.  This says that any differential form ω on a closed Riemannian manifold can be uniquely written as the sum of three parts:
+
+  
+    
+      
+        ω
+        =
+        d
+        α
+        +
+        δ
+        β
+        +
+        γ
+      
+    
+    {\displaystyle \omega =d\alpha +\delta \beta +\gamma }
+  where γ is harmonic: Δγ = 0. In terms of the L2 metric on differential forms, this gives an orthogonal direct sum decomposition:
+
+  
+    
+      
+        
+          Ω
+          
+            k
+          
+        
+        (
+        M
+        )
+        ≅
+        im
+        ⁡
+        
+          d
+          
+            k
+            −
+            1
+          
+        
+        ⊕
+        im
+        ⁡
+        
+          δ
+          
+            k
+            +
+            1
+          
+        
+        ⊕
+        
+          
+            
+              H
+            
+          
+          
+            Δ
+          
+          
+            k
+          
+        
+        (
+        M
+        )
+        .
+      
+    
+    {\displaystyle \Omega ^{k}(M)\cong \operatorname {im} d_{k-1}\oplus \operatorname {im} \delta _{k+1}\oplus {\mathcal {H}}_{\Delta }^{k}(M).}
+  
+
+
+=== Hodge theory of elliptic complexes ===
+Atiyah and Bott defined elliptic complexes as a generalization of the de Rham complex. The Hodge theorem extends to this setting, as follows. Let 
+  
+    
+      
+        
+          E
+          
+            0
+          
+        
+        ,
+        
+          E
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          E
+          
+            N
+          
+        
+      
+    
+    {\displaystyle E_{0},E_{1},\dots ,E_{N}}
+   be vector bundles, equipped with metrics, on a closed smooth manifold M with a volume form dV.  Suppose that
+
+  
+    
+      
+        
+          L
+          
+            i
+          
+        
+        :
+        Γ
+        (
+        
+          E
+          
+            i
+          
+        
+        )
+        →
+        Γ
+        (
+        
+          E
+          
+            i
+            +
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle L_{i}:\Gamma (E_{i})\rightarrow \Gamma (E_{i+1})}
+  are linear differential operators acting on C∞ sections of these vector bundles, and that the induced sequence
+
+  
+    
+      
+        0
+        →
+        Γ
+        (
+        
+          E
+          
+            0
+          
+        
+        )
+        →
+        Γ
+        (
+        
+          E
+          
+            1
+          
+        
+        )
+        →
+        ⋯
+        →
+        Γ
+        (
+        
+          E
+          
+            N
+          
+        
+        )
+        →
+        0
+      
+    
+    {\displaystyle 0\to \Gamma (E_{0})\rightarrow \Gamma (E_{1})\rightarrow \cdots \rightarrow \Gamma (E_{N})\to 0}
+  is an elliptic complex.  Introduce the direct sums:
+
+  
+    
+      
+        
+          
+            
+              E
+            
+          
+          
+            ∙
+          
+        
+        =
+        
+          ⨁
+          
+            i
+          
+        
+        Γ
+        (
+        
+          E
+          
+            i
+          
+        
+        )
+      
+    
+    {\displaystyle {\mathcal {E}}^{\bullet }=\bigoplus _{i}\Gamma (E_{i})}
+  
+
+  
+    
+      
+        L
+        =
+        ⨁
+        
+          L
+          
+            i
+          
+        
+        :
+        
+          
+            
+              E
+            
+          
+          
+            ∙
+          
+        
+        →
+        
+          
+            
+              E
+            
+          
+          
+            ∙
+          
+        
+      
+    
+    {\displaystyle L=\bigoplus L_{i}:{\mathcal {E}}^{\bullet }\rightarrow {\mathcal {E}}^{\bullet }}
+  and let L∗ be the adjoint of L.  Define the elliptic operator Δ = LL∗ + L∗L.  As in the de Rham case, this yields the vector space of harmonic sections
+
+  
+    
+      
+        
+          
+            H
+          
+        
+        =
+        {
+        e
+        ∈
+        
+          
+            
+              E
+            
+          
+          
+            ∙
+          
+        
+        ∣
+        Δ
+        e
+        =
+        0
+        }
+        .
+      
+    
+    {\displaystyle {\mathcal {H}}=\{e\in {\mathcal {E}}^{\bullet }\mid \Delta e=0\}.}
+  Let 
+  
+    
+      
+        H
+        :
+        
+          
+            
+              E
+            
+          
+          
+            ∙
+          
+        
+        →
+        
+          
+            H
+          
+        
+      
+    
+    {\displaystyle H:{\mathcal {E}}^{\bullet }\rightarrow {\mathcal {H}}}
+   be the orthogonal projection, and let G be the Green's operator for Δ.  The Hodge theorem then asserts the following:
+H and G are well-defined.
+Id = H + ΔG = H + GΔ
+LG = GL, L∗G = GL∗
+The cohomology of the complex is canonically isomorphic to the space of harmonic sections, 
+  
+    
+      
+        H
+        (
+        
+          E
+          
+            j
+          
+        
+        )
+        ≅
+        
+          
+            H
+          
+        
+        (
+        
+          E
+          
+            j
+          
+        
+        )
+      
+    
+    {\displaystyle H(E_{j})\cong {\mathcal {H}}(E_{j})}
+  , in the sense that each cohomology class has a unique harmonic representative.There is also a Hodge decomposition in this situation, generalizing the statement above for the de Rham complex.
+
+
+== Hodge theory for complex projective varieties ==
+
+Let X be a smooth complex projective variety, meaning that X is a closed complex submanifold of some complex projective space CPN. By Chow's theorem, complex projective varieties are automatically algebraic: they are defined by the vanishing of homogenous polynomial equations on CPN. The standard Riemannian metric on CPN induces a Riemannian metric on X which has a strong compatibility with the complex structure, making X a Kähler manifold.
+For a complex manifold X and a natural number r, every C∞ r-form on X (with complex coefficients) can be written uniquely as a sum of forms of type (p, q) with p + q = r, meaning forms that can locally be written as a finite sum of terms, with each term taking the form
+
+  
+    
+      
+        f
+        
+        d
+        
+          z
+          
+            1
+          
+        
+        ∧
+        ⋯
+        ∧
+        d
+        
+          z
+          
+            p
+          
+        
+        ∧
+        d
+        
+          
+            
+              w
+              
+                1
+              
+            
+            ¯
+          
+        
+        ∧
+        ⋯
+        ∧
+        d
+        
+          
+            
+              w
+              
+                q
+              
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle f\,dz_{1}\wedge \cdots \wedge dz_{p}\wedge d{\overline {w_{1}}}\wedge \cdots \wedge d{\overline {w_{q}}}}
+  with f a C∞ function and the zs and ws holomorphic functions. On a Kähler manifold, the (p, q) components of a harmonic form are again harmonic. Therefore, for any compact Kähler manifold X, the Hodge theorem gives a decomposition of the cohomology of X with complex coefficients as a direct sum of complex vector spaces:
+
+  
+    
+      
+        
+          H
+          
+            r
+          
+        
+        (
+        X
+        ,
+        
+          C
+        
+        )
+        =
+        
+          ⨁
+          
+            p
+            +
+            q
+            =
+            r
+          
+        
+        
+          H
+          
+            p
+            ,
+            q
+          
+        
+        (
+        X
+        )
+        .
+      
+    
+    {\displaystyle H^{r}(X,\mathbf {C} )=\bigoplus _{p+q=r}H^{p,q}(X).}
+  This decomposition is in fact independent of the choice of Kähler metric (but there is no analogous decomposition for a general compact complex manifold). On the other hand, the Hodge decomposition genuinely depends on the structure of X as a complex manifold, whereas the group Hr(X, C) depends only on the underlying topological space of X.
+The piece Hp,q(X) of the Hodge decomposition can be identified with a coherent sheaf cohomology group, which depends only on X as a complex manifold (not on the choice of Kähler metric):
+
+  
+    
+      
+        
+          H
+          
+            p
+            ,
+            q
+          
+        
+        (
+        X
+        )
+        ≅
+        
+          H
+          
+            q
+          
+        
+        (
+        X
+        ,
+        
+          Ω
+          
+            p
+          
+        
+        )
+        ,
+      
+    
+    {\displaystyle H^{p,q}(X)\cong H^{q}(X,\Omega ^{p}),}
+  where Ωp denotes the sheaf of holomorphic p-forms on X. For example, Hp,0(X) is the space of holomorphic p-forms on X. (If X is projective, Serre's GAGA theorem implies that a holomorphic p-form on all of X is in fact algebraic.)
+The Hodge number hp,q(X) means the dimension of the complex vector space Hp.q(X). These are important invariants of a smooth complex projective variety; they do not change when the complex structure of X is varied continuously, and yet they are in general not topological invariants. Among the properties of Hodge numbers are Hodge symmetry hp,q = hq,p (because Hp,q(X) is the complex conjugate of Hq,p(X)) and hp,q = hn−p,n−q (by Serre duality).
+The Hodge numbers of a smooth complex projective variety (or compact Kähler manifold) can be listed in the Hodge diamond (shown in the case of complex dimension 2):
+
+The Betti numbers of X are the sum of the Hodge numbers in a given row. For example, every smooth projective curve of genus g has Hodge diamond
+
+For another example, every K3 surface has Hodge diamond 
+
+A basic application of Hodge theory is that the odd Betti numbers b2a+1 of a smooth complex projective variety (or compact Kähler manifold) are even, by Hodge symmetry. This is not true for compact complex manifolds in general, as shown by the example of the Hopf surface, which is diffeomorphic to S1 × S3 and hence has b1 = 1.
+The "Kähler package" is a powerful set of restrictions on the cohomology of smooth complex projective varieties (or compact Kähler manifolds), building on Hodge theory. The results include the Lefschetz hyperplane theorem, the hard Lefschetz theorem, and the Hodge-Riemann bilinear relations. Hodge theory and extensions such as non-abelian Hodge theory also give strong restrictions on the possible fundamental groups of compact Kähler manifolds.
+
+
+== Algebraic cycles and the Hodge conjecture ==
+
+Let X be a smooth complex projective variety. A complex subvariety Y in X of codimension p defines an element of the cohomology group 
+  
+    
+      
+        
+          H
+          
+            2
+            p
+          
+        
+        (
+        X
+        ,
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle H^{2p}(X,\mathbb {Z} )}
+  . Moreover, the resulting class has a special property: its image in the complex cohomology 
+  
+    
+      
+        
+          H
+          
+            2
+            p
+          
+        
+        (
+        X
+        ,
+        
+          C
+        
+        )
+      
+    
+    {\displaystyle H^{2p}(X,\mathbb {C} )}
+   lies in the middle piece of the Hodge decomposition, 
+  
+    
+      
+        
+          H
+          
+            p
+            ,
+            p
+          
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle H^{p,p}(X)}
+  . The Hodge conjecture predicts a converse: every element of 
+  
+    
+      
+        
+          H
+          
+            2
+            p
+          
+        
+        (
+        X
+        ,
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle H^{2p}(X,\mathbb {Z} )}
+   whose image in complex cohomology lies in the subspace 
+  
+    
+      
+        
+          H
+          
+            p
+            ,
+            p
+          
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle H^{p,p}(X)}
+   should have a positive integral multiple which is a 
+  
+    
+      
+        
+          Z
+        
+      
+    
+    {\displaystyle \mathbb {Z} }
+  -linear combination of classes of complex subvarieties of X. (Such a linear combination is called an algebraic cycle on X.)
+A crucial point is that the Hodge decomposition is a decomposition of cohomology with complex coefficients that usually does not come from a decomposition of cohomology with integral (or rational) coefficients. As a result, the intersection
+
+  
+    
+      
+        (
+        
+          H
+          
+            2
+            p
+          
+        
+        (
+        X
+        ,
+        
+          Z
+        
+        )
+        
+          /
+        
+        
+          torsion
+        
+        )
+        ∩
+        
+          H
+          
+            p
+            ,
+            p
+          
+        
+        (
+        X
+        )
+        ⊂
+        
+          H
+          
+            2
+            p
+          
+        
+        (
+        X
+        ,
+        
+          C
+        
+        )
+      
+    
+    {\displaystyle (H^{2p}(X,\mathbb {Z} )/{\text{torsion}})\cap H^{p,p}(X)\subset H^{2p}(X,\mathbb {C} )}
+  may be much smaller than the whole group 
+  
+    
+      
+        
+          H
+          
+            2
+            p
+          
+        
+        (
+        X
+        ,
+        
+          Z
+        
+        )
+        
+          /
+        
+      
+    
+    {\displaystyle H^{2p}(X,\mathbb {Z} )/}
+  torsion, even if the Hodge number 
+  
+    
+      
+        
+          h
+          
+            p
+            ,
+            p
+          
+        
+      
+    
+    {\displaystyle h^{p,p}}
+   is big. In short, the Hodge conjecture predicts that the possible "shapes" of complex subvarieties of X (as described by cohomology) are determined by the Hodge structure of X (the combination of integral cohomology with the Hodge decomposition of complex cohomology).
+The Lefschetz (1,1)-theorem says that the Hodge conjecture is true for p = 1 (even integrally, that is, without the need for a positive integral multiple in the statement).
+The Hodge structure of a variety X describes the integrals of algebraic differential forms on X over homology classes in X. In this sense, Hodge theory is related to a basic issue in calculus: there is in general no "formula" for the integral of an algebraic function. In particular, definite integrals of algebraic functions, known as periods, can be transcendental numbers. The difficulty of the Hodge conjecture reflects the lack of understanding of such integrals in general.
+Example: For a smooth complex projective K3 surface X, the group H2(X, Z) is isomorphic to Z22, and H1,1(X) is isomorphic to C20. Their intersection can have rank anywhere between 1 and 20; this rank is called the Picard number of X. The moduli space of all projective K3 surfaces has a countably infinite set of components, each of complex dimension 19. The subspace of K3 surfaces with Picard number a has dimension 20−a. (Thus, for most projective K3 surfaces, the intersection of H2(X, Z) with H1,1(X) is isomorphic to Z, but for "special" K3 surfaces the intersection can be bigger.)
+This example suggests several different roles played by Hodge theory in complex algebraic geometry. First, Hodge theory gives restrictions on which topological spaces can have the structure of a smooth complex projective variety. Second, Hodge theory gives information about the moduli space of smooth complex projective varieties with a given topological type. The best case is when the Torelli theorem holds, meaning that the variety is determined up to isomorphism by its Hodge structure. Finally, Hodge theory gives information about the Chow group of algebraic cycles on a given variety. The Hodge conjecture is about the image of the cycle map from Chow groups to ordinary cohomology, but Hodge theory also gives information about the kernel of the cycle map, for example using the intermediate Jacobians which are built from the Hodge structure.
+
+
+== Generalizations ==
+Mixed Hodge theory, developed by Pierre Deligne, extends Hodge theory to all complex algebraic varieties, not necessarily smooth or compact. Namely, the cohomology of any complex algebraic variety has a more general type of decomposition, a mixed Hodge structure.
+A different generalization of Hodge theory to singular varieties is provided by intersection homology. Namely, Morihiko Saito showed that the intersection homology of any complex projective variety (not necessarily smooth) has a pure Hodge structure, just as in the smooth case. In fact, the whole Kähler package extends to intersection homology.
+A fundamental aspect of complex geometry is that there are continuous families of non-isomorphic complex manifolds (which are all diffeomorphic as real manifolds). Phillip Griffiths's notion of a variation of Hodge structure describes how the Hodge structure of a smooth complex projective variety X varies when X varies. In geometric terms, this amounts to studying the period mapping associated to a family of varieties. Saito's theory of Hodge modules is a generalization. Roughly speaking, a mixed Hodge module on a variety X is a sheaf of mixed Hodge structures over X, as would arise from a family of varieties which need not be smooth or compact.
+
+
+== Notes ==
+
+
+== References ==
+Arapura, Donu, Computing Some Hodge Numbers (PDF)
+Griffiths, Phillip; Harris, Joseph (1994) [1978]. Principles of Algebraic Geometry. Wiley Classics Library. Wiley Interscience. ISBN 0-471-05059-8. MR 0507725.
+Hodge, W. V. D. (1941), The Theory and Applications of Harmonic Integrals, Cambridge University Press, ISBN 978-0-521-35881-1, MR 0003947
+Huybrechts, Daniel (2005), Complex Geometry: An Introduction, Springer, ISBN 3-540-21290-6, MR 2093043
+Voisin, Claire (2007) [2002], Hodge Theory and Complex Algebraic Geometry (2 vols.), Cambridge University Press, doi:10.1017/CBO9780511615344, ISBN 978-0-521-71801-1, MR 1967689
+Warner, Frank (1983) [1971], Foundations of Differentiable Manifolds and Lie Groups, Springer, ISBN 0-387-90894-3, MR 0722297
+Wells, Jr., Raymond O. (2008) [1973], Differential Analysis on Complex Manifolds, Graduate Texts in Mathematics, 65 (3rd ed.), Springer, doi:10.1007/978-0-387-73892-5, hdl:10338.dmlcz/141778, ISBN 978-0-387-73891-8, MR 2359489

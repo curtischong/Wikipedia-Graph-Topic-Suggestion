@@ -1,0 +1,1668 @@
+Second order linear partial differential equations (PDEs) are classified as either elliptic, hyperbolic, or parabolic. Any second order linear PDE in two variables can be written in the form
+
+  
+    
+      
+        A
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        2
+        B
+        
+          u
+          
+            x
+            y
+          
+        
+        +
+        C
+        
+          u
+          
+            y
+            y
+          
+        
+        +
+        D
+        
+          u
+          
+            x
+          
+        
+        +
+        E
+        
+          u
+          
+            y
+          
+        
+        +
+        F
+        u
+        +
+        G
+        =
+        0
+        ,
+        
+      
+    
+    {\displaystyle Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_{x}+Eu_{y}+Fu+G=0,\,}
+  where A, B, C, D, E, F, and G are functions of x and y and where 
+  
+    
+      
+        
+          u
+          
+            x
+          
+        
+        =
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              x
+            
+          
+        
+      
+    
+    {\displaystyle u_{x}={\frac {\partial u}{\partial x}}}
+   and similarly for 
+  
+    
+      
+        
+          u
+          
+            x
+            x
+          
+        
+        ,
+        
+          u
+          
+            y
+          
+        
+        ,
+        
+          u
+          
+            y
+            y
+          
+        
+        ,
+        
+          u
+          
+            x
+            y
+          
+        
+      
+    
+    {\displaystyle u_{xx},u_{y},u_{yy},u_{xy}}
+  . A PDE written in this form is elliptic if
+
+  
+    
+      
+        
+          B
+          
+            2
+          
+        
+        −
+        A
+        C
+        <
+        0
+        ,
+      
+    
+    {\displaystyle B^{2}-AC<0,}
+  with this naming convention inspired by the equation for a planar ellipse.
+The simplest nontrivial examples of elliptic PDE's are the Laplace equation, 
+  
+    
+      
+        Δ
+        u
+        =
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        
+          u
+          
+            y
+            y
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \Delta u=u_{xx}+u_{yy}=0}
+  , and the Poisson equation, 
+  
+    
+      
+        Δ
+        u
+        =
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        
+          u
+          
+            y
+            y
+          
+        
+        =
+        f
+        (
+        x
+        ,
+        y
+        )
+        .
+      
+    
+    {\displaystyle \Delta u=u_{xx}+u_{yy}=f(x,y).}
+   In a sense, any other elliptic PDE in two variables can be considered to be a generalization of one of these equations, as it can always be put into the canonical form
+
+  
+    
+      
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        
+          u
+          
+            y
+            y
+          
+        
+        +
+        
+           (lower-order terms)
+        
+        =
+        0
+      
+    
+    {\displaystyle u_{xx}+u_{yy}+{\text{  (lower-order terms)}}=0}
+  through a change of variables.
+
+
+== Qualitative behavior ==
+Elliptic equations have no real characteristic curves, curves along which it is not possible to eliminate at least one second derivative of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   from the conditions of the Cauchy problem. Since characteristic curves are the only curves along which solutions to partial differential equations with smooth parameters can have discontinuous derivatives, solutions to elliptic equations cannot have discontinuous derivatives anywhere. This means elliptic equations are well suited to describe equilibrium states, where any discontinuities have already been smoothed out. For instance, we can obtain Laplace's equation from the heat equation 
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        Δ
+        u
+      
+    
+    {\displaystyle u_{t}=\Delta u}
+   by setting 
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle u_{t}=0}
+  . This means that Laplace's equation describes a steady state of the heat equation.In parabolic and hyperbolic equations, characteristics describe lines along which information about the initial data travels. Since elliptic equations have no real characteristic curves, there is no meaningful sense of information propagation for elliptic equations. This makes elliptic equations better suited to describe static, rather than dynamic, processes.
+
+
+== Derivation of canonical form ==
+We derive the canonical form for elliptic equations in two variables, 
+  
+    
+      
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        
+          u
+          
+            x
+            y
+          
+        
+        +
+        
+          u
+          
+            y
+            y
+          
+        
+        +
+        
+           (lower-order terms)
+        
+        =
+        0
+      
+    
+    {\displaystyle u_{xx}+u_{xy}+u_{yy}+{\text{  (lower-order terms)}}=0}
+  .
+
+  
+    
+      
+        ξ
+        =
+        ξ
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle \xi =\xi (x,y)}
+   and 
+  
+    
+      
+        η
+        =
+        η
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle \eta =\eta (x,y)}
+  .If 
+  
+    
+      
+        u
+        (
+        ξ
+        ,
+        η
+        )
+        =
+        u
+        [
+        ξ
+        (
+        x
+        ,
+        y
+        )
+        ,
+        η
+        (
+        x
+        ,
+        y
+        )
+        ]
+      
+    
+    {\displaystyle u(\xi ,\eta )=u[\xi (x,y),\eta (x,y)]}
+  , applying the chain rule once gives
+
+  
+    
+      
+        
+          u
+          
+            x
+          
+        
+        =
+        
+          u
+          
+            ξ
+          
+        
+        
+          ξ
+          
+            x
+          
+        
+        +
+        
+          u
+          
+            η
+          
+        
+        
+          η
+          
+            x
+          
+        
+      
+    
+    {\displaystyle u_{x}=u_{\xi }\xi _{x}+u_{\eta }\eta _{x}}
+   and 
+  
+    
+      
+        
+          u
+          
+            y
+          
+        
+        =
+        
+          u
+          
+            ξ
+          
+        
+        
+          ξ
+          
+            y
+          
+        
+        +
+        
+          u
+          
+            η
+          
+        
+        
+          η
+          
+            y
+          
+        
+      
+    
+    {\displaystyle u_{y}=u_{\xi }\xi _{y}+u_{\eta }\eta _{y}}
+  ,a second application gives
+
+  
+    
+      
+        
+          u
+          
+            x
+            x
+          
+        
+        =
+        
+          u
+          
+            ξ
+            ξ
+          
+        
+        
+          
+            
+              ξ
+              
+                2
+              
+            
+          
+          
+            x
+          
+        
+        +
+        
+          u
+          
+            η
+            η
+          
+        
+        
+          
+            
+              η
+              
+                2
+              
+            
+          
+          
+            x
+          
+        
+        +
+        2
+        
+          u
+          
+            ξ
+            η
+          
+        
+        
+          ξ
+          
+            x
+          
+        
+        
+          η
+          
+            x
+          
+        
+        +
+        
+          u
+          
+            ξ
+          
+        
+        
+          ξ
+          
+            x
+            x
+          
+        
+        +
+        
+          u
+          
+            η
+          
+        
+        
+          η
+          
+            x
+            x
+          
+        
+        ,
+      
+    
+    {\displaystyle u_{xx}=u_{\xi \xi }{\xi ^{2}}_{x}+u_{\eta \eta }{\eta ^{2}}_{x}+2u_{\xi \eta }\xi _{x}\eta _{x}+u_{\xi }\xi _{xx}+u_{\eta }\eta _{xx},}
+  
+  
+    
+      
+        
+          u
+          
+            y
+            y
+          
+        
+        =
+        
+          u
+          
+            ξ
+            ξ
+          
+        
+        
+          
+            
+              ξ
+              
+                2
+              
+            
+          
+          
+            y
+          
+        
+        +
+        
+          u
+          
+            η
+            η
+          
+        
+        
+          
+            
+              η
+              
+                2
+              
+            
+          
+          
+            y
+          
+        
+        +
+        2
+        
+          u
+          
+            ξ
+            η
+          
+        
+        
+          ξ
+          
+            y
+          
+        
+        
+          η
+          
+            y
+          
+        
+        +
+        
+          u
+          
+            ξ
+          
+        
+        
+          ξ
+          
+            y
+            y
+          
+        
+        +
+        
+          u
+          
+            η
+          
+        
+        
+          η
+          
+            y
+            y
+          
+        
+        ,
+      
+    
+    {\displaystyle u_{yy}=u_{\xi \xi }{\xi ^{2}}_{y}+u_{\eta \eta }{\eta ^{2}}_{y}+2u_{\xi \eta }\xi _{y}\eta _{y}+u_{\xi }\xi _{yy}+u_{\eta }\eta _{yy},}
+   and
+  
+    
+      
+        
+          u
+          
+            x
+            y
+          
+        
+        =
+        
+          u
+          
+            ξ
+            ξ
+          
+        
+        
+          ξ
+          
+            x
+          
+        
+        
+          ξ
+          
+            y
+          
+        
+        +
+        
+          u
+          
+            η
+            η
+          
+        
+        
+          η
+          
+            x
+          
+        
+        
+          η
+          
+            y
+          
+        
+        +
+        
+          u
+          
+            ξ
+            η
+          
+        
+        (
+        
+          ξ
+          
+            x
+          
+        
+        
+          η
+          
+            y
+          
+        
+        +
+        
+          ξ
+          
+            y
+          
+        
+        
+          η
+          
+            x
+          
+        
+        )
+        +
+        
+          u
+          
+            ξ
+          
+        
+        
+          ξ
+          
+            x
+            y
+          
+        
+        +
+        
+          u
+          
+            η
+          
+        
+        
+          η
+          
+            x
+            y
+          
+        
+        .
+      
+    
+    {\displaystyle u_{xy}=u_{\xi \xi }\xi _{x}\xi _{y}+u_{\eta \eta }\eta _{x}\eta _{y}+u_{\xi \eta }(\xi _{x}\eta _{y}+\xi _{y}\eta _{x})+u_{\xi }\xi _{xy}+u_{\eta }\eta _{xy}.}
+  We can replace our PDE in x and y with an equivalent equation in 
+  
+    
+      
+        ξ
+      
+    
+    {\displaystyle \xi }
+   and 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+  
+
+  
+    
+      
+        a
+        
+          u
+          
+            ξ
+            ξ
+          
+        
+        +
+        2
+        b
+        
+          u
+          
+            ξ
+            η
+          
+        
+        +
+        c
+        
+          u
+          
+            η
+            η
+          
+        
+        
+           + (lower-order terms)
+        
+        =
+        0
+        ,
+        
+      
+    
+    {\displaystyle au_{\xi \xi }+2bu_{\xi \eta }+cu_{\eta \eta }{\text{ + (lower-order terms)}}=0,\,}
+  where
+
+  
+    
+      
+        a
+        =
+        A
+        
+          
+            
+              ξ
+              
+                x
+              
+            
+          
+          
+            2
+          
+        
+        +
+        2
+        B
+        
+          ξ
+          
+            x
+          
+        
+        
+          ξ
+          
+            y
+          
+        
+        +
+        C
+        
+          
+            
+              ξ
+              
+                y
+              
+            
+          
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle a=A{\xi _{x}}^{2}+2B\xi _{x}\xi _{y}+C{\xi _{y}}^{2},}
+  
+  
+    
+      
+        b
+        =
+        2
+        A
+        
+          ξ
+          
+            x
+          
+        
+        
+          η
+          
+            x
+          
+        
+        +
+        2
+        B
+        (
+        
+          ξ
+          
+            x
+          
+        
+        
+          η
+          
+            y
+          
+        
+        +
+        
+          ξ
+          
+            y
+          
+        
+        
+          η
+          
+            x
+          
+        
+        )
+        +
+        2
+        C
+        
+          ξ
+          
+            y
+          
+        
+        
+          η
+          
+            y
+          
+        
+        ,
+      
+    
+    {\displaystyle b=2A\xi _{x}\eta _{x}+2B(\xi _{x}\eta _{y}+\xi _{y}\eta _{x})+2C\xi _{y}\eta _{y},}
+   and
+  
+    
+      
+        c
+        =
+        A
+        
+          
+            
+              η
+              
+                x
+              
+            
+          
+          
+            2
+          
+        
+        +
+        2
+        B
+        
+          η
+          
+            x
+          
+        
+        
+          η
+          
+            y
+          
+        
+        +
+        C
+        
+          
+            
+              η
+              
+                y
+              
+            
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle c=A{\eta _{x}}^{2}+2B\eta _{x}\eta _{y}+C{\eta _{y}}^{2}.}
+  To transform our PDE into the desired canonical form, we seek 
+  
+    
+      
+        ξ
+      
+    
+    {\displaystyle \xi }
+   and 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+   such that 
+  
+    
+      
+        a
+        =
+        c
+      
+    
+    {\displaystyle a=c}
+   and 
+  
+    
+      
+        b
+        =
+        0
+      
+    
+    {\displaystyle b=0}
+  .  This gives us the system of equations
+
+  
+    
+      
+        a
+        −
+        c
+        =
+        A
+        (
+        
+          
+            
+              ξ
+              
+                x
+              
+            
+          
+          
+            2
+          
+        
+        −
+        
+          
+            
+              η
+              
+                x
+              
+            
+          
+          
+            2
+          
+        
+        )
+        +
+        2
+        B
+        (
+        
+          ξ
+          
+            x
+          
+        
+        
+          ξ
+          
+            y
+          
+        
+        −
+        
+          η
+          
+            x
+          
+        
+        
+          η
+          
+            y
+          
+        
+        )
+        +
+        C
+        (
+        
+          
+            
+              ξ
+              
+                y
+              
+            
+          
+          
+            2
+          
+        
+        −
+        
+          
+            
+              η
+              
+                y
+              
+            
+          
+          
+            2
+          
+        
+        )
+        =
+        0
+      
+    
+    {\displaystyle a-c=A({\xi _{x}}^{2}-{\eta _{x}}^{2})+2B(\xi _{x}\xi _{y}-\eta _{x}\eta _{y})+C({\xi _{y}}^{2}-{\eta _{y}}^{2})=0}
+  
+  
+    
+      
+        b
+        =
+        0
+        =
+        2
+        A
+        
+          ξ
+          
+            x
+          
+        
+        
+          η
+          
+            x
+          
+        
+        +
+        2
+        B
+        (
+        
+          ξ
+          
+            x
+          
+        
+        
+          η
+          
+            y
+          
+        
+        +
+        
+          ξ
+          
+            y
+          
+        
+        
+          η
+          
+            x
+          
+        
+        )
+        +
+        2
+        C
+        
+          ξ
+          
+            y
+          
+        
+        
+          η
+          
+            y
+          
+        
+        ,
+      
+    
+    {\displaystyle b=0=2A\xi _{x}\eta _{x}+2B(\xi _{x}\eta _{y}+\xi _{y}\eta _{x})+2C\xi _{y}\eta _{y},}
+  Adding 
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+   times the second equation to the first and setting 
+  
+    
+      
+        ϕ
+        =
+        ξ
+        +
+        i
+        η
+      
+    
+    {\displaystyle \phi =\xi +i\eta }
+   gives the quadratic equation
+
+  
+    
+      
+        A
+        
+          
+            
+              ϕ
+              
+                x
+              
+            
+          
+          
+            2
+          
+        
+        +
+        2
+        B
+        
+          ϕ
+          
+            x
+          
+        
+        
+          ϕ
+          
+            y
+          
+        
+        +
+        C
+        
+          
+            
+              ϕ
+              
+                y
+              
+            
+          
+          
+            2
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle A{\phi _{x}}^{2}+2B\phi _{x}\phi _{y}+C{\phi _{y}}^{2}=0.}
+  Since the discriminant 
+  
+    
+      
+        
+          B
+          
+            2
+          
+        
+        −
+        A
+        C
+        <
+        0
+      
+    
+    {\displaystyle B^{2}-AC<0}
+  , this equation has two distinct solutions,
+
+  
+    
+      
+        
+          
+            ϕ
+            
+              x
+            
+          
+        
+        ,
+        
+          
+            ϕ
+            
+              y
+            
+          
+        
+        =
+        
+          
+            
+              B
+              ±
+              i
+              
+                
+                  A
+                  C
+                  −
+                  
+                    B
+                    
+                      2
+                    
+                  
+                
+              
+            
+            A
+          
+        
+      
+    
+    {\displaystyle {\phi _{x}},{\phi _{y}}={\frac {B\pm i{\sqrt {AC-B^{2}}}}{A}}}
+  which are complex conjugates. Choosing either solution, we can solve for 
+  
+    
+      
+        ϕ
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle \phi (x,y)}
+  , and recover 
+  
+    
+      
+        ξ
+      
+    
+    {\displaystyle \xi }
+   and 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+   with the transformations 
+  
+    
+      
+        ξ
+        =
+        Re
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle \xi =\operatorname {Re} \phi }
+   and 
+  
+    
+      
+        η
+        =
+        Im
+        ⁡
+        ϕ
+      
+    
+    {\displaystyle \eta =\operatorname {Im} \phi }
+  . Since 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+   and 
+  
+    
+      
+        ξ
+      
+    
+    {\displaystyle \xi }
+   will satisfy 
+  
+    
+      
+        a
+        −
+        c
+        =
+        0
+      
+    
+    {\displaystyle a-c=0}
+   and 
+  
+    
+      
+        b
+        =
+        0
+      
+    
+    {\displaystyle b=0}
+  , so with a change of variables from x and y to 
+  
+    
+      
+        η
+      
+    
+    {\displaystyle \eta }
+   and 
+  
+    
+      
+        ξ
+      
+    
+    {\displaystyle \xi }
+   will transform the PDE
+
+  
+    
+      
+        A
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        2
+        B
+        
+          u
+          
+            x
+            y
+          
+        
+        +
+        C
+        
+          u
+          
+            y
+            y
+          
+        
+        +
+        D
+        
+          u
+          
+            x
+          
+        
+        +
+        E
+        
+          u
+          
+            y
+          
+        
+        +
+        F
+        u
+        +
+        G
+        =
+        0
+        ,
+        
+      
+    
+    {\displaystyle Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_{x}+Eu_{y}+Fu+G=0,\,}
+  into the canonical form
+
+  
+    
+      
+        
+          u
+          
+            ξ
+            ξ
+          
+        
+        +
+        
+          u
+          
+            η
+            η
+          
+        
+        +
+        
+           (lower-order terms)
+        
+        =
+        0
+        ,
+      
+    
+    {\displaystyle u_{\xi \xi }+u_{\eta \eta }+{\text{ (lower-order terms)}}=0,}
+  as desired.
+
+
+== In higher dimensions ==
+A general second order partial differential equation in n variables takes the form
+
+  
+    
+      
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            n
+          
+        
+        
+          a
+          
+            i
+            ,
+            j
+          
+        
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  i
+                
+              
+              ∂
+              
+                x
+                
+                  j
+                
+              
+            
+          
+        
+        
+        
+           + (lower-order terms)
+        
+        =
+        0.
+      
+    
+    {\displaystyle \sum _{i=1}^{n}\sum _{j=1}^{n}a_{i,j}{\frac {\partial ^{2}u}{\partial x_{i}\partial x_{j}}}\;{\text{ + (lower-order terms)}}=0.}
+  This equation is considered elliptic if there are no characteristic surfaces, i.e. surfaces along which it is not possible to eliminate at least one second derivative of u from the conditions of the Cauchy problem.Unlike the two dimensional case, this equation cannot in general be reduced to a simple canonical form.
+
+
+== See also ==
+Elliptic operator
+Hyperbolic partial differential equation
+Parabolic partial differential equation
+PDEs of second order (for fuller discussion)
+
+
+== References ==
+
+
+== External links ==
+Hazewinkel, Michiel, ed. (2001) [1994], "Elliptic partial differential equation", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Hazewinkel, Michiel, ed. (2001) [1994], "Elliptic partial differential equation, numerical methods", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Weisstein, Eric W. "Elliptic Partial Differential Equation". MathWorld.

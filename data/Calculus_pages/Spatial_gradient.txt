@@ -1,0 +1,18 @@
+A spatial gradient is a gradient whose components are spatial derivatives, i.e., rate of change of a given scalar physical quantity with respect to the position coordinates. 
+Homogeneous regions have spatial gradient vector norm equal to zero.
+When evaluated over altitude or depth, it is called vertical gradient.
+Examples:
+
+BiologyConcentration gradient, the ratio of solute concentration between two adjoining regions
+Potential gradient, the difference in electric charge between two adjoining regionsFluid dynamics and earth scienceDensity gradient
+Pressure gradient
+Temperature gradient
+Geothermal gradient
+Sound speed gradient
+Wind gradient
+Lapse rate
+
+
+== See also ==
+Time derivative
+Material derivative

@@ -1,0 +1,2425 @@
+In real analysis, a branch of mathematics, the Darboux integral is constructed using Darboux sums and is one possible definition of the integral of a function. Darboux integrals are equivalent to Riemann integrals, meaning that a function is Darboux-integrable if and only if it is Riemann-integrable, and the values of the two integrals, if they exist, are equal. The definition of the Darboux integral has the advantage of being easier to apply in computations or proofs than that of the Riemann integral. Consequently, introductory textbooks on calculus and real analysis often develop Riemann integration using the Darboux integral, rather than the true Riemann integral.  Moreover, the definition is readily extended to defining Riemann-Stieltjes integration.  Darboux integrals are named after their inventor, Gaston Darboux.
+
+
+== Definition ==
+The definition of the Darboux integral considers upper and lower (Darboux) integrals, which exist for any bounded real-valued function f on the interval [a,b]. The Darboux integral exists if and only if the upper and lower integrals are equal.  The upper and lower integrals are in turn the infimum and supremum, respectively, of upper and lower (Darboux) sums which over- and underestimate, respectively, the "area under the curve." In particular, for a given partition of the interval of integration, the upper and lower sums add together the areas of rectangular slices whose heights are the supremum and infimum, respectively, of f in each subinterval of the partition.  These ideas are made precise below:
+
+
+=== Darboux sums ===
+A partition of an interval [a,b] is a finite sequence of values xi such that
+
+  
+    
+      
+        a
+        =
+        
+          x
+          
+            0
+          
+        
+        <
+        
+          x
+          
+            1
+          
+        
+        <
+        ⋯
+        <
+        
+          x
+          
+            n
+          
+        
+        =
+        b
+        .
+        
+        
+      
+    
+    {\displaystyle a=x_{0}<x_{1}<\cdots <x_{n}=b.\,\!}
+  Each interval [xi−1,xi] is called a subinterval of the partition.  Let ƒ:[a,b]→ℝ be a bounded function, and let
+
+  
+    
+      
+        P
+        =
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle P=(x_{0},\ldots ,x_{n})\,\!}
+  be a partition of [a,b].  Let
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  M
+                  
+                    i
+                  
+                
+                =
+                
+                  sup
+                  
+                    x
+                    ∈
+                    [
+                    
+                      x
+                      
+                        i
+                        −
+                        1
+                      
+                    
+                    ,
+                    
+                      x
+                      
+                        i
+                      
+                    
+                    ]
+                  
+                
+                f
+                (
+                x
+                )
+                ,
+              
+            
+            
+              
+                
+                  m
+                  
+                    i
+                  
+                
+                =
+                
+                  inf
+                  
+                    x
+                    ∈
+                    [
+                    
+                      x
+                      
+                        i
+                        −
+                        1
+                      
+                    
+                    ,
+                    
+                      x
+                      
+                        i
+                      
+                    
+                    ]
+                  
+                
+                f
+                (
+                x
+                )
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}M_{i}=\sup _{x\in [x_{i-1},x_{i}]}f(x),\\m_{i}=\inf _{x\in [x_{i-1},x_{i}]}f(x).\end{aligned}}}
+  
+The upper Darboux sum of ƒ with respect to P is
+
+  
+    
+      
+        
+          U
+          
+            f
+            ,
+            P
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          x
+          
+            i
+          
+        
+        −
+        
+          x
+          
+            i
+            −
+            1
+          
+        
+        )
+        
+          M
+          
+            i
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle U_{f,P}=\sum _{i=1}^{n}(x_{i}-x_{i-1})M_{i}.\,\!}
+  The lower Darboux sum of ƒ with respect to P is
+
+  
+    
+      
+        
+          L
+          
+            f
+            ,
+            P
+          
+        
+        =
+        
+          ∑
+          
+            i
+            =
+            1
+          
+          
+            n
+          
+        
+        (
+        
+          x
+          
+            i
+          
+        
+        −
+        
+          x
+          
+            i
+            −
+            1
+          
+        
+        )
+        
+          m
+          
+            i
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle L_{f,P}=\sum _{i=1}^{n}(x_{i}-x_{i-1})m_{i}.\,\!}
+  The lower and upper Darboux sums are often called the lower and upper sums.
+
+
+=== Darboux integrals ===
+The upper Darboux integral of ƒ is
+
+  
+    
+      
+        
+          U
+          
+            f
+          
+        
+        =
+        inf
+        {
+        
+          U
+          
+            f
+            ,
+            P
+          
+        
+        :
+        P
+        
+           is a partition of 
+        
+        [
+        a
+        ,
+        b
+        ]
+        }
+        .
+        
+        
+      
+    
+    {\displaystyle U_{f}=\inf\{U_{f,P}\colon P{\text{ is a partition of }}[a,b]\}.\,\!}
+  The lower Darboux integral of ƒ is
+
+  
+    
+      
+        
+          L
+          
+            f
+          
+        
+        =
+        sup
+        {
+        
+          L
+          
+            f
+            ,
+            P
+          
+        
+        :
+        P
+        
+           is a partition of 
+        
+        [
+        a
+        ,
+        b
+        ]
+        }
+        .
+        
+        
+      
+    
+    {\displaystyle L_{f}=\sup\{L_{f,P}\colon P{\text{ is a partition of }}[a,b]\}.\,\!}
+  In some literature an integral symbol with an underline and overline represent the lower and upper Darboux integrals respectively.
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  L
+                  
+                    f
+                  
+                
+                ≡
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+                
+                
+                  d
+                
+                x
+              
+              
+                
+                
+                  U
+                  
+                    f
+                  
+                
+                ≡
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+                
+                
+                  d
+                
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}L_{f}\equiv {\underline {\int _{a}^{b}}}f(x)\,\mathrm {d} x&\quad U_{f}\equiv {\overline {\int _{a}^{b}}}f(x)\,\mathrm {d} x\end{aligned}}}
+  And like Darboux sums they are sometimes simply called the lower and upper integrals.
+If Uƒ = Lƒ, then we call the common value the Darboux Integral. We also say that ƒ is Darboux-integrable or simply integrable and set
+
+  
+    
+      
+        
+          ∫
+          
+            a
+          
+          
+            b
+          
+        
+        
+          f
+          (
+          t
+          )
+          
+          d
+          t
+        
+        =
+        
+          U
+          
+            f
+          
+        
+        =
+        
+          L
+          
+            f
+          
+        
+        ,
+        
+        
+      
+    
+    {\displaystyle \int _{a}^{b}{f(t)\,dt}=U_{f}=L_{f},\,\!}
+  An equivalent and sometimes useful criterion for the integrability of f is to show that for every ε > 0 there exists a partition Pε on  [a,b] such that
+
+  
+    
+      
+        
+          U
+          
+            f
+            ,
+            
+              P
+              
+                ϵ
+              
+            
+          
+        
+        −
+        
+          L
+          
+            f
+            ,
+            
+              P
+              
+                ϵ
+              
+            
+          
+        
+        <
+        ϵ
+      
+    
+    {\displaystyle U_{f,P_{\epsilon }}-L_{f,P_{\epsilon }}<\epsilon }
+  
+
+
+== Properties ==
+For any given partition, the upper Darboux sum is always greater than or equal to the lower Darboux sum. Furthermore, the lower Darboux sum is bounded below by the rectangle of width (b-a) and height inf(f) taken over [a,b]. Likewise, the upper sum is bounded above by the rectangle of width (b-a) and height sup(f).
+  
+    
+      
+        (
+        b
+        −
+        a
+        )
+        
+          inf
+          
+            x
+            ∈
+            [
+            a
+            ,
+            b
+            ]
+          
+        
+        f
+        (
+        x
+        )
+        ⩽
+        
+          L
+          
+            f
+            ,
+            P
+          
+        
+        ⩽
+        
+          U
+          
+            f
+            ,
+            P
+          
+        
+        ⩽
+        (
+        b
+        −
+        a
+        )
+        
+          sup
+          
+            x
+            ∈
+            [
+            a
+            ,
+            b
+            ]
+          
+        
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle (b-a)\inf _{x\in [a,b]}f(x)\leqslant L_{f,P}\leqslant U_{f,P}\leqslant (b-a)\sup _{x\in [a,b]}f(x)}
+  The lower and upper Darboux integrals satisfy
+  
+    
+      
+        
+          
+            
+              ∫
+              
+                a
+              
+              
+                b
+              
+            
+            _
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+        ⩽
+        
+          
+            
+              ∫
+              
+                a
+              
+              
+                b
+              
+            
+            ¯
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle {\underline {\int _{a}^{b}}}f(x)\,dx\leqslant {\overline {\int _{a}^{b}}}f(x)\,dx}
+  Given any c in (a,b)
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+              
+              
+                
+                =
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        c
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+                +
+                
+                  
+                    
+                      ∫
+                      
+                        c
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+              
+            
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+              
+              
+                
+                =
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        c
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+                +
+                
+                  
+                    
+                      ∫
+                      
+                        c
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\underline {\int _{a}^{b}}}f(x)\,dx&={\underline {\int _{a}^{c}}}f(x)\,dx+{\underline {\int _{c}^{b}}}f(x)\,dx\\[6pt]{\overline {\int _{a}^{b}}}f(x)\,dx&={\overline {\int _{a}^{c}}}f(x)\,dx+{\overline {\int _{c}^{b}}}f(x)\,dx\end{aligned}}}
+  The lower and upper Darboux integrals are not necessarily linear. Suppose that g:[a,b]→ℝ is also a bounded function, then the upper and lower integrals satisfy the following inequalities.
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+                +
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                g
+                (
+                x
+                )
+                
+                d
+                x
+              
+              
+                
+                ⩽
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+                +
+                g
+                (
+                x
+                )
+                
+                d
+                x
+              
+            
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+                +
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                g
+                (
+                x
+                )
+                
+                d
+                x
+              
+              
+                
+                ⩾
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+                +
+                g
+                (
+                x
+                )
+                
+                d
+                x
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\underline {\int _{a}^{b}}}f(x)\,dx+{\underline {\int _{a}^{b}}}g(x)\,dx&\leqslant {\underline {\int _{a}^{b}}}f(x)+g(x)\,dx\\[6pt]{\overline {\int _{a}^{b}}}f(x)\,dx+{\overline {\int _{a}^{b}}}g(x)\,dx&\geqslant {\overline {\int _{a}^{b}}}f(x)+g(x)\,dx\end{aligned}}}
+  For a constant c ≥ 0 we have
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                c
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                c
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                c
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                c
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\underline {\int _{a}^{b}}}cf(x)&=c{\underline {\int _{a}^{b}}}f(x)\\[6pt]{\overline {\int _{a}^{b}}}cf(x)&=c{\overline {\int _{a}^{b}}}f(x)\end{aligned}}}
+  For a constant c ≤ 0 we have
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                c
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                c
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                f
+                (
+                x
+                )
+              
+            
+            
+              
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    ¯
+                  
+                
+                c
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                c
+                
+                  
+                    
+                      ∫
+                      
+                        a
+                      
+                      
+                        b
+                      
+                    
+                    _
+                  
+                
+                f
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\underline {\int _{a}^{b}}}cf(x)&=c{\overline {\int _{a}^{b}}}f(x)\\[6pt]{\overline {\int _{a}^{b}}}cf(x)&=c{\underline {\int _{a}^{b}}}f(x)\end{aligned}}}
+  Consider the function:
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  F
+                  :
+                  [
+                  a
+                  ,
+                  b
+                  ]
+                  →
+                  
+                    R
+                  
+                
+              
+              
+                
+                  F
+                  (
+                  x
+                  )
+                  =
+                  
+                    
+                      
+                        ∫
+                        
+                          a
+                        
+                        
+                          x
+                        
+                      
+                      _
+                    
+                  
+                  f
+                  (
+                  t
+                  )
+                  
+                  d
+                  t
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}F:[a,b]\to \mathbb {R} \\F(x)={\underline {\int _{a}^{x}}}f(t)\,dt\end{cases}}}
+  
+then F is Lipschitz continuous. An identical result holds if F is defined using an upper Darboux integral.
+
+
+== Examples ==
+
+
+=== A Darboux-integrable function ===
+Suppose we want to show that the function f(x) = x is Darboux-integrable on the interval [0,1] and determine its value. To do this we partition [0,1] into n equally sized subintervals each of length 1/n. We denote a partition of n equally sized subintervals as Pn.
+Now since f(x) = x is strictly increasing on [0,1], the infimum on any particular subinterval is given by its starting point. Likewise the supremum on any particular subinterval is given by its end point. The starting point of the kth subinterval in Pn is (k-1)/n and the end point is k/n. Thus the lower Darboux sum on a partition Pn is given by
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  L
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                f
+                (
+                
+                  x
+                  
+                    k
+                    −
+                    1
+                  
+                
+                )
+                (
+                
+                  x
+                  
+                    k
+                  
+                
+                −
+                
+                  x
+                  
+                    k
+                    −
+                    1
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  
+                    
+                      k
+                      −
+                      1
+                    
+                    n
+                  
+                
+                ⋅
+                
+                  
+                    1
+                    n
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      n
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                [
+                k
+                −
+                1
+                ]
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      n
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  [
+                  
+                    
+                      
+                        (
+                        n
+                        −
+                        1
+                        )
+                        n
+                      
+                      2
+                    
+                  
+                  ]
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}L_{f,P_{n}}&=\sum _{k=1}^{n}f(x_{k-1})(x_{k}-x_{k-1})\\&=\sum _{k=1}^{n}{\frac {k-1}{n}}\cdot {\frac {1}{n}}\\&={\frac {1}{n^{2}}}\sum _{k=1}^{n}[k-1]\\&={\frac {1}{n^{2}}}\left[{\frac {(n-1)n}{2}}\right]\end{aligned}}}
+  similarly, the upper Darboux sum is given by
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  U
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                f
+                (
+                
+                  x
+                  
+                    k
+                  
+                
+                )
+                (
+                
+                  x
+                  
+                    k
+                  
+                
+                −
+                
+                  x
+                  
+                    k
+                    −
+                    1
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                
+                  
+                    k
+                    n
+                  
+                
+                ⋅
+                
+                  
+                    1
+                    n
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      n
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                k
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      n
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  [
+                  
+                    
+                      
+                        (
+                        n
+                        +
+                        1
+                        )
+                        n
+                      
+                      2
+                    
+                  
+                  ]
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}U_{f,P_{n}}&=\sum _{k=1}^{n}f(x_{k})(x_{k}-x_{k-1})\\&=\sum _{k=1}^{n}{\frac {k}{n}}\cdot {\frac {1}{n}}\\&={\frac {1}{n^{2}}}\sum _{k=1}^{n}k\\&={\frac {1}{n^{2}}}\left[{\frac {(n+1)n}{2}}\right]\end{aligned}}}
+  Since
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  U
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+                −
+                
+                  L
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    n
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}U_{f,P_{n}}-L_{f,P_{n}}&={\frac {1}{n}}\end{aligned}}}
+  Thus for given any ε > 0, we have that any partition Pn with n > 1/ε satisfies 
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  U
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+                −
+                
+                  L
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+              
+              
+                
+                <
+                ϵ
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}U_{f,P_{n}}-L_{f,P_{n}}&<\epsilon \end{aligned}}}
+  which shows that f is Darboux integrable. To find the value of the integral note that
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    1
+                  
+                
+                f
+                (
+                x
+                )
+                
+                d
+                x
+              
+              
+                
+                =
+                
+                  lim
+                  
+                    n
+                    →
+                    ∞
+                  
+                
+                
+                  U
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+                =
+                
+                  lim
+                  
+                    n
+                    →
+                    ∞
+                  
+                
+                
+                  L
+                  
+                    f
+                    ,
+                    
+                      P
+                      
+                        n
+                      
+                    
+                  
+                
+                =
+                
+                  
+                    1
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\int _{0}^{1}f(x)\,dx&=\lim _{n\to \infty }U_{f,P_{n}}=\lim _{n\to \infty }L_{f,P_{n}}={\frac {1}{2}}\end{aligned}}}
+  
+
+
+=== An unintegrable function ===
+Suppose we have the function f:[0,1]→ℝ defined as 
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  
+                    {
+                    
+                      
+                        
+                          0
+                          ,
+                        
+                        
+                          
+                            if 
+                          
+                          x
+                          
+                             is rational
+                          
+                        
+                      
+                      
+                        
+                          1
+                          ,
+                        
+                        
+                          
+                            if 
+                          
+                          x
+                          
+                             is irrational
+                          
+                        
+                      
+                    
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}f(x)&={\begin{cases}0,&{\text{if }}x{\text{ is rational}}\\1,&{\text{if }}x{\text{ is irrational}}\end{cases}}\end{aligned}}}
+  Since the rational and irrational numbers are both dense subsets of ℝ, it follows that f takes on the value of 0 and 1 on every subinterval of any partition. Thus for any partition P we have
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  L
+                  
+                    f
+                    ,
+                    P
+                  
+                
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                (
+                
+                  x
+                  
+                    k
+                  
+                
+                −
+                
+                  x
+                  
+                    k
+                    −
+                    1
+                  
+                
+                )
+                
+                  inf
+                  
+                    x
+                    ∈
+                    [
+                    
+                      x
+                      
+                        k
+                        −
+                        1
+                      
+                    
+                    ,
+                    
+                      x
+                      
+                        k
+                      
+                    
+                    ]
+                  
+                
+                f
+                =
+                0
+              
+            
+            
+              
+                
+                  U
+                  
+                    f
+                    ,
+                    P
+                  
+                
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    k
+                    =
+                    1
+                  
+                  
+                    n
+                  
+                
+                (
+                
+                  x
+                  
+                    k
+                  
+                
+                −
+                
+                  x
+                  
+                    k
+                    −
+                    1
+                  
+                
+                )
+                
+                  sup
+                  
+                    x
+                    ∈
+                    [
+                    
+                      x
+                      
+                        k
+                        −
+                        1
+                      
+                    
+                    ,
+                    
+                      x
+                      
+                        k
+                      
+                    
+                    ]
+                  
+                
+                f
+                =
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}L_{f,P}&=\sum _{k=1}^{n}(x_{k}-x_{k-1})\inf _{x\in [x_{k-1},x_{k}]}f=0\\U_{f,P}&=\sum _{k=1}^{n}(x_{k}-x_{k-1})\sup _{x\in [x_{k-1},x_{k}]}f=1\end{aligned}}}
+  from which we can see that the lower and upper Darboux integrals are unequal.
+
+
+== Refinement of a partition and relation to Riemann integration ==
+
+A refinement of the partition
+
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle x_{0},\ldots ,x_{n}\,\!}
+  is a partition
+
+  
+    
+      
+        
+          y
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          
+            m
+          
+        
+        
+        
+      
+    
+    {\displaystyle y_{0},\ldots ,y_{m}\,\!}
+  such that for every i with
+
+  
+    
+      
+        0
+        ≤
+        i
+        ≤
+        n
+        
+        
+      
+    
+    {\displaystyle 0\leq i\leq n\,\!}
+  there is an integer r(i) such that
+
+  
+    
+      
+        
+          x
+          
+            i
+          
+        
+        =
+        
+          y
+          
+            r
+            (
+            i
+            )
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle x_{i}=y_{r(i)}.\,\!}
+  In other words, to make a refinement, cut the subintervals into smaller pieces and do not remove any existing cuts.  If
+
+  
+    
+      
+        
+          P
+          ′
+        
+        =
+        (
+        
+          y
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          y
+          
+            m
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle P'=(y_{0},\ldots ,y_{m})\,\!}
+  is a refinement of
+
+  
+    
+      
+        P
+        =
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        ,
+        
+        
+      
+    
+    {\displaystyle P=(x_{0},\ldots ,x_{n}),\,\!}
+  then
+
+  
+    
+      
+        
+          U
+          
+            f
+            ,
+            P
+          
+        
+        ≥
+        
+          U
+          
+            f
+            ,
+            
+              P
+              ′
+            
+          
+        
+        
+        
+      
+    
+    {\displaystyle U_{f,P}\geq U_{f,P'}\,\!}
+  and
+
+  
+    
+      
+        
+          L
+          
+            f
+            ,
+            P
+          
+        
+        ≤
+        
+          L
+          
+            f
+            ,
+            
+              P
+              ′
+            
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle L_{f,P}\leq L_{f,P'}.\,\!}
+  If P1, P2 are two partitions of the same interval (one need not be a refinement of the other), then
+
+  
+    
+      
+        
+          L
+          
+            f
+            ,
+            
+              P
+              
+                1
+              
+            
+          
+        
+        ≤
+        
+          U
+          
+            f
+            ,
+            
+              P
+              
+                2
+              
+            
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle L_{f,P_{1}}\leq U_{f,P_{2}}.\,\!}
+  It follows that
+
+  
+    
+      
+        
+          L
+          
+            f
+          
+        
+        ≤
+        
+          U
+          
+            f
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle L_{f}\leq U_{f}.\,\!}
+  Riemann sums always lie between the corresponding lower and upper Darboux sums.  Formally, if
+
+  
+    
+      
+        P
+        =
+        (
+        
+          x
+          
+            0
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle P=(x_{0},\ldots ,x_{n})\,\!}
+  and
+
+  
+    
+      
+        T
+        =
+        (
+        
+          t
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          t
+          
+            n
+          
+        
+        )
+        
+        
+      
+    
+    {\displaystyle T=(t_{1},\ldots ,t_{n})\,\!}
+  together make a tagged partition
+
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+        ≤
+        
+          t
+          
+            1
+          
+        
+        ≤
+        
+          x
+          
+            1
+          
+        
+        ≤
+        ⋯
+        ≤
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        ≤
+        
+          t
+          
+            n
+          
+        
+        ≤
+        
+          x
+          
+            n
+          
+        
+        
+        
+      
+    
+    {\displaystyle x_{0}\leq t_{1}\leq x_{1}\leq \cdots \leq x_{n-1}\leq t_{n}\leq x_{n}\,\!}
+  (as in the definition of the Riemann integral), and if the Riemann sum of ƒ corresponding to P and T is R, then
+
+  
+    
+      
+        
+          L
+          
+            f
+            ,
+            P
+          
+        
+        ≤
+        R
+        ≤
+        
+          U
+          
+            f
+            ,
+            P
+          
+        
+        .
+        
+        
+      
+    
+    {\displaystyle L_{f,P}\leq R\leq U_{f,P}.\,\!}
+  From the previous fact, Riemann integrals are at least as strong as Darboux integrals: if the Darboux integral exists, then the upper and lower Darboux sums corresponding to a sufficiently fine partition will be close to the value of the integral, so any Riemann sum over the same partition will also be close to the value of the integral. There is a tagged partition that comes arbitrarily close to the value of the upper Darboux integral or lower Darboux integral, and consequently, if the Riemann integral exists, then the Darboux integral must exist as well.
+
+
+== See also ==
+Regulated integral
+Lebesgue integration
+Minimum bounding rectangle
+
+
+== Notes ==
+
+
+== References ==
+"Darboux Integral". Wolfram MathWorld. Retrieved 2013-01-08.
+Darboux integral at Encyclopaedia of Mathematics
+Hazewinkel, Michiel, ed. (2001) [1994], "Darboux sum", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Spivak, Michael (2008), Calculus (4 ed.), Publish or Perish, ISBN 978-0914098911

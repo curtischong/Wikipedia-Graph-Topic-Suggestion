@@ -1,0 +1,452 @@
+Calculus, known in its early history as infinitesimal calculus, is a mathematical discipline focused on limits, continuity, derivatives, integrals, and infinite series. 
+Isaac Newton and Gottfried Wilhelm Leibniz independently developed the theory of indefinitesimal calculus in the later 17th century. 
+By the end of the 17th century, each scholar claimed that the other had stolen his work, and the Leibniz-Newton calculus controversy continued until the death of Leibniz in 1716.
+
+
+== Pioneers of calculus ==
+
+
+=== Ancient ===
+
+The ancient period introduced some of the ideas that led to integral calculus, but does not seem to have developed these ideas in a rigorous and systematic way.  Calculations of volumes and areas, one goal of integral calculus, can be found in the Egyptian Moscow papyrus (c. 1820 BC), but the formulas are only given for concrete numbers, some are only approximately true, and they are not derived by deductive reasoning. Babylonians may have discovered the trapezoidal rule while doing astronomical observations of Jupiter.From the age of Greek mathematics, Eudoxus (c. 408−355 BC) used the method of exhaustion, which foreshadows the concept of the limit, to calculate areas and volumes, while Archimedes (c. 287−212 BC) developed this idea further, inventing heuristics which resemble the methods of integral calculus. Greek mathematicians are also credited with a significant use of infinitesimals. Democritus is the first person recorded to consider seriously the division of objects into an infinite number of cross-sections, but his inability to rationalize discrete cross-sections with a cone's smooth slope prevented him from accepting the idea. At approximately the same time, Zeno of Elea discredited infinitesimals further by his articulation of the paradoxes which they create.
+Archimedes developed this method further, while also inventing heuristic methods which resemble modern day concepts somewhat in his The Quadrature of the Parabola, The Method, and On the Sphere and Cylinder.  It should not be thought that infinitesimals were put on a rigorous footing during this time, however. Only when it was supplemented by a proper geometric proof would Greek mathematicians accept a proposition as true. It was not until the 17th century that the method was formalized by Cavalieri as the method of Indivisibles and eventually incorporated by Newton into a general framework of integral calculus. Archimedes was the first to find the tangent to a curve other than a circle, in a method akin to differential calculus. While studying the spiral, he separated a point's motion into two components, one radial motion component and one circular motion component, and then continued to add the two component motions together, thereby finding the tangent to the curve. The pioneers of the calculus such as Isaac Barrow and Johann Bernoulli were diligent students of Archimedes; see for instance C. S. Roero (1983).
+The method of exhaustion was reinvented in China by Liu Hui in the 4th century AD in order to find the area of a circle. In the 5th century, Zu Chongzhi established a method that would later be called Cavalieri's principle to find the volume of a sphere.
+
+
+=== Medieval ===
+In the Islamic Middle East, the 11th-century Arab mathematician Ibn al-Haytham (Alhazen) derived a formula for the sum of fourth powers. He used the results to carry out what would now be called an integration, where the formulas for the sums of integral squares and fourth powers allowed him to calculate the volume of a paraboloid. In the 12th century, the Persian mathematician Sharaf al-Dīn al-Tūsī discovered the derivative of cubic polynomials. His Treatise on Equations developed concepts related to differential calculus, such as the derivative function and the maxima and minima of curves, in order to solve cubic equations which may not have positive solutions.Some of Ibn al-Haytham's ideas on calculus later appeared in Indian mathematics, at the Kerala school of astronomy and mathematics, suggesting a possible transmission of Islamic mathematics to Kerala following the Muslim conquests in the Indian subcontinent. Madhava of Sangamagrama in the 14th century, and later mathematicians of the Kerala school, stated components of calculus such as the Taylor series and infinite series approximations. However, they were not able to combine many differing ideas under the two unifying themes of the derivative and the integral, show the connection between the two, and turn calculus into the powerful problem-solving tool we have today.The mathematical study of continuity was revived in the 14th century by the Oxford Calculators and French collaborators such as Nicole Oresme. They proved the "Merton mean speed theorem": that a uniformly accelerated body travels the same distance as a body with uniform speed whose speed is half the final velocity of the accelerated body.
+
+
+=== Early Modern ===
+
+In the 17th century, European mathematicians Isaac Barrow, René Descartes, Pierre de Fermat, Blaise Pascal, John Wallis and others discussed the idea of a derivative. In particular, in Methodus ad disquirendam maximam et minima and in De tangentibus linearum curvarum, Fermat developed an adequality method for determining maxima, minima, and tangents to various curves that was closely related to differentiation. Isaac Newton would later write that his own early ideas about calculus came directly from "Fermat's way of drawing tangents."On the integral side, Cavalieri developed his method of indivisibles in the 1630s and 1640s, providing a more modern form of the ancient Greek method of exhaustion, and computing Cavalieri's quadrature formula, the area under the curves xn of higher degree, which had previously only been computed for the parabola, by Archimedes. Torricelli extended this work to other curves such as the cycloid, and then the formula was generalized to fractional and negative powers by Wallis in 1656.  In a 1659 treatise, Fermat is credited with an ingenious trick for evaluating the integral of any power function directly.  Fermat also obtained a technique for finding the centers of gravity of various plane and solid figures, which influenced further work in quadrature. James Gregory, influenced by Fermat's contributions both to tangency and to quadrature, was then able to prove a restricted version of the second fundamental theorem of calculus in the mid-17th century. The first full proof of the fundamental theorem of calculus was given by Isaac Barrow.One prerequisite to the establishment of a calculus of functions of a real variable involved finding an antiderivative for the rational function 
+  
+    
+      
+        f
+        (
+        x
+        )
+         
+        =
+         
+        
+          
+            1
+            x
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)\ =\ {\frac {1}{x}}.}
+   This problem can be phrased as quadrature of the rectangular hyperbola xy = 1. In 1647 Gregoire de Saint-Vincent noted that the required function F satisfied 
+  
+    
+      
+        F
+        (
+        s
+        t
+        )
+        =
+        F
+        (
+        s
+        )
+        +
+        F
+        (
+        t
+        )
+        ,
+      
+    
+    {\displaystyle F(st)=F(s)+F(t),}
+   so that a geometric sequence became, under F, an arithmetic sequence. A. A. de Sarasa associated this feature with contemporary algorithms called logarithms that economized arithmetic by rendering multiplications into additions. So F was first known as the "hyperbolic logarithm". After Euler exploited e = 2.71828..., and F was identified as the inverse function of the exponential function, it became the natural logarithm, satisfying 
+  
+    
+      
+        
+          
+            
+              d
+              F
+            
+            
+              d
+              x
+            
+          
+        
+         
+        =
+         
+        
+          
+            1
+            x
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {dF}{dx}}\ =\ {\frac {1}{x}}.}
+  
+The first proof of Rolle's theorem was given by Michel Rolle in 1691 using methods developed by the Dutch mathematician Johann van Waveren Hudde. The mean value theorem in its modern form was stated by Bernard Bolzano and Augustin-Louis Cauchy (1789–1857) also after the founding of modern calculus. Important contributions were also made by Barrow, Huygens, and many others.
+
+
+=== Newton and Leibniz ===
+
+Before Newton and Leibniz, the word “calculus” referred to any body of mathematics, but in the following years, "calculus" became a popular term for a field of mathematics based upon their insights. Newton and Leibniz, building on this work, independently developed the surrounding theory of infinitesimal calculus in the late 17th century. Also, Leibniz did a great deal of work with developing consistent and useful notation and concepts. Newton provided some of the most important applications to physics, especially of integral calculus. The purpose of this section is to examine Newton and Leibniz’s investigations into the developing field of infinitesimal calculus. Specific importance will be put on the justification and descriptive terms which they used in an attempt to understand calculus as they themselves conceived it.
+By the middle of the 17th century, European mathematics had changed its primary repository of knowledge. In comparison to the last century which maintained Hellenistic mathematics as the starting point for research, Newton, Leibniz and their contemporaries increasingly looked towards the works of more modern thinkers. Europe had become home to a burgeoning mathematical community and with the advent of enhanced institutional and organizational bases a new level of organization and academic integration was being achieved. Importantly, however, the community lacked formalism; instead it consisted of a disordered mass of various methods, techniques, notations, theories, and paradoxes.
+Newton came to calculus as part of his investigations in physics and geometry. He viewed calculus as the scientific description of the generation of motion and magnitudes. In comparison, Leibniz focused on the tangent problem and came to believe that calculus was a metaphysical explanation of change. Importantly, the core of their insight was the formalization of the inverse properties between the integral and the differential of a function. This insight had been anticipated by their predecessors, but they were the first to conceive calculus as a system in which new rhetoric and descriptive terms were created. Their unique discoveries lay not only in their imagination, but also in their ability to synthesize the insights around them into a universal algorithmic process, thereby forming a new mathematical system.
+
+
+==== Newton ====
+Newton completed no definitive publication formalizing his fluxional calculus; rather, many of his mathematical discoveries were transmitted through correspondence, smaller papers or as embedded aspects in his other definitive compilations, such as the Principia and Opticks. Newton would begin his mathematical training as the chosen heir of Isaac Barrow in Cambridge. His aptitude was recognized early and he quickly learned the current theories. By 1664 Newton had made his first important contribution by advancing the binomial theorem, which he had extended to include fractional and negative exponents. Newton succeeded in expanding the applicability of the binomial theorem by applying the algebra of finite quantities in an analysis of infinite series. He showed a willingness to view infinite series not only as approximate devices, but also as alternative forms of expressing a term.Many of Newton's critical insights occurred during the plague years of 1665–1666  which he later described as, "the prime of my age for invention and minded mathematics and [natural] philosophy more than at any time since." It was during his plague-induced isolation that the first written conception of fluxionary calculus was recorded in the unpublished De Analysi per Aequationes Numero Terminorum Infinitas. In this paper, Newton determined the area under a curve by first calculating a momentary rate of change and then extrapolating the total area. He began by reasoning about an indefinitely small triangle whose area is a function of x and y. He then reasoned that the infinitesimal increase in the abscissa will create a new formula where x = x + o (importantly, o is the letter, not the digit 0). He then recalculated the area with the aid of the binomial theorem, removed all quantities containing the letter o and re-formed an algebraic expression for the area. Significantly, Newton would then “blot out” the quantities containing o because terms "multiplied by it will be nothing in respect to the rest".
+At this point Newton had begun to realize the central property of inversion. He had created an expression for the area under a curve by considering a momentary increase at a point. In effect, the fundamental theorem of calculus was built into his calculations. While his new formulation offered incredible potential, Newton was well aware of its logical limitations at the time. He admits that "errors are not to be disregarded in mathematics, no matter how small" and that what he had achieved was “shortly explained rather than accurately demonstrated."
+In an effort to give calculus a more rigorous explication and framework, Newton compiled in 1671 the Methodus Fluxionum et Serierum Infinitarum. In this book, Newton's strict empiricism shaped and defined his fluxional calculus. He exploited instantaneous motion and infinitesimals informally. He used math as a methodological tool to explain the physical world. The base of Newton’s revised calculus became continuity; as such he redefined his calculations in terms of continual flowing motion. For Newton, variable magnitudes are not aggregates of infinitesimal elements, but are generated by the indisputable fact of motion. As with many of his works, Newton delayed publication. Methodus Fluxionum was not published until 1736.Newton attempted to avoid the use of the infinitesimal by forming calculations based on ratios of changes. In the Methodus Fluxionum he defined the rate of generated change as a fluxion, which he represented by a dotted letter, and the quantity generated he defined as a fluent. For example, if 
+  
+    
+      
+        
+          x
+        
+      
+    
+    {\displaystyle {x}}
+   and 
+  
+    
+      
+        
+          y
+        
+      
+    
+    {\displaystyle {y}}
+   are fluents, then 
+  
+    
+      
+        
+          
+            
+              x
+              ˙
+            
+          
+        
+      
+    
+    {\displaystyle {\dot {x}}}
+   and 
+  
+    
+      
+        
+          
+            
+              y
+              ˙
+            
+          
+        
+      
+    
+    {\displaystyle {\dot {y}}}
+   are their respective fluxions. This revised calculus of ratios continued to be developed and was maturely stated in the 1676 text De Quadratura Curvarum where Newton came to define the present day derivative as the ultimate ratio of change, which he defined as the ratio between evanescent increments (the ratio of fluxions) purely at the moment in question. Essentially, the ultimate ratio is the ratio as the increments vanish into nothingness. Importantly, Newton explained the existence of the ultimate ratio by appealing to motion;
+“For by the ultimate velocity is meant that, with which the body is moved, neither before it arrives at its last place, when the motion ceases nor after but at the very instant when it arrives... the ultimate ratio of evanescent quantities is to be understood, the ratio of quantities not before they vanish, not after, but with which they vanish”Newton developed his fluxional calculus in an attempt to evade the informal use of infinitesimals in his calculations.
+
+
+==== Leibniz ====
+
+While Newton began development of his fluxional calculus in 1665–1666 his findings did not become widely circulated until later. In the intervening years Leibniz also strove to create his calculus. In comparison to Newton who came to math at an early age, Leibniz began his rigorous math studies with a mature intellect. He was a polymath, and his intellectual interests and achievements involved metaphysics, law, economics, politics, logic, and mathematics. In order to understand Leibniz’s reasoning in calculus his background should be kept in mind. Particularly, his metaphysics which described the universe as a Monadology, and his plans of creating a precise formal logic whereby, "a general method in which all truths of the reason would be reduced to a kind of calculation."
+In 1672 Leibniz met the mathematician Huygens who convinced Leibniz to dedicate significant time to the study of mathematics. By 1673 he had progressed to reading Pascal’s Traité des Sinus du Quarte Cercle and it was during his largely autodidactic research that Leibniz said "a light turned on". Like Newton, Leibniz, saw the tangent as a ratio but declared it as simply the ratio between ordinates and abscissas. He continued this reasoning to argue that the integral was in fact the sum of the ordinates for infinitesimal intervals in the abscissa; in effect, the sum of an infinite number of rectangles. From these definitions the inverse relationship or differential became clear and Leibniz quickly realized the potential to form a whole new system of mathematics. Where Newton over the course of his career used several approaches in addition to an approach using infinitesimals, Leibniz made this the cornerstone of his notation and calculus.
+In the manuscripts of 25 October to 11 November 1675, Leibniz recorded his discoveries and experiments with various forms of notation. He was acutely aware of the notational terms used and his earlier plans to form a precise logical symbolism became evident. Eventually, Leibniz denoted the infinitesimal increments of abscissas and ordinates dx and dy, and the summation of infinitely many infinitesimally thin rectangles as a long s (∫ ), which became the present integral symbol 
+  
+    
+      
+        
+          ∫
+        
+      
+    
+    {\displaystyle \scriptstyle \int }
+  .
+While Leibniz's notation is used by modern mathematics, his logical base was different from our current one. Leibniz embraced infinitesimals and wrote extensively so as, “not to make of the infinitely small a mystery, as had Pascal.” According to Gilles Deleuze, Leibniz's zeroes "are nothings, but they are not absolute nothings, they are nothings respectively" (quoting Leibniz' text "Justification of the calculus of infinitesimals by the calculus of ordinary algebra").  Alternatively, he defines them as, “less than any given quantity.” For Leibniz, the world was an aggregate of infinitesimal points and the lack of scientific proof for their existence did not trouble him. Infinitesimals to Leibniz were ideal quantities of a different type from appreciable numbers. The truth of continuity was proven by existence itself. For Leibniz the principle of continuity and thus the validity of his calculus was assured. Three hundred years after Leibniz's work, Abraham Robinson showed that using infinitesimal quantities in calculus could be given a solid foundation.
+
+
+==== Legacy ====
+The rise of calculus stands out as a unique moment in mathematics. Calculus is the mathematics of motion and change, and as such, its invention required the creation of a new mathematical system. Importantly, Newton and Leibniz did not create the same calculus and they did not conceive of modern calculus. While they were both involved in the process of creating a mathematical system to deal with variable quantities their elementary base was different. For Newton, change was a variable quantity over time and for Leibniz it was the difference ranging over a sequence of infinitely close values. Notably, the descriptive terms each system created to describe change was different.
+Historically, there was much debate over whether it was Newton or Leibniz who first "invented" calculus. This argument, the Leibniz and Newton calculus controversy, involving Leibniz, who was German, and the Englishman Newton, led to a rift in the European mathematical community lasting over a century. Leibniz was the first to publish his investigations; however, it is well established that Newton had started his work several years prior to Leibniz and had already developed a theory of tangents by the time Leibniz became interested in the question.
+It is not known how much this may have influenced Leibniz. The initial accusations were made by students and supporters of the two great scientists at the turn of the century, but after 1711 both of them became personally involved, accusing each other of plagiarism.
+The priority dispute had an effect of separating English-speaking mathematicians from those in the continental Europe for many years. Only in the 1820s, due to the efforts of the Analytical Society, did Leibnizian analytical calculus become accepted in England. Today, both Newton and Leibniz are given credit for independently developing the basics of calculus. It is Leibniz, however, who is credited with giving the new discipline the name it is known by today: "calculus". Newton's name for it was "the science of fluents and fluxions".
+The work of both Newton and Leibniz is reflected in the notation used today. Newton introduced the notation 
+  
+    
+      
+        
+          
+            
+              f
+              ˙
+            
+          
+        
+      
+    
+    {\displaystyle {\dot {f}}}
+   for the derivative of a function f. Leibniz introduced the symbol 
+  
+    
+      
+        ∫
+      
+    
+    {\displaystyle \int }
+   for the integral and wrote the derivative of a function y of the variable x as 
+  
+    
+      
+        
+          
+            
+              d
+              y
+            
+            
+              d
+              x
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {dy}{dx}}}
+  , both of which are still in use.
+Since the time of Leibniz and Newton, many mathematicians have contributed to the continuing development of calculus. One of the first and most complete works on both infinitesimal and integral calculus was written in 1748 by Maria Gaetana Agnesi.
+
+
+=== Operational methods ===
+
+Antoine Arbogast (1800) was the first to separate the symbol of operation from that of quantity in a differential equation. Francois-Joseph Servois (1814) seem to have been the first to give correct rules on the subject. Charles James Hargreave (1848) applied these methods in his memoir on differential equations, and George Boole freely employed them. Hermann Grassmann and Hermann Hankel made great use of the theory, the former in studying equations, the latter in his theory of complex numbers.
+
+
+=== Calculus of variations ===
+The calculus of variations may be said to begin with a problem of Johann Bernoulli (1696). It immediately occupied the attention of Jakob Bernoulli but Leonhard Euler first elaborated the subject. His contributions began in 1733, and his Elementa Calculi Variationum gave to the science its name. Joseph Louis Lagrange contributed extensively to the theory, and Adrien-Marie Legendre (1786) laid down a method, not entirely satisfactory, for the discrimination of maxima and minima. To this discrimination Brunacci (1810), Carl Friedrich Gauss (1829), Siméon Denis Poisson (1831), Mikhail Vasilievich Ostrogradsky (1834), and Carl Gustav Jakob Jacobi (1837) have been among the contributors. An important general work is that of Sarrus (1842) which was condensed and improved by Augustin Louis Cauchy (1844). Other valuable treatises and memoirs have been written by Strauch (1849), Jellett (1850), Otto Hesse (1857), Alfred Clebsch (1858), and Carll (1885), but perhaps the most important work of the century is that of Karl Weierstrass. His course on the theory may be asserted to be the first to place calculus on a firm and rigorous foundation.
+
+
+== Integrals ==
+Niels Henrik Abel seems to have been the first to consider in a general way the question as to what differential equations can be integrated in a finite form by the aid of ordinary functions, an investigation extended by Liouville. Cauchy early undertook the general theory of determining definite integrals, and the subject has been prominent during the 19th century. Frullani integral, David Bierens de Haan's work on the theory and his elaborate tables, Lejeune Dirichlet's lectures embodied in Meyer's treatise, and numerous memoirs of Legendre, Poisson, Plana, Raabe, Sohncke, Schlömilch, Elliott, Leudesdorf and Kronecker are among the noteworthy contributions.
+Eulerian integrals were first studied by Euler and afterwards investigated by Legendre, by whom they were classed as Eulerian integrals of the first and second species, as follows:
+
+  
+    
+      
+        
+          ∫
+          
+            0
+          
+          
+            1
+          
+        
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        (
+        1
+        −
+        x
+        
+          )
+          
+            n
+            −
+            1
+          
+        
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{0}^{1}x^{n-1}(1-x)^{n-1}\,dx}
+  
+  
+    
+      
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        
+          e
+          
+            −
+            x
+          
+        
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        
+        d
+        x
+      
+    
+    {\displaystyle \int _{0}^{\infty }e^{-x}x^{n-1}\,dx}
+  although these were not the exact forms of Euler's study.
+If n is a positive integer, it follows that:
+
+  
+    
+      
+        
+          ∫
+          
+            0
+          
+          
+            ∞
+          
+        
+        
+          e
+          
+            −
+            x
+          
+        
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        d
+        x
+        =
+        (
+        n
+        −
+        1
+        )
+        !
+        ,
+      
+    
+    {\displaystyle \int _{0}^{\infty }e^{-x}x^{n-1}dx=(n-1)!,}
+  but the integral converges for all positive real 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   and defines an analytic continuation of the factorial function to all of the complex plane except for poles at zero and the negative integers. To it Legendre assigned the symbol 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  , and it is now called the gamma function. Besides being analytic over positive reals ℝ+,  
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+   also enjoys the uniquely defining property that 
+  
+    
+      
+        log
+        ⁡
+        Γ
+      
+    
+    {\displaystyle \log \Gamma }
+   is convex, which aesthetically justifies this analytic continuation of the factorial function over any other analytic continuation. To the subject Lejeune Dirichlet has contributed an important theorem (Liouville, 1839), which has been elaborated by Liouville, Catalan, Leslie Ellis, and others. On the evaluation of 
+  
+    
+      
+        Γ
+        (
+        x
+        )
+      
+    
+    {\displaystyle \Gamma (x)}
+   and 
+  
+    
+      
+        log
+        ⁡
+        Γ
+        (
+        x
+        )
+      
+    
+    {\displaystyle \log \Gamma (x)}
+   Raabe (1843–44), Bauer (1859), and Gudermann (1845) have written. Legendre's great table appeared in 1816.
+
+
+== Applications ==
+The application of the infinitesimal calculus to problems in physics and astronomy was contemporary with the origin of the science. All through the 18th century these applications were multiplied, until at its close Laplace and Lagrange had brought the whole range of the study of forces into the realm of analysis. To Lagrange (1773) we owe the introduction of the theory of the potential into dynamics, although the name "potential function" and the fundamental memoir of the subject are due to Green (1827, printed in 1828). The name "potential" is due to Gauss (1840), and the distinction between potential and potential function to Clausius. With its development are connected the names of Lejeune Dirichlet, Riemann, von Neumann, Heine, Kronecker, Lipschitz, Christoffel, Kirchhoff, Beltrami, and many of the leading physicists of the century.
+It is impossible in this place to enter into the great variety of other applications of analysis to physical problems. Among them are the investigations of Euler on vibrating chords; Sophie Germain on elastic membranes; Poisson, Lamé, Saint-Venant, and Clebsch on the elasticity of three-dimensional bodies; Fourier on heat diffusion; Fresnel on light; Maxwell, Helmholtz, and Hertz on electricity; Hansen, Hill, and Gyldén on astronomy; Maxwell on spherical harmonics; Lord Rayleigh on acoustics; and the contributions of Lejeune Dirichlet, Weber, Kirchhoff, F. Neumann, Lord Kelvin, Clausius, Bjerknes, MacCullagh, and Fuhrmann to physics in general. The labors of Helmholtz should be especially mentioned, since he contributed to the theories of dynamics, electricity, etc., and brought his great analytical powers to bear on the fundamental axioms of mechanics as well as on those of pure mathematics.
+Furthermore, infinitesimal calculus was introduced into the social sciences, starting with Neoclassical economics. Today, it is a valuable tool in mainstream economics.
+
+
+== See also ==
+Analytic geometry
+History of logarithms
+History of mathematics
+Non-Newtonian calculus
+Non-standard calculus
+
+
+== Notes ==
+
+
+== Further reading ==
+Roero, C.S. (2005). "Gottfried Wilhelm Leibniz, first three papers on the calculus (1684, 1686, 1693)".  In Grattan-Guinness, I. (ed.). Landmark writings in Western mathematics 1640–1940. Elsevier. pp. 46–58. ISBN 978-0-444-50871-3.
+Roero, C.S. (1983). "Jakob Bernoulli, attentive student of the work of Archimedes: marginal notes to the edition of Barrow". Boll. Storia Sci. Mat. 3 (1): 77–125.
+Boyer, Carl (1959). The History of the Calculus and its Conceptual Development. New York: Dover Publications. Republication of a 1939 book (2nd printing in 1949) with a different title.
+Calinger, Ronald (1999). A Contextual History of Mathematics. Toronto: Prentice-Hall. ISBN 978-0-02-318285-3.
+Reyes, Mitchell (2004). "The Rhetoric in Mathematics: Newton, Leibniz, the Calculus, and the Rhetorical Force of the Infinitesimal". Quarterly Journal of Speech. 90 (2): 159–184. doi:10.1080/0033563042000227427.
+Grattan-Guinness, Ivor. The Rainbow of Mathematics: A History of the Mathematical Sciences, Chapters 5 and 6, W. W. Norton & Company, 2000.
+Hoffman, Ruth Irene, "On the development and use of the concepts of the infinitesimal calculus before Newton and Leibniz", Thesis (M.A.), University of Colorado, 1937
+
+
+== External links ==
+A history of the calculus in The MacTutor History of Mathematics archive, 1996.
+Earliest Known Uses of Some of the Words of Mathematics: Calculus & Analysis
+Newton Papers, Cambridge University Digital Library
+(in English and Arabic) The Excursion of Calculus, 1772

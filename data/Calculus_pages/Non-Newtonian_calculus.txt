@@ -1,0 +1,570 @@
+In mathematics, a multiplicative calculus is a system with two multiplicative operators, called a "multiplicative derivative" and a "multiplicative integral", which are inversely related in a manner analogous to the inverse relationship between the derivative and integral in the classical calculus of Newton and Leibniz. The multiplicative calculi provide alternatives to the classical calculus, which has an additive derivative and an additive integral.
+Infinitely many non-Newtonian calculi are multiplicative, including the geometric calculus and the bigeometric calculus discussed below.. These calculi all have a derivative and/or integral that is not a linear operator.
+The geometric calculus is useful in image analysis and in the study of growth/decay phenomena (e.g., in economic growth, bacterial growth, and radioactive decay). The bigeometric calculus is useful in some applications of fractals and in the theory of elasticity in economics.
+
+
+== Multiplicative derivatives ==
+
+
+=== Geometric calculus ===
+The classical derivative is
+
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            
+              f
+              (
+              x
+              +
+              h
+              )
+              −
+              f
+              (
+              x
+              )
+            
+            h
+          
+        
+        .
+      
+    
+    {\displaystyle f'(x)=\lim _{h\to 0}{\frac {f(x+h)-f(x)}{h}}.}
+  The geometric derivative is
+
+  
+    
+      
+        
+          f
+          
+            ∗
+          
+        
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            (
+            
+              
+                
+                  f
+                  (
+                  x
+                  +
+                  h
+                  )
+                
+                
+                  f
+                  (
+                  x
+                  )
+                
+              
+            
+            )
+          
+          
+            
+              1
+              h
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle f^{*}(x)=\lim _{h\to 0}\left({\frac {f(x+h)}{f(x)}}\right)^{\frac {1}{h}},}
+  assuming that all values of f are positive numbers.
+This simplifies to
+
+  
+    
+      
+        
+          f
+          
+            ∗
+          
+        
+        (
+        x
+        )
+        =
+        
+          e
+          
+            
+              
+                
+                  f
+                  ′
+                
+                (
+                x
+                )
+              
+              
+                f
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle f^{*}(x)=e^{\frac {f'(x)}{f(x)}}}
+  for functions where the statement is meaningful. Notice that the exponent in the preceding expression represents the well-known logarithmic derivative.
+In the geometric calculus, the exponential functions are the functions having a constant derivative. Furthermore, just as the arithmetic average (of functions) is the "natural" average in the classical calculus, the well-known geometric average is the "natural" average in the geometric calculus.
+
+
+=== Bigeometric calculus ===
+A similar definition to the geometric derivative is the bigeometric derivative
+
+  
+    
+      
+        
+          f
+          
+            ∗
+          
+        
+        (
+        x
+        )
+        =
+        
+          lim
+          
+            h
+            →
+            0
+          
+        
+        
+          
+            (
+            
+              
+                
+                  f
+                  
+                    
+                      (
+                    
+                  
+                  (
+                  1
+                  +
+                  h
+                  )
+                  x
+                  
+                    
+                      )
+                    
+                  
+                
+                
+                  f
+                  (
+                  x
+                  )
+                
+              
+            
+            )
+          
+          
+            
+              1
+              h
+            
+          
+        
+        =
+        
+          lim
+          
+            k
+            →
+            1
+          
+        
+        
+          
+            (
+            
+              
+                
+                  f
+                  (
+                  k
+                  x
+                  )
+                
+                
+                  f
+                  (
+                  x
+                  )
+                
+              
+            
+            )
+          
+          
+            
+              1
+              
+                ln
+                ⁡
+                k
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle f^{*}(x)=\lim _{h\to 0}\left({\frac {f{\big (}(1+h)x{\big )}}{f(x)}}\right)^{\frac {1}{h}}=\lim _{k\to 1}\left({\frac {f(kx)}{f(x)}}\right)^{\frac {1}{\ln k}},}
+  assuming that all arguments and all values of f are positive numbers.
+This simplifies to
+
+  
+    
+      
+        
+          f
+          
+            ∗
+          
+        
+        (
+        x
+        )
+        =
+        
+          e
+          
+            
+              
+                x
+                
+                  f
+                  ′
+                
+                (
+                x
+                )
+              
+              
+                f
+                (
+                x
+                )
+              
+            
+          
+        
+      
+    
+    {\displaystyle f^{*}(x)=e^{\frac {xf'(x)}{f(x)}}}
+  for functions where the statement is meaningful. Notice that the exponent in the preceding expression represents the well-known elasticity concept, which is widely used in economics.
+In the bigeometric calculus, the power functions are the functions having a constant derivative. Furthermore, the bigeometric derivative is scale-invariant (or scale-free), i.e., it is invariant under all changes of scale (or unit) in function arguments and values.
+
+
+== Multiplicative integrals ==
+Each multiplicative derivative has an associated multiplicative integral. For example, the geometric derivative and the bigeometric derivative are inversely related to the geometric integral and the bigeometric integral respectively.
+Of course, each multiplicative integral is a multiplicative operator, but some product integrals are not multiplicative operators. (See Product integral#Basic definitions.)
+
+
+== Discrete calculus ==
+Just as differential equations have a discrete analog in difference equations with the forward difference operator replacing the derivative, the discrete analog of the geometric derivative is the forward ratio operator f(x + 1)/f(x), and recurrence relations can be formulated using this operator. See also Indefinite product.
+
+
+== Complex analysis ==
+Multiplicative versions of derivatives and integrals from complex analysis behave quite differently from the usual operators.
+
+
+== History ==
+Between 1967 and 1988, Jane Grossman, Michael Grossman, and Robert Katz produced a number of publications on a subject created in 1967 by the latter two, called "non-Newtonian calculus". The non-Newtonian calculi are alternatives to the classical calculus of Newton and Leibniz and are used in science, engineering, and mathematics. The geometric calculus and the bigeometric calculus are among the infinitely many non-Newtonian calculi that are multiplicative. (Infinitely many non-Newtonian calculi are not multiplicative.)
+In 1972, Michael Grossman and Robert Katz completed their book Non-Newtonian Calculus. It includes discussions of nine specific non-Newtonian calculi, the general theory of non-Newtonian calculus, and heuristic guides for application. Subsequently, with Jane Grossman, they wrote several other books/articles on non-Newtonian calculus and on related matters, such as "weighted calculus", "meta-calculus", and averages/means.On page 82 of Non-Newtonian Calculus, published in 1972, Michael Grossman and Robert Katz wrote:
+
+"However, since we have nowhere seen a discussion of even one specific non-Newtonian calculus, and since we have not found a notion that encompasses the *-average, we are inclined to the view that the non-Newtonian calculi have not been known and recognized heretofore. But only the mathematical community can decide that."
+
+
+== General theory of non-Newtonian calculus ==
+Based on six sources, this section is about the non-Newtonian calculi, which are alternatives to the classical calculus of Newton and Leibniz.
+
+
+=== Construction: an outline ===
+The construction of an arbitrary non-Newtonian calculus involves the real number system and an ordered pair * of arbitrary complete ordered fields.
+Let R denote the set of all real numbers, and let A and B denote the respective realms of the two arbitrary complete ordered fields.
+Assume that both A and B are subsets of R. (However, we are not assuming that the two arbitrary complete ordered fields are subfields of the real number system.) Consider an arbitrary function f with arguments in A and values in B.
+By using the natural operations, natural orderings, and natural topologies for A and B, one can define the following (and other) concepts of the *-calculus: the *-limit of f at an argument a, f is *-continuous at a, f is *-continuous on a closed interval, the *-derivative of f at a, the *-average of a *-continuous function f on a closed interval, and the *-integral of a *-continuous function f on a closed interval.
+Many, if not most, *-calculi are markedly different from the classical calculus, but the structure of each *-calculus is similar to that of the classical calculus. For example, each *-calculus has two Fundamental Theorems showing that the *-derivative and the *-integral are inversely related; and for each *-calculus, there is a special class of functions having a constant *-derivative. Furthermore, the classical calculus is one of the infinitely many *-calculi.
+A non-Newtonian calculus is defined to be any *-calculus other than the classical calculus.
+
+
+=== Relationships to classical calculus ===
+The *-derivative, *-average, and *-integral can be expressed in terms of their classical counterparts (and vice versa). (However, as indicated in the Reception-section below, there are situations in which a specific non-Newtonian calculus may be more suitable than the classical calculus.)
+Again, consider an arbitrary function f with arguments in A and values in B. Let α and β be the ordered-field isomorphisms from R onto A and B, respectively. Let α−1 and β−1 be their respective inverses.
+Let D denote the classical derivative, and let D* denote the *-derivative. Finally, for each number t such that α(t) is in the domain of f, let F(t) = β−1(f(α(t))).
+Theorem 1. For each number a in A, [D*f](a) exists if and only if [DF](α−1(a)) exists, and if they do exist, then [D*f](a) = β([DF](α−1(a))).
+Theorem 2. Assume f is *-continuous on a closed interval (contained in A) from r to s, where r and s are in A. Then F is classically continuous on the closed interval (contained in R) from α−1(r) to α−1(s), and M* = β(M), where M* is the *-average of f from r to s, and M is the classical (i.e., arithmetic) average of F from α−1(r) to α−1(s).
+Theorem 3. Assume f is *-continuous on a closed interval (contained in A) from r to s, where r and s are in A. Then S* = β(S), where S* is the *-integral of f from r to s, and S is the classical integral of F from α−1(r) to α−1(s).
+
+
+=== Examples ===
+Let 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+   be the identity function on 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  . Let 
+  
+    
+      
+        j
+      
+    
+    {\displaystyle j}
+   be the function on 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+   such that 
+  
+    
+      
+        j
+        (
+        x
+        )
+        =
+        1
+        
+          /
+        
+        x
+      
+    
+    {\displaystyle j(x)=1/x}
+   for each nonzero number 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , and 
+  
+    
+      
+        j
+        (
+        0
+        )
+        =
+        0
+      
+    
+    {\displaystyle j(0)=0}
+  . And let 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+   be the function on R such that 
+  
+    
+      
+        k
+        (
+        x
+        )
+        =
+        
+          
+            x
+          
+        
+      
+    
+    {\displaystyle k(x)={\sqrt {x}}}
+   for each nonnegative number 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , and 
+  
+    
+      
+        k
+        (
+        x
+        )
+        =
+        −
+        
+          
+            −
+            x
+          
+        
+      
+    
+    {\displaystyle k(x)=-{\sqrt {-x}}}
+   for each negative number 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  .
+Example 1. If α = I = β, then the *-calculus is the classical calculus.
+Example 2. If α = I and β = exp, then the *-calculus is the geometric calculus.
+Example 3. If α = exp = β, then the *-calculus is the bigeometric calculus.
+Example 4. If α = exp and β = I, then the *-calculus is the so-called anageometric calculus.
+Example 5. If α = I and β = j, then the *-calculus is the so-called harmonic calculus.
+Example 6. If α = j = β, then the *-calculus is the so-called biharmonic calculus.
+Example 7. If α = j and β = I, then the *-calculus is the so-called anaharmonic calculus.
+Example 8. If α = I and β = k, then the *-calculus is the so-called quadratic calculus.
+Example 9. If α = k = β, then the *-calculus is the so-called biquadratic calculus.
+Example 10. If α = k and β = I, then the *-calculus is the so-called anaquadratic calculus.
+
+
+== Reception ==
+The geometric calculus and non-Newtonian calculus were recommended as topics for the 21st-century college-mathematics-curriculum, in the keynote speech at the 27th International Conference on Technology in Collegiate Mathematics (ICTCM) in March 2015. The keynote speaker was the mathematics-educator Eric Gaze. His speech is entitled "Complexity, Computation, and Quantitative Reasoning: A Mathematics Curriculum for the 21st Century".
+A special-session (mini-symposium) called "Non-Newtonian Calculus" was held at the 17th International Conference on Computational and Mathematical Methods in Science and Engineering (CMMSE), 4–8 July 2017, at Rota, Cadiz - Spain. The special-session on non-Newtonian calculus was organized by Fernando Córdova-Lepe and Marco Mora, both from Universidad Católica del Maule in Chile. From the conference-announcement: "Non-Newtonian Calculus (NNC) ... has been increasing its development through the recoding of the multiplicative world (from the point of view of the standard calculation) as an essentially linear domain, and therein lies the nucleus of importance. Many advances and applications in science, engineering and mathematics are appearing more frequently. This mini symposium will be one of the first international meetings of a dispersed scientific community that has worked or is working on this topic and annoting a mark in the history of NNC. Taking into account the novelty of the subject, all topics related to NNC (theory and applications) are welcome."
+Non-Newtonian Calculus, a book including detailed discussions about the geometric calculus and the bigeometric calculus (both of which are non-Newtonian calculi), was reviewed by David Pearce MacAdam in the Journal of the Optical Society of America. He included the following assertion: "The greatest value of these non-Newtonian calculi may prove to be their ability to yield simpler physical laws than the Newtonian calculus."
+Non-Newtonian Calculus, a book including detailed discussions about the geometric calculus and the bigeometric calculus (both of which are non-Newtonian calculi), was reviewed by H. Gollmann (Graz, Austria) in the journal Internationale Mathematische Nachrichten. He included the following assertion: "The possibilities opened up by the new [non-Newtonian] calculi seem to be immense." (German: "Die durch die neuen Kalküle erschlossenen Möglichkeiten scheinen unermesslich.")
+Non-Newtonian Calculus, a book including detailed discussions about the geometric calculus and the bigeometric calculus (both of which are non-Newtonian calculi), was reviewed by Ivor Grattan-Guinness in Middlesex Math Notes. He included the following assertions: "There is enough here [in Non-Newtonian Calculus] to indicate that non-Newtonian calculi ... have considerable potential as alternative approaches to traditional problems. This very original piece of mathematics will surely expose a number of missed opportunities in the history of the subject."
+The geometric calculus was used in an article concerning wave physics, partial differential equations, complex multiplicative calculus, and multiplicative vector spaces, by Max Cubillos (California Institute of Technology). The article is called "Modelling wave propagation without sampling restrictions using the multiplicative calculus I: Theoretical considerations". From the article: ""We exploit this fact to show that some partial differential equations (PDE) can be solved far more efficiently using techniques based on the multiplicative [geometric] calculus. ... The calculus developed by Newton and Leibniz is one of most significant breakthroughs in mathematics but an infinite number of other versions of calculus are possible. The treatise [Non-Newtonian Calculus] by Grossman and Katz is perhaps the earliest comprehensive work on other so-called non-Newtonian calculi ... Recent contributions have expanded on the ideas of non-Newtonian calculi and have shown some applications, particularly using the multiplicative calculus. These include significant extensions of the multiplicative calculus to complex numbers, contributions on numerical algorithms in the multiplicative calculus and applications to specific problems of scientific interest. However, to the authors’ knowledge there have not been any numerical applications to the partial differential equation (PDE) of mathematical physics. This paper is the first in a series of articles that aims to bridge that gap, by applying techniques of the multiplicative calculus to solve problems in mathematical physics far more efficiently than current methods."
+Non-Newtonian calculus was used by James R. Meginniss (Claremont Graduate School and Harvey Mudd College) to create a theory of probability that is adapted to human behavior and decision making.
+Seminars concerning non-Newtonian calculus and the dynamics of random fractal structures were conducted by Wojbor Woycznski (Case Western Reserve University) at Ohio State University on 22 April 2011, and at Cleveland State University on 2 May 2012. In the abstracts for the seminars he asserted: "Many natural phenomena, from microscopic bacteria growth, through macroscopic turbulence, to the large scale structure of the Universe, display a fractal character. For studying the time evolution of such "rough" objects, the classical, "smooth" Newtonian calculus is not enough."
+A seminar concerning fractional calculus, random fractals, and non-Newtonian calculus was conducted by Wojbor Woycznski (Case Western Reserve University) at Case Western Reserve University on 3 April 2013. In the abstract for the seminar he asserted: "Random fractals, a quintessentially 20th century idea, arise as natural models of various physical, biological (think your mother's favorite cauliflower dish), and economic (think Wall Street, or the Horseshoe Casino) phenomena, and they can be characterized in terms of the mathematical concept of fractional dimension. Surprisingly, their time evolution can be analyzed by employing a non-Newtonian calculus utilizing integration and differentiation of fractional order."
+The geometric calculus was used by Agamirza E. Bashirov (Eastern Mediterranean University in Cyprus), together with Emine Misirli Kurpinar and Ali Ozyapici (both of Ege University in Turkey), in an article on differential equations and calculus of variations. The article was submitted by Steven G. Krantz. In that article, the authors state: "We think that multiplicative calculus can especially be useful as a mathematical tool for economics and finance ... In the present paper our aim is to bring multiplicative calculus to the attention of researchers and to demonstrate its usefulness." (The "multiplicative calculus" referred to here is the geometric calculus.)
+The geometric calculus was used by Agamirza E. Bashirov, Emine Misirli, Yucel Tandogdu, and Ali Ozyapici in an article on modelling with multiplicative differential equations. In that article they state: "In this study it becomes evident that the multiplicative calculus methodology has some advantages over additive calculus in modeling some processes in areas such as actuarial science, finance, economics, biology, demographics, etc." (The "multiplicative calculus" referred to here is the geometric calculus.)
+The geometric calculus is among the topics presented in the mathematics textbook Mathematical Analysis: Fundamentals by Agamirza E. Bashirov of Eastern Mediterranean University in Cyprus. (The author uses the expression "multiplicative calculus" instead of "geometric calculus".) Included in the book is application of the geometric calculus to differential equations, and a proof using geometric calculus of the well-known fact that there is a function infinitely-many times differentiable but not analytic. From the Abstract to Chapter 11: "An interesting feature of this chapter is an introduction to multiplicative calculus, which is an alternative to the calculus of Newton and Leibnitz."
+The geometric calculus was used by Diana Andrada Filip (Babeș-Bolyai University of Cluj-Napoca in Romania) and Cyrille Piatecki (Orléans University in France) to re-postulate and analyse the neoclassical exogenous growth model in economics. In that article they state: "In this paper, we have tried to present how a non-Newtonian calculus could be applied to repostulate and analyse the neoclassical [Solow-Swan] exogenous growth model [in economics]. ... In fact, one must acknowledge that it’s only under the effort of Grossman & Katz (1972) ... that such a non-Newtonian calculus emerged to give a natural answer to many growth phenomena. ... We must underscore that to discover that there was a non-Newtonian way to look to differential equations has been a great surprise for us. It opens the question to know if there are major fields of economic analysis which can be profoundly re-thought in the light of this discovery."
+A discussion concerning the advantages of using the geometric calculus in economic analysis is presented in an article by Diana Andrada Filip (Babeș-Bolyai University of Cluj-Napoca in Romania) and Cyrille Piatecki (Orléans University in France). In that article they state: "The double entry bookkeeping promoted by Luca Pacioli in the fifteenth century could be considered a strong argument in behalf of the multiplicative calculus, which can be developed from the Grossman and Katz non-Newtonian calculus concept." (The "multiplicative calculus" referred to here is the geometric calculus.)
+The geometric calculus was used by Luc Florack and Hans van Assen (both of the Eindhoven University of Technology) in the study of biomedical image analysis. In their article "Multiplicative calculus in biomedical image analysis" they state: "We advocate the use of an alternative calculus in biomedical image analysis, known as multiplicative (a.k.a. non-Newtonian) calculus. ... The purpose of this article is to provide a condensed review of multiplicative calculus and to illustrate its potential use in biomedical image analysis" (The "multiplicative calculus" referred to here is the geometric calculus.) In Professor Florack's article "Regularization of positive definite matrix fields based on multiplicative calculus" he states: "Multiplicative calculus provides a natural framework in problems involving positive images and positivity preserving operators. In increasingly important, complex imaging frameworks, such as diffusion tensor imaging, it complements standard calculus in a nontrivial way. The purpose of this article is to illustrate the basics of multiplicative calculus and its application to the regularization of positive definite matrix fields." (The "multiplicative calculus" referred to here is the geometric calculus.)
+The geometric calculus was used in "Physically inspired depth-from-defocus", an article about image analysis and computer vision by Nico Persch, Christopher Schroers, Simon Setzer, and Joachim Weickert (all from Saarland University in Germany). From the article: "For the  minimisation  of  our  energy  functional, we show the advantages of a multiplicative Euler–Lagrange formalism ... Our work is an example how one can benefit from physically refined modelling in conjunction with multiplicative calculi. It is our hope that both concepts will receive more popularity in future computer vision models."
+The geometric calculus and the bigeometric calculus were among the topics covered in a course on non-Newtonian calculus conducted in the summer-term of 2012 by Joachim Weickert, Laurent Hoeltgen, and other faculty from the Mathematical Image Analysis Group of Saarland University in Germany. Among the other topics covered were applications to digital image processing, rates of return, and growth processes.
+A multiplicative calculus was used in the study of contour detection in images with multiplicative noise by Marco Mora, Fernando Córdova-Lepe, and Rodrigo Del-Valle (all of Universidad Católica del Maule in Chile). In that article they state: "This work presents a new operator of non-Newtonian type which [has] shown [to] be more efficient in contour detection [in images with multiplicative noise] than the traditional operators. ... In our view, the work proposed in (Grossman and Katz, 1972) stands as a foundation, for its clarity of purpose."
+The bigeometric calculus was used in the article “A multi-directional gradient with bi-geometric calculus to detect contours in images with multiplicative noise” by M. Acevedo-Letelier, K. Vilches, and M. Mora (all from Universidad Católica del Maule in Chile). From the Abstract: “In this paper a new operator is presented for the detection of contours in images with multiplicative noise, by using the operations introduced in the bi-geometric calculus, since recent results in the literature show that multiplicative operators tend to make more accurate approximations of the reality in images with multiplicative noise. The operator introduced corresponds to a multiplicative multi-directional gradient. The Global Efficiency was used as performance function to make a comparison about the effectiveness in the detection of contours, between the multi-gradient and its multiplicative version. ... According to the results obtained from the objective comparison, the multiplicative multi-directional gradient operator presents improved efficiency in obtaining contours versus its classical version."
+The geometric calculus was used by Emine Misirli and Yusuf Gurefe (both of Ege University in Turkey) in their lecture "The new numerical algorithms for solving multiplicative differential equations". In that presentation they stated: "While one problem can be easily expressed using one calculus, the same problem can not be expressed as easily [using another]."
+The bigeometric derivative was used to reformulate the Volterra product integral. (Please see Product integral#Basic definitions.)
+The geometric calculus and the bigeometric calculus were used by Mustafa Riza (Eastern Mediterranean University in Cyprus), together with Ali Ozyapici and Emine Misirli (both of Ege University in Turkey), in an article on differential equations and finite difference methods.
+A multiplicative type of calculus for complex-valued functions of a complex variable was developed and used by Ali Uzer (Fatih University in Turkey).
+Complex multiplicative calculus was developed by Agamirza E. Bashirov and Mustafa Riza (both of Eastern Mediterranean University in Cyprus).
+The geometric calculus was used by Agamirza E. Bashirov (Eastern Mediterranean University in Cyprus) in an article on line integrals and double multiplicative integrals.
+The geometric calculus was used by Emine Misirli and Yusuf Gurefe (both of Ege University in Turkey) in an article on the numerical solution of multiplicative differential equations.
+The geometric calculus was used by James D. Englehardt (University of Miami) and Ruochen Li (Shenzhen, China) in an article on pathogen counts in treated water.
+Weighted geometric calculus was used by David Baqaee (Harvard University) in an article on an axiomatic foundation for intertemporal decision making.
+The bigeometric calculus was used in an article on multiplicative differential equations by Dorota Aniszewska (Wrocław University of Technology).
+The bigeometric calculus was used in an article on chaos in multiplicative dynamical systems by Dorota Aniszewska and Marek Rybaczuk (both from the Wrocław University of Technology in Poland).
+The bigeometric calculus was used in an article on multiplicative Lorenz systems by Dorota Aniszewska and Marek Rybaczuk (both from Wrocław University of Technology).
+The bigeometric calculus was used in an article on multiplicative dynamical systems by Dorota Aniszewska and Marek Rybaczuk (both from Wrocław University of Technology).
+The bigeometric calculus was used in an article on fractals and material science by M. Rybaczuk and P. Stoppel (both from Wrocław University of Technology).
+The bigeometric calculus was used in an article on fractal dimension and dimensional spaces by Marek Rybaczuka (Wrocław University of Technology in Poland), Alicja Kedziab (Medical Academy of Wrocław in Poland), and Witold Zielinskia (Wrocław University of Technology).
+The geometric calculus and the bigeometric calculus are useful in the study of dimensional spaces. In dimensional spaces (in a similar way to physical quantities) you can multiply and divide quantities which have different dimensions but you cannot add and subtract quantities with different dimensions. This means that the classical additive derivative is undefined because the difference f(x+Δx)−f(x) has no value. However, in dimensional spaces, the geometric derivative and the bigeometric derivative remain well-defined. Multiplicative dynamical systems can become chaotic even when the corresponding classical additive system does not because the additive and multiplicative derivatives become inequivalent if the variables involved also have a varying fractal dimension.
+The geometric calculus was used by S. L. Blyumin (Lipetsk State Technical University in Russia) in an article on information technology.
+The bigeometric derivative was used by Fernando Córdova-Lepe (Universidad Católica del Maule in Chile) in an article on the theory of elasticity in economics.
+The geometric calculus was applied to functional analysis by Cengiz Türkmen and Feyzi Başar (both from Fatih University in Turkey).
+The geometric calculus was used by Gunnar Sparr sv:Gunnar Sparr (Lund Institute of Technology, in Sweden) in an article on computer vision. (The "multiplicative derivative" referred to in the article is the geometric derivative.)
+The geometric integral is useful in stochastics. (See Product integral#Basic definitions.)
+The geometric calculus is the subject of an article by Dick Stanley in the journal PRIMUS. The same issue of Primus contains a paper by Duff Campbell: "Multiplicative calculus and student projects".
+Bigeometric Calculus: A System with a Scale-Free Derivative was reviewed in Mathematical Reviews in 1984 by Ralph P. Boas Jr. He included the following assertion: "It seems plausible that people who need to study functions from this point of view might well be able to formulate problems more clearly by using bigeometric calculus instead of classical calculus".
+Non-Newtonian Calculus, a book including detailed discussions about the geometric calculus and the bigeometric calculus (both of which are non-Newtonian calculi), is used in the 2006 report "Stern Review on the Economics of Climate Change", according to a 2012 critique of that report (called "What is Wrong with Stern?") by former UK Cabinet Minister Peter Lilley and economist Richard Tol. The report "Stern Review on the Economics of Climate Change" was commissioned by the UK government and was written by a team led by Nicholas Stern (former Chief Economist at the World Bank).
+Non-Newtonian Calculus, a book including detailed discussions about the geometric calculus and the bigeometric calculus (both of which are non-Newtonian calculi), is cited by Ivor Grattan-Guinness in his book The Rainbow of Mathematics: A History of the Mathematical Sciences .
+Non-Newtonian Calculus, a book including detailed discussions about the geometric calculus and the bigeometric calculus (both of which are non-Newtonian calculi), is used in an article on sequence spaces by Ahmet Faruk Cakmak (Yıldız Technical University in Turkey) and Feyzi Basar (Fatih University in Turkey). The abstract of the article begins with the statement: "As alternatives to classical calculus, Grossman and Katz (Non-Newtonian Calculus, 1972) introduced the non-Newtonian calculi consisting of the branches of geometric, anageometric, and bigeometric calculus, etc."
+Geometric arithmetic was used by Muttalip Ozavsar and Adem C. Cevikel (both of Yıldız Technical University in Turkey) in an article on multiplicative metric spaces and multiplicative contraction mappings.
+The non-Newtonian averages (of functions) were used to construct a family of means (of two positive numbers). Included among those means are some well-known ones such as the arithmetic mean, the geometric mean, the harmonic mean, the power means, the logarithmic mean, the identric mean, and the Stolarsky mean.  The family of means was used to yield simple proofs of some familiar inequalities. Publications about that family are cited in six articles.
+Non-Newtonian calculus was used by Z. Avazzadeh, Z. Beygi Rizi, G. B. Loghmani, and F. M. Maalek Ghaini (the first three from Yazd University in Iran, and the last from Islamic Azad University in Iran) to devise a numerical method for solving nonlinear Volterra integro-differential equations.
+Application of non-Newtonian calculus to "continuous and bounded functions over the field of non-Newtonian/geometric complex numbers" was made by Zafer Cakir (Gumushane University, Turkey).
+Multiplicative calculus was the subject of Christopher Olah's lecture at the Singularity Summit on 13 October 2012. Singularity University's Singularity Summit is a conference on robotics, artificial intelligence, brain-computer interfacing, and other emerging technologies including genomics and regenerative medicine. Christopher Olah is a Thiel Fellow.
+Non-Newtonian calculus was used in the article "Certain sequence spaces over the non-Newtonian complex field" by Sebiha Tekin and Feyzi Basar, both of Fatih University in Turkey.
+Non-Newtonian calculus was used in the article "Fixed points of non-Newtonian contraction mappings on non-Newtonian metric spaces" by Demet Binbaşıoǧlu (Gaziosmanpaşa University in Turkey), Serkan Demiriz (Gaziosmanpaşa University in Turkey), and Duran Türkoǧlu (Gazi University in Turkey). From the article: "The non-Newtonian calculus has many applications in different areas including fractal geometry, image analysis (e.g.,in biomedicine), growth/decay analysis (e.g.,in economic growth, bacterial growth and radioactive decay), finance (e.g.,rates of return), the theory of elasticity in economics, marketing, the economics of climate change, atmospheric temperature, signal processing (electrical engineering), wave theory in physics, quantum physics and gauge theory, information technology, pathogen counts in treated water, actuarial science, tumor therapy and cancer-chemotherapy in medicine, materials science/engineering, demographics, differential equations (including a multiplicative Lorenz system and Runge–Kutta methods), calculus of variations, finite-difference methods, averages of functions, means of two positive numbers, weighted calculus, meta-calculus, approximation theory, least-squares methods, multivariable calculus, complex analysis, functional analysis, probability theory, utility theory, Bayesian analysis, stochastics, decision making, dynamical systems, chaos theory, and dimensional spaces."
+
+
+== See also ==
+List of derivatives and integrals in alternative calculi
+Indefinite product
+Product integral
+Fractal derivative
+
+
+== References ==
+
+
+== Further reading ==
+Non-Diophantine arithmetics, alternative number systems, created by Mark Burgin in 1977: Czachor, Marek (2016). "Relativity of arithmetic as a fundamental symmetry of physics". Quantum Studies: Mathematics and Foundations. 3 (2): 123–133. arXiv:1412.8583. doi:10.1007/s40509-015-0056-4.
+Non-Diophantine calculi, alternative calculi, created by Marek Czachor in 2015: Czachor, Marek (2016). "Relativity of arithmetic as a fundamental symmetry of physics". Quantum Studies: Mathematics and Foundations. 3 (2): 123–133. arXiv:1412.8583. doi:10.1007/s40509-015-0056-4.
+"Quotientiation, an extension of the differentiation process", Robert Edouard Moritz.
+
+
+== External links ==
+Non-Newtonian calculus website

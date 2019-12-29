@@ -1,0 +1,31 @@
+In electronic communications, especially in telecommunications, an interference is that which modifies a signal in a disruptive manner, as it travels along a channel between its source and receiver. The term is often used to refer to the addition of unwanted signals to a useful signal. Common examples are:
+
+Electromagnetic interference (EMI)
+Co-channel interference (CCI), also known as crosstalk
+Adjacent-channel interference (ACI)
+Intersymbol interference (ISI)
+Inter-carrier interference (ICI), caused by doppler shift in OFDM modulation (multitone modulation).
+Common-mode interference (CMI)
+Conducted interferenceInterference is typically but not always distinguished from noise, for example white thermal noise.
+Radio resource management aims at reducing and controlling the co-channel and adjacent-channel interference.
+
+
+== Interference alignment ==
+A solution to interference problems in wireless communication networks is interference alignment, which was discovered by Syed Ali Jafar at the University of California, Irvine. Specialized applications were previously studied by Yitzhak Birk and Tomer Kol for an index coding problem in 1998, and then by Mohammad Ali Maddah-Ali and Abolfazl S. Motahari in the specialized context of the X channel. Interference alignment was eventually established as a general principle by Jafar and Viveck R. Cadambe in 2008, when they introduced "a mechanism to align an arbitrarily large number of interferers, leading to the surprising conclusion that wireless networks are not essentially interference limited." This led to the adoption of interference alignment in the design of wireless networks.Jafar explained:
+
+My research group crystallized the concept of interference alignment and showed that through interference alignment, it is possible for everyone to access half of the total bandwidth free from interference. Initially this result was shown under a number of idealized assumptions that are typical in theoretical studies. We have since continued to work on peeling off these idealizations one at a time, to bring the theory closer to practice. Along the way we have made numerous discoveries through the lens of interference alignment, which reveal new and powerful signaling schemes.
+According to New York University senior researcher Paul Horn:
+
+Syed Jafar revolutionized our understanding of the capacity limits of wireless networks. He demonstrated the astounding result that each user in a wireless network can access half of the spectrum without interference from other users, regardless of how many users are sharing the spectrum. This is a truly remarkable result that has a tremendous impact on both information theory and the design of wireless networks.
+
+
+== See also ==
+Distortion
+Inter-flow interference
+Intra-flow interference
+Meaconing
+Signal-to-interference ratio (SIR)
+Signal-to-noise plus interference (SNIR)
+
+
+== References ==

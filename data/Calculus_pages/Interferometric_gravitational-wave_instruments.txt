@@ -1,0 +1,17 @@
+An interferometric gravitational-wave detector (or interferometric gravitational-wave telescope) is a gravitational wave detector that uses the wave interference to detect gravitational waves. Laser interferometers detects gravitational waves that extend and contract the distance between mirrors. Atom interferometers are proposed to detect gravitational waves, which would lengthen or shorten the distance between recombining atom clouds. Interferometric gravitational-wave detectors are one class of detectors and for more information about other types of instruments used for gravitational wave detection see the article on gravitational wave observatories.
+
+
+== Locations ==
+Interferometric gravitational wave detectors include 
+
+GEO600 near Sarstedt, Germany,
+LIGO (Laser Interferometer Gravitational-Wave Observatory) in the United States,  in Hanford,  Washington, laser beam arms totalling 5 miles, and a 2.5 x 2.5 mile facility in Livingston, Louisiana, 30 miles east of Baton Rouge.
+TAMA 300, Tokyo, Japan
+Virgo interferometer, near Pisa, Italy.
+
+
+== References ==
+
+
+== External links ==
+LIGO Livingston

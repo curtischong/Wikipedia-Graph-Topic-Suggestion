@@ -1,0 +1,1355 @@
+In mathematics, subharmonic and superharmonic functions are important classes of functions used extensively in partial differential equations, complex analysis and potential theory.
+Intuitively, subharmonic functions are related to convex functions of one variable as follows. If the graph of a convex function and a line intersect at two points, then the graph of the convex function is below the line between those points. In the same way, if the values of a subharmonic function are no larger than the values of a harmonic function on the boundary of a ball, then the values of the subharmonic function are no larger than the values of the harmonic function also inside the ball.
+Superharmonic functions can be defined by the same description, only replacing "no larger" with "no smaller". Alternatively, a superharmonic function is just the negative of a subharmonic function, and for this reason any property of subharmonic functions  can be easily transferred to superharmonic functions.
+
+
+== Formal definition ==
+Formally, the definition can be stated as follows. Let  
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   be a subset of the Euclidean space 
+  
+    
+      
+        
+          
+            
+              R
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\mathbb {R} }^{n}}
+   and let
+
+  
+    
+      
+        φ
+        :
+        G
+        →
+        
+          
+            R
+          
+        
+        ∪
+        {
+        −
+        ∞
+        }
+      
+    
+    {\displaystyle \varphi \colon G\to {\mathbb {R} }\cup \{-\infty \}}
+  be an upper semi-continuous function. Then, 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+   is called subharmonic if for any closed ball 
+  
+    
+      
+        
+          
+            
+              B
+              (
+              x
+              ,
+              r
+              )
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {B(x,r)}}}
+   of center 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   and radius 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+   contained  in 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   and every real-valued continuous function 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+   on  
+  
+    
+      
+        
+          
+            
+              B
+              (
+              x
+              ,
+              r
+              )
+            
+            ¯
+          
+        
+      
+    
+    {\displaystyle {\overline {B(x,r)}}}
+   that is harmonic in 
+  
+    
+      
+        B
+        (
+        x
+        ,
+        r
+        )
+      
+    
+    {\displaystyle B(x,r)}
+   and satisfies  
+  
+    
+      
+        φ
+        (
+        y
+        )
+        ≤
+        h
+        (
+        y
+        )
+      
+    
+    {\displaystyle \varphi (y)\leq h(y)}
+   for all 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+   on the  boundary  
+  
+    
+      
+        ∂
+        B
+        (
+        x
+        ,
+        r
+        )
+      
+    
+    {\displaystyle \partial B(x,r)}
+   of 
+  
+    
+      
+        B
+        (
+        x
+        ,
+        r
+        )
+      
+    
+    {\displaystyle B(x,r)}
+   we have   
+  
+    
+      
+        φ
+        (
+        y
+        )
+        ≤
+        h
+        (
+        y
+        )
+      
+    
+    {\displaystyle \varphi (y)\leq h(y)}
+   for all  
+  
+    
+      
+        y
+        ∈
+        B
+        (
+        x
+        ,
+        r
+        )
+        .
+      
+    
+    {\displaystyle y\in B(x,r).}
+  
+Note that by the above, the function which is identically −∞ is subharmonic, but some authors exclude this function by definition.
+A function 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   is called superharmonic if 
+  
+    
+      
+        −
+        u
+      
+    
+    {\displaystyle -u}
+   is subharmonic.
+
+
+== Properties ==
+A function is harmonic  if and only if it is both subharmonic and superharmonic.
+If 
+  
+    
+      
+        ϕ
+        
+      
+    
+    {\displaystyle \phi \,}
+   is C2 (twice continuously differentiable) on an open set 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   in 
+  
+    
+      
+        
+          
+            
+              R
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\mathbb {R} }^{n}}
+  , then 
+  
+    
+      
+        ϕ
+        
+      
+    
+    {\displaystyle \phi \,}
+   is subharmonic if and only if one has 
+  
+    
+      
+        Δ
+        ϕ
+        ≥
+        0
+      
+    
+    {\displaystyle \Delta \phi \geq 0}
+   on 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+  , where 
+  
+    
+      
+        Δ
+      
+    
+    {\displaystyle \Delta }
+   is the Laplacian.
+The maximum of a subharmonic function cannot be achieved in the interior of its domain unless the function is constant, this is the so-called maximum principle. However, the minimum of a subharmonic function can be achieved in the interior of its domain.
+Subharmonic functions make a convex cone, that is, a linear combination of subharmonic functions with positive coefficients is also subharmonic.
+The pointwise maximum of two subharmonic functions is subharmonic.
+The limit of a decreasing sequence of subharmonic functions is subharmonic (or identically equal to 
+  
+    
+      
+        −
+        ∞
+      
+    
+    {\displaystyle -\infty }
+  ).
+Subharmonic functions are not necessarily continuous in the usual topology, however one can introduce the fine topology which makes them continuous.
+
+
+== Examples ==
+If 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is analytic then 
+  
+    
+      
+        log
+        ⁡
+        
+          |
+        
+        f
+        
+          |
+        
+      
+    
+    {\displaystyle \log |f|}
+   is subharmonic. More examples can be constructed by using the properties listed above,
+by taking maxima, convex combinations and limits. In dimension 1, all subharmonic functions can be obtained in this way.
+
+
+== Riesz Representation Theorem ==
+If 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   is subharmonic in a region 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  , in Euclidean space of dimension 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  ,  
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+   is harmonic in 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  , and 
+  
+    
+      
+        u
+        ≤
+        v
+      
+    
+    {\displaystyle u\leq v}
+  , then 
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+  
+is called a harmonic majorant of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  . If a harmonic majorant exists, then there exists the least harmonic majorant, and
+
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        v
+        (
+        x
+        )
+        −
+        
+          ∫
+          
+            D
+          
+        
+        
+          
+            
+              d
+              μ
+              (
+              y
+              )
+            
+            
+              
+                |
+              
+              x
+              −
+              y
+              
+                
+                  |
+                
+                
+                  n
+                  −
+                  2
+                
+              
+            
+          
+        
+        ,
+        
+        n
+        ≥
+        3
+      
+    
+    {\displaystyle u(x)=v(x)-\int _{D}{\frac {d\mu (y)}{|x-y|^{n-2}}},\quad n\geq 3}
+  while in dimension 2,
+
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        v
+        (
+        x
+        )
+        +
+        
+          ∫
+          
+            D
+          
+        
+        log
+        ⁡
+        
+          |
+        
+        x
+        −
+        y
+        
+          |
+        
+        d
+        μ
+        (
+        y
+        )
+        ,
+      
+    
+    {\displaystyle u(x)=v(x)+\int _{D}\log |x-y|d\mu (y),}
+  where  
+  
+    
+      
+        v
+      
+    
+    {\displaystyle v}
+   is the least harmonic majorant, and  
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+   is a Borel measure in 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  .
+This is called the Riesz representation theorem.
+
+
+== Subharmonic functions in the complex plane ==
+Subharmonic functions are of a particular importance in complex analysis, where they are intimately connected to holomorphic functions.
+One can show that a real-valued, continuous function 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+   of a complex variable (that is, of two real variables) defined on a set 
+  
+    
+      
+        G
+        ⊂
+        
+          C
+        
+      
+    
+    {\displaystyle G\subset \mathbb {C} }
+   is subharmonic if and only if for any closed disc 
+  
+    
+      
+        D
+        (
+        z
+        ,
+        r
+        )
+        ⊂
+        G
+      
+    
+    {\displaystyle D(z,r)\subset G}
+   of center 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+   and radius 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+   one has
+
+  
+    
+      
+        φ
+        (
+        z
+        )
+        ≤
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        φ
+        (
+        z
+        +
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        
+        d
+        θ
+        .
+      
+    
+    {\displaystyle \varphi (z)\leq {\frac {1}{2\pi }}\int _{0}^{2\pi }\varphi (z+re^{i\theta })\,d\theta .}
+  Intuitively, this means that a subharmonic function is at any point no greater than the average of the values in a circle around that point, a fact which can be used to derive the maximum principle.
+If 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is a holomorphic function, then 
+
+  
+    
+      
+        φ
+        (
+        z
+        )
+        =
+        log
+        ⁡
+        
+          |
+          
+            f
+            (
+            z
+            )
+          
+          |
+        
+      
+    
+    {\displaystyle \varphi (z)=\log \left|f(z)\right|}
+  is a subharmonic function if we define the value of  
+  
+    
+      
+        φ
+        (
+        z
+        )
+      
+    
+    {\displaystyle \varphi (z)}
+   at the zeros of 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   to be −∞. It follows that
+
+  
+    
+      
+        
+          ψ
+          
+            α
+          
+        
+        (
+        z
+        )
+        =
+        
+          
+            |
+            
+              f
+              (
+              z
+              )
+            
+            |
+          
+          
+            α
+          
+        
+      
+    
+    {\displaystyle \psi _{\alpha }(z)=\left|f(z)\right|^{\alpha }}
+  is subharmonic for every α > 0. This observation plays a role in the theory of Hardy spaces, especially for the study of Hp when 0 < p < 1.
+In the context of the complex plane, the connection to the convex functions can be realized as well by the fact that a subharmonic function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   on a domain 
+  
+    
+      
+        G
+        ⊂
+        
+          C
+        
+      
+    
+    {\displaystyle G\subset \mathbb {C} }
+   that is constant in the imaginary direction is convex in the real direction and vice versa.
+
+
+=== Harmonic majorants of subharmonic functions ===
+If 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   is subharmonic in a region 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+   of the complex plane, and 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+   is harmonic on 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  , then 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+   is a harmonic majorant of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   in 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+   if 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  ≤
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+   in 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  . Such an inequality can be viewed as a growth condition on 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  .
+
+
+=== Subharmonic functions in the unit disc. Radial maximal function ===
+Let φ be subharmonic, continuous and non-negative in an open subset Ω of the complex plane containing the closed unit disc D(0, 1). The radial maximal function for the function φ (restricted to the unit disc) is defined on the unit circle by
+
+  
+    
+      
+        (
+        M
+        φ
+        )
+        (
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        =
+        
+          sup
+          
+            0
+            ≤
+            r
+            <
+            1
+          
+        
+        φ
+        (
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle (M\varphi )(e^{i\theta })=\sup _{0\leq r<1}\varphi (re^{i\theta }).}
+  If Pr denotes the Poisson kernel, it follows from the subharmonicity that
+
+  
+    
+      
+        0
+        ≤
+        φ
+        (
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        ≤
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        
+          P
+          
+            r
+          
+        
+        
+          (
+          
+            θ
+            −
+            t
+          
+          )
+        
+        φ
+        
+          (
+          
+            e
+            
+              i
+              t
+            
+          
+          )
+        
+        
+        
+          d
+        
+        t
+        ,
+         
+         
+         
+        r
+        <
+        1.
+      
+    
+    {\displaystyle 0\leq \varphi (re^{i\theta })\leq {\frac {1}{2\pi }}\int _{0}^{2\pi }P_{r}\left(\theta -t\right)\varphi \left(e^{it}\right)\,\mathrm {d} t,\ \ \ r<1.}
+  It can be shown that the last integral is less than the value at e iθ of the Hardy–Littlewood maximal function φ∗ of the restriction of φ to the unit circle T,
+
+  
+    
+      
+        
+          φ
+          
+            ∗
+          
+        
+        (
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        =
+        
+          sup
+          
+            0
+            <
+            α
+            ≤
+            π
+          
+        
+        
+          
+            1
+            
+              2
+              α
+            
+          
+        
+        
+          ∫
+          
+            θ
+            −
+            α
+          
+          
+            θ
+            +
+            α
+          
+        
+        φ
+        
+          (
+          
+            e
+            
+              i
+              t
+            
+          
+          )
+        
+        
+        
+          d
+        
+        t
+        ,
+      
+    
+    {\displaystyle \varphi ^{*}(e^{i\theta })=\sup _{0<\alpha \leq \pi }{\frac {1}{2\alpha }}\int _{\theta -\alpha }^{\theta +\alpha }\varphi \left(e^{it}\right)\,\mathrm {d} t,}
+  so that 0 ≤ M φ ≤ φ∗. It is known that the Hardy–Littlewood operator is bounded on Lp(T) when 1 < p < ∞.
+It follows that for some universal constant C,
+
+  
+    
+      
+        ‖
+        M
+        φ
+        
+          ‖
+          
+            
+              L
+              
+                2
+              
+            
+            (
+            
+              T
+            
+            )
+          
+          
+            2
+          
+        
+        ≤
+        
+          C
+          
+            2
+          
+        
+        
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        φ
+        (
+        
+          e
+          
+            i
+            θ
+          
+        
+        
+          )
+          
+            2
+          
+        
+        
+        
+          d
+        
+        θ
+        .
+      
+    
+    {\displaystyle \|M\varphi \|_{L^{2}(\mathbf {T} )}^{2}\leq C^{2}\,\int _{0}^{2\pi }\varphi (e^{i\theta })^{2}\,\mathrm {d} \theta .}
+  If f is a function holomorphic in Ω and 0 < p < ∞, then the preceding inequality applies to φ = |f | p/2. It can be deduced from these facts that any function F in the classical Hardy space Hp satisfies
+
+  
+    
+      
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        
+          
+            (
+          
+        
+        
+          sup
+          
+            0
+            ≤
+            r
+            <
+            1
+          
+        
+        
+          |
+        
+        F
+        (
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        
+          |
+        
+        
+          
+            
+              )
+            
+          
+          
+            p
+          
+        
+        
+        
+          d
+        
+        θ
+        ≤
+        
+          C
+          
+            2
+          
+        
+        
+        
+          sup
+          
+            0
+            ≤
+            r
+            <
+            1
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            2
+            π
+          
+        
+        
+          |
+        
+        F
+        (
+        r
+        
+          e
+          
+            i
+            θ
+          
+        
+        )
+        
+          
+            |
+          
+          
+            p
+          
+        
+        
+        
+          d
+        
+        θ
+        .
+      
+    
+    {\displaystyle \int _{0}^{2\pi }{\Bigl (}\sup _{0\leq r<1}|F(re^{i\theta })|{\Bigr )}^{p}\,\mathrm {d} \theta \leq C^{2}\,\sup _{0\leq r<1}\int _{0}^{2\pi }|F(re^{i\theta })|^{p}\,\mathrm {d} \theta .}
+  With more work, it can be shown that F has radial limits F(e iθ) almost everywhere on the unit circle, and (by the dominated convergence theorem) that Fr, defined by Fr(e iθ) = F(r e iθ) tends to F in Lp(T).
+
+
+== Subharmonic functions on Riemannian manifolds ==
+Subharmonic functions  can be defined on an arbitrary Riemannian manifold.
+Definition: Let M be a Riemannian manifold, and 
+  
+    
+      
+        f
+        :
+        
+        M
+        →
+        
+          
+            R
+          
+        
+      
+    
+    {\displaystyle f:\;M\to {\mathbb {R} }}
+   an upper semicontinuous function. Assume that for any open subset 
+  
+    
+      
+        U
+        ⊂
+        M
+      
+    
+    {\displaystyle U\subset M}
+  , and any harmonic function f1 on U, such that 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        ≥
+        f
+      
+    
+    {\displaystyle f_{1}\geq f}
+   on the boundary of U, the inequality 
+  
+    
+      
+        
+          f
+          
+            1
+          
+        
+        ≥
+        f
+      
+    
+    {\displaystyle f_{1}\geq f}
+   holds on all U. Then f is called subharmonic.
+This definition is equivalent to one given above. Also, for twice differentiable functions, subharmonicity is equivalent to the inequality 
+  
+    
+      
+        Δ
+        f
+        ≥
+        0
+      
+    
+    {\displaystyle \Delta f\geq 0}
+  , where 
+  
+    
+      
+        Δ
+      
+    
+    {\displaystyle \Delta }
+   is the usual Laplacian.
+
+
+== See also ==
+Plurisubharmonic function — generalization to several complex variables
+Classical fine topology
+
+
+== Notes ==
+
+
+== References ==
+Conway, John B. (1978). Functions of one complex variable. New York: Springer-Verlag. ISBN 0-387-90328-3.
+Krantz, Steven G. (1992). Function Theory of Several Complex Variables. Providence, Rhode Island: AMS Chelsea Publishing. ISBN 0-8218-2724-3.
+Doob, Joseph Leo (1984). Classical Potential Theory and Its Probabilistic Counterpart. Berlin Heidelberg New York: Springer-Verlag. ISBN 3-540-41206-9.Rosenblum, Marvin; Rovnyak, James (1994). Topics in Hardy classes and univalent functions. Birkhauser Advanced Texts: Basel Textbooks. Basel: Birkhauser Verlag.This article incorporates material from Subharmonic and superharmonic functions on PlanetMath, which is licensed under the Creative Commons Attribution/Share-Alike License.

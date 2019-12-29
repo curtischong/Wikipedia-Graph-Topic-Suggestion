@@ -1,0 +1,18 @@
+Variational methods in general relativity refers to various mathematical techniques that employ the use of variational calculus in Einstein's theory of general relativity. The most commonly used tools are Lagrangians and Hamiltonians and are used to derive the Einstein field equations.
+
+
+== Lagrangian methods ==
+
+The equations of motion in physical theories can often be derived from an object called the Lagrangian. In classical mechanics, this object is usually of the form, 'kinetic energy − potential energy'. In general, the Lagrangian is that function which when integrated over produces the Action functional.
+David Hilbert gave an early and classic formulation of the equations in Einstein's general relativity. This used the functional now called the Einstein-Hilbert action.
+
+
+== See also ==
+Palatini action
+Plebanski action
+MacDowell–Mansouri action
+Freidel–Starodubtsev action
+Mathematics of general relativity
+
+
+== References ==

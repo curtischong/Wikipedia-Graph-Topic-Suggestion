@@ -1,0 +1,872 @@
+In geometry, the convex hull or convex envelope or convex closure of a shape is the smallest convex set that contains it. For instance, for a bounded subset of the plane, the convex hull may be visualized as the shape enclosed by a rubber band stretched around the subset.
+Formally, the convex hull may be defined either as the intersection of all convex sets containing a given subset 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   of a Euclidean space, or equivalently as the set of all convex combinations of points in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  .
+The algorithmic problem of finding the convex hull of a finite set of points in the plane or other low-dimensional Euclidean spaces is one of the fundamental problems of computational geometry.
+
+
+== Definitions ==
+A set of points in a Euclidean space is defined to be convex if it contains the line segments connecting each pair of its points. The convex hull of a given set 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   may be defined as
+The (unique) minimal convex set containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+The intersection of all convex sets containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+The set of all convex combinations of points in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+The union of all simplices with vertices in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  For bounded sets in the Euclidean plane, not all on one line, the boundary of the convex hull is the simple closed curve with minimum perimeter containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . One may imagine stretching a rubber band so that it surrounds the entire set 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+   and then releasing it, allowing it to contract; when it becomes taut, it encloses the convex hull of 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  . However this formulation does not generalize to higher dimensions: for a finite set of points in three-dimensional space, a neighborhood of a spanning tree of the points encloses them with arbitrarily small surface area, smaller than the surface area of the convex hull.The definition using convex combinations may be extended from Euclidean spaces to arbitrary real vector spaces or affine spaces; convex hulls may also be generalized in a more abstract way, to oriented matroids.
+
+
+=== Equivalence of definitions ===
+It is not obvious that the first definition makes sense: why should there exist a unique minimal convex set containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , for every 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  ? However, the second definition, the intersection of all convex sets containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , is well-defined. It is a subset of every other convex set 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+   that contains 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , because 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+   is included among the sets being intersected. Thus, it is exactly the unique minimal convex set containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . Therefore, the first two definitions are equivalent.Each convex set containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   must (by the assumption that it is convex) contain all convex combinations of points in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , so the set of all convex combinations is contained in the intersection of all convex sets containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . Conversely, the set of all convex combinations is itself a convex set containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , so it also contains the intersection of all convex sets containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , and therefore the second and third definitions are equivalent.In fact, according to Carathéodory's theorem, if 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a subset of a 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  -dimensional vector space, every convex combination of finitely many points from 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is also a convex combination of at most 
+  
+    
+      
+        d
+        +
+        1
+      
+    
+    {\displaystyle d+1}
+   points in 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . The set of convex combinations of a 
+  
+    
+      
+        (
+        d
+        +
+        1
+        )
+      
+    
+    {\displaystyle (d+1)}
+  -tuple of points is a simplex; in the plane it is a triangle and in three-dimensional space it is a tetrahedron. Therefore, every convex combination of points of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   belongs to a simplex whose vertices belong to 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , and the third and fourth definitions are equivalent.
+
+
+=== Upper and lower hulls ===
+In two dimensions, the convex hull is sometimes partitioned into two parts, the upper hull and the lower hull, stretching between the leftmost and rightmost points of the hull. More generally, for convex hulls in any dimension, one can partition the boundary of the hull into upward-facing points (points for which an upward ray is disjoint from the hull), downward-facing points, and extreme points. For three-dimensional hulls, the upward-facing and downward-facing parts of the boundary form topological disks.
+
+
+== Topological properties ==
+
+
+=== Intersection of closed half-spaces ===
+If the convex hull of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a closed set (as happens, for instance, if 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a finite set or more generally a compact set), then it is the intersection of all closed half-spaces containing 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . However, an intersection of closed half-spaces is itself closed, so when a convex hull is not closed it cannot be represented in this way.
+
+
+=== Preservation of topological properties ===
+
+Topologically, the convex hull of an open set is always itself open, and the convex hull of a compact set is always itself compact. However, there exist closed sets for which the convex hull is not closed. For instance, the closed set
+
+  
+    
+      
+        
+          {
+          
+            (
+            x
+            ,
+            y
+            )
+            
+              |
+              
+                y
+                ≥
+                
+                  
+                    1
+                    
+                      1
+                      +
+                      
+                        x
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+              }
+            
+          
+          
+        
+      
+    
+    {\displaystyle \left\{(x,y)\left|y\geq {\frac {1}{1+x^{2}}}\right\}\right.}
+  (the set of points that lie on or above the witch of Agnesi) has the open upper half-plane as its convex hull.
+
+
+=== Extreme points and compact hulls ===
+
+An extreme point of a convex set is a point in the set that does not lie on a line segment between any other two points of the same set.
+For a convex hull, every extreme point must be part of the given set, because otherwise it cannot be formed as a convex combination of given points.
+According to the Krein–Milman theorem, every compact convex set in a Euclidean space (or more generally in a locally convex topological vector space) is the convex hull of its extreme points. However, this may not be true for convex sets that are not compact; for instance, the whole Euclidean plane and the open unit ball are both convex, but neither one has any extreme points. Choquet theory extends this theory from finite convex combinations of extreme points to infinite combinations (integrals) in more general spaces.
+
+
+== Geometric and algebraic properties ==
+
+
+=== Closure operator ===
+More abstractly, the convex-hull operator Conv() has the characteristic properties of a closure operator:
+It is extensive, meaning that the convex hull of every set 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a superset of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  .
+It is non-decreasing, meaning that, for every two sets 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   and Y with 
+  
+    
+      
+        X
+        ⊆
+        Y
+      
+    
+    {\displaystyle X\subseteq Y}
+  , the convex hull of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a subset of the convex hull of 
+  
+    
+      
+        Y
+      
+    
+    {\displaystyle Y}
+  .
+It is idempotent, meaning that for every 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  , the convex hull of the convex hull of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is the same as the convex hull of 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  .When applied to a finite set of points, this is the closure operator of an antimatroid, the shelling antimatroid of the point set.
+Every antimatroid can be represented in this way by convex hulls of points in a Euclidean space of high-enough dimension.
+
+
+=== Minkowski sum ===
+The operations of constructing the convex hull and taking the Minkowski sum commute with each other, in the sense that the Minkowski sum of convex hulls of sets gives the same result as the convex hull of the Minkowski sum of the same sets. This provides a step towards the Shapley–Folkman theorem bounding the distance of a Minkowski sum from its convex hull.
+
+
+=== Projective duality ===
+The projective dual operation to constructing the convex hull of a set of points is constructing the intersection of a family of closed halfspaces that all contain the origin (or any other designated point).
+
+
+== Special cases ==
+
+
+=== Finite point sets ===
+
+The convex hull of a finite point set 
+  
+    
+      
+        S
+        ⊊
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle S\subsetneq \mathbb {R} ^{n}}
+   forms a convex polygon when 
+  
+    
+      
+        n
+        =
+        2
+      
+    
+    {\displaystyle n=2}
+  , or more generally a convex polytope in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+  . Each extreme point of the hull is called a vertex, and (by the Krein–Milman theorem) every convex polytope is the convex hull of its vertices. It is the unique convex polytope whose vertices belong to 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+   and that encloses all of 
+  
+    
+      
+        S
+      
+    
+    {\displaystyle S}
+  .
+For sets of points in general position, the convex hull is a simplicial polytope.
+According to the upper bound theorem, the number of faces of the convex hull of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   points in 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  -dimensional Euclidean space is 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            ⌊
+            d
+            
+              /
+            
+            2
+            ⌋
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{\lfloor d/2\rfloor })}
+  . In particular, in two and three dimensions the number of faces is at most linear in 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  .
+
+
+=== Simple polygons ===
+
+The convex hull of a simple polygon encloses the given polygon and is partitioned by it into regions, one of which is the polygon itself. The other regions, bounded by a polygonal chain of the polygon and a single convex hull edge, are called pockets. Computing the same decomposition recursively for each pocket forms a hierarchical description of a given polygon called its convex differences tree. Reflecting a pocket across its convex hull edge expands the given simple polygon into a polygon with the same perimeter and larger area, and the Erdős–Nagy theorem states that this expansion process eventually terminates.
+
+
+=== Brownian motion ===
+The curve generated by Brownian motion in the plane, at any fixed time, has probability 1 of having a convex hull whose boundary forms a continuously differentiable curve. However, for any angle 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+   in the range 
+  
+    
+      
+        π
+        
+          /
+        
+        2
+        <
+        θ
+        <
+        π
+      
+    
+    {\displaystyle \pi /2<\theta <\pi }
+  , there will be times during the Brownian motion where the moving particle touches the boundary of the convex hull at a point of angle 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  . The Hausdorff dimension of this set of exceptional times is (with high probability) 
+  
+    
+      
+        1
+        −
+        π
+        
+          /
+        
+        2
+        θ
+      
+    
+    {\displaystyle 1-\pi /2\theta }
+  .
+
+
+=== Space curves ===
+
+For the convex hull of a space curve or finite set of space curves in general position in three-dimensional space, the boundary is locally developable. Examples include the oloid, the convex hull of two circles in perpendicular planes, each passing through the other's center, the sphericon, the convex hull of two semicircles in perpendicular planes with a common center, and D-forms, the convex shapes obtained from Alexandrov's uniqueness theorem for a surface formed by gluing together two planar convex sets of equal perimeter.
+
+
+=== Functions ===
+The convex hull of a function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   on a real vector space is the function whose epigraph is the convex hull of the epigraph of 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  .
+It is the unique maximal convex function majorized by 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  . The definition can be extended to the convex hull of a set of functions (obtained from the convex hull of the union of their epigraphs, or equivalently from their pointwise minimum) and, in this form, is dual to the convex conjugate operation.
+
+
+== Computation ==
+
+In computational geometry, a number of algorithms are known for computing the convex hull for a finite set of points and for other geometric objects.
+Computing the convex hull means constructing an unambiguous, efficient representation of the required convex shape. Output representations that have been considered for convex hulls of point sets include a list of linear inequalities describing the facets of the hull, an undirected graph of facets and their adjacencies, or the full face lattice of the hull. In two dimensions, it may suffice more simply to list the points that are vertices, in their cyclic order around the hull.For convex hulls in two or three dimensions, the complexity of the corresponding algorithms is usually estimated in terms  of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  , the number of input points, and 
+  
+    
+      
+        h
+      
+    
+    {\displaystyle h}
+  , the number of points on the convex hull, which may be significantly smaller than 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  . For higher-dimensional hulls, the number of faces of other dimensions may also come into the analysis. Graham scan can compute the convex hull of 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+   points in the plane in time 
+  
+    
+      
+        O
+        (
+        n
+        log
+        ⁡
+        n
+        )
+      
+    
+    {\displaystyle O(n\log n)}
+  . For points in two and three dimensions, more complicated output-sensitive algorithms are known that compute the convex hull in time 
+  
+    
+      
+        O
+        (
+        n
+        log
+        ⁡
+        h
+        )
+      
+    
+    {\displaystyle O(n\log h)}
+  . These include Chan's algorithm and the Kirkpatrick–Seidel algorithm. For dimensions 
+  
+    
+      
+        d
+        >
+        3
+      
+    
+    {\displaystyle d>3}
+  , the time for computing the convex hull is 
+  
+    
+      
+        O
+        (
+        
+          n
+          
+            ⌊
+            d
+            
+              /
+            
+            2
+            ⌋
+          
+        
+        )
+      
+    
+    {\displaystyle O(n^{\lfloor d/2\rfloor })}
+  , matching the worst-case output complexity of the problem.The convex hull of a simple polygon in the plane can be constructed in linear time.
+
+
+== Related structures ==
+
+Several other shapes can be defined from a set of points in a similar way to the convex hull, as the minimal superset with some property, the intersection of all shapes containing the points from a given family of shapes, or the union of all combinations of points for a certain type of combination. For instance:
+
+The affine hull is the smallest affine subspace of a Euclidean space containing a given set, or the union of all affine combinations of points in the set.
+The linear hull is the smallest linear subspace of a vector space containing a given set, or the union of all linear combinations of points in the set.
+The conical hull or positive hull of a subset of a vector space is the set of all positive combinations of points in the subset.
+The circular hull or alpha-hull of a subset of the plane is the intersection of all disks with a given radius 
+  
+    
+      
+        1
+        
+          /
+        
+        α
+      
+    
+    {\displaystyle 1/\alpha }
+   that contain the subset.
+The relative convex hull of a subset of a two-dimensional simple polygon is the intersection of all relatively convex supersets, where a set within the same polygon is relatively convex if it contains the geodesic between any two of its points.
+The orthogonal convex hull or rectilinear convex hull is the intersection of all orthogonally convex and connected supersets, where a set is orthogonally convex if it contains all axis-parallel segments between pairs of its points.
+The orthogonal convex hull is a special case of a much more general construction, the hyperconvex hull, which can be thought of as the smallest injective metric space containing the points of a given metric space.
+The holomorphically convex hull is a generalization of similar concepts to complex analytic manifolds, obtained as an intersection of sublevel sets of holomorphic functions containing a given set.The Delaunay triangulation of a point set and its dual, the Voronoi diagram, are mathematically  related to convex hulls: the Delaunay triangulation of a point set in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbb {R} ^{n}}
+   can be viewed as the projection of a convex hull in 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbb {R} ^{n+1}.}
+  
+The alpha shapes of a finite point set give a nested family of (non-convex) geometric objects describing the shape of a point set at different levels of detail.
+Each of alpha shape is the union of some of the features of the Delaunay triangulation, selected by comparing their circumradius to the parameter alpha. The point set itself forms one endpoint of this family of shapes, and its convex hull forms the other endpoint.
+The convex layers of a point set are a nested family of convex polygons, the outermost of which is the convex hull, with the inner layers constructed recursively from the points that are not vertices of the convex hull.The convex skull of a polygon is the largest convex polygon contained inside it. It can be found in polynomial time but the exponent of the algorithm is high.
+
+
+== Applications ==
+
+
+=== Combinatorial optimization ===
+In combinatorial optimization and polyhedral combinatorics, central objects of study are the convex hulls of indicator vectors of solutions to a combinatorial problem. If the facets of these polytopes can be found, describing the polytopes as intersections of halfspaces, then algorithms based on linear programming can be used to find optimal solutions.  In multi-objective optimization, a different type of convex hull is also used, the convex hull of the weight vectors of solutions. One can maximize any quasiconvex combination of weights by finding and checking each convex hull vertex, often more efficiently than checking all possible solutions.
+
+
+=== Asymptotic analysis ===
+Newton polygons of univariate polynomials and Newton polytopes of multivariate polynomials are convex hulls of points derived from the exponents of the terms in the polynomial, and can be used to analyze the asymptotic behavior of the polynomial and the valuations of its roots.
+
+
+=== Ethology ===
+The convex hull is commonly known as the minimum convex polygon (MCP) in ethology, where it is a classic, though perhaps simplistic, approach in estimating an animal's home range based on points where the animal has been observed. Outliers can make the MCP excessively large, which has motivated relaxed approaches that contain only a subset of the observations (e.g., find an MCP that contains at least 95% of the points).
+
+
+=== Other ===
+The problem of finding convex hulls finds its practical applications in pattern recognition, image processing, statistics, geographic information system, game theory, construction of phase diagrams, and static code analysis by abstract interpretation. It also serves as a tool, a building block for a number of other computational-geometric algorithms such as the rotating calipers method for computing the width and diameter of a point set.
+
+
+== Notes ==
+
+
+== References ==
+Andrew, A. M. (1979), "Another efficient algorithm for convex hulls in two dimensions", Information Processing Letters, 9 (5): 216–219, doi:10.1016/0020-0190(79)90072-3
+Avis, David; Bremner, David; Seidel, Raimund (1997), "How good are convex hull algorithms?", Computational Geometry, 7 (5–6): 265–301, doi:10.1016/S0925-7721(96)00023-5, MR 1447243
+Brown, K. Q. (1979), "Voronoi diagrams from convex hulls", Information Processing Letters, 9 (5): 223–228, doi:10.1016/0020-0190(79)90074-7
+de Berg, M.; van Kreveld, M.; Overmars, Mark; Schwarzkopf, O. (2008), Computational Geometry: Algorithms and Applications (3rd ed.), Springer
+Chang, J. S.; Yap, C.-K. (1986), "A polynomial solution for the potato-peeling problem", Discrete & Computational Geometry, 1 (2): 155–182, doi:10.1007/BF02187692, MR 0834056
+Chazelle, Bernard (1985), "On the convex layers of a planar set", IEEE Transactions on Information Theory, 31 (4): 509–517, doi:10.1109/TIT.1985.1057060, MR 0798557
+Chazelle, Bernard (1993), "An optimal convex hull algorithm in any fixed dimension" (PDF), Discrete & Computational Geometry, 10 (1): 377–409, CiteSeerX 10.1.1.113.8709, doi:10.1007/BF02573985
+Cranston, M.; Hsu, P.; March, P. (1989), "Smoothness of the convex hull of planar Brownian motion", Annals of Probability, 17 (1): 144–150, JSTOR 2244202, MR 0972777
+Demaine, Erik D.; Gassend, Blaise; O'Rourke, Joseph; Toussaint, Godfried T. (2008), "All polygons flip finitely ... right?", Surveys on Discrete and Computational Geometry, Contemporary Mathematics, 453, Providence, Rhode Island: American Mathematical Society, pp. 231–255, doi:10.1090/conm/453/08801, MR 2405683
+Dirnböck, Hans; Stachel, Hellmuth (1997), "The development of the oloid" (PDF), Journal for Geometry and Graphics, 1 (2): 105–118, MR 1622664
+Edelsbrunner, Herbert; Kirkpatrick, David G.; Seidel, Raimund (1983), "On the shape of a set of points in the plane", IEEE Transactions on Information Theory, 29 (4): 551–559, doi:10.1109/TIT.1983.1056714
+Graham, Ronald L.; Yao, F. Frances (1983), "Finding the convex hull of a simple polygon", Journal of Algorithms, 4 (4): 324–331, doi:10.1016/0196-6774(83)90013-5, MR 0729228
+Grünbaum, Branko (2003), Convex Polytopes, Graduate Texts in Mathematics (2nd ed.), Springer, ISBN 9780387004242
+Herrlich, Horst (1992), "Hyperconvex hulls of metric spaces", Proceedings of the Symposium on General Topology and Applications (Oxford, 1989), Topology and its Applications, 44 (1–3): 181–187, doi:10.1016/0166-8641(92)90092-E, MR 1173256
+Kashiwabara, Kenji; Nakamura, Masataka; Okamoto, Yoshio (2005), "The affine representation theorem for abstract convex geometries", Computational Geometry, 30 (2): 129–144, CiteSeerX 10.1.1.14.4965, doi:10.1016/j.comgeo.2004.05.001, MR 2107032
+Kernohan, Brian J.; Gitzen, Robert A.; Millspaugh, Joshua J. (2001), "Analysis of animal space use and movements",  in Millspaugh, Joshua; Marzluff, John M. (eds.), Radio Tracking and Animal Populations, Academic Press, ISBN 9780080540221
+Kiselman, Christer O. (2002), "A semigroup of operators in convexity theory", Transactions of the American Mathematical Society, 354 (5): 2035–2053, doi:10.1090/S0002-9947-02-02915-X, MR 1881029
+Knuth, Donald E. (1992), Axioms and Hulls, Lecture Notes in Computer Science, 606, Heidelberg: Springer-Verlag, doi:10.1007/3-540-55611-7, ISBN 3-540-55611-7, MR 1226891
+Krein, Mark; Milman, David (1940), "On extreme points of regular convex sets", Studia Mathematica, 9: 133–138
+Krein, M.; Šmulian, V. (1940), "On regularly convex sets in the space conjugate to a Banach space", Annals of Mathematics, Second Series, 41: 556–583, doi:10.2307/1968735, JSTOR 1968735, MR 0002009
+Lee, D. T. (1983), "On finding the convex hull of a simple polygon", International Journal of Computer and Information Sciences, 12 (2): 87–98, doi:10.1007/BF00993195, MR 0724699
+McCallum, Duncan; Avis, David (1979), "A linear algorithm for finding the convex hull of a simple polygon", Information Processing Letters, 9 (5): 201–206, doi:10.1016/0020-0190(79)90069-3, MR 0552534
+Okon, T. (2000), "Choquet theory in metric spaces", Zeitschrift für Analysis und ihre Anwendungen, 19 (2): 303–314, doi:10.4171/ZAA/952, MR 1768994
+Ottmann, T.; Soisalon-Soininen, E.; Wood, Derick (1984), "On the definition and computation of rectilinear convex hulls", Information Sciences, 33 (3): 157–171, doi:10.1016/0020-0255(84)90025-2
+Rappoport, Ari (1992), "An efficient adaptive algorithm for constructing the convex differences tree of a simple polygon", Computer Graphics Forum, 11 (4): 235–240, doi:10.1111/1467-8659.1140235
+Rockafellar, R. Tyrrell (1970), Convex Analysis, Princeton Mathematical Series, 28, Princeton University Press, Princeton, N.J., MR 0274683
+Rossi, Hugo (1961), "Holomorphically convex sets in several complex variables", Annals of Mathematics, Second Series, 74: 470–493, doi:10.2307/1970292, JSTOR 1970292, MR 0133479
+Sakuma, Itsuo (1977), "Closedness of convex hulls", Journal of Economic Theory, 14 (1): 223–227, doi:10.1016/0022-0531(77)90095-3
+Schneider, Rolf (1993), Convex Bodies: The Brunn–Minkowski Theory, Encyclopedia of Mathematics and its Applications, 44, Cambridge: Cambridge University Press, doi:10.1017/CBO9780511526282, ISBN 0-521-35220-7, MR 1216521
+Seaton, Katherine A. (2017), "Sphericons and D-forms: a crocheted connection", Journal of Mathematics and the Arts, 11 (4): 187–202, arXiv:1603.08409, doi:10.1080/17513472.2017.1318512, MR 3765242
+Sedykh, V. D. (1981), "Structure of the convex hull of a space curve", Trudy Seminara imeni I. G. Petrovskogo (6): 239–256, MR 0630708, translated in Journal of Soviet Mathematics 33 (4): 1140–1153, 1986, doi:10.1007/BF01086114
+Talman, Louis A. (1977), "Fixed points for condensing multifunctions in metric spaces with convex structure", Kōdai Mathematical Seminar Reports, 29 (1–2): 62–70, MR 0463985
+Toussaint, Godfried (1986), "An optimal algorithm for computing the relative convex hull of a set of points in a polygon", Proceedings of EURASIP, Signal Processing III: Theories and Applications, Part 2, North-Holland, pp. 853–856
+Westermann, L. R. J. (1976), "On the hull operator", Indagationes Mathematicae, 38 (2): 179–184, doi:10.1016/1385-7258(76)90065-2, MR 0404097
+
+
+== External links ==
+Hazewinkel, Michiel, ed. (2001) [1994], "Convex hull", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Weisstein, Eric W. "Convex Hull". MathWorld.
+"Convex Hull" by Eric W. Weisstein, Wolfram Demonstrations Project, 2007.

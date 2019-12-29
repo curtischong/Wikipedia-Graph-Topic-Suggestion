@@ -1,0 +1,1189 @@
+In mathematics, a hyperbolic partial differential equation of order n is a partial differential equation (PDE) that, roughly speaking, has a well-posed initial value problem for the first n − 1 derivatives.  More precisely, the Cauchy problem can be locally solved for arbitrary initial data along any non-characteristic hypersurface.  Many of the equations of mechanics are hyperbolic, and so the study of hyperbolic equations is of substantial contemporary interest. The model hyperbolic equation is the wave equation.  In one spatial dimension, this is
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          c
+          
+            2
+          
+        
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial t^{2}}}=c^{2}{\frac {\partial ^{2}u}{\partial x^{2}}}}
+  The equation has the property that, if u and its first time derivative are arbitrarily specified initial data on the line t = 0 (with sufficient smoothness properties), then there exists a solution for all time t.
+The solutions of hyperbolic equations are "wave-like". If a disturbance is made in the initial data of a hyperbolic differential equation, then not every point of space feels the disturbance at once.  Relative to a fixed time coordinate, disturbances have a finite propagation speed. They travel along the characteristics of the equation. This feature qualitatively distinguishes hyperbolic equations from elliptic partial differential equations and parabolic partial differential equations.  A perturbation of the initial (or boundary) data of an elliptic or parabolic equation is felt at once by essentially all points in the domain.
+Although the definition of hyperbolicity is fundamentally a qualitative one, there are precise criteria that depend on the particular kind of differential equation under consideration.  There is a well-developed theory for linear differential operators, due to Lars Gårding, in the context of microlocal analysis.  Nonlinear differential equations are hyperbolic if their linearizations are hyperbolic in the sense of Gårding.  There is a somewhat different theory for first order systems of equations coming from systems of conservation laws.
+
+
+== Definition ==
+A partial differential equation is hyperbolic at a point P provided that the Cauchy problem is uniquely solvable in a neighborhood of P for any initial data given on a non-characteristic hypersurface passing through P.  Here the prescribed initial data consist of all (transverse) derivatives of the function on the surface up to one less than the order of the differential equation.
+
+
+== Examples ==
+By a linear change of variables, any equation of the form
+
+  
+    
+      
+        A
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        2
+        B
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              x
+              ∂
+              y
+            
+          
+        
+        +
+        C
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          (lower order derivative terms)
+        
+        =
+        0
+      
+    
+    {\displaystyle A{\frac {\partial ^{2}u}{\partial x^{2}}}+2B{\frac {\partial ^{2}u}{\partial x\partial y}}+C{\frac {\partial ^{2}u}{\partial y^{2}}}+{\text{(lower order derivative terms)}}=0}
+  with
+
+  
+    
+      
+        
+          B
+          
+            2
+          
+        
+        −
+        A
+        C
+        >
+        0
+      
+    
+    {\displaystyle B^{2}-AC>0}
+  can be transformed to the wave equation, apart from lower order terms which are inessential for the qualitative understanding of the equation.  This definition is analogous to the definition of a planar hyperbola.
+The one-dimensional wave equation:
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                t
+                
+                  2
+                
+              
+            
+          
+        
+        −
+        
+          c
+          
+            2
+          
+        
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial ^{2}u}{\partial t^{2}}}-c^{2}{\frac {\partial ^{2}u}{\partial x^{2}}}=0}
+  is an example of a hyperbolic equation. The two-dimensional and three-dimensional wave equations also fall into the category of hyperbolic PDE. This type of second-order hyperbolic partial differential equation may be transformed to a hyperbolic system of first-order differential equations.
+
+
+== Hyperbolic system of partial differential equations ==
+The following is a system of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+   first order partial differential equations for 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+   unknown functions 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        =
+        (
+        
+          u
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          u
+          
+            s
+          
+        
+        )
+      
+    
+    {\displaystyle {\vec {u}}=(u_{1},\ldots ,u_{s})}
+  , 
+  
+    
+      
+        
+          
+            
+              u
+              →
+            
+          
+        
+        =
+        
+          
+            
+              u
+              →
+            
+          
+        
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\displaystyle {\vec {u}}={\vec {u}}({\vec {x}},t)}
+  , where 
+  
+    
+      
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ∈
+        
+          
+            R
+          
+          
+            d
+          
+        
+      
+    
+    {\displaystyle {\vec {x}}\in \mathbb {R} ^{d}}
+  :
+
+  
+    
+      
+        (
+        ∗
+        )
+        
+        
+          
+            
+              ∂
+              
+                
+                  
+                    u
+                    →
+                  
+                
+              
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            d
+          
+        
+        
+          
+            ∂
+            
+              ∂
+              
+                x
+                
+                  j
+                
+              
+            
+          
+        
+        
+          
+            
+              
+                f
+                
+                  j
+                
+              
+              →
+            
+          
+        
+        (
+        
+          
+            
+              u
+              →
+            
+          
+        
+        )
+        =
+        0
+        ,
+      
+    
+    {\displaystyle (*)\quad {\frac {\partial {\vec {u}}}{\partial t}}+\sum _{j=1}^{d}{\frac {\partial }{\partial x_{j}}}{\vec {f^{j}}}({\vec {u}})=0,}
+  where 
+  
+    
+      
+        
+          
+            
+              
+                f
+                
+                  j
+                
+              
+              →
+            
+          
+        
+        ∈
+        
+          C
+          
+            1
+          
+        
+        (
+        
+          
+            R
+          
+          
+            s
+          
+        
+        ,
+        
+          
+            R
+          
+          
+            s
+          
+        
+        )
+        ,
+        j
+        =
+        1
+        ,
+        …
+        ,
+        d
+      
+    
+    {\displaystyle {\vec {f^{j}}}\in C^{1}(\mathbb {R} ^{s},\mathbb {R} ^{s}),j=1,\ldots ,d}
+   are once continuously differentiable functions, nonlinear in general.
+Next, for each 
+  
+    
+      
+        
+          
+            
+              
+                f
+                
+                  j
+                
+              
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {f^{j}}}}
+   define the 
+  
+    
+      
+        s
+        ×
+        s
+      
+    
+    {\displaystyle s\times s}
+    Jacobian matrix 
+
+  
+    
+      
+        
+          A
+          
+            j
+          
+        
+        :=
+        
+          
+            (
+            
+              
+                
+                  
+                    
+                      
+                        ∂
+                        
+                          f
+                          
+                            1
+                          
+                          
+                            j
+                          
+                        
+                      
+                      
+                        ∂
+                        
+                          u
+                          
+                            1
+                          
+                        
+                      
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    
+                      
+                        ∂
+                        
+                          f
+                          
+                            1
+                          
+                          
+                            j
+                          
+                        
+                      
+                      
+                        ∂
+                        
+                          u
+                          
+                            s
+                          
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                  ⋮
+                
+                
+                  ⋱
+                
+                
+                  ⋮
+                
+              
+              
+                
+                  
+                    
+                      
+                        ∂
+                        
+                          f
+                          
+                            s
+                          
+                          
+                            j
+                          
+                        
+                      
+                      
+                        ∂
+                        
+                          u
+                          
+                            1
+                          
+                        
+                      
+                    
+                  
+                
+                
+                  ⋯
+                
+                
+                  
+                    
+                      
+                        ∂
+                        
+                          f
+                          
+                            s
+                          
+                          
+                            j
+                          
+                        
+                      
+                      
+                        ∂
+                        
+                          u
+                          
+                            s
+                          
+                        
+                      
+                    
+                  
+                
+              
+            
+            )
+          
+        
+        ,
+        
+           for 
+        
+        j
+        =
+        1
+        ,
+        …
+        ,
+        d
+        .
+      
+    
+    {\displaystyle A^{j}:={\begin{pmatrix}{\frac {\partial f_{1}^{j}}{\partial u_{1}}}&\cdots &{\frac {\partial f_{1}^{j}}{\partial u_{s}}}\\\vdots &\ddots &\vdots \\{\frac {\partial f_{s}^{j}}{\partial u_{1}}}&\cdots &{\frac {\partial f_{s}^{j}}{\partial u_{s}}}\end{pmatrix}},{\text{ for }}j=1,\ldots ,d.}
+  The system 
+  
+    
+      
+        (
+        ∗
+        )
+      
+    
+    {\displaystyle (*)}
+   is hyperbolic if for all 
+  
+    
+      
+        
+          α
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          α
+          
+            d
+          
+        
+        ∈
+        
+          R
+        
+      
+    
+    {\displaystyle \alpha _{1},\ldots ,\alpha _{d}\in \mathbb {R} }
+   the matrix 
+  
+    
+      
+        A
+        :=
+        
+          α
+          
+            1
+          
+        
+        
+          A
+          
+            1
+          
+        
+        +
+        ⋯
+        +
+        
+          α
+          
+            d
+          
+        
+        
+          A
+          
+            d
+          
+        
+      
+    
+    {\displaystyle A:=\alpha _{1}A^{1}+\cdots +\alpha _{d}A^{d}}
+  
+has only real eigenvalues and is diagonalizable.
+If the matrix 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+   has s distinct real eigenvalues, it follows that it is diagonalizable. In this case the system 
+  
+    
+      
+        (
+        ∗
+        )
+      
+    
+    {\displaystyle (*)}
+   is called strictly hyperbolic.
+If the matrix 
+  
+    
+      
+        A
+      
+    
+    {\displaystyle A}
+   is symmetric, it follows that it is diagonalizable and the eigenvalues are real. In this case the system 
+  
+    
+      
+        (
+        ∗
+        )
+      
+    
+    {\displaystyle (*)}
+   is called symmetric hyperbolic.
+
+
+== Hyperbolic system and conservation laws ==
+There is a connection between a hyperbolic system and a conservation law. Consider a hyperbolic system of one partial differential equation for one unknown function 
+  
+    
+      
+        u
+        =
+        u
+        (
+        
+          
+            
+              x
+              →
+            
+          
+        
+        ,
+        t
+        )
+      
+    
+    {\displaystyle u=u({\vec {x}},t)}
+  . Then the system 
+  
+    
+      
+        (
+        ∗
+        )
+      
+    
+    {\displaystyle (*)}
+   has the form
+
+  
+    
+      
+        (
+        ∗
+        ∗
+        )
+        
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        +
+        
+          ∑
+          
+            j
+            =
+            1
+          
+          
+            d
+          
+        
+        
+          
+            ∂
+            
+              ∂
+              
+                x
+                
+                  j
+                
+              
+            
+          
+        
+        
+          
+            f
+            
+              j
+            
+          
+        
+        (
+        u
+        )
+        =
+        0.
+      
+    
+    {\displaystyle (**)\quad {\frac {\partial u}{\partial t}}+\sum _{j=1}^{d}{\frac {\partial }{\partial x_{j}}}{f^{j}}(u)=0.}
+  Here, 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   can be interpreted as a quantity that moves around according to the flux given by 
+  
+    
+      
+        
+          
+            
+              f
+              →
+            
+          
+        
+        =
+        (
+        
+          f
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          f
+          
+            d
+          
+        
+        )
+      
+    
+    {\displaystyle {\vec {f}}=(f^{1},\ldots ,f^{d})}
+  . To see that the quantity 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   is conserved, integrate 
+  
+    
+      
+        (
+        ∗
+        ∗
+        )
+      
+    
+    {\displaystyle (**)}
+   over a domain 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  
+
+  
+    
+      
+        
+          ∫
+          
+            Ω
+          
+        
+        
+          
+            
+              ∂
+              u
+            
+            
+              ∂
+              t
+            
+          
+        
+        d
+        ⁡
+        Ω
+        +
+        
+          ∫
+          
+            Ω
+          
+        
+        ∇
+        ⋅
+        
+          
+            
+              f
+              →
+            
+          
+        
+        (
+        u
+        )
+        d
+        ⁡
+        Ω
+        =
+        0.
+      
+    
+    {\displaystyle \int _{\Omega }{\frac {\partial u}{\partial t}}\operatorname {d} \Omega +\int _{\Omega }\nabla \cdot {\vec {f}}(u)\operatorname {d} \Omega =0.}
+  If 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   and 
+  
+    
+      
+        
+          
+            
+              f
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {f}}}
+   are sufficiently smooth functions, we can use the divergence theorem and change the order of the integration and 
+  
+    
+      
+        ∂
+        
+          /
+        
+        ∂
+        t
+      
+    
+    {\displaystyle \partial /\partial t}
+   to get a conservation law for the quantity 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   in the general form
+
+  
+    
+      
+        
+          
+            d
+            
+              d
+              ⁡
+              t
+            
+          
+        
+        
+          ∫
+          
+            Ω
+          
+        
+        u
+        d
+        ⁡
+        Ω
+        +
+        
+          ∫
+          
+            ∂
+            Ω
+          
+        
+        
+          
+            
+              f
+              →
+            
+          
+        
+        (
+        u
+        )
+        ⋅
+        
+          
+            
+              n
+              →
+            
+          
+        
+        d
+        ⁡
+        Γ
+        =
+        0
+        ,
+      
+    
+    {\displaystyle {\frac {\operatorname {d} }{\operatorname {d} t}}\int _{\Omega }u\operatorname {d} \Omega +\int _{\partial \Omega }{\vec {f}}(u)\cdot {\vec {n}}\operatorname {d} \Gamma =0,}
+  which means that the time rate of change of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   in the domain 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+   is equal to the net flux of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   through its boundary 
+  
+    
+      
+        ∂
+        Ω
+      
+    
+    {\displaystyle \partial \Omega }
+  . Since this is an equality, it can be concluded that 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   is conserved within 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+  .
+
+
+== See also ==
+Elliptic partial differential equation
+Hypoelliptic operator
+Parabolic partial differential equation
+Relativistic heat conduction
+
+
+== Notes ==
+
+
+== Bibliography ==
+Evans, Lawrence C. (2010) [1998], Partial differential equations (PDF), Graduate Studies in Mathematics, 19 (2nd ed.), Providence, R.I.: American Mathematical Society, doi:10.1090/gsm/019, ISBN 978-0-8218-4974-3, MR 2597943
+A. D. Polyanin, Handbook of Linear Partial Differential Equations for Engineers and Scientists, Chapman & Hall/CRC Press, Boca Raton, 2002. ISBN 1-58488-299-9
+Rozhdestvenskii, B.L. (2001) [1994], "H/h048300",  in Hazewinkel, Michiel (ed.), Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+
+
+== External links ==
+Hazewinkel, Michiel, ed. (2001) [1994], "Hyperbolic partial differential equation, numerical methods", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Linear Hyperbolic Equations at EqWorld: The World of Mathematical Equations.
+Nonlinear Hyperbolic Equations at EqWorld: The World of Mathematical Equations.

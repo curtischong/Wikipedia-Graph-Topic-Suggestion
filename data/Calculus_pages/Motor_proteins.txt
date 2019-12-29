@@ -1,0 +1,71 @@
+Motor proteins are a class of molecular motors that can move along the cytoplasm of animal cells. They convert chemical energy into mechanical work by the hydrolysis of ATP. Flagellar rotation, however, is powered by a proton pump.
+
+
+== Cellular functions ==
+The best prominent example of a motor protein is the muscle protein myosin which "motors" the contraction of muscle fibers in animals. Motor proteins are the driving force behind most active transport of proteins and vesicles in the cytoplasm. Kinesins and cytoplasmic dyneins play essential roles in intracellular transport such as axonal transport and in the formation of the spindle apparatus and the separation of the chromosomes during mitosis and meiosis. Axonemal dynein, found in cilia and flagella, is crucial to cell motility, for example in spermatozoa, and fluid transport, for example in trachea.
+
+
+== Diseases associated with motor protein defects ==
+The importance of motor proteins in cells becomes evident when they fail to fulfill their function. For example, kinesin deficiencies have been identified as the cause for Charcot-Marie-Tooth disease and some kidney diseases. Dynein deficiencies can lead to chronic infections of the respiratory tract as cilia fail to function without dynein. Numerous myosin deficiencies are related to disease states and genetic syndromes. Because myosin II is essential for muscle contraction, defects in muscular myosin predictably cause myopathies. Myosin is necessary in the process of hearing because of its role in the growth of stereocilia so defects in myosin protein structure can lead to Usher syndrome and non-syndromic deafness.
+
+
+== Cytoskeletal motor proteins ==
+Motor proteins utilizing the cytoskeleton for movement fall into two categories based on their substrates: microfilaments or microtubules. Actin motors such as myosin move along microfilaments through interaction with actin, and microtubule motors such as dynein and kinesin move along microtubules through interaction with tubulin. 
+There are two basic types of microtubule motors: plus-end motors and minus-end motors, depending on the direction in which they "walk" along the microtubule cables within the cell.
+
+
+=== Actin motors ===
+
+
+==== Myosin ====
+Myosins are a superfamily of actin motor proteins that convert chemical energy in the form of ATP to mechanical energy, thus generating force and movement. The first identified myosin, myosin II, is responsible for generating muscle contraction. Myosin II is an elongated protein that is formed from two heavy chains with motor heads and two light chains. Each myosin head contains actin and ATP binding site. The myosin heads bind and hydrolyze ATP, which provides the energy to walk toward the plus end of an actin filament. Myosin II are also vital in the process of cell division. For example, non-muscle myosin II bipolar thick filaments provide the force of contraction needed to divide the cell into two daughter cells during cytokinesis. In addition to myosin II, many other myosin types are responsible for variety of movement of non-muscle cells. For example, myosin is involved in intracellular organization and the protrusion of actin-rich structures at the cell surface. Myosin V is involved in vesicle and organelle transport. Myosin XI is involved in cytoplasmic streaming, wherein movement along microfilament networks in the cell allows organelles and cytoplasm to stream in a particular direction. Eighteen different classes of myosins are known.Genomic representation of myosin motors:
+Fungi (yeast): 5
+Plants (Arabidopsis): 17
+Insects (Drosophila): 13
+Mammals (human): 40
+Chromadorea ( nematode C. elegans): 15
+
+
+=== Microtubule motors ===
+
+
+==== Kinesin ====
+Kinesins are a group of related motor proteins that use a microtubule track in anterograde movement. They are vital to spindle formation in mitotic and meiotic  chromosome separation during cell division and are also responsible for shuttling mitochondria, Golgi bodies, and vesicles within eukaryotic cells. Kinesins have two heavy chains and two light chains per active motor. The two globular head motor domains in heavy chains can convert the chemical energy of ATP hydrolysis into mechanical work to move along microtubules. The direction in which cargo is transported can be towards the plus-end or the minus-end, depending on the type of kinesin. In general, kinesins with N-terminal motor domains move their cargo towards the plus ends of microtubules located at the cell periphery, while kinesins with C-terminal motor domains move cargo towards the minus ends of microtubules located at the nucleus. Fourteen distinct kinesin families are known, with some additional kinesin-like proteins that cannot be classified into these families.Genomic representation of kinesin motors:
+Fungi (yeast): 6
+Plants (Arabidopsis thaliana): 61
+Insects (Drosophila melanogaster): 25
+Mammals (human): 45
+
+
+==== Dynein ====
+Dyneins are microtubule motors capable of a retrograde sliding movement. Dynein complexes are much larger and more complex than kinesin and myosin motors. Dyneins are composed of two or three heavy chains and a large and variable number of associated light chains. Dyneins drive intracellular transport toward the minus end of microtubules which lies in the microtubule organizing center near the nucleus. The dynein family has two major branches. Axonemal dyneins facilitate the beating of cilia and flagella by rapid and efficient sliding movements of microtubules. Another branch is cytoplasmic dyneins which facilitate the transport of intracellular cargos. Compared to 15 types of axonemal dynein, only two cytoplasmic forms are known.Genomic representation of dynein motors:
+Fungi (yeast): 1
+Plants (Arabidopsis thaliana): 0
+Insects (Drosophila melanogaster): 13
+Mammals (human): 14-15
+
+
+=== Plant-specific motors ===
+In contrast to animals, fungi and non-vascular plants, the cells of flowering plants lack dynein motors. However, they contain a larger number of different kinesins. Many of these plant-specific kinesin groups are specialized for functions during plant cell mitosis. Plant cells differ from animal cells in that they have a cell wall. During mitosis, the new cell wall is built by the formation of a cell plate starting in the center of the cell. This process is facilitated by a phragmoplast, a microtubule array unique to plant cell mitosis. The building of cell plate and ultimately the new cell wall requires kinesin-like motor proteins.Another motor protein essential for plant cell division is kinesin-like calmodulin-binding protein (KCBP), which is unique to plants and part kinesin and part myosin.
+
+
+== Other molecular motors ==
+
+Besides the motor proteins above, there are many more types of proteins capable of generating forces and torque in the cell. Many of these molecular motors are ubiquitous in both prokaryotic and eukaryotic cells, although some, such as those involved with cytoskeletal elements or chromatin, are unique to eukaryotes.  The motor protein prestin, expressed in mammalian cochlear outer hair cells, produces mechanical amplification in the cochlea.  It is a direct voltage-to-force converter, which operates at the microsecond rate and possesses piezoelectric properties.
+
+
+== See also ==
+ATP synthase
+Cytoskeleton
+Protein dynamics
+Shin'ichi Ishiwata, a scientist who specializes in the study of the chemistry and mechanics of muscles and motor proteins
+
+
+== References ==
+
+
+== External links ==
+MBInfo - What are Motor Proteins?
+Ron Vale's Seminar: "Molecular Motor Proteins"
+Biology of Motor Proteins Institute for Biophysical Chemistry, Göttingen
+Jonathan Howard (2001), Mechanics of motor proteins and the cytoskeleton. ISBN 9780878933334

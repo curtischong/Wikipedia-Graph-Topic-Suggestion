@@ -1,0 +1,1758 @@
+In mathematics, mathematical physics and the theory of stochastic processes, a harmonic function is a twice continuously differentiable function f : U → R, where U is an open subset of Rn, that satisfies Laplace's equation, that is,
+
+  
+    
+      
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              f
+            
+            
+              ∂
+              
+                x
+                
+                  1
+                
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              f
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              f
+            
+            
+              ∂
+              
+                x
+                
+                  n
+                
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle {\frac {\partial ^{2}f}{\partial x_{1}^{2}}}+{\frac {\partial ^{2}f}{\partial x_{2}^{2}}}+\cdots +{\frac {\partial ^{2}f}{\partial x_{n}^{2}}}=0}
+  everywhere on U. This is usually written as
+
+  
+    
+      
+        
+          ∇
+          
+            2
+          
+        
+        f
+        =
+        0
+      
+    
+    {\displaystyle \nabla ^{2}f=0}
+  or
+
+  
+    
+      
+        
+          Δ
+          f
+          =
+          0
+        
+      
+    
+    {\displaystyle \textstyle \Delta f=0}
+  
+
+
+== Etymology of the term "harmonic" ==
+The descriptor "harmonic" in the name harmonic function originates from a point on a taut string which is undergoing harmonic motion. This solution to the differential equation for this type of motion can be written in terms of sines and cosines, functions which are thus referred to as harmonics. Fourier analysis involves expanding periodic functions on the unit circle in terms of a series of these harmonics. Considering higher dimensional analogues of the harmonics on the unit n-sphere, one arrives at the spherical harmonics. These functions satisfy Laplace's equation and over time "harmonic" was used to refer to all functions satisfying Laplace's equation.
+
+
+== Examples ==
+Examples of harmonic functions of two variables are:
+
+The real and imaginary parts of any holomorphic function
+The function 
+  
+    
+      
+        
+        
+        f
+        (
+        x
+        ,
+        y
+        )
+        =
+        
+          e
+          
+            x
+          
+        
+        sin
+        ⁡
+        y
+      
+    
+    {\displaystyle \,\!f(x,y)=e^{x}\sin y}
+  ; this is a special case of the example above, as 
+  
+    
+      
+        f
+        (
+        x
+        ,
+        y
+        )
+        =
+        Im
+        ⁡
+        (
+        
+          e
+          
+            x
+            +
+            i
+            y
+          
+        
+        )
+      
+    
+    {\displaystyle f(x,y)=\operatorname {Im} (e^{x+iy})}
+  , and 
+  
+    
+      
+        
+          e
+          
+            x
+            +
+            i
+            y
+          
+        
+      
+    
+    {\displaystyle e^{x+iy}}
+   is a holomorphic function.
+The function 
+  
+    
+      
+        
+        
+        f
+        (
+        x
+        ,
+        y
+        )
+        =
+        ln
+        ⁡
+        (
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle \,\!f(x,y)=\ln(x^{2}+y^{2})}
+   defined on 
+  
+    
+      
+        
+          
+            R
+          
+          
+            2
+          
+        
+        ∖
+        {
+        0
+        }
+      
+    
+    {\displaystyle \mathbb {R} ^{2}\setminus \lbrace 0\rbrace }
+  .  This can describe the electric potential due to a line charge or the gravity potential due to a long cylindrical mass.Examples of harmonic functions of three variables are given in the table below with 
+  
+    
+      
+        
+          r
+          
+            2
+          
+        
+        =
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          y
+          
+            2
+          
+        
+        +
+        
+          z
+          
+            2
+          
+        
+      
+    
+    {\displaystyle r^{2}=x^{2}+y^{2}+z^{2}}
+  :
+
+Harmonic functions that arise in physics are determined by their singularities and boundary conditions (such as Dirichlet boundary conditions or Neumann boundary conditions). On regions without boundaries, adding the real or imaginary part of any entire function will produce a harmonic function with the same singularity, so in this case the harmonic function is not determined by its singularities; however, we can make the solution unique in physical situations by requiring that the solution approaches 0 as r approaches infinity. In this case, uniqueness follows by Liouville's theorem.
+The singular points of the harmonic functions above are expressed as "charges" and "charge densities" using the terminology of electrostatics, and so the corresponding harmonic function will be proportional to the electrostatic potential due to these charge distributions. Each function above will yield another harmonic function when multiplied by a constant, rotated, and/or has a constant added. The inversion of each function will yield another harmonic function which has singularities which are the images of the original singularities in a spherical "mirror". Also, the sum of any two harmonic functions will yield another harmonic function.
+Finally, examples of harmonic functions of n variables are:
+
+The constant, linear and affine functions on all of Rn (for example, the electric potential between the plates of a capacitor, and the gravity potential of a slab)
+The function 
+  
+    
+      
+        
+        
+        f
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        …
+        ,
+        
+          x
+          
+            n
+          
+        
+        )
+        =
+        (
+        
+          
+            
+              x
+              
+                1
+              
+            
+          
+          
+            2
+          
+        
+        +
+        ⋯
+        +
+        
+          
+            
+              x
+              
+                n
+              
+            
+          
+          
+            2
+          
+        
+        
+          )
+          
+            1
+            −
+            n
+            
+              /
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \,\!f(x_{1},\dots ,x_{n})=({x_{1}}^{2}+\cdots +{x_{n}}^{2})^{1-n/2}}
+   on 
+  
+    
+      
+        
+          
+            R
+          
+          
+            n
+          
+        
+        ∖
+        {
+        0
+        }
+      
+    
+    {\displaystyle \mathbb {R} ^{n}\setminus \lbrace 0\rbrace }
+   for n > 2.
+
+
+== Remarks ==
+The set of harmonic functions on a given open set U can be seen as the kernel of the Laplace operator Δ and is therefore a vector space over R: sums, differences and scalar multiples of harmonic functions are again harmonic.
+If f is a harmonic function on U, then all partial derivatives of f are also harmonic functions on U. The Laplace operator Δ and the partial derivative operator will commute on this class of functions.
+In several ways, the harmonic functions are real analogues to holomorphic functions. All harmonic functions are analytic, that is, they can be locally expressed as power series. This is a general fact about elliptic operators, of which the Laplacian is a major example.
+The uniform limit of a convergent sequence of harmonic functions is still harmonic. This is true because every continuous function satisfying the mean value property is harmonic. Consider the sequence on (−∞, 0) × R defined by 
+  
+    
+      
+        
+          
+            f
+            
+              n
+            
+          
+          (
+          x
+          ,
+          y
+          )
+          =
+          
+            
+              1
+              n
+            
+          
+          exp
+          ⁡
+          (
+          n
+          x
+          )
+          cos
+          ⁡
+          (
+          n
+          y
+          )
+        
+      
+    
+    {\displaystyle \scriptstyle f_{n}(x,y)={\frac {1}{n}}\exp(nx)\cos(ny)}
+  . This sequence is harmonic and converges uniformly to the zero function; however note that the partial derivatives are not uniformly convergent to the zero function (the derivative of the zero function). This  example shows the importance of relying on the mean value property and continuity to argue that the limit is harmonic.
+
+
+== Connections with complex function theory ==
+The real and imaginary part of any holomorphic function yield harmonic functions on R2 (these are said to be a pair of harmonic conjugate functions). Conversely, any harmonic function u on an open subset Ω of  R2 is locally the real part of a holomorphic function. This is immediately seen observing that, writing z = x + iy, the complex function g(z) := ux − i uy is holomorphic in Ω because it satisfies the Cauchy–Riemann equations. Therefore, g has locally a primitive f, and u is the real part of f up to a constant,  as ux is the real part of 
+  
+    
+      
+        
+          f
+          
+            
+            
+              ′
+            
+          
+          =
+          g
+        
+      
+    
+    {\displaystyle \scriptstyle f\,^{\prime }=g}
+   .
+Although the above correspondence with holomorphic functions only holds for functions of  two real variables, harmonic functions in n variables still enjoy a number of properties typical of holomorphic functions. They are (real) analytic; they have a maximum principle and a mean-value principle; a theorem of removal of singularities as well as a Liouville theorem holds for them in analogy to the corresponding theorems in complex functions theory.
+
+
+== Properties of harmonic functions ==
+Some important properties of harmonic functions can be deduced from Laplace's equation.
+
+
+=== Regularity theorem for harmonic functions ===
+Harmonic functions are infinitely differentiable in open sets.  In fact, harmonic functions are real analytic.
+
+
+=== Maximum principle ===
+Harmonic functions satisfy the following maximum principle: if K is a nonempty compact subset of U, then f restricted to K attains its maximum and minimum on the boundary of K.  If U is connected, this means that f cannot have local maxima or minima, other than the exceptional case where f is constant. Similar properties can be shown for subharmonic functions.
+
+
+=== The mean value property ===
+If B(x, r) is a ball with center x and radius r which is completely contained in the open set Ω ⊂ Rn, then the value u(x) of  a harmonic function u: Ω → R at the center of the ball is given by the average value of u on the surface of the ball; this average value is also equal to the average value of u  in the interior of the ball.  In other words,
+
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              n
+              
+                ω
+                
+                  n
+                
+              
+              
+                r
+                
+                  n
+                  −
+                  1
+                
+              
+            
+          
+        
+        
+          ∫
+          
+            ∂
+            B
+            (
+            x
+            ,
+            r
+            )
+          
+        
+        u
+        
+        d
+        σ
+        =
+        
+          
+            1
+            
+              
+                ω
+                
+                  n
+                
+              
+              
+                r
+                
+                  n
+                
+              
+            
+          
+        
+        
+          ∫
+          
+            B
+            (
+            x
+            ,
+            r
+            )
+          
+        
+        u
+        
+        d
+        V
+      
+    
+    {\displaystyle u(x)={\frac {1}{n\omega _{n}r^{n-1}}}\int _{\partial B(x,r)}u\,d\sigma ={\frac {1}{\omega _{n}r^{n}}}\int _{B(x,r)}u\,dV}
+  where ωn is the area of the unit sphere in n dimensions and σ is the (n − 1)-dimensional surface measure.
+Conversely, all locally integrable functions satisfying the (volume) mean-value property are both infinitely differentiable and harmonic.
+In terms of convolutions, if
+
+  
+    
+      
+        
+          χ
+          
+            r
+          
+        
+        :=
+        
+          
+            1
+            
+              
+                |
+              
+              B
+              (
+              0
+              ,
+              r
+              )
+              
+                |
+              
+            
+          
+        
+        
+          χ
+          
+            B
+            (
+            0
+            ,
+            r
+            )
+          
+        
+        =
+        
+          
+            n
+            
+              
+                ω
+                
+                  n
+                
+              
+              
+                r
+                
+                  n
+                
+              
+            
+          
+        
+        
+          χ
+          
+            B
+            (
+            0
+            ,
+            r
+            )
+          
+        
+      
+    
+    {\displaystyle \chi _{r}:={\frac {1}{|B(0,r)|}}\chi _{B(0,r)}={\frac {n}{\omega _{n}r^{n}}}\chi _{B(0,r)}}
+  denotes the characteristic function of the ball with radius r about the origin, normalized so that 
+  
+    
+      
+        
+          
+            ∫
+            
+              
+                
+                  R
+                
+                
+                  n
+                
+              
+            
+          
+          
+            χ
+            
+              r
+            
+          
+          
+          d
+          x
+          =
+          1
+        
+      
+    
+    {\displaystyle \scriptstyle \int _{\mathbf {R} ^{n}}\chi _{r}\,dx=1}
+  , the function u is harmonic on Ω if and only if
+
+  
+    
+      
+        u
+        (
+        x
+        )
+        =
+        u
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        (
+        x
+        )
+        
+      
+    
+    {\displaystyle u(x)=u*\chi _{r}(x)\;}
+  as soon as B(x, r) ⊂ Ω.
+Sketch of the proof. The proof of the mean-value property of the harmonic functions and its converse follows immediately observing that the non-homogeneous equation, for any 0 < s < r
+
+  
+    
+      
+        Δ
+        w
+        =
+        
+          χ
+          
+            r
+          
+        
+        −
+        
+          χ
+          
+            s
+          
+        
+        
+      
+    
+    {\displaystyle \Delta w=\chi _{r}-\chi _{s}\;}
+  admits an easy explicit solution wr,s of class C1,1 with compact support in B(0, r). Thus, if u is harmonic in Ω
+
+  
+    
+      
+        0
+        =
+        Δ
+        u
+        ∗
+        
+          w
+          
+            r
+            ,
+            s
+          
+        
+        =
+        u
+        ∗
+        Δ
+        
+          w
+          
+            r
+            ,
+            s
+          
+        
+        =
+        u
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        −
+        u
+        ∗
+        
+          χ
+          
+            s
+          
+        
+        
+      
+    
+    {\displaystyle 0=\Delta u*w_{r,s}=u*\Delta w_{r,s}=u*\chi _{r}-u*\chi _{s}\;}
+  holds in the set Ωr of all points x in 
+  
+    
+      
+        Ω
+      
+    
+    {\displaystyle \Omega }
+   with 
+  
+    
+      
+        dist
+        ⁡
+        (
+        x
+        ,
+        ∂
+        Ω
+        )
+        >
+        r
+      
+    
+    {\displaystyle \operatorname {dist} (x,\partial \Omega )>r}
+   .
+Since u is continuous in Ω, u*χr converges to u as s → 0 showing the mean value property for u in Ω. Conversely, if u is any 
+  
+    
+      
+        
+          L
+          
+            
+              l
+              o
+              c
+            
+          
+          
+            1
+          
+        
+        
+      
+    
+    {\displaystyle L_{\mathrm {loc} }^{1}\;}
+   function satisfying the mean-value property in Ω, that is,
+
+  
+    
+      
+        u
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        =
+        u
+        ∗
+        
+          χ
+          
+            s
+          
+        
+        
+      
+    
+    {\displaystyle u*\chi _{r}=u*\chi _{s}\;}
+  holds in Ωr for all 0 < s < r then, iterating m times the convolution with χr one has:
+
+  
+    
+      
+        u
+        =
+        u
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        =
+        u
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        ∗
+        ⋯
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        
+        ,
+        
+        x
+        ∈
+        
+          Ω
+          
+            m
+            r
+          
+        
+        ,
+      
+    
+    {\displaystyle u=u*\chi _{r}=u*\chi _{r}*\cdots *\chi _{r}\,,\qquad x\in \Omega _{mr},}
+  so that u is 
+  
+    
+      
+        
+          C
+          
+            m
+            −
+            1
+          
+        
+        (
+        
+          Ω
+          
+            m
+            r
+          
+        
+        )
+        
+      
+    
+    {\displaystyle C^{m-1}(\Omega _{mr})\;}
+   because the m-fold iterated convolution of χr is of class 
+  
+    
+      
+        
+          C
+          
+            m
+            −
+            1
+          
+        
+        
+      
+    
+    {\displaystyle C^{m-1}\;}
+   with support  B(0, mr). Since r and m are arbitrary, u is 
+  
+    
+      
+        
+          C
+          
+            ∞
+          
+        
+        (
+        Ω
+        )
+        
+      
+    
+    {\displaystyle C^{\infty }(\Omega )\;}
+   too. Moreover,
+
+  
+    
+      
+        Δ
+        u
+        ∗
+        
+          w
+          
+            r
+            ,
+            s
+          
+        
+        =
+        u
+        ∗
+        Δ
+        
+          w
+          
+            r
+            ,
+            s
+          
+        
+        =
+        u
+        ∗
+        
+          χ
+          
+            r
+          
+        
+        −
+        u
+        ∗
+        
+          χ
+          
+            s
+          
+        
+        =
+        0
+        
+      
+    
+    {\displaystyle \Delta u*w_{r,s}=u*\Delta w_{r,s}=u*\chi _{r}-u*\chi _{s}=0\;}
+  for all 0 < s < r so that Δu = 0 in Ω by the fundamental theorem of the calculus of variations, proving the equivalence between harmonicity and mean-value property.
+This statement of the mean value property can be generalized as follows: If h is any spherically symmetric function supported in B(x,r) such that ∫h = 1, then u(x) = h * u(x). In other words, we can take the weighted average of u about a point and recover u(x). In particular, by taking h to be a C∞ function, we can recover the value of u at any point even if we only know how u acts as a distribution. See Weyl's lemma.
+
+
+=== Harnack's inequality ===
+Let u be a non-negative harmonic function in a bounded domain Ω.  Then for every connected set
+
+  
+    
+      
+        V
+        ⊂
+        
+          
+            V
+            ¯
+          
+        
+        ⊂
+        Ω
+        ,
+      
+    
+    {\displaystyle V\subset {\overline {V}}\subset \Omega ,}
+  Harnack's inequality 
+
+  
+    
+      
+        
+          sup
+          
+            V
+          
+        
+        u
+        ≤
+        C
+        
+          inf
+          
+            V
+          
+        
+        u
+      
+    
+    {\displaystyle \sup _{V}u\leq C\inf _{V}u}
+  holds for some constant C that depends only on V and Ω.
+
+
+=== Removal of singularities ===
+The following principle of removal of singularities holds for harmonic functions. If f is a harmonic function defined on a dotted open subset 
+  
+    
+      
+        
+          Ω
+          
+          ∖
+          
+          {
+          
+            x
+            
+              0
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \scriptstyle \Omega \,\setminus \,\{x_{0}\}}
+   of Rn , which is less singular at x0 than the fundamental solution, that is
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        o
+        
+          (
+          
+            |
+            x
+            −
+            
+              x
+              
+                0
+              
+            
+            
+              |
+              
+                2
+                −
+                n
+              
+            
+          
+          )
+        
+        ,
+        
+        
+          as 
+        
+        x
+        →
+        
+          x
+          
+            0
+          
+        
+        ,
+      
+    
+    {\displaystyle f(x)=o\left(\vert x-x_{0}\vert ^{2-n}\right),\qquad {\text{as }}x\to x_{0},}
+  then f extends to a harmonic function on Ω (compare Riemann's theorem for functions of a complex variable).
+
+
+=== Liouville's theorem ===
+Theorem: If f is a harmonic function defined on all of Rn which is bounded above or bounded below, then f is constant.
+(Compare Liouville's theorem for functions of a complex variable).
+Edward Nelson gave a particularly short proof of this theorem for the case of bounded functions, using the mean value property mentioned above: 
+
+Given two points, choose two balls with the given points as centers and of equal radius.  If the radius is large enough, the two balls will coincide except for an arbitrarily small proportion of their volume. Since f is bounded, the averages of it over the two balls are arbitrarily close, and so f assumes the same value at any two points.  
+The proof can be adapted to the case where the harmonic function f is merely bounded above or below. By adding a constant and possibly multiplying by 
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  , we may assume that f is non-negative. Then for any two points 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  , and any positive number 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  , we let 
+  
+    
+      
+        r
+        =
+        R
+        +
+        d
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle r=R+d(x,y)}
+  . We then consider the balls 
+  
+    
+      
+        
+          B
+          
+            R
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle B_{R}(x)}
+   and 
+  
+    
+      
+        
+          B
+          
+            r
+          
+        
+        (
+        y
+        )
+      
+    
+    {\displaystyle B_{r}(y)}
+  , where by the triangle inequality, the first ball is contained in the second.
+By the averaging property and the monotonicity of the integral, we have
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              vol
+              ⁡
+              (
+              
+                B
+                
+                  R
+                
+              
+              )
+            
+          
+        
+        
+          ∫
+          
+            
+              B
+              
+                R
+              
+            
+            (
+            x
+            )
+          
+        
+        f
+        (
+        z
+        )
+        
+        d
+        z
+        ≤
+        
+          
+            1
+            
+              vol
+              ⁡
+              (
+              
+                B
+                
+                  R
+                
+              
+              )
+            
+          
+        
+        
+          ∫
+          
+            
+              B
+              
+                r
+              
+            
+            (
+            y
+            )
+          
+        
+        f
+        (
+        z
+        )
+        
+        d
+        z
+        .
+      
+    
+    {\displaystyle f(x)={\frac {1}{\operatorname {vol} (B_{R})}}\int _{B_{R}(x)}f(z)\,dz\leq {\frac {1}{\operatorname {vol} (B_{R})}}\int _{B_{r}(y)}f(z)\,dz.}
+  (Note that since 
+  
+    
+      
+        vol
+        ⁡
+        (
+        
+          B
+          
+            R
+          
+        
+        (
+        x
+        )
+        )
+      
+    
+    {\displaystyle \operatorname {vol} (B_{R}(x))}
+   is independent of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , we denote it merely as 
+  
+    
+      
+        vol
+        ⁡
+        (
+        
+          B
+          
+            R
+          
+        
+        )
+      
+    
+    {\displaystyle \operatorname {vol} (B_{R})}
+  .) In the last expression, we may multiply and divide by 
+  
+    
+      
+        vol
+        ⁡
+        (
+        
+          B
+          
+            r
+          
+        
+        )
+      
+    
+    {\displaystyle \operatorname {vol} (B_{r})}
+   and use the averaging property again, to obtain
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        ≤
+        
+          
+            
+              vol
+              ⁡
+              (
+              
+                B
+                
+                  r
+                
+              
+              )
+            
+            
+              vol
+              ⁡
+              (
+              
+                B
+                
+                  R
+                
+              
+              )
+            
+          
+        
+        f
+        (
+        y
+        )
+        .
+      
+    
+    {\displaystyle f(x)\leq {\frac {\operatorname {vol} (B_{r})}{\operatorname {vol} (B_{R})}}f(y).}
+  But as 
+  
+    
+      
+        R
+        →
+        ∞
+      
+    
+    {\displaystyle R\rightarrow \infty }
+  , the quantity 
+
+  
+    
+      
+        
+          
+            
+              vol
+              ⁡
+              (
+              
+                B
+                
+                  r
+                
+              
+              )
+            
+            
+              vol
+              ⁡
+              (
+              
+                B
+                
+                  R
+                
+              
+              )
+            
+          
+        
+        =
+        
+          
+            
+              (
+              R
+              +
+              d
+              (
+              x
+              ,
+              y
+              )
+              
+                )
+                
+                  n
+                
+              
+            
+            
+              R
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\operatorname {vol} (B_{r})}{\operatorname {vol} (B_{R})}}={\frac {(R+d(x,y))^{n}}{R^{n}}}}
+  tends to 1. Thus, 
+  
+    
+      
+        f
+        (
+        x
+        )
+        ≤
+        f
+        (
+        y
+        )
+      
+    
+    {\displaystyle f(x)\leq f(y)}
+  . The same argument with the roles of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+   reversed shows that 
+  
+    
+      
+        f
+        (
+        y
+        )
+        ≤
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(y)\leq f(x)}
+  , so that 
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        f
+        (
+        y
+        )
+      
+    
+    {\displaystyle f(x)=f(y)}
+  .
+
+
+== Generalizations ==
+
+
+=== Weakly harmonic function ===
+A function (or, more generally, a distribution) is weakly harmonic if it satisfies Laplace's equation
+
+  
+    
+      
+        Δ
+        f
+        =
+        0
+        
+      
+    
+    {\displaystyle \Delta f=0\,}
+  in a weak sense (or, equivalently, in the sense of distributions).  A weakly harmonic function coincides almost everywhere with a strongly harmonic function, and is in particular smooth.  A weakly harmonic distribution is precisely the distribution associated to a strongly harmonic function, and so also is smooth.  This is Weyl's lemma.
+There are other weak formulations of Laplace's equation that are often useful.  One of which is Dirichlet's principle, representing harmonic functions in the Sobolev space H1(Ω) as the minimizers of the Dirichlet energy integral
+
+  
+    
+      
+        J
+        (
+        u
+        )
+        :=
+        
+          ∫
+          
+            Ω
+          
+        
+        
+          |
+        
+        ∇
+        u
+        
+          
+            |
+          
+          
+            2
+          
+        
+        
+        d
+        x
+      
+    
+    {\displaystyle J(u):=\int _{\Omega }|\nabla u|^{2}\,dx}
+  with respect to local variations, that is, all functions 
+  
+    
+      
+        u
+        ∈
+        
+          H
+          
+            1
+          
+        
+        (
+        Ω
+        )
+      
+    
+    {\displaystyle u\in H^{1}(\Omega )}
+   such that J(u) ≤ J(u + v) holds for all 
+  
+    
+      
+        v
+        ∈
+        
+          C
+          
+            c
+          
+          
+            ∞
+          
+        
+        (
+        Ω
+        )
+        ,
+      
+    
+    {\displaystyle v\in C_{c}^{\infty }(\Omega ),}
+   or equivalently, for all 
+  
+    
+      
+        v
+        ∈
+        
+          H
+          
+            0
+          
+          
+            1
+          
+        
+        (
+        Ω
+        )
+        .
+      
+    
+    {\displaystyle v\in H_{0}^{1}(\Omega ).}
+  
+
+
+=== Harmonic functions on manifolds ===
+Harmonic functions can be defined on an arbitrary Riemannian manifold, using the Laplace–Beltrami operator Δ. In this context, a function is called harmonic if 
+
+  
+    
+      
+         
+        Δ
+        f
+        =
+        0.
+      
+    
+    {\displaystyle \ \Delta f=0.}
+  Many of the properties of harmonic functions on domains in Euclidean space carry over to this more general setting, including the mean value theorem (over geodesic balls), the maximum principle, and the Harnack inequality.  With the exception of the mean value theorem, these are easy consequences of the corresponding results for general linear elliptic partial differential equations of the second order.
+
+
+=== Subharmonic functions ===
+A C2 function that satisfies Δf ≥ 0 is called subharmonic.  This condition guarantees that the maximum principle will hold, although other properties of harmonic functions may fail.  More generally, a function is subharmonic if and only if, in the interior of any ball in its domain, its graph lies below that of the harmonic function interpolating its boundary values on the ball.
+
+
+=== Harmonic forms ===
+One generalization of the study of harmonic functions is the study of harmonic forms on Riemannian manifolds, and it is related to the study of cohomology. Also, it is possible to define harmonic vector-valued functions, or harmonic maps of two Riemannian manifolds, which are critical points of a generalized Dirichlet energy functional (this includes harmonic functions as a special case, a result known as  Dirichlet principle). This kind of harmonic map appears in the theory of minimal surfaces. For example, a curve, that is, a map from an interval in R to a Riemannian manifold, is a harmonic map if and only if it is a geodesic.
+
+
+=== Harmonic maps between manifolds ===
+
+If M and N are two Riemannian manifolds, then a harmonic map u : M → N is defined to be a critical point of the Dirichlet energy
+
+  
+    
+      
+        D
+        [
+        u
+        ]
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ∫
+          
+            M
+          
+        
+        ‖
+        d
+        u
+        
+          ‖
+          
+            2
+          
+        
+        
+        d
+        Vol
+      
+    
+    {\displaystyle D[u]={\frac {1}{2}}\int _{M}\|du\|^{2}\,d\operatorname {Vol} }
+  in which du : TM → TN is the differential of u, and the norm is that induced by the metric on M and that on N on the tensor product bundle T*M ⊗ u−1 TN.
+Important special cases of harmonic maps between manifolds include minimal surfaces, which are precisely the harmonic immersions of a surface into three-dimensional Euclidean space.  More generally, minimal submanifolds are harmonic immersions of one manifold in another.  Harmonic coordinates are a harmonic diffeomorphism from a manifold to an open subset of a Euclidean space of the same dimension.
+
+
+== See also ==
+
+
+== Notes ==
+
+
+== References ==
+Evans, Lawrence C. (1998), Partial Differential Equations, American Mathematical Society.
+Gilbarg, David; Trudinger, Neil, Elliptic Partial Differential Equations of Second Order, ISBN 3-540-41160-7.
+Han, Q.; Lin, F. (2000), Elliptic Partial Differential Equations, American Mathematical Society.
+Jost, Jürgen (2005), Riemannian Geometry and Geometric Analysis (4th ed.), Berlin, New York: Springer-Verlag, ISBN 978-3-540-25907-7.
+
+
+== External links ==
+Hazewinkel, Michiel, ed. (2001) [1994], "Harmonic function", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Weisstein, Eric W. "Harmonic Function". MathWorld.
+Harmonic Function Theory by S.Axler, Paul Bourdon, and Wade Ramey

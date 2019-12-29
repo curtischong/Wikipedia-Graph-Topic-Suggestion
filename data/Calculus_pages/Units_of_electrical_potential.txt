@@ -1,0 +1,7 @@
+The statvolt is a unit of voltage and electrical potential used in the esu-cgs and gaussian system of units. The conversion to the SI system is exactly
+
+1 statvolt = 299.792458 volts.
+(The conversion factor 299.792458 is simply the numerical value of the speed of light in m/s divided by 106)The statvolt is also defined in the cgs system as 1 erg / esu.It is a useful unit for electromagnetism because, in a vacuum, an electric field of one statvolt/cm has the same energy density as a magnetic field of one gauss.  Likewise, a plane wave propagating in a vacuum has perpendicular electric and magnetic fields such that for every gauss of magnetic field intensity there is one statvolt/cm of electric field intensity.The abvolt is another option for a unit of voltage in the cgs system.
+
+
+== References ==

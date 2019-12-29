@@ -1,0 +1,1610 @@
+In mathematics, convergence tests are methods of testing for the convergence, conditional convergence, absolute convergence, interval of convergence or divergence of an infinite series 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }a_{n}}
+  .
+
+
+== List of tests ==
+
+
+=== Limit of the summand ===
+If the limit of the summand is undefined or nonzero, that is 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        ≠
+        0
+      
+    
+    {\displaystyle \lim _{n\to \infty }a_{n}\neq 0}
+  , then the series must diverge. In this sense, the partial sums are Cauchy only if this limit exists and is equal to zero. The test is inconclusive if the limit of the summand is zero.
+
+
+=== Ratio test ===
+This is also known as D'Alembert's criterion.
+
+Suppose that there exists 
+  
+    
+      
+        r
+      
+    
+    {\displaystyle r}
+   such that
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          |
+          
+            
+              
+                a
+                
+                  n
+                  +
+                  1
+                
+              
+              
+                a
+                
+                  n
+                
+              
+            
+          
+          |
+        
+        =
+        r
+        .
+      
+    
+    {\displaystyle \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r.}
+  
+If r < 1, then the series is absolutely convergent. If r > 1, then the series diverges. If r = 1, the ratio test is inconclusive, and the series may converge.
+
+
+=== Root test ===
+This is also known as the nth root test or Cauchy's criterion.
+
+Let
+
+  
+    
+      
+        r
+        =
+        
+          lim sup
+          
+            n
+            →
+            ∞
+          
+        
+        
+          
+            
+              
+                |
+              
+              
+                a
+                
+                  n
+                
+              
+              
+                |
+              
+            
+            
+              n
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle r=\limsup _{n\to \infty }{\sqrt[{n}]{|a_{n}|}},}
+  
+where 
+  
+    
+      
+        lim sup
+      
+    
+    {\displaystyle \limsup }
+   denotes the limit superior (possibly 
+  
+    
+      
+        ∞
+      
+    
+    {\displaystyle \infty }
+  ; if the limit exists it is the same value).
+If r < 1, then the series converges. If r > 1, then the series diverges. If r = 1, the root test is inconclusive, and the series may converge or diverge.The root test is stronger than the ratio test: whenever the ratio test determines the convergence or divergence of an infinite series, the root test does too, but not conversely.For example, for the series
+
+1 + 1 + 0.5 + 0.5 + 0.25 + 0.25 + 0.125 + 0.125 + ... = 4convergence follows from the root test but not from the ratio test.
+
+
+=== Integral test ===
+The series can be compared to an integral to establish convergence or divergence. Let 
+  
+    
+      
+        f
+        :
+        [
+        1
+        ,
+        ∞
+        )
+        →
+        
+          
+            R
+          
+          
+            +
+          
+        
+      
+    
+    {\displaystyle f:[1,\infty )\to \mathbb {R} _{+}}
+   be a non-negative and monotonically decreasing function such that 
+  
+    
+      
+        f
+        (
+        n
+        )
+        =
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle f(n)=a_{n}}
+  .
+
+If
+
+  
+    
+      
+        
+          ∫
+          
+            1
+          
+          
+            ∞
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+        =
+        
+          lim
+          
+            t
+            →
+            ∞
+          
+        
+        
+          ∫
+          
+            1
+          
+          
+            t
+          
+        
+        f
+        (
+        x
+        )
+        
+        d
+        x
+        <
+        ∞
+        ,
+      
+    
+    {\displaystyle \int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(x)\,dx<\infty ,}
+  
+then the series converges. But if the integral diverges, then the series does so as well.
+In other words, the series 
+  
+    
+      
+        
+          
+            a
+            
+              n
+            
+          
+        
+      
+    
+    {\displaystyle {a_{n}}}
+   converges if and only if the integral converges.
+
+
+=== Direct comparison test ===
+If the series 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }b_{n}}
+   is an absolutely convergent series and 
+  
+    
+      
+        
+          |
+        
+        
+          a
+          
+            n
+          
+        
+        
+          |
+        
+        ≤
+        
+          |
+        
+        
+          b
+          
+            n
+          
+        
+        
+          |
+        
+      
+    
+    {\displaystyle |a_{n}|\leq |b_{n}|}
+   for sufficiently large n , then the series 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }a_{n}}
+   converges absolutely.
+
+
+=== Limit comparison test ===
+If 
+  
+    
+      
+        {
+        
+          a
+          
+            n
+          
+        
+        }
+        ,
+        {
+        
+          b
+          
+            n
+          
+        
+        }
+        >
+        0
+      
+    
+    {\displaystyle \{a_{n}\},\{b_{n}\}>0}
+  , (that is, each element of the two sequences is positive) and the limit 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          
+            
+              a
+              
+                n
+              
+            
+            
+              b
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle \lim _{n\to \infty }{\frac {a_{n}}{b_{n}}}}
+   exists, is finite and non-zero, then 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }a_{n}}
+   converges if and only if 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }b_{n}}
+   converges.
+
+
+=== Cauchy condensation test ===
+Let 
+  
+    
+      
+        
+          {
+          
+            a
+            
+              n
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{a_{n}\right\}}
+   be a positive non-increasing sequence. Then the sum 
+  
+    
+      
+        A
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle A=\sum _{n=1}^{\infty }a_{n}}
+   converges if and only if the sum 
+  
+    
+      
+        
+          A
+          
+            ∗
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          2
+          
+            n
+          
+        
+        
+          a
+          
+            
+              2
+              
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle A^{*}=\sum _{n=0}^{\infty }2^{n}a_{2^{n}}}
+   converges. Moreover, if they converge, then 
+  
+    
+      
+        A
+        ≤
+        
+          A
+          
+            ∗
+          
+        
+        ≤
+        2
+        A
+      
+    
+    {\displaystyle A\leq A^{*}\leq 2A}
+   holds.
+
+
+=== Abel's test ===
+Suppose the following statements are true:
+
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}}
+   is a convergent series,
+
+  
+    
+      
+        
+          {
+          
+            b
+            
+              n
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{b_{n}\right\}}
+   is a monotonic sequence, and
+
+  
+    
+      
+        
+          {
+          
+            b
+            
+              n
+            
+          
+          }
+        
+      
+    
+    {\displaystyle \left\{b_{n}\right\}}
+   is bounded.Then 
+  
+    
+      
+        ∑
+        
+          a
+          
+            n
+          
+        
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum a_{n}b_{n}}
+   is also convergent.
+
+
+=== Absolute convergence test ===
+Every absolutely convergent series converges.
+
+
+=== Alternating series test ===
+This is also known as the Leibniz criterion.
+Suppose the following statements are true:
+
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \lim _{n\to \infty }a_{n}=0}
+  ,
+for every n, 
+  
+    
+      
+        
+          a
+          
+            n
+            +
+            1
+          
+        
+        ≤
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{n+1}\leq a_{n}}
+  Then 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            k
+          
+          
+            ∞
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            n
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=k}^{\infty }(-1)^{n}a_{n}}
+   and 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            k
+          
+          
+            ∞
+          
+        
+        (
+        −
+        1
+        
+          )
+          
+            n
+            +
+            1
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=k}^{\infty }(-1)^{n+1}a_{n}}
+   are convergent series.
+
+
+=== Dirichlet's test ===
+If 
+  
+    
+      
+        {
+        
+          a
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{a_{n}\}}
+   is a sequence of real numbers and 
+  
+    
+      
+        {
+        
+          b
+          
+            n
+          
+        
+        }
+      
+    
+    {\displaystyle \{b_{n}\}}
+   a sequence of complex numbers satisfying
+
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        ≥
+        
+          a
+          
+            n
+            +
+            1
+          
+        
+      
+    
+    {\displaystyle a_{n}\geq a_{n+1}}
+  
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \lim _{n\rightarrow \infty }a_{n}=0}
+  
+  
+    
+      
+        
+          |
+          
+            
+              ∑
+              
+                n
+                =
+                1
+              
+              
+                N
+              
+            
+            
+              b
+              
+                n
+              
+            
+          
+          |
+        
+        ≤
+        M
+      
+    
+    {\displaystyle \left|\sum _{n=1}^{N}b_{n}\right|\leq M}
+   for every positive integer Nwhere M is some constant, then the series
+
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }a_{n}b_{n}}
+  converges.
+
+
+=== Raabe–Duhamel's test ===
+Let 
+  
+    
+      
+        
+          a
+          
+            n
+          
+        
+        >
+        0
+      
+    
+    {\displaystyle a_{n}>0}
+  .
+Define
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        n
+        
+          (
+          
+            
+              
+                
+                  a
+                  
+                    n
+                  
+                
+                
+                  a
+                  
+                    n
+                    +
+                    1
+                  
+                
+              
+            
+            −
+            1
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle b_{n}=n\left({\frac {a_{n}}{a_{n+1}}}-1\right).}
+  If
+
+  
+    
+      
+        L
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle L=\lim _{n\to \infty }b_{n}}
+  exists there are three possibilities:
+
+if L > 1 the series converges
+if L < 1 the series diverges
+and if L = 1 the test is inconclusive.An alternative formulation of this test is as follows. Let { an } be a series of real numbers. Then if b > 1 and K (a natural number) exist such that
+
+  
+    
+      
+        
+          |
+          
+            
+              
+                a
+                
+                  n
+                  +
+                  1
+                
+              
+              
+                a
+                
+                  n
+                
+              
+            
+          
+          |
+        
+        ≤
+        1
+        −
+        
+          
+            b
+            n
+          
+        
+      
+    
+    {\displaystyle \left|{\frac {a_{n+1}}{a_{n}}}\right|\leq 1-{\frac {b}{n}}}
+  for all n > K then the series {an} is convergent.
+
+
+=== Bertrand's test ===
+Let { an } be a sequence of positive numbers.
+Define
+
+  
+    
+      
+        
+          b
+          
+            n
+          
+        
+        =
+        ln
+        ⁡
+        n
+        
+          (
+          
+            n
+            
+              (
+              
+                
+                  
+                    
+                      a
+                      
+                        n
+                      
+                    
+                    
+                      a
+                      
+                        n
+                        +
+                        1
+                      
+                    
+                  
+                
+                −
+                1
+              
+              )
+            
+            −
+            1
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle b_{n}=\ln n\left(n\left({\frac {a_{n}}{a_{n+1}}}-1\right)-1\right).}
+  If
+
+  
+    
+      
+        L
+        =
+        
+          lim
+          
+            n
+            →
+            ∞
+          
+        
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle L=\lim _{n\to \infty }b_{n}}
+  exists, there are three possibilities:
+if L > 1 the series converges
+if L < 1 the series diverges
+and if L = 1 the test is inconclusive.
+
+
+=== Gauss's test ===
+Let { un } be a sequence of positive numbers.  If 
+  
+    
+      
+        
+          
+            
+              u
+              
+                n
+              
+            
+            
+              u
+              
+                n
+                +
+                1
+              
+            
+          
+        
+        =
+        1
+        +
+        
+          
+            a
+            n
+          
+        
+        +
+        O
+        (
+        1
+        
+          /
+        
+        
+          n
+          
+            p
+          
+        
+        )
+      
+    
+    {\displaystyle {\frac {u_{n}}{u_{n+1}}}=1+{\frac {a}{n}}+O(1/n^{p})}
+   for some p > 1, then 
+  
+    
+      
+        ∑
+        
+          u
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum u_{n}}
+   converges if a > 1 and diverges if a ≤ 1.
+
+
+=== Notes ===
+For some specific types of series there are more specialized convergence tests, for instance for Fourier series there is the Dini test.
+
+
+== Examples ==
+Consider the series
+
+  
+    
+      
+        (
+        ∗
+        )
+        
+        
+        
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              n
+              
+                α
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle (*)\;\;\;\sum _{n=1}^{\infty }{\frac {1}{n^{\alpha }}}.}
+  
+Cauchy condensation test implies that (*) is finitely convergent if
+
+  
+    
+      
+        (
+        ∗
+        ∗
+        )
+        
+        
+        
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          2
+          
+            n
+          
+        
+        
+          
+            (
+            
+              
+                1
+                
+                  2
+                  
+                    n
+                  
+                
+              
+            
+            )
+          
+          
+            α
+          
+        
+      
+    
+    {\displaystyle (**)\;\;\;\sum _{n=1}^{\infty }2^{n}\left({\frac {1}{2^{n}}}\right)^{\alpha }}
+  is finitely convergent. Since
+
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          2
+          
+            n
+          
+        
+        
+          
+            (
+            
+              
+                1
+                
+                  2
+                  
+                    n
+                  
+                
+              
+            
+            )
+          
+          
+            α
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          2
+          
+            n
+            −
+            n
+            α
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          2
+          
+            (
+            1
+            −
+            α
+            )
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }2^{n}\left({\frac {1}{2^{n}}}\right)^{\alpha }=\sum _{n=1}^{\infty }2^{n-n\alpha }=\sum _{n=1}^{\infty }2^{(1-\alpha )n}}
+  (**) is geometric series with ratio 
+  
+    
+      
+        
+          2
+          
+            (
+            1
+            −
+            α
+            )
+          
+        
+      
+    
+    {\displaystyle 2^{(1-\alpha )}}
+  . (**) is finitely convergent if its ratio is less than one (namely 
+  
+    
+      
+        α
+        >
+        1
+      
+    
+    {\displaystyle \alpha >1}
+  ). Thus, (*) is finitely convergent if and only if 
+  
+    
+      
+        α
+        >
+        1
+      
+    
+    {\displaystyle \alpha >1}
+  .
+
+
+== Convergence of products ==
+While most of the tests deal with the convergence of infinite series, they can also be used to show the convergence or divergence of infinite products. This can be achieved using following theorem: Let 
+  
+    
+      
+        
+          
+            {
+            
+              a
+              
+                n
+              
+            
+            }
+          
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle \left\{a_{n}\right\}_{n=1}^{\infty }}
+   be a sequence of positive numbers. Then the infinite product 
+  
+    
+      
+        
+          ∏
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        (
+        1
+        +
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \prod _{n=1}^{\infty }(1+a_{n})}
+   converges if and only if the series 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }a_{n}}
+   converges. Also similarly, if 
+  
+    
+      
+        0
+        <
+        
+          a
+          
+            n
+          
+        
+        <
+        1
+      
+    
+    {\displaystyle 0<a_{n}<1}
+   holds, then 
+  
+    
+      
+        
+          ∏
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        (
+        1
+        −
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \prod _{n=1}^{\infty }(1-a_{n})}
+   approaches a non-zero limit if and only if the series 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \sum _{n=1}^{\infty }a_{n}}
+   converges .
+This can be proved by taking the logarithm of the product and using limit comparison test.
+
+
+== See also ==
+L'Hôpital's rule
+Shift rule
+
+
+== References ==
+
+
+== Further reading ==
+Leithold, Louis (1972). The Calculus, with Analytic Geometry (2nd ed.). New York: Harper & Row. pp. 655–737. ISBN 0-06-043959-9.
+
+
+== External links ==
+Flowchart for choosing convergence test

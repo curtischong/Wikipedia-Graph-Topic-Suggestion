@@ -1,0 +1,54 @@
+Adrian Stephen Lewis (born 1962 in England) is a British-Canadian mathematician, specializing in variational analysis and nonsmooth optimization.
+
+
+== Education and career ==
+At the University of Cambridge he graduated with B.A. in mathematics in 1983, M.A. in 1987, and Ph.D. in engineering in 1987. His doctoral dissertation is entitled Extreme point methods for infinite linear programming. Lewis was a postdoc at Dalhousie University. In Canada he was a faculty member at the University of Waterloo from 1989 to 2001 and at Simon Fraser University from 2001 to 2004. At Cornell University he is since 2004 a full professor and since 2018 the Samuel B. Eckert Professor of Engineering in the School of Operations Research and Information Engineering. From 2010 to 2013 he served as the School's director.Lewis has held visiting appointments at academic institutions in France, Italy, New Zealand, the United States, and Spain.
+He is a co-editor for Mathematical Programming, Series A and an associate editor for Set-Valued and Variational Analysis and for Mathematika. He has been a member of the  editorial boards of Mathematics of Operations Research, the SIAM Journal on Optimization, the SIAM Journal on Matrix Analysis and Applications, the SIAM Journal on Control and Optimization, and the MPS/SIAM Series on Optimization.Much of his research deals with "semi-algebraic optimization and variational properties of eigenvalues." With Jonathan Borwein he co-authored the book Convex Analysis and Nonlinear Optimization (2000, 2nd edition 2006).Lewis holds British and Canadian citizenship and permanent residency in the USA.
+
+
+== Selected publications ==
+Borwein, J. M.; Lewis, A. S. (1991). "Duality Relationships for Entropy-Like Minimization Problems". SIAM Journal on Control and Optimization. 29 (2): 325–338. doi:10.1137/0329017.
+Borwein, J. M.; Lewis, A. S. (1991). "Convergence of Best Entropy Estimates". SIAM Journal on Optimization. 1 (2): 191–205. doi:10.1137/0801014.
+Borwein, J. M.; Lewis, A. S. (1991). "On the convergence of moment problems". Transactions of the American Mathematical Society. 325: 249–271. doi:10.1090/S0002-9947-1991-1008695-8.
+Borwein, J. M.; Lewis, A. S. (1992). "Partially finite convex programming, Part I: Quasi relative interiors and duality theory". Mathematical Programming. 57 (1–3): 15–48. doi:10.1007/BF01581072.
+Borwein, J. M.; Lewis, A. S. (1993). "Partially-Finite Programming in 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+      
+    
+    {\displaystyle L_{1}}
+   and the Existence of Maximum Entropy Estimates". SIAM Journal on Optimization. 3 (2): 248–267. doi:10.1137/0803012.
+Borwein, J.M.; Lewis, A.S.; Nussbaum, R.D. (1994). "Entropy Minimization, DAD Problems, and Doubly Stochastic Kernels". Journal of Functional Analysis. 123 (2): 264–307. doi:10.1006/jfan.1994.1089.
+Lewis, Adrian S.; Overton, Michael L. (1996). "Eigenvalue optimization". Acta Numerica. 5: 149–190. Bibcode:1996AcNum...5..149L. doi:10.1017/S0962492900002646.
+Lewis, A. S. (1996). "Convex Analysis on the Hermitian Matrices". SIAM Journal on Optimization. 6: 164–177. doi:10.1137/0806009.
+Borwein, J. M.; Lewis, A. S.; Noll, D. (1996). "Maximum Entropy Reconstruction Using Derivative Information, Part 1: Fisher Information and Convex Duality". Mathematics of Operations Research. 21 (2): 442–468. doi:10.1287/moor.21.2.442.
+Lewis, A. S. (2000). "Lidskii's Theorem via Nonsmooth Analysis". SIAM Journal on Matrix Analysis and Applications. 21 (2): 379–381. doi:10.1137/S0895479898338676.
+Burke, J. V.; Lewis, A. S.; Overton, M. L. (2001). "Optimal Stability and Eigenvalue Multiplicity". Foundations of Computational Mathematics. 1 (2): 205–225. doi:10.1007/PL00021726.
+Lewis, A.S. (2003). "The mathematics of eigenvalue optimization". Mathematical Programming. 97: 155–176. doi:10.1007/s10107-003-0441-3.
+Burke, James V.; Lewis, Adrian S.; Overton, Michael L. (2004). "Variational Analysis of the Abscissa Mapping for Polynomials via the Gauss-Lucas Theorem". Journal of Global Optimization. 28 (3/4): 259–268. doi:10.1023/B:JOGO.0000026448.63457.51.
+Burke, James V.; Lewis, Adrian S.; Overton, Michael L. (2005). "Variational analysis of functions of the roots of polynomials". Mathematical Programming. 104 (2–3): 263–292. doi:10.1007/s10107-005-0616-1.
+Lewis, Adrian S.; Pang, C. H. Jeffrey (2008). "Variational Analysis of Pseudospectra". SIAM Journal on Optimization. 19 (3): 1048–1072. doi:10.1137/070681521.
+Drusvyatskiy, D.; Lewis, A. S. (2013). "Tilt Stability, Uniform Quadratic Growth, and Strong Metric Regularity of the Subdifferential". SIAM Journal on Optimization. 23: 256–267. arXiv:1204.5794. doi:10.1137/120876551.
+Burke, James V.; Curtis, Frank E.; Lewis, Adrian S.; Overton,, Michael L.; Simões, Lucas EA (2018). "Gradient sampling methods for nonsmooth optimization". arXiv:1804.11003 [math.OC].CS1 maint: multiple names: authors list (link)
+
+
+== Awards and honours ==
+1995–1996 — Aisenstadt Prize of the Canadian Centre de recherches mathématiques
+2003 — Lagrange Prize for Continuous Optimization from SIAM and the Mathematical Programming Society
+2009 — Fellow of SIAM
+2014 — Invited Speaker, International Congress of Mathematicians at Seoul
+2018 — INFORMS Computing Society Prize (with James V. Burke, Frank E. Curtis, and Michael L. Overton)
+
+
+== References ==
+
+
+== External links ==
+"Adrian Lewis, homepage". School of Operations Research and Information Engineering, Cornell University."Research articles (with online links)".

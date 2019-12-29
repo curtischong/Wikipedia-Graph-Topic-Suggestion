@@ -1,0 +1,337 @@
+In mathematics,  contact geometry is the study of a geometric structure on smooth manifolds given by a hyperplane distribution in the tangent bundle satisfying a condition called 'complete non-integrability'.  Equivalently, such a distribution may be given (at least locally) as the kernel of a differential one-form, and the non-integrability condition translates into a maximal non-degeneracy condition on the form. These conditions are opposite to two equivalent conditions for 'complete integrability' of a hyperplane distribution, i.e. that it be tangent to a codimension one foliation on the manifold, whose equivalence is the content of the Frobenius theorem.
+Contact geometry is in many ways an odd-dimensional counterpart of symplectic geometry, a structure on certain even-dimensional manifolds. Both contact and symplectic geometry are motivated by the mathematical formalism of classical mechanics, where one can consider either the even-dimensional phase space of a mechanical system or constant-energy hypersurface, which, being codimension one, has odd dimension.
+
+
+== Applications ==
+Like symplectic geometry, contact geometry has broad applications in physics, e.g. geometrical optics, classical mechanics, thermodynamics, geometric quantization, integrable systems and to control theory.  Contact geometry also has applications to low-dimensional topology; for example, it has been used by Kronheimer and Mrowka to prove the property P conjecture, by Michael Hutchings to define an invariant of smooth three-manifolds, and by Lenhard Ng to define invariants of knots.  It was also used by Yakov Eliashberg to derive a topological characterization of Stein manifolds of dimension at least six.
+
+
+== Contact forms and structures ==
+A contact structure on an odd dimensional manifold is a smoothly varying family of codimension one subspaces of each tangent space of the manifold, satisfying a non-integrability condition.  The family may be described as a section of a bundle as follows:
+Given an n-dimensional smooth manifold M, and a point p ∈ M, a contact element of M with contact point p is an (n − 1)-dimensional linear subspace of the tangent space to M at p. A contact element can be given by the kernel of a linear function on the tangent space to M at p. However, if a subspace is given by the kernel of a linear function ω, then it will also be given by the zeros of λω where λ ≠ 0 is any nonzero real number. Thus, the kernels of { λω : λ ≠ 0 } all give the same contact element. It follows that the space of all contact elements of M can be identified with a quotient of the cotangent bundle T*M (with the zero section 
+  
+    
+      
+        
+          0
+          
+            M
+          
+        
+      
+    
+    {\displaystyle 0_{M}}
+   removed), namely:
+
+  
+    
+      
+        
+          
+            PT
+          
+          
+            ∗
+          
+        
+        M
+        =
+        (
+        
+          
+            T
+          
+          
+            ∗
+          
+        
+        M
+        −
+        
+          
+            0
+            
+              M
+            
+          
+        
+        )
+        
+          /
+        
+        
+        ∼
+         
+        
+           where, for 
+        
+        
+          ω
+          
+            i
+          
+        
+        ∈
+        
+          
+            T
+          
+          
+            p
+          
+          
+            ∗
+          
+        
+        M
+        ,
+         
+         
+        
+          ω
+          
+            1
+          
+        
+        ∼
+        
+          ω
+          
+            2
+          
+        
+         
+        
+        ⟺
+        
+         
+        ∃
+         
+        λ
+        ≠
+        0
+         
+        :
+         
+        
+          ω
+          
+            1
+          
+        
+        =
+        λ
+        
+          ω
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle {\text{PT}}^{*}M=({\text{T}}^{*}M-{0_{M}})/\!\sim \ {\text{ where, for }}\omega _{i}\in {\text{T}}_{p}^{*}M,\ \ \omega _{1}\sim \omega _{2}\ \iff \ \exists \ \lambda \neq 0\ :\ \omega _{1}=\lambda \omega _{2}.}
+  A contact structure on an odd dimensional manifold M, of dimension 2k+1, is a smooth distribution of contact elements, denoted by ξ, which is generic at each point. The genericity condition is that ξ is non-integrable.
+Assume that we have a smooth distribution of contact elements, ξ, given locally by a differential 1-form α; i.e. a smooth section of the cotangent bundle. The non-integrability condition can be given explicitly as:
+
+  
+    
+      
+        α
+        ∧
+        (
+        
+          d
+        
+        α
+        
+          )
+          
+            k
+          
+        
+        ≠
+        0
+         
+        
+          where
+        
+         
+        (
+        
+          d
+        
+        α
+        
+          )
+          
+            k
+          
+        
+        =
+        
+          
+            
+              
+                
+                  d
+                
+                α
+                ∧
+                …
+                ∧
+                
+                  d
+                
+                α
+              
+              ⏟
+            
+          
+          
+            k
+            −
+            
+              times
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \alpha \wedge ({\text{d}}\alpha )^{k}\neq 0\ {\text{where}}\ ({\text{d}}\alpha )^{k}=\underbrace {{\text{d}}\alpha \wedge \ldots \wedge {\text{d}}\alpha } _{k-{\text{times}}}.}
+  Notice that if ξ is given by the differential 1-form α, then the same distribution is given locally by β = ƒ⋅α, where ƒ is a non-zero smooth function. If ξ is co-orientable then α is defined globally.
+
+
+=== Properties ===
+It follows from the Frobenius theorem on integrability that the contact field ξ is completely nonintegrable. This property of the contact field is roughly the opposite of being a field formed by the tangent planes to a family of nonoverlapping hypersurfaces in M. In particular, you cannot find a hypersurface in M whose tangent spaces agree with ξ, even locally. In fact, there is no submanifold of dimension greater than k whose tangent spaces lie in ξ.
+
+
+=== Relation with symplectic structures ===
+A consequence of the definition is that the restriction of the 2-form ω = dα to a hyperplane in ξ is a nondegenerate 2-form. This construction provides any contact manifold M with a natural symplectic bundle of rank one smaller than the dimension of M. Note that a symplectic vector space is always even-dimensional, while contact manifolds need to be odd-dimensional.
+The cotangent bundle T*N of any n-dimensional manifold  N is itself a manifold (of dimension 2n) and supports naturally an exact symplectic structure ω = dλ. (This 1-form λ is sometimes called the Liouville form). There are several ways to construct an associated contact manifold, one of dimension 2n − 1, one of dimension 2n + 1.
+
+ProjectivizationLet M be the projectivization of the cotangent bundle of N: thus M is fiber bundle over a M whose fiber at a point x is the space of lines in T*N, or, equivalently, the space of hyperplanes in TN. The 1-form λ does not descend to a genuine 1-form on M. However, it is homogeneous of degree 1, and so it defines a 1-form with values in the line bundle O(1), which is the dual of the fibrewise tautological line bundle of M. The kernel of this 1-form defines a contact distribution.
+
+Energy surfacesSuppose that H is a smooth function on T*N,   that E is a regular value for H, so that the level set 
+  
+    
+      
+        L
+        =
+        {
+        (
+        q
+        ,
+        p
+        )
+        ∈
+        
+          T
+          
+            ∗
+          
+        
+        N
+        
+          |
+        
+        H
+        (
+        q
+        ,
+        p
+        )
+        =
+        E
+        }
+      
+    
+    {\displaystyle L=\{(q,p)\in T^{*}N|H(q,p)=E\}}
+   is a smooth submanifold of codimension 1.  A vector field Y is called an Euler (or Liouville) vector field if it is transverse to L and conformally symplectic,  meaning that the Lie derivative of dλ with respect to Y is a multiple of dλ in a neighborhood of L.
+Then the restriction of 
+  
+    
+      
+        
+          i
+          
+            Y
+          
+        
+        d
+        λ
+      
+    
+    {\displaystyle i_{Y}d\lambda }
+   to L is a contact form on L.
+This construction originates in Hamiltonian mechanics, where H is a Hamiltonian of a mechanical system with the configuration space N and the phase space T*N, and E is the value of the energy.
+
+The unit cotangent bundleChoose a Riemannian metric on the manifold N and let H be the associated kinetic energy.
+Then the level set   H =1/2  is the  unit cotangent bundle of N,  a smooth manifold of dimension 2n-1 fibering over N with fibers being spheres. Then the Liouville form restricted to the unit cotangent bundle is a contact structure.  This corresponds to a special case of the second construction, where the flow of the Euler vector field Y corresponds to linear scaling of momenta p's, leaving the q's fixed. The vector field R, defined by the equalities
+
+λ(R) = 1 and dλ(R, A) = 0 for all vector fields A,is called the Reeb vector field, and it generates the geodesic flow of the Riemannian metric. More precisely, using the Riemannian metric, one can identify each point of the cotangent bundle of N with a point of the tangent bundle of N, and then the value of R at that point of the (unit) cotangent bundle is the corresponding (unit) vector parallel to N.
+
+First jet bundleOn the other hand, one can build a contact manifold M of dimension 2n + 1 by considering the first jet bundle of the real valued functions on N. This bundle is isomorphic to T*N×R using the exterior derivative of a function. With coordinates (x, t), M has a contact structure
+
+α = dt + λ.Conversely, given any contact manifold M, the product M×R has a natural structure of a symplectic manifold. If α is a contact form on M, then
+
+ω = d(etα)is a symplectic form on M×R, where t denotes the variable in the R-direction.  This new manifold is called the symplectization (sometimes symplectification in the literature) of the contact manifold M.
+
+
+=== Examples ===
+As a prime example, consider R3, endowed with coordinates (x,y,z) and the one-form dz − y dx. The contact plane ξ at a point (x,y,z) is spanned by the vectors X1 = ∂y and X2 = ∂x + y ∂z.
+By replacing the single variables x and y with the multivariables x1, ..., xn, y1, ..., yn, one can generalize this example to any R2n+1. By a theorem of Darboux, every contact structure on a manifold looks locally like this particular contact structure on the (2n + 1)-dimensional vector space.
+An important class of contact manifolds is formed by Sasakian manifolds.
+
+
+== Legendrian submanifolds and knots ==
+The most interesting subspaces of a contact manifold are its Legendrian submanifolds.  The non-integrability of the contact hyperplane field on a (2n + 1)-dimensional manifold means that no 2n-dimensional submanifold has it as its tangent bundle, even locally.  However, it is in general possible to find n-dimensional (embedded or immersed) submanifolds whose tangent spaces lie inside the contact field.  Legendrian submanifolds are analogous to Lagrangian submanifolds of symplectic manifolds.  There is a precise relation: the lift of a Legendrian submanifold in a symplectization of a contact manifold is a Lagrangian submanifold.
+The simplest example of Legendrian submanifolds are Legendrian knots inside a contact three-manifold.  Inequivalent Legendrian knots may be equivalent as smooth knots; that is, there are knots which are smoothly isotopic where the isotopy cannot be chosen to be a path of Legendrian knots.
+Legendrian submanifolds are very rigid objects; typically there are infinitely many Legendrian isotopy classes of embeddings which are all smoothly isotopic. Symplectic field theory provides invariants of Legendrian submanifolds called relative contact homology that can sometimes distinguish distinct Legendrian submanifolds that are topologically identical (i.e. smoothly isotopic).
+
+
+== Reeb vector field ==
+If α is a contact form for a given contact structure, the Reeb vector field R can be defined as the unique element of the (one-dimensional) kernel of dα such that α(R) = 1.  If a contact manifold arises as a constant-energy hypersurface inside a symplectic manifold, then the Reeb vector field is the restriction to the submanifold of the Hamiltonian vector field associated to the energy function.  (The restriction yields a vector field on the contact hypersurface because the Hamiltonian vector field preserves energy levels.)
+The dynamics of the Reeb field can be used to study the structure of the contact manifold or even the underlying manifold using techniques of Floer homology such as symplectic field theory and, in three dimensions, embedded contact homology.  Different contact forms whose kernels give the same contact structure will yield different Reeb vector fields, whose dynamics are in general very different.  The various flavors of contact homology depend a priori on the choice of a contact form, and construct algebraic structures the closed trajectories of their Reeb vector fields; however, these algebraic structures turn out to be independent of the contact form, i.e. they are invariants of the underlying contact structure, so that in the end, the contact form may be seen as an auxiliary choice.  In the case of embedded contact homology, one obtains an invariant of the underlying three-manifold, i.e. the embedded contact homology is independent of contact structure; this allows one to obtain results that hold for any Reeb vector field on the manifold.
+The Reeb field is named after Georges Reeb.
+
+
+== Some historical remarks ==
+The roots of contact geometry appear in work of Christiaan Huygens, Isaac Barrow and Isaac Newton. The theory of contact transformations (i.e. transformations preserving a contact structure) was developed by Sophus Lie, with the dual aims of studying differential equations (e.g. the Legendre transformation or canonical transformation) and describing the 'change of space element', familiar from projective duality.
+
+
+== See also ==
+Floer homology, some flavors of which give invariants of contact manifolds and their Legendrian submanifolds
+Quantized contact transformation
+Sub-Riemannian geometry
+
+
+== References ==
+
+
+=== Introductions to contact geometry ===
+Etnyre, J. Introductory lectures on contact geometry, Proc. Sympos. Pure Math. 71 (2003), 81–107, math.SG/0111118
+Geiges, H. Contact Geometry, math.SG/0307242
+Geiges, H. An Introduction to Contact Topology, Cambridge University Press, 2008.
+Aebischer et al. Symplectic geometry, Birkhäuser (1994), ISBN 3-7643-5064-4
+V. I. Arnold, Mathematical Methods of Classical Mechanics, Springer-Verlag (1989), ISBN 0-387-96890-3
+
+
+=== Applications to differential equations ===
+V. I. Arnold, Geometrical Methods In The Theory Of Ordinary Differential Equations, Springer-Verlag (1988), ISBN 0-387-96649-8
+
+
+=== Contact three-manifolds and Legendrian knots ===
+William Thurston, Three-Dimensional Geometry and Topology. Princeton University Press(1997), ISBN 0-691-08304-5
+
+
+=== Information on the history of contact geometry ===
+Lutz, R. Quelques remarques historiques et prospectives sur la géométrie de contact , Conf. on Diff. Geom. and Top. (Sardinia, 1988) Rend. Fac. Sci. Univ. Cagliari 58 (1988), suppl., 361–393.
+Geiges, H.  A Brief History of Contact Geometry and Topology, Expo. Math. 19 (2001), 25–53. doi:10.1016/S0723-0869(01)80014-1
+Arnold, V.I. (trans.  E. Primrose),   Huygens and Barrow, Newton and Hooke: pioneers in mathematical analysis and catastrophe theory from evolvents to quasicrystals.  Birkhauser Verlag, 1990.
+Contact geometry Theme on arxiv.org
+
+
+== External links ==
+Contact manifold at the Manifold Atlas

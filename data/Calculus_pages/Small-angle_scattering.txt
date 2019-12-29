@@ -1,0 +1,39 @@
+Small-angle X-ray scattering (SAXS) is a small-angle scattering technique by which nanoscale density differences in a sample can be quantified. This means that it can determine nanoparticle size distributions, resolve the size and shape of (monodisperse) macromolecules, determine pore sizes, characteristic distances of partially ordered materials, and much more. This is achieved by analyzing the elastic scattering behaviour of X-rays when travelling through the material, recording their scattering at small angles (typically 0.1 - 10°, hence the "Small-angle" in its name). It belongs to the family of small-angle scattering (SAS) techniques along with small-angle neutron scattering, and is typically done using hard X-rays with a wavelength of 0.07 - 0.2 nm.. Depending on the angular range in which a clear scattering signal can be recorded, SAXS is capable of delivering structural information of dimensions between 1 and 100 nm, and of repeat distances in partially ordered systems of up to 150 nm. USAXS (ultra-small angle X-ray scattering) can resolve even larger dimensions, as the smaller the recorded angle, the larger the object dimensions that are probed.
+SAXS and USAXS belong to a family of X-ray scattering techniques that are used in the characterization of materials. In the case of biological macromolecules such as proteins, the advantage of SAXS over crystallography is that a crystalline sample is not needed. Furthermore, the properties of SAXS allow investigation of conformational diversity in these molecules.  Nuclear magnetic resonance spectroscopy methods encounter problems with macromolecules of higher molecular mass (> 30-40 kDa).  However, owing to the random orientation of dissolved or partially ordered molecules, the spatial averaging leads to a loss of information in SAXS compared to crystallography.
+
+
+== Applications ==
+SAXS is used for the determination of the microscale or nanoscale structure of particle systems in terms of such parameters as averaged particle sizes, shapes, distribution, and surface-to-volume ratio.   The materials can be solid or liquid and they can contain solid, liquid or gaseous domains (so-called particles) of the same or another material in any combination. Not only particles, but also the structure of ordered systems like lamellae, and fractal-like materials can be studied. The method is accurate, non-destructive and usually requires only a minimum of sample preparation. Applications are very broad and include colloids of all types, metals, cement, oil, polymers, plastics, proteins, foods and pharmaceuticals and can be found in research as well as in quality control. The X-ray source can be a laboratory source or synchrotron light which provides a higher X-ray flux.
+
+
+== SAXS instruments ==
+In an SAXS instrument a monochromatic beam of X-rays is brought to a sample from which some of the X-rays scatter, while most simply go through the sample without interacting with it. The scattered X-rays form a scattering pattern which is then detected at a detector which is typically a 2-dimensional flat X-ray detector situated behind the sample perpendicular to the direction of the primary beam that initially hit the sample. The scattering pattern contains the information on the structure of the sample.
+The major problem that must be overcome in SAXS instrumentation is the separation of the weak scattered intensity from the strong main beam. The smaller the desired angle, the more difficult this becomes. The problem is comparable to one encountered when trying to observe a weakly radiant object close to the sun, like the sun's corona. Only if the moon blocks out the main light source does the corona become visible. Likewise, in SAXS the non-scattered beam that merely travels through the sample must be blocked, without blocking the closely adjacent scattered radiation. Most available X-ray sources produce divergent beams and this compounds the problem. In principle the problem could be overcome by focusing the beam, but this is not easy when dealing with X-rays and was previously not done except on synchrotrons where large bent mirrors can be used. This is why most laboratory small angle devices rely on collimation instead.
+Laboratory SAXS instruments can be divided into two main groups: point-collimation and line-collimation instruments:
+
+
+=== Point-collimation instruments ===
+Point-collimation instruments have pinholes that shape the X-ray beam to a small circular or elliptical spot that illuminates the sample. Thus the scattering is centro-symmetrically distributed around the primary X-ray beam and the scattering pattern in the detection plane consists of circles around the primary beam. Owing to the small illuminated sample volume and the wastefulness of the collimation process — only those photons are allowed to pass that happen to fly in the right direction — the scattered intensity is small and therefore the measurement time is in the order of hours or days in case of very weak scatterers. If focusing optics like bent mirrors or bent monochromator crystals or collimating and monochromating optics like multilayers are used, measurement time can be greatly reduced. Point-collimation allows the orientation of non-isotropic systems (fibres, sheared liquids) to be determined.
+
+
+=== Line-collimation instruments ===
+Line-collimation instruments restrict the beam only in one dimension (rather than two as for point collimation) so that the beam cross-section is a long but narrow line. The illuminated sample volume is much larger compared to point-collimation and the scattered intensity at the same flux density is proportionally larger. Thus measuring times with line-collimation SAXS instruments are much shorter compared to point-collimation and are in the range of minutes. A disadvantage is that the recorded pattern is essentially an integrated superposition (a self-convolution) of many adjacent pinhole patterns. The resulting smearing can be easily removed using model-free algorithms or deconvolution methods based on Fourier transformation, but only if the system is isotropic. Line collimation is of great benefit for any isotropic nanostructured materials, e.g. proteins, surfactants, particle dispersion and emulsions.
+
+
+== SAXS instrument manufacturers ==
+SAXS instrument manufacturers include Anton Paar, Austria; Bruker AXS, Germany; Hecus X-Ray Systems Graz, Austria; Malvern Panalytical. the Netherlands, Rigaku Corporation, Japan; Xenocs, France; and Saxslab, Denmark.
+
+
+== See also ==
+Biological small-angle scattering
+GISAS (Grazing-Incidence Small-Angle Scattering)
+Fluctuation X-ray Scattering (FXS)
+Wide-angle X-ray scattering
+
+
+== References ==
+
+
+== External links ==
+SAXS at a Synchrotron
+A movie demonstrating small-angle scattering using laserlight on a hair

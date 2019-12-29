@@ -1,0 +1,1302 @@
+In functional analysis and related areas of mathematics, a sequence space is a vector space whose elements are infinite sequences of real or complex numbers. Equivalently, it is a function space whose elements are functions from the natural numbers to the field K of real or complex numbers.  The set of all such functions is naturally  identified with the set of all possible infinite sequences with elements in K, and can be turned into a vector space under the operations of pointwise addition of functions and pointwise scalar multiplication. All sequence spaces are linear subspaces of this space.  Sequence spaces are typically equipped with a norm, or at least the structure of a topological vector space.
+The most important sequence spaces in analysis are the ℓp spaces, consisting of the p-power summable sequences, with the p-norm.  These are special cases of Lp spaces for the counting measure on the set of natural numbers.  Other important classes of sequences like convergent sequences or null sequences form sequence spaces, respectively denoted c and c0, with the sup norm. Any sequence space can also be equipped with the topology of pointwise convergence, under which it becomes a special kind of Fréchet space called FK-space.
+
+
+== Definition ==
+Let K denote the field either of real or complex numbers.  Denote by KN the set of all sequences of scalars
+
+  
+    
+      
+        (
+        
+          x
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        ,
+        
+        
+          x
+          
+            n
+          
+        
+        ∈
+        
+          K
+        
+        .
+      
+    
+    {\displaystyle (x_{n})_{n\in \mathbf {N} },\quad x_{n}\in \mathbf {K} .}
+  This can be turned into a vector space by defining vector addition as
+
+  
+    
+      
+        (
+        
+          x
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        +
+        (
+        
+          y
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+        (
+        
+          x
+          
+            n
+          
+        
+        +
+        
+          y
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+      
+    
+    {\displaystyle (x_{n})_{n\in \mathbf {N} }+(y_{n})_{n\in \mathbf {N} }{\stackrel {\rm {def}}{=}}(x_{n}+y_{n})_{n\in \mathbf {N} }}
+  and the scalar multiplication as
+
+  
+    
+      
+        α
+        (
+        
+          x
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        :=
+        (
+        α
+        
+          x
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \alpha (x_{n})_{n\in \mathbf {N} }:=(\alpha x_{n})_{n\in \mathbf {N} }.}
+  A sequence space is any linear subspace of KN.
+
+
+=== ℓp spaces ===
+
+For 0 < p < ∞, ℓp is the subspace of KN consisting of all sequences x = (xn) satisfying
+
+  
+    
+      
+        
+          ∑
+          
+            n
+          
+        
+        
+          |
+        
+        
+          x
+          
+            n
+          
+        
+        
+          
+            |
+          
+          
+            p
+          
+        
+        <
+        ∞
+        .
+      
+    
+    {\displaystyle \sum _{n}|x_{n}|^{p}<\infty .}
+  If p ≥ 1, then the real-valued operation 
+  
+    
+      
+        ‖
+        ⋅
+        
+          ‖
+          
+            p
+          
+        
+      
+    
+    {\displaystyle \|\cdot \|_{p}}
+   defined by
+
+  
+    
+      
+        ‖
+        x
+        
+          ‖
+          
+            p
+          
+        
+        =
+        
+          
+            (
+            
+              
+                ∑
+                
+                  n
+                
+              
+              
+                |
+              
+              
+                x
+                
+                  n
+                
+              
+              
+                
+                  |
+                
+                
+                  p
+                
+              
+            
+            )
+          
+          
+            1
+            
+              /
+            
+            p
+          
+        
+      
+    
+    {\displaystyle \|x\|_{p}=\left(\sum _{n}|x_{n}|^{p}\right)^{1/p}}
+  defines a norm on ℓp.  In fact, ℓp is a complete metric space with respect to this norm, and therefore is a Banach space.
+If 0 < p < 1, then ℓp does not carry a norm, but rather a metric defined by
+
+  
+    
+      
+        d
+        (
+        x
+        ,
+        y
+        )
+        =
+        
+          ∑
+          
+            n
+          
+        
+        
+          |
+        
+        
+          x
+          
+            n
+          
+        
+        −
+        
+          y
+          
+            n
+          
+        
+        
+          
+            |
+          
+          
+            p
+          
+        
+        .
+        
+      
+    
+    {\displaystyle d(x,y)=\sum _{n}|x_{n}-y_{n}|^{p}.\,}
+  If p = ∞, then ℓ∞ is defined to be the space of all bounded sequences.  With respect to the norm
+
+  
+    
+      
+        ‖
+        x
+        
+          ‖
+          
+            ∞
+          
+        
+        =
+        
+          sup
+          
+            n
+          
+        
+        
+          |
+        
+        
+          x
+          
+            n
+          
+        
+        
+          |
+        
+        ,
+      
+    
+    {\displaystyle \|x\|_{\infty }=\sup _{n}|x_{n}|,}
+  ℓ∞ is also a Banach space.
+
+
+=== c, c0 and  c00 ===
+The space of convergent sequences c is a sequence space.  This consists of all x ∈ KN such that limn→∞xn exists.  Since every convergent sequence is bounded, c is a linear subspace of ℓ∞.  It is, moreover, a closed subspace with respect to the infinity norm, and so a Banach space in its own right.
+The subspace of null sequences c0 consists of all sequences whose limit is zero.  This is a closed subspace of c, and so again a Banach space.
+The subspace of eventually zero sequences c00 consists of all sequences which have only finitely many nonzero elements. This is not a closed subspace and therefore is not a Banach space with respect to the infinity norm. For example, the sequence (xn) where xn has 1/k for the first n entries and is zero everywhere else (i.e. xn = (1, 1/2, ..., 1/n, 0, ...)) is Cauchy w.r.t. infinity norm but not convergent (to a sequence in c00).
+
+
+=== Other sequence spaces ===
+The space of bounded series, denote by bs, is the space of sequences x for which
+
+  
+    
+      
+        
+          sup
+          
+            n
+          
+        
+        
+          |
+          
+            
+              ∑
+              
+                i
+                =
+                0
+              
+              
+                n
+              
+            
+            
+              x
+              
+                i
+              
+            
+          
+          |
+        
+        <
+        ∞
+        .
+      
+    
+    {\displaystyle \sup _{n}\left\vert \sum _{i=0}^{n}x_{i}\right\vert <\infty .}
+  This space, when equipped with the norm
+
+  
+    
+      
+        ‖
+        x
+        
+          ‖
+          
+            b
+            s
+          
+        
+        =
+        
+          sup
+          
+            n
+          
+        
+        
+          |
+          
+            
+              ∑
+              
+                i
+                =
+                0
+              
+              
+                n
+              
+            
+            
+              x
+              
+                i
+              
+            
+          
+          |
+        
+        ,
+      
+    
+    {\displaystyle \|x\|_{bs}=\sup _{n}\left\vert \sum _{i=0}^{n}x_{i}\right\vert ,}
+  is a Banach space isometrically isomorphic to ℓ∞, via the linear mapping
+
+  
+    
+      
+        (
+        
+          x
+          
+            n
+          
+        
+        
+          )
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        ↦
+        
+          
+            (
+            
+              
+                ∑
+                
+                  i
+                  =
+                  0
+                
+                
+                  n
+                
+              
+              
+                x
+                
+                  i
+                
+              
+            
+            )
+          
+          
+            n
+            ∈
+            
+              N
+            
+          
+        
+        .
+      
+    
+    {\displaystyle (x_{n})_{n\in \mathbf {N} }\mapsto \left(\sum _{i=0}^{n}x_{i}\right)_{n\in \mathbf {N} }.}
+  The subspace cs consisting of all convergent series is a subspace that goes over to the space c under this isomorphism.
+The space Φ or 
+  
+    
+      
+        
+          c
+          
+            00
+          
+        
+      
+    
+    {\displaystyle c_{00}}
+   is defined to be the space of all infinite sequences with only a finite number of non-zero terms (sequences with finite support).  This set is dense in many sequence spaces.
+
+
+== Properties of ℓp spaces and the space c0 ==
+
+The space ℓ2 is the only ℓp space that is a Hilbert space, since any norm that is induced by an inner product should satisfy the parallelogram law
+
+  
+    
+      
+        ‖
+        x
+        +
+        y
+        
+          ‖
+          
+            p
+          
+          
+            2
+          
+        
+        +
+        ‖
+        x
+        −
+        y
+        
+          ‖
+          
+            p
+          
+          
+            2
+          
+        
+        =
+        2
+        ‖
+        x
+        
+          ‖
+          
+            p
+          
+          
+            2
+          
+        
+        +
+        2
+        ‖
+        y
+        
+          ‖
+          
+            p
+          
+          
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle \|x+y\|_{p}^{2}+\|x-y\|_{p}^{2}=2\|x\|_{p}^{2}+2\|y\|_{p}^{2}.}
+  Substituting two distinct unit vectors for x and y directly shows that the identity is not true unless p = 2.
+Each ℓp is distinct, in that ℓp is a strict subset of ℓs whenever p < s; furthermore, ℓp is not linearly isomorphic to ℓs when p ≠ s.  In fact, by Pitt's theorem (Pitt 1936), every bounded linear operator from ℓs to ℓp is compact when p < s.  No such operator can be an isomorphism; and further, it cannot be an isomorphism on any infinite-dimensional subspace of ℓs, and is thus said to be strictly singular.
+If 1 < p < ∞, then the (continuous) dual space of ℓp is isometrically isomorphic to ℓq, where q is the Hölder conjugate of p: 1/p + 1/q = 1.  The specific isomorphism associates to an element x of ℓq the functional
+
+  
+    
+      
+        
+          L
+          
+            x
+          
+        
+        (
+        y
+        )
+        =
+        
+          ∑
+          
+            n
+          
+        
+        
+          x
+          
+            n
+          
+        
+        
+          y
+          
+            n
+          
+        
+      
+    
+    {\displaystyle L_{x}(y)=\sum _{n}x_{n}y_{n}}
+  for y in ℓp.  Hölder's inequality implies that Lx is a bounded linear functional on ℓp, and in fact
+
+  
+    
+      
+        
+          |
+        
+        
+          L
+          
+            x
+          
+        
+        (
+        y
+        )
+        
+          |
+        
+        ≤
+        ‖
+        x
+        
+          ‖
+          
+            q
+          
+        
+        
+        ‖
+        y
+        
+          ‖
+          
+            p
+          
+        
+      
+    
+    {\displaystyle |L_{x}(y)|\leq \|x\|_{q}\,\|y\|_{p}}
+  so that the operator norm satisfies
+
+  
+    
+      
+        ‖
+        
+          L
+          
+            x
+          
+        
+        
+          ‖
+          
+            (
+            
+              ℓ
+              
+                p
+              
+            
+            
+              )
+              
+                ∗
+              
+            
+          
+        
+        
+          
+            
+              
+                =
+              
+              
+                
+                  d
+                  e
+                  f
+                
+              
+            
+          
+        
+        
+          sup
+          
+            y
+            ∈
+            
+              ℓ
+              
+                p
+              
+            
+            ,
+            y
+            ≠
+            0
+          
+        
+        
+          
+            
+              
+                |
+              
+              
+                L
+                
+                  x
+                
+              
+              (
+              y
+              )
+              
+                |
+              
+            
+            
+              ‖
+              y
+              
+                ‖
+                
+                  p
+                
+              
+            
+          
+        
+        ≤
+        ‖
+        x
+        
+          ‖
+          
+            q
+          
+        
+        .
+      
+    
+    {\displaystyle \|L_{x}\|_{(\ell ^{p})^{*}}{\stackrel {\rm {def}}{=}}\sup _{y\in \ell ^{p},y\not =0}{\frac {|L_{x}(y)|}{\|y\|_{p}}}\leq \|x\|_{q}.}
+  In fact, taking y to be the element of ℓp with
+
+  
+    
+      
+        
+          y
+          
+            n
+          
+        
+        =
+        
+          
+            {
+            
+              
+                
+                  0
+                
+                
+                  
+                    
+                      
+                        i
+                        f
+                      
+                       
+                      
+                        x
+                        
+                          n
+                        
+                      
+                      =
+                      0
+                    
+                  
+                
+              
+              
+                
+                  
+                    x
+                    
+                      n
+                    
+                    
+                      −
+                      1
+                    
+                  
+                  
+                    |
+                  
+                  
+                    x
+                    
+                      n
+                    
+                  
+                  
+                    
+                      |
+                    
+                    
+                      q
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        i
+                        f
+                      
+                       
+                      
+                        x
+                        
+                          n
+                        
+                      
+                      ≠
+                      0
+                    
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle y_{n}={\begin{cases}0&{\rm {{if}\ x_{n}=0}}\\x_{n}^{-1}|x_{n}|^{q}&{\rm {{if}\ x_{n}\not =0}}\end{cases}}}
+  gives Lx(y) = ||x||q, so that in fact
+
+  
+    
+      
+        ‖
+        
+          L
+          
+            x
+          
+        
+        
+          ‖
+          
+            (
+            
+              ℓ
+              
+                p
+              
+            
+            
+              )
+              
+                ∗
+              
+            
+          
+        
+        =
+        ‖
+        x
+        
+          ‖
+          
+            q
+          
+        
+        .
+      
+    
+    {\displaystyle \|L_{x}\|_{(\ell ^{p})^{*}}=\|x\|_{q}.}
+  Conversely, given a bounded linear functional L on ℓp, the sequence defined by xn = L(en) lies in ℓq.  Thus the mapping 
+  
+    
+      
+        x
+        ↦
+        
+          L
+          
+            x
+          
+        
+      
+    
+    {\displaystyle x\mapsto L_{x}}
+   gives an isometry
+
+  
+    
+      
+        
+          κ
+          
+            q
+          
+        
+        :
+        
+          ℓ
+          
+            q
+          
+        
+        →
+        (
+        
+          ℓ
+          
+            p
+          
+        
+        
+          )
+          
+            ∗
+          
+        
+        .
+      
+    
+    {\displaystyle \kappa _{q}:\ell ^{q}\to (\ell ^{p})^{*}.}
+  The map
+
+  
+    
+      
+        
+          ℓ
+          
+            q
+          
+        
+        
+          
+            →
+            
+              
+                κ
+                
+                  q
+                
+              
+            
+          
+        
+        (
+        
+          ℓ
+          
+            p
+          
+        
+        
+          )
+          
+            ∗
+          
+        
+        
+          
+            →
+            
+              (
+              
+                κ
+                
+                  q
+                
+                
+                  ∗
+                
+              
+              
+                )
+                
+                  −
+                  1
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \ell ^{q}{\xrightarrow {\kappa _{q}}}(\ell ^{p})^{*}{\xrightarrow {(\kappa _{q}^{*})^{-1}}}}
+  obtained by composing κp with the inverse of its transpose coincides with the canonical injection of ℓq into its double dual.  As a consequence ℓq is a reflexive space. By abuse of notation, it is typical to identify ℓq with the dual of ℓp: (ℓp)* = ℓq.  Then reflexivity is understood by the sequence of identifications (ℓp)** = (ℓq)* = ℓp.
+The space c0 is defined as the space of all sequences converging to zero, with norm identical to  ||x||∞. It is a closed subspace of ℓ∞, hence a Banach space. The dual of c0 is ℓ1; the dual of ℓ1 is ℓ∞. For the case of natural numbers index set, the ℓp and c0 are separable, with the sole exception of ℓ∞.  The dual of ℓ∞ is the ba space.
+The spaces c0 and ℓp (for 1 ≤ p < ∞) have a canonical unconditional Schauder basis {ei | i = 1, 2,…}, where ei is the sequence which is zero but for a 1 in the ith entry.
+The space ℓ1 has the Schur property: In ℓ1, any sequence that is weakly convergent is also strongly convergent (Schur 1921).  However, since the weak topology on infinite-dimensional spaces is strictly weaker than the strong topology, there are nets in ℓ1 that are weak convergent but not strong convergent.
+The ℓp spaces can be embedded into many Banach spaces. The question of whether every infinite-dimensional Banach space contains an isomorph of some ℓp or of c0, was answered negatively by B. S. Tsirelson's construction of Tsirelson space in 1974.  The dual statement, that every separable Banach space is linearly isometric to a quotient space of ℓ1, was answered in the affirmative by Banach & Mazur (1933). That is, for every separable Banach space X, there exists a quotient map 
+  
+    
+      
+        Q
+        :
+        
+          ℓ
+          
+            1
+          
+        
+        →
+        X
+      
+    
+    {\displaystyle Q:\ell ^{1}\to X}
+  , so that X is isomorphic to 
+  
+    
+      
+        
+          ℓ
+          
+            1
+          
+        
+        
+          /
+        
+        ker
+        ⁡
+        Q
+      
+    
+    {\displaystyle \ell ^{1}/\ker Q}
+  .  In general, ker Q is not complemented in ℓ1, that is, there does not exist a subspace Y of ℓ1 such that 
+  
+    
+      
+        
+          ℓ
+          
+            1
+          
+        
+        =
+        Y
+        ⊕
+        ker
+        ⁡
+        Q
+      
+    
+    {\displaystyle \ell ^{1}=Y\oplus \ker Q}
+  . In fact, ℓ1 has uncountably many uncomplemented subspaces that are not isomorphic to one another (for example, take 
+  
+    
+      
+        X
+        =
+        
+          ℓ
+          
+            p
+          
+        
+      
+    
+    {\displaystyle X=\ell ^{p}}
+  ; since there are uncountably many such X 's, and since no ℓp is isomorphic to any other, there are thus uncountably many ker Q 's).
+Except for the trivial finite-dimensional case, an unusual feature of ℓp is that it is not polynomially reflexive.
+
+
+=== ℓp spaces are increasing in p ===
+For 
+  
+    
+      
+        p
+        ∈
+        [
+        1
+        ,
+        ∞
+        ]
+      
+    
+    {\displaystyle p\in [1,\infty ]}
+  , the spaces 
+  
+    
+      
+        
+          ℓ
+          
+            p
+          
+        
+      
+    
+    {\displaystyle \ell ^{p}}
+   are increasing in 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  , with the inclusion operator being continuous: for 
+  
+    
+      
+        1
+        ≤
+        p
+        <
+        q
+        ≤
+        ∞
+      
+    
+    {\displaystyle 1\leq p<q\leq \infty }
+  , one has 
+  
+    
+      
+        ‖
+        f
+        
+          ‖
+          
+            q
+          
+        
+        ≤
+        ‖
+        f
+        
+          ‖
+          
+            p
+          
+        
+      
+    
+    {\displaystyle \|f\|_{q}\leq \|f\|_{p}}
+  .  
+This follows from defining 
+  
+    
+      
+        F
+        :=
+        
+          
+            f
+            
+              ‖
+              f
+              
+                ‖
+                
+                  p
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle F:={\frac {f}{\|f\|_{p}}}}
+   for 
+  
+    
+      
+        f
+        ∈
+        
+          ℓ
+          
+            p
+          
+        
+      
+    
+    {\displaystyle f\in \ell ^{p}}
+  , and noting that 
+  
+    
+      
+        
+          |
+        
+        F
+        (
+        m
+        )
+        
+          |
+        
+        ≤
+        1
+      
+    
+    {\displaystyle |F(m)|\leq 1}
+   for all 
+  
+    
+      
+        m
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle m\in \mathbb {N} }
+  , which can be shown to imply 
+  
+    
+      
+        ‖
+        F
+        
+          ‖
+          
+            q
+          
+          
+            q
+          
+        
+        ≤
+        1
+      
+    
+    {\displaystyle \|F\|_{q}^{q}\leq 1}
+  .
+
+
+== See also ==
+Lp space
+Tsirelson space
+beta-dual space
+Orlicz sequence space
+
+
+== References ==
+Banach, S.; Mazur, S. (1933), "Zur Theorie der linearen Dimension", Studia Mathematica, 4: 100–112.
+Dunford, Nelson; Schwartz, Jacob T. (1958), Linear operators, volume I, Wiley-Interscience.
+Pitt, H.R. (1936), "A note on bilinear forms", J. London Math. Soc., 11 (3): 174–180, doi:10.1112/jlms/s1-11.3.174.
+Schur, J. (1921), "Über lineare Transformationen in der Theorie der unendlichen Reihen", Journal für die reine und angewandte Mathematik, 151: 79–111, doi:10.1515/crll.1921.151.79.

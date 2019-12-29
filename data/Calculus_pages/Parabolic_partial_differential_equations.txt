@@ -1,0 +1,883 @@
+A parabolic partial differential equation is a type of partial differential equation (PDE). Parabolic PDEs are used to describe a wide variety of time-dependent phenomena, including heat conduction, particle diffusion, and pricing of derivative investment instruments.
+
+
+== Definition ==
+To define the simplest kind of parabolic PDE, consider a real-valued function 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle u(x,y)}
+   of two independent real variables, 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  . A second-order, linear, constant-coefficient PDE for 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   takes the form
+
+  
+    
+      
+        A
+        
+          u
+          
+            x
+            x
+          
+        
+        +
+        2
+        B
+        
+          u
+          
+            x
+            y
+          
+        
+        +
+        C
+        
+          u
+          
+            y
+            y
+          
+        
+        +
+        D
+        
+          u
+          
+            x
+          
+        
+        +
+        E
+        
+          u
+          
+            y
+          
+        
+        +
+        F
+        =
+        0
+        ,
+      
+    
+    {\displaystyle Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_{x}+Eu_{y}+F=0,}
+  and this PDE is classified as being parabolic if the coefficients satisfy the condition
+
+  
+    
+      
+        
+          B
+          
+            2
+          
+        
+        −
+        A
+        C
+        =
+        0.
+      
+    
+    {\displaystyle B^{2}-AC=0.}
+  Usually 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   represents one-dimensional position and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+   represents time,
+and the PDE is solved subject to prescribed initial and boundary conditions.
+The name "parabolic" is used because the assumption on the coefficients is the same as the condition
+for the analytic geometry equation 
+  
+    
+      
+        A
+        
+          x
+          
+            2
+          
+        
+        +
+        2
+        B
+        x
+        y
+        +
+        C
+        
+          y
+          
+            2
+          
+        
+        +
+        D
+        x
+        +
+        E
+        y
+        +
+        F
+        =
+        0
+      
+    
+    {\displaystyle Ax^{2}+2Bxy+Cy^{2}+Dx+Ey+F=0}
+  
+to define a planar parabola.
+The basic example of a parabolic PDE is the one-dimensional heat equation,
+
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        α
+        
+        
+          u
+          
+            x
+            x
+          
+        
+        ,
+      
+    
+    {\displaystyle u_{t}=\alpha \,u_{xx},}
+  where 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        t
+        )
+      
+    
+    {\displaystyle u(x,t)}
+   is the temperature at time 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+   and at position 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   along a thin rod, and 
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+   is a positive constant (the thermal diffusivity). The symbol 
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+      
+    
+    {\displaystyle u_{t}}
+   signifies the partial derivative of 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   with respect to the time variable 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  , and similarly 
+  
+    
+      
+        
+          u
+          
+            x
+            x
+          
+        
+      
+    
+    {\displaystyle u_{xx}}
+   is the second partial derivative with respect to 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  . For this example, 
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+   plays the role of 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+   in the general second-order linear PDE:
+
+  
+    
+      
+        A
+        =
+        α
+      
+    
+    {\displaystyle A=\alpha }
+  , 
+  
+    
+      
+        E
+        =
+        −
+        1
+      
+    
+    {\displaystyle E=-1}
+  , and the other coefficients are zero.
+The heat equation says, roughly, that temperature at a given time and point rises or falls at a rate proportional to the difference between the temperature at that point and the average temperature near that point. The quantity 
+  
+    
+      
+        
+          u
+          
+            x
+            x
+          
+        
+      
+    
+    {\displaystyle u_{xx}}
+   measures how far off the temperature is from satisfying the mean value property of harmonic functions.
+The concept of a parabolic PDE can be generalized in several ways.
+For instance, the flow of heat through a material body is governed by the three-dimensional heat equation,
+
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        α
+        
+        Δ
+        u
+        ,
+      
+    
+    {\displaystyle u_{t}=\alpha \,\Delta u,}
+  where
+
+  
+    
+      
+        Δ
+        u
+        :=
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                x
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                y
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                ∂
+                
+                  2
+                
+              
+              u
+            
+            
+              ∂
+              
+                z
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Delta u:={\frac {\partial ^{2}u}{\partial x^{2}}}+{\frac {\partial ^{2}u}{\partial y^{2}}}+{\frac {\partial ^{2}u}{\partial z^{2}}}}
+  denotes the Laplace operator acting on 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+  .  This equation is the prototype of a multi-dimensional parabolic PDE.
+Noting that 
+  
+    
+      
+        −
+        Δ
+      
+    
+    {\displaystyle -\Delta }
+   is an elliptic operator suggests a broader definition of a parabolic PDE:
+
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        −
+        L
+        u
+        ,
+      
+    
+    {\displaystyle u_{t}=-Lu,}
+  where 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+   is a second-order elliptic operator
+(implying that 
+  
+    
+      
+        L
+      
+    
+    {\displaystyle L}
+   must be positive;
+a case where 
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        +
+        L
+        u
+      
+    
+    {\displaystyle u_{t}=+Lu}
+   is considered below).
+A system of partial differential equations for a vector 
+  
+    
+      
+        u
+      
+    
+    {\displaystyle u}
+   can also be parabolic.
+For example, such a system is hidden in an equation of the form
+
+  
+    
+      
+        ∇
+        ⋅
+        (
+        a
+        (
+        x
+        )
+        ∇
+        u
+        (
+        x
+        )
+        )
+        +
+        b
+        (
+        x
+        
+          )
+          
+            T
+          
+        
+        ∇
+        u
+        (
+        x
+        )
+        +
+        c
+        u
+        (
+        x
+        )
+        =
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle \nabla \cdot (a(x)\nabla u(x))+b(x)^{\text{T}}\nabla u(x)+cu(x)=f(x)}
+  if the matrix-valued function 
+  
+    
+      
+        a
+        (
+        x
+        )
+      
+    
+    {\displaystyle a(x)}
+   has a kernel of dimension 1.
+Parabolic PDEs can also be nonlinear.  For example, Fisher's equation is a nonlinear PDE that includes the same diffusion term as the heat equation but incorporates a linear growth term and a nonlinear decay term. 
+
+
+== Solution ==
+Under broad assumptions, an initial/boundary-value problem for a linear parabolic PDE has a solution for all time.
+The solution 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        t
+        )
+      
+    
+    {\displaystyle u(x,t)}
+  , as a function of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   for a fixed time 
+  
+    
+      
+        t
+        >
+        0
+      
+    
+    {\displaystyle t>0}
+  ,
+is generally smoother than the initial data 
+  
+    
+      
+        u
+        (
+        x
+        ,
+        0
+        )
+        =
+        
+          u
+          
+            0
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle u(x,0)=u_{0}(x)}
+  .
+For a nonlinear parabolic PDE, a solution of an initial/boundary-value problem
+might explode in a singularity within a finite amount of time.
+It can be difficult to determine whether a solution exists for all time, or to understand the singularities that do arise.
+Such interesting questions arise in the solution of the Poincaré conjecture via Ricci flow.
+
+
+== Backward parabolic equation ==
+One occasionally encounters a so-called backward parabolic PDE, which takes the form 
+  
+    
+      
+        
+          u
+          
+            t
+          
+        
+        =
+        L
+        u
+      
+    
+    {\displaystyle u_{t}=Lu}
+   (note the absence of a minus sign).
+An initial-value problem for the backward heat equation,
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  
+                    u
+                    
+                      t
+                    
+                  
+                  =
+                  −
+                  Δ
+                  u
+                
+                
+                  
+                    
+                      on
+                    
+                  
+                   
+                   
+                  Ω
+                  ×
+                  (
+                  0
+                  ,
+                  T
+                  )
+                  ,
+                
+              
+              
+                
+                  u
+                  =
+                  0
+                
+                
+                  
+                    
+                      on
+                    
+                  
+                   
+                   
+                  ∂
+                  Ω
+                  ×
+                  (
+                  0
+                  ,
+                  T
+                  )
+                  ,
+                
+              
+              
+                
+                  u
+                  =
+                  f
+                
+                
+                  
+                    
+                      on
+                    
+                  
+                   
+                   
+                  Ω
+                  ×
+                  
+                    {
+                    0
+                    }
+                  
+                  .
+                
+              
+            
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\begin{cases}u_{t}=-\Delta u&{\textrm {on}}\ \ \Omega \times (0,T),\\u=0&{\textrm {on}}\ \ \partial \Omega \times (0,T),\\u=f&{\textrm {on}}\ \ \Omega \times \left\{0\right\}.\end{cases}},}
+  is equivalent to a final-value problem for the ordinary heat equation,
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  
+                    u
+                    
+                      t
+                    
+                  
+                  =
+                  Δ
+                  u
+                
+                
+                  
+                    
+                      on
+                    
+                  
+                   
+                   
+                  Ω
+                  ×
+                  (
+                  0
+                  ,
+                  T
+                  )
+                  ,
+                
+              
+              
+                
+                  u
+                  =
+                  0
+                
+                
+                  
+                    
+                      on
+                    
+                  
+                   
+                   
+                  ∂
+                  Ω
+                  ×
+                  (
+                  0
+                  ,
+                  T
+                  )
+                  ,
+                
+              
+              
+                
+                  u
+                  =
+                  f
+                
+                
+                  
+                    
+                      on
+                    
+                  
+                   
+                   
+                  Ω
+                  ×
+                  
+                    {
+                    T
+                    }
+                  
+                  .
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}u_{t}=\Delta u&{\textrm {on}}\ \ \Omega \times (0,T),\\u=0&{\textrm {on}}\ \ \partial \Omega \times (0,T),\\u=f&{\textrm {on}}\ \ \Omega \times \left\{T\right\}.\end{cases}}}
+  An initial/boundary-value problem for a backward parabolic PDE is usually not well-posed
+(solutions often grow unbounded in finite time, or even fail to exist).
+Nonetheless, these problems are important for the study of the reflection of singularities of solutions to various other PDEs.
+
+Moreover, they arise in the pricing problem for certain financial instruments.
+
+
+== Examples ==
+Heat equation
+Mean curvature flow
+Ricci flow
+
+
+== See also ==
+Hyperbolic partial differential equation
+Elliptic partial differential equation
+Autowave
+
+
+== References ==
+
+Evans, Lawrence C. (2010) [1998], Partial differential equations (PDF), Graduate Studies in Mathematics, 19 (2nd ed.), Providence, R.I.: American Mathematical Society, doi:10.1090/gsm/019, ISBN 978-0-8218-4974-3, MR 2597943
+Hazewinkel, Michiel, ed. (2001) [1994], "Parabolic partial differential equation", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Hazewinkel, Michiel, ed. (2001) [1994], "Parabolic partial differential equation, numerical methods", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4

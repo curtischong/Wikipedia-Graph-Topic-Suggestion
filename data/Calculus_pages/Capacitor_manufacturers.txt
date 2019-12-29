@@ -1,0 +1,153 @@
+The capacitor plague was a problem related to a higher-than-expected failure rate of non-solid aluminum electrolytic capacitors, between 1999 and 2007, especially those from some Taiwanese manufacturers, due to faulty electrolyte composition that caused corrosion accompanied by gas generation, often rupturing the case of the capacitor from the build-up of pressure.
+High failure rates occurred in many well-known brands of electronics, and were particularly evident in motherboards, video cards, and power supplies of personal computers.
+
+
+== History ==
+
+
+=== First announcements ===
+Faulty capacitors have been a problem since capacitors' initial development, but the first flawed capacitors linked to Taiwanese raw material problems were reported by the specialist magazine Passive Component Industry in September 2002. Shortly thereafter, two mainstream electronics journals reported the discovery of widespread prematurely failing capacitors, from Taiwanese manufacturers, in motherboards.These publications informed engineers and other technically interested specialists, but the issue did not receive widespread public exposure until Carey Holzman published his experiences about "leaking capacitors" in the overclocking performance community.
+
+
+=== Public attention ===
+
+The news from the Holzman publication spread quickly on the Internet and in newspapers, partly due to the spectacular images of the failures — bulging or burst cans, expelled sealing rubber and leaking electrolyte on countless circuit boards. Many PC users were affected, and caused an avalanche of reports and comments on thousands of blogs and other web communities.The quick spread of the news also resulted in many misinformed users and blogs posting pictures of capacitors that had failed due to reasons other than faulty electrolyte.
+
+
+=== Prevalence ===
+Most of the affected capacitors were produced from 1999 to 2003 and failed between 2002 and 2005. Problems with capacitors produced with an incorrectly formulated electrolyte have affected equipment manufactured up to at least 2007.Major vendors of motherboards such as Abit, IBM, Dell, Apple, HP, and Intel were affected by capacitors with faulty electrolytes.
+In 2005, Dell spent some US$420 million replacing motherboards outright and on the logistics of determining whether a system was in need of replacement.Many other equipment manufacturers unknowingly assembled and sold boards with faulty capacitors, and as a result the effect of the capacitor plague could be seen in all kinds of devices worldwide.
+Because not all manufacturers had offered recalls or repairs, do-it-yourself repair instructions were written and published on the Internet.
+
+
+=== Responsibility ===
+In the November/December 2002 issue of Passive Component Industry, following its initial story about defective electrolyte, reported that some large Taiwanese manufacturers of electrolytic capacitors were denying responsibility for defective products.While industrial customers confirmed the failures, they were not able to trace the source of the faulty components. The defective capacitors were marked with previously unknown brands such as "Tayeh", "Choyo", or "Chhsi". The marks were not easily linked to familiar companies or product brands. Failed e-caps with well known brands may have had failures not related to defective electrolyte.
+The motherboard manufacturer ABIT Computer Corp. was the only affected manufacturer that publicly admitted to defective capacitors obtained from Taiwan capacitor makers being used in its products. However, the company would not reveal the name of the capacitor maker that supplied the faulty products.
+
+
+=== Industrial espionage ===
+A 2003 article in The Independent claimed that the cause of the faulty capacitors was in fact due to a mis-copied formula. In 2001, a scientist working in the Rubycon Corporation in Japan stole a mis-copied formula for capacitors' electrolytes. He had first worked for the Luminous Town Electric company in China. In the same year, the scientist's staff left China, stealing again the mis-copied formula and moving to Taiwan, where they would have created their own company, producing capacitors and propagating even more of this faulty formula of capacitor electrolytes.
+
+
+== Symptoms ==
+
+
+=== Common characteristics ===
+The non-solid aluminum electrolytic capacitors with improperly formulated electrolyte mostly belonged to the so-called "low equivalent series resistance (ESR)", "low impedance", or "high ripple current" e-cap series. The advantage of e-caps using an electrolyte composed of 70% water or more is, in particular, a low ESR, which allows a higher ripple current, and decreased production costs, water being the least costly material in a capacitor.
+
+
+=== Premature failure ===
+All electrolytic capacitors with non-solid electrolyte age over time, due to evaporation of the electrolyte. The capacitance usually decreases and the ESR usually increases. The normal lifespan of a non-solid electrolytic capacitor of consumer quality, typically rated at 2000 h/85 °C and operating at 40 °C, is roughly 6 years. It can be more than 10 years for a 1000 h/105 °C capacitor operating at 40 °C. Electrolytic capacitors that operate at a lower temperature can have a considerably longer lifespan.
+The capacitance should normally degrade to as low as 70% of the rated value, and the ESR increase to twice the rated value, over the normal life span of the component, before it should be considered as a "degradation failure". The life of an electrolytic capacitor with defective electrolyte can be as little as two years. The capacitor may fail prematurely after reaching approximately 30% to 50% of its expected lifetime.
+
+
+=== Electrical symptoms ===
+The electrical characteristics of a failed electrolytic capacitor with an open vent are the following:
+
+capacitance value decreases to below the rated value
+ESR increases to very high values.Electrolytic capacitors with an open vent are in the process of drying out, regardless of whether they have good or bad electrolyte. They always show low capacitance values and very high ohmic ESR values. Dry e-caps are therefore electrically useless.
+E-caps can fail without any visible symptoms. Since the electrical characteristics of electrolytic capacitors are the reason for their use, these parameters must be tested with instruments to definitively decide if the devices have failed. But even if the electrical parameters are out of their specifications, the assignment of failure to the electrolyte problem is not a certainty.
+Non-solid aluminum electrolytic capacitors without visible symptoms, which have improperly formulated electrolyte, typically show two electrical symptoms:
+
+relatively high and fluctuating leakage current
+increased capacitance value, up to twice the rated value, which fluctuates after heating and cooling of the capacitor body
+
+
+=== Visible symptoms ===
+
+When examining a failed electronic device, the failed capacitors can easily be recognized by clearly visible symptoms that include the following:
+Bulging of the vent on top of the capacitor. (The "vent" is stamped into the top of the casing of a can-shaped capacitor, forming a seam that is meant to split to relieve pressure build-up inside, preventing an explosion.)
+Broken or cracked vent, often accompanied with visible crusty rust-like brown or red dried electrolyte deposits.
+Capacitor casing sitting crooked on the circuit board, caused by the bottom rubber plug being pushed out, sometimes with electrolyte having leaked onto the motherboard from the base of the capacitor, visible as dark-brown or black surface deposits on the PCB. The leaked electrolyte can be confused with thick elastic glue sometimes used to secure the capacitors against shock. A dark brown or black crust up the side of a capacitor is invariably glue, not electrolyte. The glue itself is harmless.
+
+
+== Non-solid aluminum electrolytic capacitors ==
+
+The first electrolytic capacitor developed was an aluminum electrolytic capacitor with a liquid electrolyte, invented by Charles Pollak in 1896.  Modern electrolytic capacitors are based on the same fundamental design. After roughly 120 years of development billions of these inexpensive and reliable capacitors are used in electronic devices.
+
+
+=== Basic construction ===
+
+Aluminum electrolytic capacitors with non-solid electrolyte are generally called "electrolytic capacitors" or "e-caps". The components consist of two strips of aluminum foil, separated by a paper spacer, which is saturated with a liquid or gel-like electrolyte. One of the aluminum foil strips, called the anode, chemically roughened and oxidized in a process called forming, holds a very thin oxide layer on its surface as an electrical insulator serving as the dielectric of the capacitor. The liquid electrolyte, which is the cathode of the capacitor, covers the irregular surface of the oxide layer of the anode perfectly, and makes the increased anode surface effectual, thus increasing the effective capacitance.
+A second aluminum foil strip, called the "cathode foil", serves to make electrical contact with the electrolyte.  The spacer separates the foil strips to avoid direct metallic contact which would produce a short circuit. Lead wires are attached to both foils which are then rolled with the spacer into a wound cylinder which will fit inside an aluminum case or "can". The winding is impregnated with liquid electrolyte. This provides a reservoir of electrolyte to extend the lifetime of the capacitor. The assembly is inserted into an aluminum can and sealed with a plug. Aluminum electrolytic capacitors with non-solid electrolyte have grooves in the top of the case, forming a vent, which is designed to split open in the event of excessive gas pressure caused by heat, short circuit, or failing electrolyte.
+
+
+=== Forming the aluminum-oxide dielectric ===
+
+The aluminum foil used in non-solid aluminum electrolytic capacitors must have a purity of 99.99%. The foil is roughened by electrochemical etching to enlarge the effective capacitive surface.  This etched anode aluminum foil is oxidized (called forming). Forming creates a very thin oxide barrier layer on the anode surface.  This oxide layer is electrically insulating and serves as the dielectric of the capacitor. The forming takes place whenever a positive voltage is applied to the anode, and generates an oxide layer whose thickness varies according to the applied voltage.  This electrochemical behavior explains the self-healing mechanism of non-solid electrolytic capacitors.
+The normal process of oxide formation or self-healing is carried out in two reaction steps. First, a strongly exothermic reaction transforms metallic aluminum (Al) into aluminum hydroxide, Al(OH)3:
+
+2 Al + 6 H2O → 2 Al(OH)3 + 3 H2 ↑This reaction is accelerated by a high electric field and by high temperatures, and is accompanied by a pressure buildup in the capacitor housing, caused by the released hydrogen gas. The gel-like aluminum hydroxide Al(OH)3 (also called alumina trihydrate (ATH), aluminic hydroxide, aluminum(III) hydroxide, or hydrated alumina) is converted, via a second reaction step (usually slowly over a few hours at room temperature, more rapidly in a few minutes at higher temperatures), into the amorphous or crystalline form of aluminum oxide, Al2O3:
+
+2 Al(OH)3 → 2 AlO(OH) + 2 H2O → Al2O3 + 3 H2OThis oxide serves as dielectric and also protects the capacitor from the aggressive reactions of metallic aluminum to parts of the electrolyte. One problem of the forming or self-healing processes in non-solid aluminum electrolytics is that of corrosion, the electrolyte having to deliver enough oxygen to generate the oxide layer, with water, corrosive of aluminum, being the most efficient way.
+
+
+=== Electrolyte composition ===
+The name "electrolytic capacitor" derives from the electrolyte, the conductive liquid inside the capacitor. As a liquid it can conform to the etched and porous structure of the anode and the grown oxide layer, and form a "tailor-made" cathode.
+From an electrical point of view the electrolyte in an electrolytic capacitor is the actual cathode of the capacitor and must have good electrical conductivity, which is actually ion-conductivity in liquids. But it is also a chemical mixture of solvents with acid or alkali additives, which must be non-corrosive (chemically inert) so that the capacitor, whose inner components are made of aluminum, remains stable over its expected lifetime. In addition to the good conductivity of operating electrolytes, there are other requirements, including chemical stability, chemical compatibility with aluminum, and low cost. The electrolyte should also provide oxygen for the forming processes and self-healing. This diversity of requirements for the liquid electrolyte results in a broad variety of proprietary solutions, with thousands of patented electrolytes.
+Up to the mid 1990s electrolytes could be roughly placed into two main groups:
+
+electrolytes based on ethylene glycol and boric acid. In these so-called glycol or borax electrolytes, an unwanted chemical crystal water reaction occurs: "acid + alcohol gives ester + water". These borax electrolytes have been standard in electrolytic capacitors for a long time, and have a water content between 5 and 20%. They work up to a maximum temperature of 85 °C or 105 °C in the voltage range up to 600 V.
+almost anhydrous electrolytes based on organic solvents, such as dimethylformamide (DMF), dimethylacetamide (DMA), or γ-butyrolactone (GBL). These capacitors with organic-solvent electrolytes are suitable for temperatures ranging up to 105 °C, 125 °C, or 150 °C; have low leakage current values; and have very good long-term behavior.It was known that water is a very good solvent for low ohmic electrolytes. However, the corrosion problems linked to water hindered, up to that time, the use of it in amounts larger  than 20% of the electrolyte, the water-driven corrosion using the above-mentioned electrolytes being kept under control with chemical inhibitors that stabilize the oxide layer.
+
+
+== Water-based electrolyte capacitors ==
+In the 1990s a third class of electrolytes was developed by Japanese researchers.
+
+Water-based electrolytes, with up to 70% water, are relatively inexpensive and boast desirable characteristics such as low ESR and higher voltage handling. These electrolytic capacitors are typically labeled "low-impedance", "low-ESR", or "high-ripple-current" with voltage ratings up to 100 V, for low-cost mass-market applications.
+Despite these advantages, researchers faced several challenges during development of water-based electrolytic capacitors.
+Many of the poorly designed capacitors made it to mass market. The capacitor plague is due to faulty electrolytes of this type.
+
+
+=== Development of a water-based electrolyte ===
+At the beginning of the 1990s, some Japanese manufacturers started the development of a new, low-ohmic water-based class of electrolytes. Water, with its high permittivity of ε = 81, is a powerful solvent for electrolytes, and possesses high solubility for conductivity-enhancing concentrations of salt ions, resulting in significantly improved conductivity compared to electrolytes with organic solvents like GBL. But water will react quite aggressively and even violently with unprotected aluminum, converting metallic aluminum (Al) into aluminum hydroxide (Al(OH)3), via a highly exothermic reaction that gives off heat, causing gas expansion that can lead to an explosion of the capacitor. Therefore, the main problem in the development of water-based electrolytes is achieving long-term stability by hindering the corrosive action of water on aluminum.
+Normally the anode foil is covered by the dielectric aluminum oxide (Al2O3) layer, which protects the base aluminum metal against the aggressiveness of aqueous alkali solutions. However, some impurities or weak points in the oxide layer offer the possibility for water-driven anodic corrosion that forms aluminum hydroxide (Al(OH)3). In e-caps using an alkaline electrolyte this aluminum hydroxide will not be transformed into the desired stable form of aluminum oxide. The weak point remains and the anodic corrosion is ongoing. This corrosive process can be interrupted by protective substances in the electrolyte known as inhibitors or passivators. Inhibitors—such as chromates, phosphates, silicates, nitrates, fluorides, benzoates, soluble oils, and certain other chemicals—can reduce the anodic and cathodic corrosion reactions. However, if inhibitors are used in an insufficient amount, they tend to increase pitting.
+
+
+=== The water problem in non-solid aluminum electrolytic capacitors ===
+The aluminum oxide layer in the electrolytic capacitor is resistant to chemical attacks, as long as the pH value of the electrolyte is in the range of pH 4.5 to 8.5. However, the pH value of the electrolyte is ideally about 7 (neutral); and measurements carried out as early as the 1970s have shown that leakage current is increased, due to chemically induced defects, when the pH value deviates from this ideal value. It is known that water is extremely corrosive to pure aluminum and introduces chemical defects. It is further known that unprotected aluminum oxide dielectrics can be slightly dissolved by alkaline electrolytes, weakening the oxide layer.The fundamental issue of water-containing-electrolyte systems lies in the control of aggressiveness of the water towards metallic aluminum. This issue has dominated the development of electrolytic capacitors over many decades.  The first commercially used electrolytes in the mid-twentieth century were mixtures of ethylene glycol and boric acid. But even these glycol electrolytes had an unwanted chemical water-crystal reaction, according to the scheme: "acid + alcohol" → "ester + water". Thus, even in the first apparently water-free electrolytes, esterification reactions could generate a water content of up to 20 percent. These electrolytes had a voltage-dependent life span, because at higher voltages the leakage current based on the aggressiveness of the water would increase exponentially; and the associated increased consumption of electrolyte would lead to a faster drying out. Otherwise, the electrolyte has to deliver the oxygen for self-healing processes, and water is the best chemical substance to do that.
+
+
+=== Water-driven corrosion: aluminum hydroxide ===
+Attempt at a pictorial representation of the formation of aluminum hydroxidein a pore of a roughened electrolytic capacitor anode foil
+
+It is known that the "normal" course of building a stable aluminum oxide layer by the transformation of aluminum, through the intermediate step of aluminum hydroxide, can be interrupted by an excessively alkaline or basic electrolyte. For example, alkaline disruption of the chemistry of this reaction results instead in the following reaction:
+
+2 Al (s) + 2 NaOH (aq) + 6 H2O → 2 Na+ (aq) + 2[Al(OH)4]− (s) + 3 H2 (g)In this case, it may happen that the hydroxide formed in the first step becomes mechanically detached from the metallic aluminum surface and will not be transformed into the desired stable form of aluminum oxide. The initial self-healing process for building a new oxide layer is prevented by a defect or a weak dielectric point, and generated hydrogen gas escapes into the capacitor. Then, at the weak point, further formation of aluminum hydroxide is started, and prevented from converting into stable aluminum oxide. The self-healing of the oxide layer inside the electrolytic capacitor can't take place. However, reactions do not come to a standstill, as more and more hydroxide grows in the pores of the anode foil, and the first reaction step produces more and more hydrogen gas in the can, increasing the pressure.
+
+
+=== Manufacturing for market ===
+The Japanese manufacturer Rubycon became a leader in the development of new water-based electrolyte systems with enhanced conductivity in the late 1990s. After several years of development, researchers led by Shigeru Uzawa had found a mixture of inhibitors that suppressed the aluminum hydration. In 1998, Rubycon announced two series, ZL and ZA, of the first production capacitors using an electrolyte with a water content of about 40%, which were suitable for temperatures ranging from −40 °C (−40 °F; 233 K) to 105 °C (221 °F; 378 K). Later, electrolytes were developed to work with water of up to 70% by weight. Other manufacturers, such as NCC, Nichicon, and Elna followed with their own products a short time later.
+The improved conductivity of the new electrolyte can be seen by comparing two capacitors, both of which have a nominal capacitance of 1000 µF at 16 V rated voltage, in a package with a diameter of 10 mm and a height of 20 mm. The capacitors of the Rubycon YXG series are provided with an electrolyte based on an organic solvent and can attain an impedance of 46 mΩ when loaded with a ripple current of 1400 mA. ZL series capacitors with the new water-based electrolyte can attain an impedance of 23 mΩ with a ripple current of 1820 mA, an overall improvement of 30%.
+The new type of capacitor was called "Low-ESR" or "Low-Impedance", "Ultra-Low-Impedance" or "High-Ripple Current" series in the data sheets. The highly competitive market in digital data technology and high-efficiency power supplies rapidly adopted these new components because of their improved performance. Furthermore, by improving the conductivity of the electrolyte, capacitors not only can withstand a higher ripple current rating, they are much cheaper to produce since water is much cheaper than other solvents. Better performance and low cost drove widespread adoption of the new capacitors for high volume products such as PCs, LCD screens, and power supplies.
+
+
+== Investigation ==
+
+
+=== Implications of industrial espionage ===
+Industrial espionage was implicated in the capacitor plague, in connection with the theft of an electrolyte formula. A materials scientist working for Rubycon in Japan left the company, taking the secret water-based electrolyte formula for Rubycon's ZA and ZL series capacitors, and began working for a Chinese company. The scientist then developed a copy of this electrolyte. Then, some staff members who defected from the Chinese company copied an incomplete version of the formula and began to market it to many of the aluminium electrolytic manufacturers in Taiwan, undercutting the prices of the Japanese manufacturers. This incomplete electrolyte lacked important proprietary ingredients which were essential to the long-term stability of the capacitors and was unstable when packaged in a finished aluminum capacitor. This faulty electrolyte allowed the unimpeded formation of hydroxide and produced hydrogen gas.There are no known public court proceedings related to alleged theft of electrolyte formulas. However, one independent laboratory analysis of defective capacitors has shown that many of the premature failures appear to be associated with high water content and missing inhibitors in the electrolyte, as described below.
+
+
+=== Incomplete electrolyte formula ===
+Unimpeded formation of hydroxide (hydration) and associated hydrogen gas production, occurring during "capacitor plague" or "bad capacitors" incidents involving the failure of large numbers of aluminum electrolytic capacitors, has been demonstrated by two researchers at the Center for Advanced Life Cycle Engineering of the University of Maryland who analyzed the failed capacitors.The two scientists initially determined, by ion chromatography and mass spectrometry, that there was hydrogen gas present in failed capacitors, leading to bulging of the capacitor's case or bursting of the vent. Thus it was proved that the oxidation takes place in accordance with the first step of aluminum oxide formation.
+Because it has been customary in electrolytic capacitors to bind the excess hydrogen by  using reducing or depolarizing compounds, such as aromatic nitrogen compounds or amines, to relieve the resulting pressure, the researchers then searched for compounds of this type. Although the analysis methods were very sensitive in detecting such pressure-relieving compounds, no traces of such agents were found within the failed capacitors.
+In capacitors in which the internal pressure build-up was so great that the capacitor case was already bulging but the vent had not opened yet, the pH value of the electrolyte could be measured. The electrolyte of the faulty Taiwanese capacitors was alkaline, with a pH of between 7 and 8. Good comparable Japanese capacitors had an electrolyte that was acidic, with a pH of around 4. As it is known that aluminum can be dissolved by alkaline liquids, but not that which is mildly acidic, an energy dispersive X-ray spectroscopy (EDX or EDS) fingerprint analysis of the electrolyte of the faulty capacitors was made, which detected dissolved aluminum in the electrolyte.
+To protect the metallic aluminum against the aggressiveness of the water, some phosphate compounds, known as inhibitors or passivators, can be used to produce long-term stable capacitors with high-aqueous electrolytes. Phosphate compounds are mentioned in patents regarding electrolytic capacitors with aqueous electrolytic systems. Since phosphate ions were missing and the electrolyte was also alkaline in the investigated Taiwanese electrolytes, the capacitor evidently lacked any protection against water damage, and the formation of more-stable alumina oxides was inhibited. Therefore, only aluminum hydroxide was generated.
+The results of chemical analysis were confirmed by measuring electrical capacitance and leakage current in a long-term test lasting 56 days. Due to the chemical corrosion, the oxide layer of these capacitors had been weakened, so after a short time the capacitance and the leakage current increased briefly, before dropping abruptly when gas pressure opened the vent. The report of Hillman and Helmold proved that the cause of the failed capacitors was a faulty electrolyte mixture used by the Taiwanese manufacturers, which lacked the necessary chemical ingredients to ensure the correct pH of the electrolyte over time, for long-term stability of the electrolytic capacitors. Their further conclusion, that the electrolyte with its alkaline pH value had the fatal flaw of a continual buildup of hydroxide without its being converted into the stable oxide, was verified on the surface of the anode foil both photographically and with an EDX-fingerprint analysis of the chemical components.
+
+
+== See also ==
+RKM code
+
+
+== References ==
+
+
+== Further reading ==
+H. Kaesche, Die Korrosion der Metalle - Physikalisch-chemische Prinzipien und aktuelle Probleme, Springer-Verlag, Berlin, 2011, ISBN 978-3-642-18427-7
+C.  Vargel, Corrosion of Aluminium, 1st Edition, 02 Oct 2004, Elsevier Science, Print Book ISBN 978-0-08-044495-6, eBook ISBN 978-0-08-047236-2
+W. J. Bernard, J. J. Randall Jr., The Reaction between Anodic Aluminum Oxide and Water, 1961 ECS - The Electrochemical Society [13]
+Ch. Vargel, M. Jacques, M. P. Schmidt, Corrosion of Aluminium, 2004 Elsevier B.V., ISBN 978-0-08-044495-6
+Patnaik, P. (2002). Handbook of Inorganic Chemicals. McGraw-Hill. ISBN 0-07-049439-8.
+Wiberg, E. and Holleman, A. F. (2001). Inorganic Chemistry. Elsevier. ISBN 0-12-352651-5

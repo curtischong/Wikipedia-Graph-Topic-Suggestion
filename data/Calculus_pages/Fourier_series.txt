@@ -1,0 +1,9723 @@
+In mathematics, a Fourier series () is a periodic function composed of harmonically related sinusoids, combined by a weighted summation.  With appropriate weights, one cycle (or period) of the summation can be made to approximate an arbitrary function in that interval (or the entire function if it too is periodic).  As such, the summation is a synthesis of another function.  The discrete-time Fourier transform is an example of Fourier series.  The process of deriving the weights that describe a given function is a form of Fourier analysis.  For functions on unbounded intervals, the analysis and synthesis analogies are Fourier transform and inverse transform.
+
+
+== History ==
+
+The Fourier series is named in honour of Jean-Baptiste Joseph Fourier (1768–1830), who made important contributions to the study of trigonometric series, after preliminary investigations by Leonhard Euler, Jean le Rond d'Alembert, and Daniel Bernoulli. Fourier introduced the series for the purpose of solving the heat equation in a metal plate, publishing his initial results in his 1807 Mémoire sur la propagation de la chaleur dans les corps solides (Treatise on the propagation of heat in solid bodies), and publishing his Théorie analytique de la chaleur (Analytical theory of heat) in 1822. The Mémoire introduced Fourier analysis, specifically Fourier series. Through Fourier's research the fact was established that an arbitrary (continuous) function can be represented by a trigonometric series. The first announcement of this great discovery was made by Fourier in 1807, before the French Academy.  Early ideas of decomposing a periodic function into the sum of simple oscillating functions date back to the 3rd century BC, when ancient astronomers proposed an empiric model of planetary motions, based on deferents and epicycles.
+The heat equation is a partial differential equation. Prior to Fourier's work, no solution to the heat equation was known in the general case, although particular solutions were known if the heat source behaved in a simple way, in particular, if the heat source was a sine or cosine wave. These simple solutions are now sometimes called eigensolutions. Fourier's idea was to model a complicated heat source as a superposition (or linear combination) of simple sine and cosine waves, and to write the solution as a superposition of the corresponding eigensolutions. This superposition or linear combination is called the Fourier series.
+From a modern point of view, Fourier's results are somewhat informal, due to the lack of a precise notion of function and integral in the early nineteenth century. Later, Peter Gustav Lejeune Dirichlet and Bernhard Riemann expressed Fourier's results with greater precision and formality.
+Although the original motivation was to solve the heat equation, it later became obvious that the same techniques could be applied to a wide array of mathematical and physical problems, and especially those involving linear differential equations with constant coefficients, for which the eigensolutions are sinusoids.  The Fourier series has many such applications in electrical engineering, vibration analysis, acoustics, optics, signal processing, image processing, quantum mechanics, econometrics, thin-walled shell theory, etc.
+
+
+== Definition ==
+Consider a real-valued function, 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+  , that is integrable on an interval of length 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  , which will be the period of the Fourier series. Common examples of analysis intervals are:
+
+  
+    
+      
+        x
+        ∈
+        [
+        0
+        ,
+        1
+        ]
+        ,
+      
+    
+    {\displaystyle x\in [0,1],}
+   and 
+  
+    
+      
+        P
+        =
+        1.
+      
+    
+    {\displaystyle P=1.}
+  
+
+  
+    
+      
+        x
+        ∈
+        [
+        −
+        π
+        ,
+        π
+        ]
+        ,
+      
+    
+    {\displaystyle x\in [-\pi ,\pi ],}
+   and 
+  
+    
+      
+        P
+        =
+        2
+        π
+        .
+      
+    
+    {\displaystyle P=2\pi .}
+  The analysis process determines the weights, indexed by integer 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  , which is also the number of cycles of the 
+  
+    
+      
+        
+          n
+          
+            th
+          
+        
+      
+    
+    {\displaystyle n^{\text{th}}}
+   harmonic in the analysis interval.  Therefore, the length of a cycle, in the units of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , is 
+  
+    
+      
+        P
+        
+          /
+        
+        n
+      
+    
+    {\displaystyle P/n}
+  . And the corresponding harmonic frequency is 
+  
+    
+      
+        n
+        
+          /
+        
+        P
+      
+    
+    {\displaystyle n/P}
+  . The 
+  
+    
+      
+        
+          n
+          
+            t
+            h
+          
+        
+      
+    
+    {\displaystyle n^{th}}
+   harmonics are 
+  
+    
+      
+        sin
+        ⁡
+        
+          (
+          
+            2
+            π
+            x
+            
+              
+                
+                  n
+                  P
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \sin \left(2\pi x{\tfrac {n}{P}}\right)}
+   and 
+  
+    
+      
+        cos
+        ⁡
+        
+          (
+          
+            2
+            π
+            x
+            
+              
+                
+                  n
+                  P
+                
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \cos \left(2\pi x{\tfrac {n}{P}}\right)}
+  , and their amplitudes (weights) are found by integration over the interval of length 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  :
+
+If 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   is 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  -periodic, then any interval of that length is sufficient.
+
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+      
+    
+    {\displaystyle a_{0}}
+   and 
+  
+    
+      
+        
+          b
+          
+            0
+          
+        
+      
+    
+    {\displaystyle b_{0}}
+   can be reduced to 
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        =
+        
+          
+            2
+            P
+          
+        
+        
+          ∫
+          
+            P
+          
+        
+        s
+        (
+        x
+        )
+        
+        d
+        x
+      
+    
+    {\displaystyle a_{0}={\frac {2}{P}}\int _{P}s(x)\,dx}
+   and 
+  
+    
+      
+        
+          b
+          
+            0
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle b_{0}=0}
+  .
+Many texts choose 
+  
+    
+      
+        P
+        =
+        2
+        π
+      
+    
+    {\displaystyle P=2\pi }
+   to simplify the argument of the sinusoid functions.The synthesis process (the actual Fourier series) is:
+
+In general, integer 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+   is theoretically infinite.  Even so, the series might not converge or exactly equate to 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   at all values of 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   (such as a single-point discontinuity) in the analysis interval. For the "well-behaved" functions typical of physical processes, equality is customarily assumed.
+
+Using a trigonometric identity:
+
+  
+    
+      
+        
+          A
+          
+            n
+          
+        
+        ⋅
+        cos
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+            −
+            
+              φ
+              
+                n
+              
+            
+          
+          )
+        
+         
+        ≡
+         
+        
+          
+            
+              
+                
+                  A
+                  
+                    n
+                  
+                
+                cos
+                ⁡
+                (
+                
+                  φ
+                  
+                    n
+                  
+                
+                )
+              
+              ⏟
+            
+          
+          
+            
+              a
+              
+                n
+              
+            
+          
+        
+        ⋅
+        cos
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  2
+                  π
+                  n
+                  x
+                
+                P
+              
+            
+          
+          )
+        
+        +
+        
+          
+            
+              
+                
+                  A
+                  
+                    n
+                  
+                
+                sin
+                ⁡
+                (
+                
+                  φ
+                  
+                    n
+                  
+                
+                )
+              
+              ⏟
+            
+          
+          
+            
+              b
+              
+                n
+              
+            
+          
+        
+        ⋅
+        sin
+        ⁡
+        
+          (
+          
+            
+              
+                
+                  2
+                  π
+                  n
+                  x
+                
+                P
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle A_{n}\cdot \cos \left({\tfrac {2\pi nx}{P}}-\varphi _{n}\right)\ \equiv \ \underbrace {A_{n}\cos(\varphi _{n})} _{a_{n}}\cdot \cos \left({\tfrac {2\pi nx}{P}}\right)+\underbrace {A_{n}\sin(\varphi _{n})} _{b_{n}}\cdot \sin \left({\tfrac {2\pi nx}{P}}\right),}
+  and definitions 
+  
+    
+      
+        
+          A
+          
+            n
+          
+        
+        ≜
+        
+          
+            
+              a
+              
+                n
+              
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                n
+              
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle A_{n}\triangleq {\sqrt {a_{n}^{2}+b_{n}^{2}}}}
+   and 
+  
+    
+      
+        
+          φ
+          
+            n
+          
+        
+        ≜
+        arctan2
+        ⁡
+        (
+        
+          b
+          
+            n
+          
+        
+        ,
+        
+          a
+          
+            n
+          
+        
+        )
+      
+    
+    {\displaystyle \varphi _{n}\triangleq \operatorname {arctan2} (b_{n},a_{n})}
+  ,
+the sine and cosine pairs can be expressed as a single sinusoid with a phase offset, analogous to the conversion between orthogonal (Cartesian) and polar coordinates:
+
+The customary form for generalizing to complex-valued 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   (next section) is obtained using Euler's formula to split the cosine function into complex exponentials.  Here, complex conjugation is denoted by an asterisk:
+
+  
+    
+      
+        
+          
+            
+              
+                cos
+                ⁡
+                
+                  (
+                  
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            n
+                            x
+                          
+                          P
+                        
+                      
+                    
+                    −
+                    
+                      φ
+                      
+                        n
+                      
+                    
+                  
+                  )
+                
+              
+              
+                
+
+                
+                ≡
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  e
+                  
+                    i
+                    
+                      (
+                      
+                        
+                          
+                            
+                              
+                                2
+                                π
+                                n
+                                x
+                              
+                              P
+                            
+                          
+                        
+                        −
+                        
+                          φ
+                          
+                            n
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+              
+                
+
+                
+                +
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    
+                      (
+                      
+                        
+                          
+                            
+                              
+                                2
+                                π
+                                n
+                                x
+                              
+                              P
+                            
+                          
+                        
+                        −
+                        
+                          φ
+                          
+                            n
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+            
+            
+              
+              
+                =
+                
+                  (
+                  
+                    
+                      
+                        
+                          1
+                          2
+                        
+                      
+                    
+                    
+                      e
+                      
+                        −
+                        i
+                        
+                          φ
+                          
+                            n
+                          
+                        
+                      
+                    
+                  
+                  )
+                
+                ⋅
+                
+                  e
+                  
+                    i
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            (
+                            +
+                            n
+                            )
+                            x
+                          
+                          P
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+
+                
+                +
+                
+                  
+                    (
+                    
+                      
+                        
+                          
+                            1
+                            2
+                          
+                        
+                      
+                      
+                        e
+                        
+                          −
+                          i
+                          
+                            φ
+                            
+                              n
+                            
+                          
+                        
+                      
+                    
+                    )
+                  
+                  
+                    ∗
+                  
+                
+                ⋅
+                
+                  e
+                  
+                    i
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            (
+                            −
+                            n
+                            )
+                            x
+                          
+                          P
+                        
+                      
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{lll}\cos \left({\tfrac {2\pi nx}{P}}-\varphi _{n}\right)&{}\equiv {\tfrac {1}{2}}e^{i\left({\tfrac {2\pi nx}{P}}-\varphi _{n}\right)}&{}+{\tfrac {1}{2}}e^{-i\left({\tfrac {2\pi nx}{P}}-\varphi _{n}\right)}\\&=\left({\tfrac {1}{2}}e^{-i\varphi _{n}}\right)\cdot e^{i{\tfrac {2\pi (+n)x}{P}}}&{}+\left({\tfrac {1}{2}}e^{-i\varphi _{n}}\right)^{*}\cdot e^{i{\tfrac {2\pi (-n)x}{P}}}.\end{array}}}
+  Therefore, with definitions:
+
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+        ≜
+        
+          {
+          
+            
+              
+                
+                  
+                    A
+                    
+                      0
+                    
+                  
+                  
+                    /
+                  
+                  2
+                
+                
+                  =
+                  
+                    a
+                    
+                      0
+                    
+                  
+                  
+                    /
+                  
+                  2
+                  ,
+                  
+                
+                
+                  n
+                  =
+                  0
+                
+              
+              
+                
+                  
+                    
+                      
+                        
+                          A
+                          
+                            n
+                          
+                        
+                        2
+                      
+                    
+                  
+                  
+                    e
+                    
+                      −
+                      i
+                      
+                        φ
+                        
+                          n
+                        
+                      
+                    
+                  
+                
+                
+                  =
+                  
+                    
+                      
+                        1
+                        2
+                      
+                    
+                  
+                  (
+                  
+                    a
+                    
+                      n
+                    
+                  
+                  −
+                  i
+                  
+                    b
+                    
+                      n
+                    
+                  
+                  )
+                  ,
+                  
+                
+                
+                  n
+                  >
+                  0
+                
+              
+              
+                
+                  
+                    c
+                    
+                      
+                        |
+                      
+                      n
+                      
+                        |
+                      
+                    
+                    
+                      ∗
+                    
+                  
+                  ,
+                  
+                
+                
+                
+                  n
+                  <
+                  0
+                
+              
+            
+          
+          }
+        
+        
+        =
+        
+        
+          
+            1
+            P
+          
+        
+        
+          ∫
+          
+            P
+          
+        
+        s
+        (
+        x
+        )
+        ⋅
+        
+          e
+          
+            −
+            i
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+          
+        
+         
+        d
+        x
+        ,
+      
+    
+    {\displaystyle c_{n}\triangleq \left\{{\begin{array}{lll}A_{0}/2&=a_{0}/2,\quad &n=0\\{\tfrac {A_{n}}{2}}e^{-i\varphi _{n}}&={\tfrac {1}{2}}(a_{n}-ib_{n}),\quad &n>0\\c_{|n|}^{*},\quad &&n<0\end{array}}\right\}\quad =\quad {\frac {1}{P}}\int _{P}s(x)\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx,}
+  the final result is:
+
+
+=== Complex-valued functions ===
+If 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   is a complex-valued function of a real variable 
+  
+    
+      
+        x
+        ,
+      
+    
+    {\displaystyle x,}
+   both components (real and imaginary part) are real-valued functions that can be represented by a Fourier series. The two sets of coefficients and the partial sum are given by:
+
+  
+    
+      
+        
+          c
+          
+            
+              
+              
+                R
+                n
+              
+            
+          
+        
+        =
+        
+          
+            1
+            P
+          
+        
+        
+          ∫
+          
+            P
+          
+        
+        Re
+        ⁡
+        {
+        s
+        (
+        x
+        )
+        }
+        ⋅
+        
+          e
+          
+            −
+            i
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+          
+        
+         
+        d
+        x
+      
+    
+    {\displaystyle c_{_{Rn}}={\frac {1}{P}}\int _{P}\operatorname {Re} \{s(x)\}\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx}
+       and     
+  
+    
+      
+        
+          c
+          
+            
+              
+              
+                I
+                n
+              
+            
+          
+        
+        =
+        
+          
+            1
+            P
+          
+        
+        
+          ∫
+          
+            P
+          
+        
+        Im
+        ⁡
+        {
+        s
+        (
+        x
+        )
+        }
+        ⋅
+        
+          e
+          
+            −
+            i
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+          
+        
+         
+        d
+        x
+      
+    
+    {\displaystyle c_{_{In}}={\frac {1}{P}}\int _{P}\operatorname {Im} \{s(x)\}\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx}
+  
+  
+    
+      
+        
+          s
+          
+            N
+          
+        
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          c
+          
+            
+              
+              
+                R
+                n
+              
+            
+          
+        
+        ⋅
+        
+          e
+          
+            i
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+          
+        
+        +
+        i
+        ⋅
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          c
+          
+            
+              
+              
+                I
+                n
+              
+            
+          
+        
+        ⋅
+        
+          e
+          
+            i
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+          
+        
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          (
+          
+            
+              c
+              
+                
+                  
+                  
+                    R
+                    n
+                  
+                
+              
+            
+            +
+            i
+            ⋅
+            
+              c
+              
+                
+                  
+                  
+                    I
+                    n
+                  
+                
+              
+            
+          
+          )
+        
+        ⋅
+        
+          e
+          
+            i
+            
+              
+                
+                  
+                    2
+                    π
+                    n
+                    x
+                  
+                  P
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle s_{N}(x)=\sum _{n=-N}^{N}c_{_{Rn}}\cdot e^{i{\tfrac {2\pi nx}{P}}}+i\cdot \sum _{n=-N}^{N}c_{_{In}}\cdot e^{i{\tfrac {2\pi nx}{P}}}=\sum _{n=-N}^{N}\left(c_{_{Rn}}+i\cdot c_{_{In}}\right)\cdot e^{i{\tfrac {2\pi nx}{P}}}.}
+  Defining 
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+        ≜
+        
+          c
+          
+            
+              
+              
+                R
+                n
+              
+            
+          
+        
+        +
+        i
+        ⋅
+        
+          c
+          
+            
+              
+              
+                I
+                n
+              
+            
+          
+        
+      
+    
+    {\displaystyle c_{n}\triangleq c_{_{Rn}}+i\cdot c_{_{In}}}
+   yields:
+
+This is identical to Eq.4 except 
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{n}}
+   and 
+  
+    
+      
+        
+          c
+          
+            −
+            n
+          
+        
+      
+    
+    {\displaystyle c_{-n}}
+   are no longer complex conjugates. The formula for 
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{n}}
+   is also unchanged:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  c
+                  
+                    n
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    P
+                  
+                
+                
+                  ∫
+                  
+                    P
+                  
+                
+                Re
+                ⁡
+                {
+                s
+                (
+                x
+                )
+                }
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            n
+                            x
+                          
+                          P
+                        
+                      
+                    
+                  
+                
+                 
+                d
+                x
+                +
+                i
+                ⋅
+                
+                  
+                    1
+                    P
+                  
+                
+                
+                  ∫
+                  
+                    P
+                  
+                
+                Im
+                ⁡
+                {
+                s
+                (
+                x
+                )
+                }
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            n
+                            x
+                          
+                          P
+                        
+                      
+                    
+                  
+                
+                 
+                d
+                x
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    P
+                  
+                
+                
+                  ∫
+                  
+                    P
+                  
+                
+                
+                  (
+                  
+                    Re
+                    ⁡
+                    {
+                    s
+                    (
+                    x
+                    )
+                    }
+                    +
+                    i
+                    ⋅
+                    Im
+                    ⁡
+                    {
+                    s
+                    (
+                    x
+                    )
+                    }
+                  
+                  )
+                
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            n
+                            x
+                          
+                          P
+                        
+                      
+                    
+                  
+                
+                 
+                d
+                x
+                 
+                =
+                 
+                
+                  
+                    1
+                    P
+                  
+                
+                
+                  ∫
+                  
+                    P
+                  
+                
+                s
+                (
+                x
+                )
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    
+                      
+                        
+                          
+                            2
+                            π
+                            n
+                            x
+                          
+                          P
+                        
+                      
+                    
+                  
+                
+                 
+                d
+                x
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}c_{n}&={\frac {1}{P}}\int _{P}\operatorname {Re} \{s(x)\}\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx+i\cdot {\frac {1}{P}}\int _{P}\operatorname {Im} \{s(x)\}\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx\\[4pt]&={\frac {1}{P}}\int _{P}\left(\operatorname {Re} \{s(x)\}+i\cdot \operatorname {Im} \{s(x)\}\right)\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx\ =\ {\frac {1}{P}}\int _{P}s(x)\cdot e^{-i{\tfrac {2\pi nx}{P}}}\ dx.\end{aligned}}}
+  
+
+
+=== Other common notations ===
+The notation 
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle c_{n}}
+   is inadequate for discussing the Fourier coefficients of several different functions.  Therefore, it is customarily replaced by a modified form of the function (
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+  , in this case), such as 
+  
+    
+      
+        
+          
+            
+              s
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\hat {s}}(n)}
+   or 
+  
+    
+      
+        S
+        [
+        n
+        ]
+      
+    
+    {\displaystyle S[n]}
+  , and functional notation often replaces subscripting:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  s
+                  
+                    ∞
+                  
+                
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    −
+                    ∞
+                  
+                  
+                    ∞
+                  
+                
+                
+                  
+                    
+                      s
+                      ^
+                    
+                  
+                
+                (
+                n
+                )
+                ⋅
+                
+                  e
+                  
+                    i
+                    
+                    2
+                    π
+                    n
+                    x
+                    
+                      /
+                    
+                    P
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    −
+                    ∞
+                  
+                  
+                    ∞
+                  
+                
+                S
+                [
+                n
+                ]
+                ⋅
+                
+                  e
+                  
+                    j
+                    
+                    2
+                    π
+                    n
+                    x
+                    
+                      /
+                    
+                    P
+                  
+                
+              
+              
+              
+                
+                  
+                    
+                      c
+                      o
+                      m
+                      m
+                      o
+                      n
+                       
+                      e
+                      n
+                      g
+                      i
+                      n
+                      e
+                      e
+                      r
+                      i
+                      n
+                      g
+                       
+                      n
+                      o
+                      t
+                      a
+                      t
+                      i
+                      o
+                      n
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}s_{\infty }(x)&=\sum _{n=-\infty }^{\infty }{\hat {s}}(n)\cdot e^{i\,2\pi nx/P}\\[6pt]&=\sum _{n=-\infty }^{\infty }S[n]\cdot e^{j\,2\pi nx/P}&&\scriptstyle {\mathsf {common\ engineering\ notation}}\end{aligned}}}
+  In engineering, particularly when the variable 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   represents time, the coefficient sequence is called a frequency domain representation. Square brackets are often used to emphasize that the domain of this function is a discrete set of frequencies.
+Another commonly used frequency domain representation uses the Fourier series coefficients to modulate a Dirac comb:
+
+  
+    
+      
+        S
+        (
+        f
+        )
+         
+        ≜
+         
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        S
+        [
+        n
+        ]
+        ⋅
+        δ
+        
+          (
+          
+            f
+            −
+            
+              
+                n
+                P
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle S(f)\ \triangleq \ \sum _{n=-\infty }^{\infty }S[n]\cdot \delta \left(f-{\frac {n}{P}}\right),}
+  where 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   represents a continuous frequency domain.  When variable 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   has units of seconds, 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   has units of hertz.  The "teeth" of the comb are spaced at multiples (i.e. harmonics) of 
+  
+    
+      
+        1
+        
+          /
+        
+        P
+      
+    
+    {\displaystyle 1/P}
+  , which is called the fundamental frequency.  
+  
+    
+      
+        
+          s
+          
+            ∞
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle s_{\infty }(x)}
+    can be recovered from this representation by an inverse Fourier transform:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  
+                    
+                      F
+                    
+                  
+                  
+                    −
+                    1
+                  
+                
+                {
+                S
+                (
+                f
+                )
+                }
+              
+              
+                
+                =
+                
+                  ∫
+                  
+                    −
+                    ∞
+                  
+                  
+                    ∞
+                  
+                
+                
+                  (
+                  
+                    
+                      ∑
+                      
+                        n
+                        =
+                        −
+                        ∞
+                      
+                      
+                        ∞
+                      
+                    
+                    S
+                    [
+                    n
+                    ]
+                    ⋅
+                    δ
+                    
+                      (
+                      
+                        f
+                        −
+                        
+                          
+                            n
+                            P
+                          
+                        
+                      
+                      )
+                    
+                  
+                  )
+                
+                
+                  e
+                  
+                    i
+                    2
+                    π
+                    f
+                    x
+                  
+                
+                
+                d
+                f
+                ,
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    −
+                    ∞
+                  
+                  
+                    ∞
+                  
+                
+                S
+                [
+                n
+                ]
+                ⋅
+                
+                  ∫
+                  
+                    −
+                    ∞
+                  
+                  
+                    ∞
+                  
+                
+                δ
+                
+                  (
+                  
+                    f
+                    −
+                    
+                      
+                        n
+                        P
+                      
+                    
+                  
+                  )
+                
+                
+                  e
+                  
+                    i
+                    2
+                    π
+                    f
+                    x
+                  
+                
+                
+                d
+                f
+                ,
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    n
+                    =
+                    −
+                    ∞
+                  
+                  
+                    ∞
+                  
+                
+                S
+                [
+                n
+                ]
+                ⋅
+                
+                  e
+                  
+                    i
+                    
+                    2
+                    π
+                    n
+                    x
+                    
+                      /
+                    
+                    P
+                  
+                
+                 
+                 
+                ≜
+                 
+                
+                  s
+                  
+                    ∞
+                  
+                
+                (
+                x
+                )
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}{\mathcal {F}}^{-1}\{S(f)\}&=\int _{-\infty }^{\infty }\left(\sum _{n=-\infty }^{\infty }S[n]\cdot \delta \left(f-{\frac {n}{P}}\right)\right)e^{i2\pi fx}\,df,\\[6pt]&=\sum _{n=-\infty }^{\infty }S[n]\cdot \int _{-\infty }^{\infty }\delta \left(f-{\frac {n}{P}}\right)e^{i2\pi fx}\,df,\\[6pt]&=\sum _{n=-\infty }^{\infty }S[n]\cdot e^{i\,2\pi nx/P}\ \ \triangleq \ s_{\infty }(x).\end{aligned}}}
+  The constructed function 
+  
+    
+      
+        S
+        (
+        f
+        )
+      
+    
+    {\displaystyle S(f)}
+   is therefore commonly referred to as a Fourier transform, even though the Fourier integral of a periodic function is not convergent at the harmonic frequencies.
+
+
+== Convergence ==
+
+In engineering applications, the Fourier series is generally presumed to converge everywhere except at discontinuities, since the functions encountered in engineering are more well behaved than the ones that mathematicians can provide as counter-examples to this presumption.  In particular, if 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+   is continuous and the derivative of 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   (which may not exist everywhere) is square integrable, then the Fourier series of 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+   converges absolutely and uniformly to 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+  .  If a function is square-integrable on the interval 
+  
+    
+      
+        [
+        
+          x
+          
+            0
+          
+        
+        ,
+        
+          x
+          
+            0
+          
+        
+        +
+        P
+        ]
+      
+    
+    {\displaystyle [x_{0},x_{0}+P]}
+  , then the Fourier series converges to the function at almost every point. Convergence of Fourier series also depends on the finite number of maxima  and minima in a function which is popularly known as one of the Dirichlet's condition for Fourier series. See Convergence of Fourier series.  It is possible to define Fourier coefficients for more general functions or distributions, in such cases convergence in norm or weak convergence is usually of interest.
+
+		
+		
+
+
+== Examples ==
+
+
+=== Example 1: a simple Fourier series ===
+
+We now use the formula above to give a Fourier series expansion of a very simple function. Consider a sawtooth wave
+
+  
+    
+      
+        s
+        (
+        x
+        )
+        =
+        
+          
+            x
+            π
+          
+        
+        ,
+        
+        
+          f
+          o
+          r
+        
+        −
+        π
+        <
+        x
+        <
+        π
+        ,
+      
+    
+    {\displaystyle s(x)={\frac {x}{\pi }},\quad \mathrm {for} -\pi <x<\pi ,}
+  
+
+  
+    
+      
+        s
+        (
+        x
+        +
+        2
+        π
+        k
+        )
+        =
+        s
+        (
+        x
+        )
+        ,
+        
+        
+          f
+          o
+          r
+        
+        −
+        π
+        <
+        x
+        <
+        π
+        
+           and 
+        
+        k
+        ∈
+        
+          Z
+        
+        .
+      
+    
+    {\displaystyle s(x+2\pi k)=s(x),\quad \mathrm {for} -\pi <x<\pi {\text{ and }}k\in \mathbb {Z} .}
+  In this case, the Fourier coefficients are given by
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  
+                    n
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    π
+                  
+                
+                
+                  ∫
+                  
+                    −
+                    π
+                  
+                  
+                    π
+                  
+                
+                s
+                (
+                x
+                )
+                cos
+                ⁡
+                (
+                n
+                x
+                )
+                
+                d
+                x
+                =
+                0
+                ,
+                
+                n
+                ≥
+                0.
+              
+            
+            
+              
+                
+                  b
+                  
+                    n
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    π
+                  
+                
+                
+                  ∫
+                  
+                    −
+                    π
+                  
+                  
+                    π
+                  
+                
+                s
+                (
+                x
+                )
+                sin
+                ⁡
+                (
+                n
+                x
+                )
+                
+                d
+                x
+              
+            
+            
+              
+              
+                
+                =
+                −
+                
+                  
+                    2
+                    
+                      π
+                      n
+                    
+                  
+                
+                cos
+                ⁡
+                (
+                n
+                π
+                )
+                +
+                
+                  
+                    2
+                    
+                      
+                        π
+                        
+                          2
+                        
+                      
+                      
+                        n
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                sin
+                ⁡
+                (
+                n
+                π
+                )
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    
+                      2
+                      
+                      (
+                      −
+                      1
+                      
+                        )
+                        
+                          n
+                          +
+                          1
+                        
+                      
+                    
+                    
+                      π
+                      n
+                    
+                  
+                
+                ,
+                
+                n
+                ≥
+                1.
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}a_{n}&={\frac {1}{\pi }}\int _{-\pi }^{\pi }s(x)\cos(nx)\,dx=0,\quad n\geq 0.\\[4pt]b_{n}&={\frac {1}{\pi }}\int _{-\pi }^{\pi }s(x)\sin(nx)\,dx\\[4pt]&=-{\frac {2}{\pi n}}\cos(n\pi )+{\frac {2}{\pi ^{2}n^{2}}}\sin(n\pi )\\[4pt]&={\frac {2\,(-1)^{n+1}}{\pi n}},\quad n\geq 1.\end{aligned}}}
+  It can be proven that Fourier series converges to 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   at every point 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   where 
+  
+    
+      
+        s
+      
+    
+    {\displaystyle s}
+   is differentiable, and therefore:
+
+When 
+  
+    
+      
+        x
+        =
+        π
+      
+    
+    {\displaystyle x=\pi }
+  , the Fourier series converges to 0, which is the half-sum of the left- and right-limit of s at 
+  
+    
+      
+        x
+        =
+        π
+      
+    
+    {\displaystyle x=\pi }
+  .  This is a particular instance of the Dirichlet theorem for Fourier series.
+
+This example leads us to a solution to the Basel problem.
+
+
+=== Example 2: Fourier's motivation ===
+The Fourier series expansion of our function in Example 1 looks more complicated than the simple formula 
+  
+    
+      
+        s
+        (
+        x
+        )
+        =
+        x
+        
+          /
+        
+        π
+      
+    
+    {\displaystyle s(x)=x/\pi }
+  , so it is not immediately apparent why one would need the Fourier series. While there are many applications, Fourier's motivation was in solving the heat equation. For example, consider a metal plate in the shape of a square whose side measures 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+   meters, with coordinates 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        ∈
+        [
+        0
+        ,
+        π
+        ]
+        ×
+        [
+        0
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle (x,y)\in [0,\pi ]\times [0,\pi ]}
+  . If there is no heat source within the plate, and if three of the four sides are held at 0 degrees Celsius, while the fourth side, given by 
+  
+    
+      
+        y
+        =
+        π
+      
+    
+    {\displaystyle y=\pi }
+  , is maintained at the temperature gradient 
+  
+    
+      
+        T
+        (
+        x
+        ,
+        π
+        )
+        =
+        x
+      
+    
+    {\displaystyle T(x,\pi )=x}
+   degrees Celsius, for 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   in 
+  
+    
+      
+        (
+        0
+        ,
+        π
+        )
+      
+    
+    {\displaystyle (0,\pi )}
+  , then one can show that the stationary heat distribution (or the heat distribution after a long period of time has elapsed) is given by
+
+  
+    
+      
+        T
+        (
+        x
+        ,
+        y
+        )
+        =
+        2
+        
+          ∑
+          
+            n
+            =
+            1
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                  +
+                  1
+                
+              
+            
+            n
+          
+        
+        sin
+        ⁡
+        (
+        n
+        x
+        )
+        
+          
+            
+              sinh
+              ⁡
+              (
+              n
+              y
+              )
+            
+            
+              sinh
+              ⁡
+              (
+              n
+              π
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle T(x,y)=2\sum _{n=1}^{\infty }{\frac {(-1)^{n+1}}{n}}\sin(nx){\sinh(ny) \over \sinh(n\pi )}.}
+  Here, sinh is the hyperbolic sine function. This solution of the heat equation is obtained by multiplying each term of  Eq.7 by 
+  
+    
+      
+        sinh
+        ⁡
+        (
+        n
+        y
+        )
+        
+          /
+        
+        sinh
+        ⁡
+        (
+        n
+        π
+        )
+      
+    
+    {\displaystyle \sinh(ny)/\sinh(n\pi )}
+  . While our example function 
+  
+    
+      
+        s
+        (
+        x
+        )
+      
+    
+    {\displaystyle s(x)}
+   seems to have a needlessly complicated Fourier series, the heat distribution 
+  
+    
+      
+        T
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle T(x,y)}
+   is nontrivial. The function 
+  
+    
+      
+        T
+      
+    
+    {\displaystyle T}
+   cannot be written as a closed-form expression. This method of solving the heat problem was made possible by Fourier's work.
+
+
+=== Other applications ===
+Another application of this Fourier series is to solve the Basel problem by using Parseval's theorem. The example generalizes and one may compute ζ(2n), for any positive integer n.
+
+
+== Beginnings ==
+This immediately gives any coefficient ak of the trigonometrical series for φ(y) for any function which has such an expansion. It works because if φ has such an expansion, then (under suitable convergence assumptions) the integral
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  a
+                  
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  ∫
+                  
+                    −
+                    1
+                  
+                  
+                    1
+                  
+                
+                φ
+                (
+                y
+                )
+                cos
+                ⁡
+                (
+                2
+                k
+                +
+                1
+                )
+                
+                  
+                    
+                      π
+                      y
+                    
+                    2
+                  
+                
+                
+                d
+                y
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∫
+                  
+                    −
+                    1
+                  
+                  
+                    1
+                  
+                
+                
+                  (
+                  
+                    a
+                    cos
+                    ⁡
+                    
+                      
+                        
+                          π
+                          y
+                        
+                        2
+                      
+                    
+                    cos
+                    ⁡
+                    (
+                    2
+                    k
+                    +
+                    1
+                    )
+                    
+                      
+                        
+                          π
+                          y
+                        
+                        2
+                      
+                    
+                    +
+                    
+                      a
+                      ′
+                    
+                    cos
+                    ⁡
+                    3
+                    
+                      
+                        
+                          π
+                          y
+                        
+                        2
+                      
+                    
+                    cos
+                    ⁡
+                    (
+                    2
+                    k
+                    +
+                    1
+                    )
+                    
+                      
+                        
+                          π
+                          y
+                        
+                        2
+                      
+                    
+                    +
+                    ⋯
+                  
+                  )
+                
+                
+                d
+                y
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}a_{k}&=\int _{-1}^{1}\varphi (y)\cos(2k+1){\frac {\pi y}{2}}\,dy\\&=\int _{-1}^{1}\left(a\cos {\frac {\pi y}{2}}\cos(2k+1){\frac {\pi y}{2}}+a'\cos 3{\frac {\pi y}{2}}\cos(2k+1){\frac {\pi y}{2}}+\cdots \right)\,dy\end{aligned}}}
+  can be carried out term-by-term.  But all terms involving 
+  
+    
+      
+        cos
+        ⁡
+        (
+        2
+        j
+        +
+        1
+        )
+        
+          
+            
+              π
+              y
+            
+            2
+          
+        
+        cos
+        ⁡
+        (
+        2
+        k
+        +
+        1
+        )
+        
+          
+            
+              π
+              y
+            
+            2
+          
+        
+      
+    
+    {\displaystyle \cos(2j+1){\frac {\pi y}{2}}\cos(2k+1){\frac {\pi y}{2}}}
+   for j ≠ k vanish when integrated from −1 to 1, leaving only the kth term.
+In these few lines, which are close to the modern formalism used in Fourier series, Fourier revolutionized both mathematics and physics. Although similar trigonometric series were previously used by Euler, d'Alembert, Daniel Bernoulli and Gauss, Fourier believed that such trigonometric series could represent any arbitrary function.  In what sense that is actually true is a somewhat subtle issue and the attempts over many years to clarify this idea have led to important discoveries in the theories of convergence, function spaces, and harmonic analysis.
+When Fourier submitted a later competition essay in 1811, the committee (which included Lagrange, Laplace, Malus and Legendre, among others) concluded: ...the manner in which the author arrives at these equations is not exempt of difficulties and...his analysis to integrate them still leaves something to be desired on the score of generality and even rigour.
+
+
+=== Birth of harmonic analysis ===
+Since Fourier's time, many different approaches to defining and understanding the concept of Fourier series have been discovered, all of which are consistent with one another, but each of which emphasizes different aspects of the topic.  Some of the more powerful and elegant approaches are based on mathematical ideas and tools that were not available at the time Fourier completed his original work. Fourier originally defined the Fourier series for real-valued functions of real arguments, and using the sine and cosine functions as the basis set for the decomposition.
+Many other Fourier-related transforms have since been defined, extending the initial idea to other applications. This general area of inquiry is now sometimes called harmonic analysis. A Fourier series, however, can be used only for periodic functions, or for functions on a bounded (compact) interval.
+
+
+== Extensions ==
+
+
+=== Fourier series on a square ===
+We can also define the Fourier series for functions of two variables 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+   in the square 
+  
+    
+      
+        [
+        −
+        π
+        ,
+        π
+        ]
+        ×
+        [
+        −
+        π
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle [-\pi ,\pi ]\times [-\pi ,\pi ]}
+  :
+
+  
+    
+      
+        
+          
+            
+              
+                f
+                (
+                x
+                ,
+                y
+                )
+              
+              
+                
+                =
+                
+                  ∑
+                  
+                    j
+                    ,
+                    k
+                    
+                    ∈
+                    
+                    
+                      Z
+                    
+                    
+                       (integers)
+                    
+                  
+                
+                
+                  c
+                  
+                    j
+                    ,
+                    k
+                  
+                
+                
+                  e
+                  
+                    i
+                    j
+                    x
+                  
+                
+                
+                  e
+                  
+                    i
+                    k
+                    y
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  c
+                  
+                    j
+                    ,
+                    k
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      4
+                      
+                        π
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    −
+                    π
+                  
+                  
+                    π
+                  
+                
+                
+                  ∫
+                  
+                    −
+                    π
+                  
+                  
+                    π
+                  
+                
+                f
+                (
+                x
+                ,
+                y
+                )
+                
+                  e
+                  
+                    −
+                    i
+                    j
+                    x
+                  
+                
+                
+                  e
+                  
+                    −
+                    i
+                    k
+                    y
+                  
+                
+                
+                d
+                x
+                
+                d
+                y
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}f(x,y)&=\sum _{j,k\,\in \,\mathbb {Z} {\text{ (integers)}}}c_{j,k}e^{ijx}e^{iky},\\[5pt]c_{j,k}&={1 \over 4\pi ^{2}}\int _{-\pi }^{\pi }\int _{-\pi }^{\pi }f(x,y)e^{-ijx}e^{-iky}\,dx\,dy.\end{aligned}}}
+  Aside from being useful for solving partial differential equations such as the heat equation, one notable application of Fourier series on the square is in image compression. In particular, the jpeg image compression standard uses the two-dimensional discrete cosine transform, which is a Fourier transform using the cosine basis functions.
+
+
+=== Fourier series of Bravais-lattice-periodic-function ===
+The three-dimensional Bravais lattice is defined as the set of vectors of the form:
+
+  
+    
+      
+        
+          R
+        
+        =
+        
+          n
+          
+            1
+          
+        
+        
+          
+            a
+          
+          
+            1
+          
+        
+        +
+        
+          n
+          
+            2
+          
+        
+        
+          
+            a
+          
+          
+            2
+          
+        
+        +
+        
+          n
+          
+            3
+          
+        
+        
+          
+            a
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbf {R} =n_{1}\mathbf {a} _{1}+n_{2}\mathbf {a} _{2}+n_{3}\mathbf {a} _{3}}
+  where 
+  
+    
+      
+        
+          n
+          
+            i
+          
+        
+      
+    
+    {\displaystyle n_{i}}
+   are integers and 
+  
+    
+      
+        
+          
+            a
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \mathbf {a} _{i}}
+   are three linearly independent vectors. Assuming we have some function, 
+  
+    
+      
+        f
+        (
+        
+          r
+        
+        )
+      
+    
+    {\displaystyle f(\mathbf {r} )}
+  , such that it obeys the following condition for any Bravais lattice vector 
+  
+    
+      
+        
+          R
+        
+        :
+        f
+        (
+        
+          r
+        
+        )
+        =
+        f
+        (
+        
+          R
+        
+        +
+        
+          r
+        
+        )
+      
+    
+    {\displaystyle \mathbf {R} :f(\mathbf {r} )=f(\mathbf {R} +\mathbf {r} )}
+  , we could make a Fourier series of it. This kind of function can be, for example, the effective potential that one electron "feels" inside a periodic crystal. It is useful to make a Fourier series of the potential then when applying Bloch's theorem. First, we may write any arbitrary vector 
+  
+    
+      
+        
+          r
+        
+      
+    
+    {\displaystyle \mathbf {r} }
+   in the coordinate-system of the lattice:
+
+  
+    
+      
+        
+          r
+        
+        =
+        
+          x
+          
+            1
+          
+        
+        
+          
+            
+              
+                a
+              
+              
+                1
+              
+            
+            
+              a
+              
+                1
+              
+            
+          
+        
+        +
+        
+          x
+          
+            2
+          
+        
+        
+          
+            
+              
+                a
+              
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          x
+          
+            3
+          
+        
+        
+          
+            
+              
+                a
+              
+              
+                3
+              
+            
+            
+              a
+              
+                3
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {r} =x_{1}{\frac {\mathbf {a} _{1}}{a_{1}}}+x_{2}{\frac {\mathbf {a} _{2}}{a_{2}}}+x_{3}{\frac {\mathbf {a} _{3}}{a_{3}}},}
+  where 
+  
+    
+      
+        
+          a
+          
+            i
+          
+        
+        ≜
+        
+          |
+        
+        
+          
+            a
+          
+          
+            i
+          
+        
+        
+          |
+        
+        .
+      
+    
+    {\displaystyle a_{i}\triangleq |\mathbf {a} _{i}|.}
+  
+Thus we can define a new function,
+
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        ≜
+        f
+        (
+        
+          r
+        
+        )
+        =
+        f
+        
+          (
+          
+            
+              x
+              
+                1
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                2
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                3
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    3
+                  
+                
+                
+                  a
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})\triangleq f(\mathbf {r} )=f\left(x_{1}{\frac {\mathbf {a} _{1}}{a_{1}}}+x_{2}{\frac {\mathbf {a} _{2}}{a_{2}}}+x_{3}{\frac {\mathbf {a} _{3}}{a_{3}}}\right).}
+  This new function, 
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})}
+  , is now a function of three-variables, each of which has periodicity a1, a2, a3 respectively:
+
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        +
+        
+          a
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        +
+        
+          a
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        +
+        
+          a
+          
+            3
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})=g(x_{1}+a_{1},x_{2},x_{3})=g(x_{1},x_{2}+a_{2},x_{3})=g(x_{1},x_{2},x_{3}+a_{3}).}
+  If we write a series for g on the interval [0, a1] for x1, we can define the following:
+
+  
+    
+      
+        
+          h
+          
+            
+              o
+              n
+              e
+            
+          
+        
+        (
+        
+          m
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        ≜
+        
+          
+            1
+            
+              a
+              
+                1
+              
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            
+              a
+              
+                1
+              
+            
+          
+        
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        ⋅
+        
+          e
+          
+            −
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            
+              x
+              
+                1
+              
+            
+          
+        
+        
+        d
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle h^{\mathrm {one} }(m_{1},x_{2},x_{3})\triangleq {\frac {1}{a_{1}}}\int _{0}^{a_{1}}g(x_{1},x_{2},x_{3})\cdot e^{-i2\pi {\frac {m_{1}}{a_{1}}}x_{1}}\,dx_{1}}
+  And then we can write:
+
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        
+          ∑
+          
+            
+              m
+              
+                1
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          h
+          
+            
+              o
+              n
+              e
+            
+          
+        
+        (
+        
+          m
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            
+              x
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})=\sum _{m_{1}=-\infty }^{\infty }h^{\mathrm {one} }(m_{1},x_{2},x_{3})\cdot e^{i2\pi {\frac {m_{1}}{a_{1}}}x_{1}}}
+  Further defining:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  h
+                  
+                    
+                      t
+                      w
+                      o
+                    
+                  
+                
+                (
+                
+                  m
+                  
+                    1
+                  
+                
+                ,
+                
+                  m
+                  
+                    2
+                  
+                
+                ,
+                
+                  x
+                  
+                    3
+                  
+                
+                )
+              
+              
+                
+                ≜
+                
+                  
+                    1
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  h
+                  
+                    
+                      o
+                      n
+                      e
+                    
+                  
+                
+                (
+                
+                  m
+                  
+                    1
+                  
+                
+                ,
+                
+                  x
+                  
+                    2
+                  
+                
+                ,
+                
+                  x
+                  
+                    3
+                  
+                
+                )
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    2
+                    π
+                    
+                      
+                        
+                          m
+                          
+                            2
+                          
+                        
+                        
+                          a
+                          
+                            2
+                          
+                        
+                      
+                    
+                    
+                      x
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                d
+                
+                  x
+                  
+                    2
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                d
+                
+                  x
+                  
+                    2
+                  
+                
+                
+                  
+                    1
+                    
+                      a
+                      
+                        1
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        1
+                      
+                    
+                  
+                
+                d
+                
+                  x
+                  
+                    1
+                  
+                
+                g
+                (
+                
+                  x
+                  
+                    1
+                  
+                
+                ,
+                
+                  x
+                  
+                    2
+                  
+                
+                ,
+                
+                  x
+                  
+                    3
+                  
+                
+                )
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    2
+                    π
+                    
+                      (
+                      
+                        
+                          
+                            
+                              m
+                              
+                                1
+                              
+                            
+                            
+                              a
+                              
+                                1
+                              
+                            
+                          
+                        
+                        
+                          x
+                          
+                            1
+                          
+                        
+                        +
+                        
+                          
+                            
+                              m
+                              
+                                2
+                              
+                            
+                            
+                              a
+                              
+                                2
+                              
+                            
+                          
+                        
+                        
+                          x
+                          
+                            2
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}h^{\mathrm {two} }(m_{1},m_{2},x_{3})&\triangleq {\frac {1}{a_{2}}}\int _{0}^{a_{2}}h^{\mathrm {one} }(m_{1},x_{2},x_{3})\cdot e^{-i2\pi {\frac {m_{2}}{a_{2}}}x_{2}}\,dx_{2}\\[12pt]&={\frac {1}{a_{2}}}\int _{0}^{a_{2}}dx_{2}{\frac {1}{a_{1}}}\int _{0}^{a_{1}}dx_{1}g(x_{1},x_{2},x_{3})\cdot e^{-i2\pi \left({\frac {m_{1}}{a_{1}}}x_{1}+{\frac {m_{2}}{a_{2}}}x_{2}\right)}\end{aligned}}}
+  We can write 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   once again as:
+
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        
+          ∑
+          
+            
+              m
+              
+                1
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          ∑
+          
+            
+              m
+              
+                2
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          h
+          
+            
+              t
+              w
+              o
+            
+          
+        
+        (
+        
+          m
+          
+            1
+          
+        
+        ,
+        
+          m
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            
+              x
+              
+                1
+              
+            
+          
+        
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            
+              x
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})=\sum _{m_{1}=-\infty }^{\infty }\sum _{m_{2}=-\infty }^{\infty }h^{\mathrm {two} }(m_{1},m_{2},x_{3})\cdot e^{i2\pi {\frac {m_{1}}{a_{1}}}x_{1}}\cdot e^{i2\pi {\frac {m_{2}}{a_{2}}}x_{2}}}
+  Finally applying the same for the third coordinate, we define:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  h
+                  
+                    
+                      t
+                      h
+                      r
+                      e
+                      e
+                    
+                  
+                
+                (
+                
+                  m
+                  
+                    1
+                  
+                
+                ,
+                
+                  m
+                  
+                    2
+                  
+                
+                ,
+                
+                  m
+                  
+                    3
+                  
+                
+                )
+              
+              
+                
+                ≜
+                
+                  
+                    1
+                    
+                      a
+                      
+                        3
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        3
+                      
+                    
+                  
+                
+                
+                  h
+                  
+                    
+                      t
+                      w
+                      o
+                    
+                  
+                
+                (
+                
+                  m
+                  
+                    1
+                  
+                
+                ,
+                
+                  m
+                  
+                    2
+                  
+                
+                ,
+                
+                  x
+                  
+                    3
+                  
+                
+                )
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    2
+                    π
+                    
+                      
+                        
+                          m
+                          
+                            3
+                          
+                        
+                        
+                          a
+                          
+                            3
+                          
+                        
+                      
+                    
+                    
+                      x
+                      
+                        3
+                      
+                    
+                  
+                
+                
+                d
+                
+                  x
+                  
+                    3
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      a
+                      
+                        3
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        3
+                      
+                    
+                  
+                
+                d
+                
+                  x
+                  
+                    3
+                  
+                
+                
+                  
+                    1
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                d
+                
+                  x
+                  
+                    2
+                  
+                
+                
+                  
+                    1
+                    
+                      a
+                      
+                        1
+                      
+                    
+                  
+                
+                
+                  ∫
+                  
+                    0
+                  
+                  
+                    
+                      a
+                      
+                        1
+                      
+                    
+                  
+                
+                d
+                
+                  x
+                  
+                    1
+                  
+                
+                g
+                (
+                
+                  x
+                  
+                    1
+                  
+                
+                ,
+                
+                  x
+                  
+                    2
+                  
+                
+                ,
+                
+                  x
+                  
+                    3
+                  
+                
+                )
+                ⋅
+                
+                  e
+                  
+                    −
+                    i
+                    2
+                    π
+                    
+                      (
+                      
+                        
+                          
+                            
+                              m
+                              
+                                1
+                              
+                            
+                            
+                              a
+                              
+                                1
+                              
+                            
+                          
+                        
+                        
+                          x
+                          
+                            1
+                          
+                        
+                        +
+                        
+                          
+                            
+                              m
+                              
+                                2
+                              
+                            
+                            
+                              a
+                              
+                                2
+                              
+                            
+                          
+                        
+                        
+                          x
+                          
+                            2
+                          
+                        
+                        +
+                        
+                          
+                            
+                              m
+                              
+                                3
+                              
+                            
+                            
+                              a
+                              
+                                3
+                              
+                            
+                          
+                        
+                        
+                          x
+                          
+                            3
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}h^{\mathrm {three} }(m_{1},m_{2},m_{3})&\triangleq {\frac {1}{a_{3}}}\int _{0}^{a_{3}}h^{\mathrm {two} }(m_{1},m_{2},x_{3})\cdot e^{-i2\pi {\frac {m_{3}}{a_{3}}}x_{3}}\,dx_{3}\\[12pt]&={\frac {1}{a_{3}}}\int _{0}^{a_{3}}dx_{3}{\frac {1}{a_{2}}}\int _{0}^{a_{2}}dx_{2}{\frac {1}{a_{1}}}\int _{0}^{a_{1}}dx_{1}g(x_{1},x_{2},x_{3})\cdot e^{-i2\pi \left({\frac {m_{1}}{a_{1}}}x_{1}+{\frac {m_{2}}{a_{2}}}x_{2}+{\frac {m_{3}}{a_{3}}}x_{3}\right)}\end{aligned}}}
+  We write 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   as:
+
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        
+          ∑
+          
+            
+              m
+              
+                1
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          ∑
+          
+            
+              m
+              
+                2
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          ∑
+          
+            
+              m
+              
+                3
+              
+            
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          h
+          
+            
+              t
+              h
+              r
+              e
+              e
+            
+          
+        
+        (
+        
+          m
+          
+            1
+          
+        
+        ,
+        
+          m
+          
+            2
+          
+        
+        ,
+        
+          m
+          
+            3
+          
+        
+        )
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            
+              x
+              
+                1
+              
+            
+          
+        
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            
+              x
+              
+                2
+              
+            
+          
+        
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              
+                
+                  m
+                  
+                    3
+                  
+                
+                
+                  a
+                  
+                    3
+                  
+                
+              
+            
+            
+              x
+              
+                3
+              
+            
+          
+        
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})=\sum _{m_{1}=-\infty }^{\infty }\sum _{m_{2}=-\infty }^{\infty }\sum _{m_{3}=-\infty }^{\infty }h^{\mathrm {three} }(m_{1},m_{2},m_{3})\cdot e^{i2\pi {\frac {m_{1}}{a_{1}}}x_{1}}\cdot e^{i2\pi {\frac {m_{2}}{a_{2}}}x_{2}}\cdot e^{i2\pi {\frac {m_{3}}{a_{3}}}x_{3}}}
+  Re-arranging:
+
+  
+    
+      
+        g
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          x
+          
+            2
+          
+        
+        ,
+        
+          x
+          
+            3
+          
+        
+        )
+        =
+        
+          ∑
+          
+            
+              m
+              
+                1
+              
+            
+            ,
+            
+              m
+              
+                2
+              
+            
+            ,
+            
+              m
+              
+                3
+              
+            
+            ∈
+            
+              Z
+            
+          
+        
+        
+          h
+          
+            
+              t
+              h
+              r
+              e
+              e
+            
+          
+        
+        (
+        
+          m
+          
+            1
+          
+        
+        ,
+        
+          m
+          
+            2
+          
+        
+        ,
+        
+          m
+          
+            3
+          
+        
+        )
+        ⋅
+        
+          e
+          
+            i
+            2
+            π
+            
+              (
+              
+                
+                  
+                    
+                      m
+                      
+                        1
+                      
+                    
+                    
+                      a
+                      
+                        1
+                      
+                    
+                  
+                
+                
+                  x
+                  
+                    1
+                  
+                
+                +
+                
+                  
+                    
+                      m
+                      
+                        2
+                      
+                    
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                
+                
+                  x
+                  
+                    2
+                  
+                
+                +
+                
+                  
+                    
+                      m
+                      
+                        3
+                      
+                    
+                    
+                      a
+                      
+                        3
+                      
+                    
+                  
+                
+                
+                  x
+                  
+                    3
+                  
+                
+              
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle g(x_{1},x_{2},x_{3})=\sum _{m_{1},m_{2},m_{3}\in \mathbb {Z} }h^{\mathrm {three} }(m_{1},m_{2},m_{3})\cdot e^{i2\pi \left({\frac {m_{1}}{a_{1}}}x_{1}+{\frac {m_{2}}{a_{2}}}x_{2}+{\frac {m_{3}}{a_{3}}}x_{3}\right)}.}
+  Now, every reciprocal lattice vector can be written as 
+  
+    
+      
+        
+          G
+        
+        =
+        
+          ℓ
+          
+            1
+          
+        
+        
+          
+            g
+          
+          
+            1
+          
+        
+        +
+        
+          ℓ
+          
+            2
+          
+        
+        
+          
+            g
+          
+          
+            2
+          
+        
+        +
+        
+          ℓ
+          
+            3
+          
+        
+        
+          
+            g
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbf {G} =\ell _{1}\mathbf {g} _{1}+\ell _{2}\mathbf {g} _{2}+\ell _{3}\mathbf {g} _{3}}
+  , where 
+  
+    
+      
+        
+          l
+          
+            i
+          
+        
+      
+    
+    {\displaystyle l_{i}}
+   are integers and 
+  
+    
+      
+        
+          
+            g
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \mathbf {g} _{i}}
+   are the reciprocal lattice vectors, we can use the fact that 
+  
+    
+      
+        
+          
+            g
+            
+              i
+            
+          
+        
+        ⋅
+        
+          
+            a
+            
+              j
+            
+          
+        
+        =
+        2
+        π
+        
+          δ
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle \mathbf {g_{i}} \cdot \mathbf {a_{j}} =2\pi \delta _{ij}}
+   to calculate that for any arbitrary reciprocal lattice vector 
+  
+    
+      
+        
+          G
+        
+      
+    
+    {\displaystyle \mathbf {G} }
+   and arbitrary vector in space 
+  
+    
+      
+        
+          r
+        
+      
+    
+    {\displaystyle \mathbf {r} }
+  , their scalar product is:
+
+  
+    
+      
+        
+          G
+        
+        ⋅
+        
+          r
+        
+        =
+        
+          (
+          
+            
+              ℓ
+              
+                1
+              
+            
+            
+              
+                g
+              
+              
+                1
+              
+            
+            +
+            
+              ℓ
+              
+                2
+              
+            
+            
+              
+                g
+              
+              
+                2
+              
+            
+            +
+            
+              ℓ
+              
+                3
+              
+            
+            
+              
+                g
+              
+              
+                3
+              
+            
+          
+          )
+        
+        ⋅
+        
+          (
+          
+            
+              x
+              
+                1
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                2
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                3
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    3
+                  
+                
+                
+                  a
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        2
+        π
+        
+          (
+          
+            
+              x
+              
+                1
+              
+            
+            
+              
+                
+                  ℓ
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                2
+              
+            
+            
+              
+                
+                  ℓ
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                3
+              
+            
+            
+              
+                
+                  ℓ
+                  
+                    3
+                  
+                
+                
+                  a
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \mathbf {G} \cdot \mathbf {r} =\left(\ell _{1}\mathbf {g} _{1}+\ell _{2}\mathbf {g} _{2}+\ell _{3}\mathbf {g} _{3}\right)\cdot \left(x_{1}{\frac {\mathbf {a} _{1}}{a_{1}}}+x_{2}{\frac {\mathbf {a} _{2}}{a_{2}}}+x_{3}{\frac {\mathbf {a} _{3}}{a_{3}}}\right)=2\pi \left(x_{1}{\frac {\ell _{1}}{a_{1}}}+x_{2}{\frac {\ell _{2}}{a_{2}}}+x_{3}{\frac {\ell _{3}}{a_{3}}}\right).}
+  And so it is clear that in our expansion, the sum is actually over reciprocal lattice vectors:
+
+  
+    
+      
+        f
+        (
+        
+          r
+        
+        )
+        =
+        
+          ∑
+          
+            
+              G
+            
+          
+        
+        h
+        (
+        
+          G
+        
+        )
+        ⋅
+        
+          e
+          
+            i
+            
+              G
+            
+            ⋅
+            
+              r
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle f(\mathbf {r} )=\sum _{\mathbf {G} }h(\mathbf {G} )\cdot e^{i\mathbf {G} \cdot \mathbf {r} },}
+  where
+
+  
+    
+      
+        h
+        (
+        
+          G
+        
+        )
+        =
+        
+          
+            1
+            
+              a
+              
+                3
+              
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            
+              a
+              
+                3
+              
+            
+          
+        
+        d
+        
+          x
+          
+            3
+          
+        
+        
+        
+          
+            1
+            
+              a
+              
+                2
+              
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            
+              a
+              
+                2
+              
+            
+          
+        
+        d
+        
+          x
+          
+            2
+          
+        
+        
+        
+          
+            1
+            
+              a
+              
+                1
+              
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            
+              a
+              
+                1
+              
+            
+          
+        
+        d
+        
+          x
+          
+            1
+          
+        
+        
+        f
+        
+          (
+          
+            
+              x
+              
+                1
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    1
+                  
+                
+                
+                  a
+                  
+                    1
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                2
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            +
+            
+              x
+              
+                3
+              
+            
+            
+              
+                
+                  
+                    a
+                  
+                  
+                    3
+                  
+                
+                
+                  a
+                  
+                    3
+                  
+                
+              
+            
+          
+          )
+        
+        ⋅
+        
+          e
+          
+            −
+            i
+            
+              G
+            
+            ⋅
+            
+              r
+            
+          
+        
+        .
+      
+    
+    {\displaystyle h(\mathbf {G} )={\frac {1}{a_{3}}}\int _{0}^{a_{3}}dx_{3}\,{\frac {1}{a_{2}}}\int _{0}^{a_{2}}dx_{2}\,{\frac {1}{a_{1}}}\int _{0}^{a_{1}}dx_{1}\,f\left(x_{1}{\frac {\mathbf {a} _{1}}{a_{1}}}+x_{2}{\frac {\mathbf {a} _{2}}{a_{2}}}+x_{3}{\frac {\mathbf {a} _{3}}{a_{3}}}\right)\cdot e^{-i\mathbf {G} \cdot \mathbf {r} }.}
+  Assuming
+
+  
+    
+      
+        
+          r
+        
+        =
+        (
+        x
+        ,
+        y
+        ,
+        z
+        )
+        =
+        
+          x
+          
+            1
+          
+        
+        
+          
+            
+              
+                a
+              
+              
+                1
+              
+            
+            
+              a
+              
+                1
+              
+            
+          
+        
+        +
+        
+          x
+          
+            2
+          
+        
+        
+          
+            
+              
+                a
+              
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          x
+          
+            3
+          
+        
+        
+          
+            
+              
+                a
+              
+              
+                3
+              
+            
+            
+              a
+              
+                3
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {r} =(x,y,z)=x_{1}{\frac {\mathbf {a} _{1}}{a_{1}}}+x_{2}{\frac {\mathbf {a} _{2}}{a_{2}}}+x_{3}{\frac {\mathbf {a} _{3}}{a_{3}}},}
+  we can solve this system of three linear equations for 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  , and 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+   in terms of 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x_{1}}
+  , 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{2}}
+   and 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle x_{3}}
+   in order to calculate the volume element in the original cartesian coordinate system. Once we have 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  , and 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+   in terms of 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x_{1}}
+  , 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{2}}
+   and 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle x_{3}}
+  , we can calculate the Jacobian determinant:
+
+  
+    
+      
+        
+          
+            |
+            
+              
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              1
+                            
+                          
+                        
+                        
+                          ∂
+                          x
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              1
+                            
+                          
+                        
+                        
+                          ∂
+                          y
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              1
+                            
+                          
+                        
+                        
+                          ∂
+                          z
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              2
+                            
+                          
+                        
+                        
+                          ∂
+                          x
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              2
+                            
+                          
+                        
+                        
+                          ∂
+                          y
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              2
+                            
+                          
+                        
+                        
+                          ∂
+                          z
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              3
+                            
+                          
+                        
+                        
+                          ∂
+                          x
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              3
+                            
+                          
+                        
+                        
+                          ∂
+                          y
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          ∂
+                          
+                            x
+                            
+                              3
+                            
+                          
+                        
+                        
+                          ∂
+                          z
+                        
+                      
+                    
+                  
+                
+              
+            
+            |
+          
+        
+      
+    
+    {\displaystyle {\begin{vmatrix}{\dfrac {\partial x_{1}}{\partial x}}&{\dfrac {\partial x_{1}}{\partial y}}&{\dfrac {\partial x_{1}}{\partial z}}\\[12pt]{\dfrac {\partial x_{2}}{\partial x}}&{\dfrac {\partial x_{2}}{\partial y}}&{\dfrac {\partial x_{2}}{\partial z}}\\[12pt]{\dfrac {\partial x_{3}}{\partial x}}&{\dfrac {\partial x_{3}}{\partial y}}&{\dfrac {\partial x_{3}}{\partial z}}\end{vmatrix}}}
+  which after some calculation and applying some non-trivial cross-product identities can be shown to be equal to:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                
+                  1
+                
+              
+              
+                a
+                
+                  2
+                
+              
+              
+                a
+                
+                  3
+                
+              
+            
+            
+              
+                
+                  a
+                  
+                    1
+                  
+                
+              
+              ⋅
+              (
+              
+                
+                  a
+                  
+                    2
+                  
+                
+              
+              ×
+              
+                
+                  a
+                  
+                    3
+                  
+                
+              
+              )
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {a_{1}a_{2}a_{3}}{\mathbf {a_{1}} \cdot (\mathbf {a_{2}} \times \mathbf {a_{3}} )}}}
+  (it may be advantageous for the sake of simplifying calculations, to work in such a cartesian coordinate system, in which it just so happens that 
+  
+    
+      
+        
+          
+            a
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a_{1}} }
+   is parallel to the x axis, 
+  
+    
+      
+        
+          
+            a
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a_{2}} }
+   lies in the x-y plane, and 
+  
+    
+      
+        
+          
+            a
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a_{3}} }
+   has components of all three axes). The denominator is exactly the volume of the primitive unit cell which is enclosed by the three primitive-vectors 
+  
+    
+      
+        
+          
+            a
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a_{1}} }
+  , 
+  
+    
+      
+        
+          
+            a
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a_{2}} }
+   and 
+  
+    
+      
+        
+          
+            a
+            
+              3
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {a_{3}} }
+  . In particular, we now know that
+
+  
+    
+      
+        d
+        
+          x
+          
+            1
+          
+        
+        
+        d
+        
+          x
+          
+            2
+          
+        
+        
+        d
+        
+          x
+          
+            3
+          
+        
+        =
+        
+          
+            
+              
+                a
+                
+                  1
+                
+              
+              
+                a
+                
+                  2
+                
+              
+              
+                a
+                
+                  3
+                
+              
+            
+            
+              
+                
+                  a
+                  
+                    1
+                  
+                
+              
+              ⋅
+              (
+              
+                
+                  a
+                  
+                    2
+                  
+                
+              
+              ×
+              
+                
+                  a
+                  
+                    3
+                  
+                
+              
+              )
+            
+          
+        
+        ⋅
+        d
+        x
+        
+        d
+        y
+        
+        d
+        z
+        .
+      
+    
+    {\displaystyle dx_{1}\,dx_{2}\,dx_{3}={\frac {a_{1}a_{2}a_{3}}{\mathbf {a_{1}} \cdot (\mathbf {a_{2}} \times \mathbf {a_{3}} )}}\cdot dx\,dy\,dz.}
+  We can write now 
+  
+    
+      
+        h
+        (
+        
+          K
+        
+        )
+      
+    
+    {\displaystyle h(\mathbf {K} )}
+   as an integral with the traditional coordinate system over the volume of the primitive cell, instead of with the 
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x_{1}}
+  , 
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{2}}
+   and 
+  
+    
+      
+        
+          x
+          
+            3
+          
+        
+      
+    
+    {\displaystyle x_{3}}
+   variables:
+
+  
+    
+      
+        h
+        (
+        
+          G
+        
+        )
+        =
+        
+          
+            1
+            
+              
+                
+                  a
+                  
+                    1
+                  
+                
+              
+              ⋅
+              (
+              
+                
+                  a
+                  
+                    2
+                  
+                
+              
+              ×
+              
+                
+                  a
+                  
+                    3
+                  
+                
+              
+              )
+            
+          
+        
+        
+          ∫
+          
+            C
+          
+        
+        d
+        
+          r
+        
+        f
+        (
+        
+          r
+        
+        )
+        ⋅
+        
+          e
+          
+            −
+            i
+            
+              K
+            
+            ⋅
+            
+              r
+            
+          
+        
+      
+    
+    {\displaystyle h(\mathbf {G} )={\frac {1}{\mathbf {a_{1}} \cdot (\mathbf {a_{2}} \times \mathbf {a_{3}} )}}\int _{C}d\mathbf {r} f(\mathbf {r} )\cdot e^{-i\mathbf {K} \cdot \mathbf {r} }}
+  And 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+   is the primitive unit cell, thus, 
+  
+    
+      
+        
+          
+            a
+            
+              1
+            
+          
+        
+        ⋅
+        (
+        
+          
+            a
+            
+              2
+            
+          
+        
+        ×
+        
+          
+            a
+            
+              3
+            
+          
+        
+        )
+      
+    
+    {\displaystyle \mathbf {a_{1}} \cdot (\mathbf {a_{2}} \times \mathbf {a_{3}} )}
+   is the volume of the primitive unit cell.
+
+
+=== Hilbert space interpretation ===
+
+In the language of Hilbert spaces, the set of functions 
+  
+    
+      
+        {
+        
+          e
+          
+            n
+          
+        
+        =
+        
+          e
+          
+            i
+            n
+            x
+          
+        
+        :
+        n
+        ∈
+        
+          Z
+        
+        }
+      
+    
+    {\displaystyle \{e_{n}=e^{inx}:n\in \mathbb {Z} \}}
+   is an orthonormal basis for the space 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        [
+        −
+        π
+        ,
+        π
+        ]
+        )
+      
+    
+    {\displaystyle L^{2}([-\pi ,\pi ])}
+   of square-integrable functions on 
+  
+    
+      
+        [
+        −
+        π
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle [-\pi ,\pi ]}
+  . This space is actually a Hilbert space with an inner product given for any two elements 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   by
+
+  
+    
+      
+        ⟨
+        f
+        ,
+        
+        g
+        ⟩
+        
+        ≜
+        
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        f
+        (
+        x
+        )
+        
+          
+            
+              g
+              (
+              x
+              )
+            
+            ¯
+          
+        
+        
+        d
+        x
+        .
+      
+    
+    {\displaystyle \langle f,\,g\rangle \;\triangleq \;{\frac {1}{2\pi }}\int _{-\pi }^{\pi }f(x){\overline {g(x)}}\,dx.}
+  The basic Fourier series result for Hilbert spaces can be written as
+
+  
+    
+      
+        f
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        ⟨
+        f
+        ,
+        
+          e
+          
+            n
+          
+        
+        ⟩
+        
+        
+          e
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle f=\sum _{n=-\infty }^{\infty }\langle f,e_{n}\rangle \,e_{n}.}
+  
+This corresponds exactly to the complex exponential formulation given above. The version with sines and cosines is also justified with the Hilbert space interpretation.  Indeed, the sines and cosines form an orthogonal set:
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        cos
+        ⁡
+        (
+        m
+        x
+        )
+        
+        cos
+        ⁡
+        (
+        n
+        x
+        )
+        
+        d
+        x
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        cos
+        ⁡
+        (
+        (
+        n
+        −
+        m
+        )
+        x
+        )
+        +
+        cos
+        ⁡
+        (
+        (
+        n
+        +
+        m
+        )
+        x
+        )
+        
+        d
+        x
+        =
+        π
+        
+          δ
+          
+            m
+            n
+          
+        
+        ,
+        
+        m
+        ,
+        n
+        ≥
+        1
+        ,
+        
+      
+    
+    {\displaystyle \int _{-\pi }^{\pi }\cos(mx)\,\cos(nx)\,dx={\frac {1}{2}}\int _{-\pi }^{\pi }\cos((n-m)x)+\cos((n+m)x)\,dx=\pi \delta _{mn},\quad m,n\geq 1,\,}
+  
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        sin
+        ⁡
+        (
+        m
+        x
+        )
+        
+        sin
+        ⁡
+        (
+        n
+        x
+        )
+        
+        d
+        x
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        cos
+        ⁡
+        (
+        (
+        n
+        −
+        m
+        )
+        x
+        )
+        −
+        cos
+        ⁡
+        (
+        (
+        n
+        +
+        m
+        )
+        x
+        )
+        
+        d
+        x
+        =
+        π
+        
+          δ
+          
+            m
+            n
+          
+        
+        ,
+        
+        m
+        ,
+        n
+        ≥
+        1
+      
+    
+    {\displaystyle \int _{-\pi }^{\pi }\sin(mx)\,\sin(nx)\,dx={\frac {1}{2}}\int _{-\pi }^{\pi }\cos((n-m)x)-\cos((n+m)x)\,dx=\pi \delta _{mn},\quad m,n\geq 1}
+  (where δmn is the Kronecker delta), and
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        cos
+        ⁡
+        (
+        m
+        x
+        )
+        
+        sin
+        ⁡
+        (
+        n
+        x
+        )
+        
+        d
+        x
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        sin
+        ⁡
+        (
+        (
+        n
+        +
+        m
+        )
+        x
+        )
+        +
+        sin
+        ⁡
+        (
+        (
+        n
+        −
+        m
+        )
+        x
+        )
+        
+        d
+        x
+        =
+        0
+        ;
+        
+      
+    
+    {\displaystyle \int _{-\pi }^{\pi }\cos(mx)\,\sin(nx)\,dx={\frac {1}{2}}\int _{-\pi }^{\pi }\sin((n+m)x)+\sin((n-m)x)\,dx=0;\,}
+  furthermore, the sines and cosines are orthogonal to the constant function 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  .  An orthonormal basis for 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        [
+        −
+        π
+        ,
+        π
+        ]
+        )
+      
+    
+    {\displaystyle L^{2}([-\pi ,\pi ])}
+   consisting of real functions is formed by the functions 
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+   and 
+  
+    
+      
+        
+          
+            2
+          
+        
+        cos
+        ⁡
+        (
+        n
+        x
+        )
+      
+    
+    {\displaystyle {\sqrt {2}}\cos(nx)}
+  , 
+  
+    
+      
+        
+          
+            2
+          
+        
+        sin
+        ⁡
+        (
+        n
+        x
+        )
+      
+    
+    {\displaystyle {\sqrt {2}}\sin(nx)}
+   with n = 1, 2,...  The density of their span is a consequence of the Stone–Weierstrass theorem, but follows also from the properties of classical kernels like the Fejér kernel.
+
+
+== Properties ==
+
+
+=== Table of basic properties ===
+This table shows some mathematical operations in the time domain and the corresponding effect in the Fourier series coefficients. Notation:
+
+  
+    
+      
+        
+          z
+          
+            ∗
+          
+        
+      
+    
+    {\displaystyle z^{*}}
+   is the complex conjugate of 
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  .
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        ,
+        g
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x),g(x)}
+   designate 
+  
+    
+      
+        P
+      
+    
+    {\displaystyle P}
+  -periodic functions defined on 
+  
+    
+      
+        0
+        <
+        x
+        ≤
+        P
+      
+    
+    {\displaystyle 0<x\leq P}
+  .
+
+  
+    
+      
+        F
+        [
+        n
+        ]
+        ,
+        G
+        [
+        n
+        ]
+      
+    
+    {\displaystyle F[n],G[n]}
+   designate the Fourier series coefficients (exponential form) of 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   as defined in equation Eq.5.
+
+
+=== Symmetry properties ===
+When the real and imaginary parts of a complex function are decomposed into their even and odd parts, there are four components, denoted below by the subscripts RE, RO, IE, and IO.  And there is a one-to-one mapping between the four components of a complex time function and the four components of its complex frequency transform:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  Time domain
+                
+              
+              
+                f
+              
+              
+                =
+              
+              
+                
+                  f
+                  
+                    
+                      
+                      
+                        RE
+                      
+                    
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  f
+                  
+                    
+                      
+                      
+                        RO
+                      
+                    
+                  
+                
+              
+              
+                +
+              
+              
+                i
+                
+                  f
+                  
+                    
+                      
+                      
+                        IE
+                      
+                    
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  
+                    
+                      i
+                       
+                      
+                        f
+                        
+                          
+                            
+                            
+                              IO
+                            
+                          
+                        
+                      
+                    
+                    ⏟
+                  
+                
+              
+            
+            
+              
+              
+                
+                  
+                    ⇕
+                  
+                
+                
+                  
+                    F
+                  
+                
+              
+              
+              
+                
+                  
+                    ⇕
+                  
+                
+                
+                  
+                    F
+                  
+                
+              
+              
+              
+                 
+                 
+                
+                  
+                    ⇕
+                  
+                
+                
+                  
+                    F
+                  
+                
+              
+              
+              
+                 
+                 
+                
+                  
+                    ⇕
+                  
+                
+                
+                  
+                    F
+                  
+                
+              
+              
+              
+                 
+                 
+                
+                  
+                    ⇕
+                  
+                
+                
+                  
+                    F
+                  
+                
+              
+            
+            
+              
+                
+                  Frequency domain
+                
+              
+              
+                F
+              
+              
+                =
+              
+              
+                
+                  F
+                  
+                    R
+                    E
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  
+                    
+                      i
+                       
+                      
+                        F
+                        
+                          I
+                          O
+                        
+                      
+                    
+                    ⏞
+                  
+                
+              
+              
+                +
+              
+              
+                i
+                 
+                
+                  F
+                  
+                    I
+                    E
+                  
+                
+              
+              
+                +
+              
+              
+                
+                  F
+                  
+                    R
+                    O
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{array}{rccccccccc}{\text{Time domain}}&f&=&f_{_{\text{RE}}}&+&f_{_{\text{RO}}}&+&if_{_{\text{IE}}}&+&\underbrace {i\ f_{_{\text{IO}}}} \\&{\Bigg \Updownarrow }{\mathcal {F}}&&{\Bigg \Updownarrow }{\mathcal {F}}&&\ \ {\Bigg \Updownarrow }{\mathcal {F}}&&\ \ {\Bigg \Updownarrow }{\mathcal {F}}&&\ \ {\Bigg \Updownarrow }{\mathcal {F}}\\{\text{Frequency domain}}&F&=&F_{RE}&+&\overbrace {i\ F_{IO}} &+&i\ F_{IE}&+&F_{RO}\end{array}}}
+  From this, various relationships are apparent, for example:
+
+The transform of a real-valued function (fRE+ fRO) is the even symmetric function FRE+ i FIO.  Conversely, an even-symmetric transform implies a real-valued time-domain.
+The transform of an imaginary-valued function (i fIE+ i fIO) is the odd symmetric function FRO+ i FIE, and the converse is true.
+The transform of an even-symmetric function (fRE+ i fIO) is the real-valued function FRE+ FRO, and the converse is true.
+The transform of an odd-symmetric function (fRO+ i fIE) is the imaginary-valued function i FIE+ i FIO, and the converse is true.
+
+
+=== Riemann–Lebesgue lemma ===
+If 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is integrable, 
+  
+    
+      
+        
+          lim
+          
+            
+              |
+            
+            n
+            
+              |
+            
+            →
+            ∞
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+        =
+        0
+      
+    
+    {\displaystyle \lim _{|n|\rightarrow \infty }{\hat {f}}(n)=0}
+  , 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            +
+            ∞
+          
+        
+        
+          a
+          
+            n
+          
+        
+        =
+        0
+      
+    
+    {\displaystyle \lim _{n\rightarrow +\infty }a_{n}=0}
+   and 
+  
+    
+      
+        
+          lim
+          
+            n
+            →
+            +
+            ∞
+          
+        
+        
+          b
+          
+            n
+          
+        
+        =
+        0.
+      
+    
+    {\displaystyle \lim _{n\rightarrow +\infty }b_{n}=0.}
+    This result is known as the Riemann–Lebesgue lemma.
+
+
+=== Derivative property ===
+We say that 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   belongs to 
+
+  
+    
+      
+        
+          C
+          
+            k
+          
+        
+        (
+        
+          T
+        
+        )
+      
+    
+    {\displaystyle C^{k}(\mathbb {T} )}
+   if 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is a 2π-periodic function on 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+   which is 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+   times differentiable, and its kth derivative is continuous.
+
+If 
+  
+    
+      
+        f
+        ∈
+        
+          C
+          
+            1
+          
+        
+        (
+        
+          T
+        
+        )
+      
+    
+    {\displaystyle f\in C^{1}(\mathbb {T} )}
+  , then the Fourier coefficients 
+  
+    
+      
+        
+          
+            
+              
+                f
+                ′
+              
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\widehat {f'}}(n)}
+   of the derivative 
+  
+    
+      
+        
+          f
+          ′
+        
+      
+    
+    {\displaystyle f'}
+   can be expressed in terms of the Fourier coefficients 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\widehat {f}}(n)}
+   of the function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  , via the formula 
+  
+    
+      
+        
+          
+            
+              
+                f
+                ′
+              
+              ^
+            
+          
+        
+        (
+        n
+        )
+        =
+        i
+        n
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\widehat {f'}}(n)=in{\widehat {f}}(n)}
+  .
+If 
+  
+    
+      
+        f
+        ∈
+        
+          C
+          
+            k
+          
+        
+        (
+        
+          T
+        
+        )
+      
+    
+    {\displaystyle f\in C^{k}(\mathbb {T} )}
+  , then 
+  
+    
+      
+        
+          
+            
+              
+                f
+                
+                  (
+                  k
+                  )
+                
+              
+              ^
+            
+          
+        
+        (
+        n
+        )
+        =
+        (
+        i
+        n
+        
+          )
+          
+            k
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\widehat {f^{(k)}}}(n)=(in)^{k}{\widehat {f}}(n)}
+  . In particular, since 
+  
+    
+      
+        
+          
+            
+              
+                f
+                
+                  (
+                  k
+                  )
+                
+              
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle {\widehat {f^{(k)}}}(n)}
+   tends to zero, we have that 
+  
+    
+      
+        
+          |
+        
+        n
+        
+          
+            |
+          
+          
+            k
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle |n|^{k}{\widehat {f}}(n)}
+   tends to zero, which means that the Fourier coefficients converge to zero faster than the kth power of n.
+
+
+=== Parseval's theorem ===
+If 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   belongs to 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        [
+        −
+        π
+        ,
+        π
+        ]
+        )
+      
+    
+    {\displaystyle L^{2}([-\pi ,\pi ])}
+  , then 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          |
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∫
+          
+            −
+            π
+          
+          
+            π
+          
+        
+        
+          |
+        
+        f
+        (
+        x
+        )
+        
+          
+            |
+          
+          
+            2
+          
+        
+        
+        d
+        x
+      
+    
+    {\displaystyle \sum _{n=-\infty }^{\infty }|{\hat {f}}(n)|^{2}={\frac {1}{2\pi }}\int _{-\pi }^{\pi }|f(x)|^{2}\,dx}
+  .
+
+
+=== Plancherel's theorem ===
+If 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        ,
+        
+        
+          c
+          
+            ±
+            1
+          
+        
+        ,
+        
+        
+          c
+          
+            ±
+            2
+          
+        
+        ,
+        …
+      
+    
+    {\displaystyle c_{0},\,c_{\pm 1},\,c_{\pm 2},\ldots }
+   are coefficients and 
+  
+    
+      
+        
+          ∑
+          
+            n
+            =
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        
+          |
+        
+        
+          c
+          
+            n
+          
+        
+        
+          
+            |
+          
+          
+            2
+          
+        
+        <
+        ∞
+      
+    
+    {\displaystyle \sum _{n=-\infty }^{\infty }|c_{n}|^{2}<\infty }
+   then there is a unique function 
+  
+    
+      
+        f
+        ∈
+        
+          L
+          
+            2
+          
+        
+        (
+        [
+        −
+        π
+        ,
+        π
+        ]
+        )
+      
+    
+    {\displaystyle f\in L^{2}([-\pi ,\pi ])}
+   such that 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+        =
+        
+          c
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {\hat {f}}(n)=c_{n}}
+   for every 
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  .
+
+
+=== Convolution theorems ===
+The first convolution theorem states that if 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   are in 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        [
+        −
+        π
+        ,
+        π
+        ]
+        )
+      
+    
+    {\displaystyle L^{1}([-\pi ,\pi ])}
+  , the Fourier series coefficients of the 2π-periodic convolution of 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   are given by:
+  
+    
+      
+        [
+        
+          
+            
+              
+                f
+                
+                  ∗
+                  
+                    2
+                    π
+                  
+                
+                g
+              
+              ^
+            
+          
+        
+        ]
+        (
+        n
+        )
+        =
+        2
+        π
+        ⋅
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+        ⋅
+        
+          
+            
+              g
+              ^
+            
+          
+        
+        (
+        n
+        )
+        ,
+      
+    
+    {\displaystyle [{\widehat {f*_{2\pi }g}}](n)=2\pi \cdot {\hat {f}}(n)\cdot {\hat {g}}(n),}
+  where:
+  
+    
+      
+        
+          
+            
+              
+                
+                  [
+                  
+                    f
+                    
+                      ∗
+                      
+                        2
+                        π
+                      
+                    
+                    g
+                  
+                  ]
+                
+                (
+                x
+                )
+                 
+              
+              
+                
+                ≜
+                
+                  ∫
+                  
+                    −
+                    π
+                  
+                  
+                    π
+                  
+                
+                f
+                (
+                u
+                )
+                ⋅
+                g
+                [
+                pv
+                ⁡
+                (
+                x
+                −
+                u
+                )
+                ]
+                
+                d
+                u
+                ,
+              
+              
+              
+                
+                
+                  
+                    (
+                  
+                
+                
+                  and 
+                
+                
+                  
+                    
+                      
+                        pv
+                        ⁡
+                        (
+                        x
+                        )
+                         
+                        ≜
+                        Arg
+                        ⁡
+                        (
+                        
+                          e
+                          
+                            i
+                            x
+                          
+                        
+                        )
+                      
+                      ⏟
+                    
+                  
+                  
+                    principal value
+                  
+                
+                
+                
+                  
+                    )
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∫
+                  
+                    −
+                    π
+                  
+                  
+                    π
+                  
+                
+                f
+                (
+                u
+                )
+                ⋅
+                g
+                (
+                x
+                −
+                u
+                )
+                
+                d
+                u
+                ,
+              
+              
+              
+                
+                  when 
+                
+                g
+                (
+                x
+                )
+                
+                   is 
+                
+                2
+                π
+                
+                  -periodic.
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  ∫
+                  
+                    2
+                    π
+                  
+                
+                f
+                (
+                u
+                )
+                ⋅
+                g
+                (
+                x
+                −
+                u
+                )
+                
+                d
+                u
+                ,
+              
+              
+              
+                
+                  when both functions are 
+                
+                2
+                π
+                
+                  -periodic, and the integral is over any 
+                
+                2
+                π
+                
+                   interval.
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\left[f*_{2\pi }g\right](x)\ &\triangleq \int _{-\pi }^{\pi }f(u)\cdot g[\operatorname {pv} (x-u)]\,du,&&{\big (}{\text{and }}\underbrace {\operatorname {pv} (x)\ \triangleq \operatorname {Arg} (e^{ix})} _{\text{principal value}}\,{\big )}\\&=\int _{-\pi }^{\pi }f(u)\cdot g(x-u)\,du,&&{\text{when }}g(x){\text{ is }}2\pi {\text{-periodic.}}\\&=\int _{2\pi }f(u)\cdot g(x-u)\,du,&&{\text{when both functions are }}2\pi {\text{-periodic, and the integral is over any }}2\pi {\text{ interval.}}\end{aligned}}}
+  The second convolution theorem states that the Fourier series coefficients of the product of 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+   are given by the discrete convolution of the 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {f}}}
+   and 
+  
+    
+      
+        
+          
+            
+              g
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {g}}}
+   sequences:
+  
+    
+      
+        [
+        
+          
+            
+              
+                f
+                ⋅
+                g
+              
+              ^
+            
+          
+        
+        ]
+        (
+        n
+        )
+        =
+        [
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        ∗
+        
+          
+            
+              g
+              ^
+            
+          
+        
+        ]
+        (
+        n
+        )
+        .
+      
+    
+    {\displaystyle [{\widehat {f\cdot g}}](n)=[{\hat {f}}*{\hat {g}}](n).}
+  A doubly infinite sequence 
+  
+    
+      
+        
+          
+            {
+            
+              c
+              
+                n
+              
+            
+            }
+          
+          
+            n
+            ∈
+            Z
+          
+        
+      
+    
+    {\displaystyle \left\{c_{n}\right\}_{n\in Z}}
+   in 
+  
+    
+      
+        
+          c
+          
+            0
+          
+        
+        (
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle c_{0}(\mathbb {Z} )}
+   is the sequence of Fourier coefficients of a function in 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        [
+        0
+        ,
+        2
+        π
+        ]
+        )
+      
+    
+    {\displaystyle L^{1}([0,2\pi ])}
+   if and only if it is a convolution of two sequences in 
+  
+    
+      
+        
+          ℓ
+          
+            2
+          
+        
+        (
+        
+          Z
+        
+        )
+      
+    
+    {\displaystyle \ell ^{2}(\mathbb {Z} )}
+  . See 
+
+
+=== Compact groups ===
+
+One of the interesting properties of the Fourier transform which we have mentioned, is that it carries convolutions to pointwise products. If that is the property which we seek to preserve, one can produce Fourier series on any compact group. Typical examples include those classical groups that are compact. This generalizes the Fourier transform to all spaces of the form L2(G), where G is a compact group, in such a way that the Fourier transform carries convolutions to pointwise products. The Fourier series exists and converges in similar ways to the [−π,π] case.
+An alternative extension to compact groups is the Peter–Weyl theorem, which proves results about representations of compact groups analogous to those about finite groups.
+
+
+=== Riemannian manifolds ===
+
+If the domain is not a group, then there is no intrinsically defined convolution. However, if 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a compact Riemannian manifold, it has a Laplace–Beltrami operator. The Laplace–Beltrami operator is the differential operator that corresponds to Laplace operator for the Riemannian manifold 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . Then, by analogy, one can consider heat equations on 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  . Since Fourier arrived at his basis by attempting to solve the heat equation, the natural generalization is to use the eigensolutions of the Laplace–Beltrami operator as a basis. This generalizes Fourier series to spaces of the type 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        X
+        )
+      
+    
+    {\displaystyle L^{2}(X)}
+  , where 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   is a Riemannian manifold. The Fourier series converges in ways similar to the 
+  
+    
+      
+        [
+        −
+        π
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle [-\pi ,\pi ]}
+   case. A typical example is to take 
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+   to be the sphere with the usual metric, in which case the Fourier basis consists of spherical harmonics.
+
+
+=== Locally compact Abelian groups ===
+
+The generalization to compact groups discussed above does not generalize to noncompact, nonabelian groups. However, there is a straightforward generalization to Locally Compact Abelian (LCA) groups.
+This generalizes the Fourier transform to 
+  
+    
+      
+        
+          L
+          
+            1
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{1}(G)}
+   or 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        G
+        )
+      
+    
+    {\displaystyle L^{2}(G)}
+  , where 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   is an LCA group. If 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   is compact, one also obtains a Fourier series, which converges similarly to the 
+  
+    
+      
+        [
+        −
+        π
+        ,
+        π
+        ]
+      
+    
+    {\displaystyle [-\pi ,\pi ]}
+   case, but if 
+  
+    
+      
+        G
+      
+    
+    {\displaystyle G}
+   is noncompact, one obtains instead a Fourier integral. This generalization yields the usual Fourier transform when the underlying locally compact Abelian group is 
+  
+    
+      
+        
+          R
+        
+      
+    
+    {\displaystyle \mathbb {R} }
+  .
+
+
+== Table of common Fourier series ==
+Some common pairs of periodic functions and their Fourier Series coefficients are shown in the table below.  The following notation applies:
+
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+   designates a periodic function defined on 
+  
+    
+      
+        0
+        <
+        x
+        ≤
+        T
+      
+    
+    {\displaystyle 0<x\leq T}
+  .
+
+  
+    
+      
+        
+          a
+          
+            0
+          
+        
+        ,
+        
+          a
+          
+            n
+          
+        
+        ,
+        
+          b
+          
+            n
+          
+        
+      
+    
+    {\displaystyle a_{0},a_{n},b_{n}}
+   designate the Fourier Series coefficients (sine-cosine form) of the periodic function 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   as defined in Eq.4.
+
+
+== Approximation and convergence of Fourier series ==
+
+An important question for the theory as well as applications is that of convergence. In particular, it is often necessary in applications to replace the infinite series 
+  
+    
+      
+        
+          ∑
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle \sum _{-\infty }^{\infty }}
+    by a finite one,
+
+  
+    
+      
+        
+          f
+          
+            N
+          
+        
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+        
+          e
+          
+            i
+            n
+            x
+          
+        
+        .
+      
+    
+    {\displaystyle f_{N}(x)=\sum _{n=-N}^{N}{\hat {f}}(n)e^{inx}.}
+  This is called a partial sum. We would like to know, in which sense does 
+  
+    
+      
+        
+          f
+          
+            N
+          
+        
+        (
+        x
+        )
+      
+    
+    {\displaystyle f_{N}(x)}
+   converge to 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+   as 
+  
+    
+      
+        N
+        →
+        ∞
+      
+    
+    {\displaystyle N\rightarrow \infty }
+  .
+
+
+=== Least squares property ===
+We say that 
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+   is a trigonometric polynomial of degree 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+   when it is of the form
+
+  
+    
+      
+        p
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            −
+            N
+          
+          
+            N
+          
+        
+        
+          p
+          
+            n
+          
+        
+        
+          e
+          
+            i
+            n
+            x
+          
+        
+        .
+      
+    
+    {\displaystyle p(x)=\sum _{n=-N}^{N}p_{n}e^{inx}.}
+  Note that 
+  
+    
+      
+        
+          f
+          
+            N
+          
+        
+      
+    
+    {\displaystyle f_{N}}
+   is a trigonometric polynomial of degree 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  . Parseval's theorem implies that
+
+Theorem. The trigonometric polynomial 
+  
+    
+      
+        
+          f
+          
+            N
+          
+        
+      
+    
+    {\displaystyle f_{N}}
+   is the unique best trigonometric polynomial of degree 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+   approximating 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  , in the sense that, for any trigonometric polynomial 
+  
+    
+      
+        p
+        ≠
+        
+          f
+          
+            N
+          
+        
+      
+    
+    {\displaystyle p\neq f_{N}}
+   of degree 
+  
+    
+      
+        N
+      
+    
+    {\displaystyle N}
+  , we have
+
+  
+    
+      
+        ‖
+        
+          f
+          
+            N
+          
+        
+        −
+        f
+        
+          ‖
+          
+            2
+          
+        
+        <
+        ‖
+        p
+        −
+        f
+        
+          ‖
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle \|f_{N}-f\|_{2}<\|p-f\|_{2},}
+  where the Hilbert space norm is defined as:
+
+  
+    
+      
+        ‖
+        g
+        
+          ‖
+          
+            2
+          
+        
+        =
+        
+          
+            
+              
+                1
+                
+                  2
+                  π
+                
+              
+            
+            
+              ∫
+              
+                −
+                π
+              
+              
+                π
+              
+            
+            
+              |
+            
+            g
+            (
+            x
+            )
+            
+              
+                |
+              
+              
+                2
+              
+            
+            
+            d
+            x
+          
+        
+        .
+      
+    
+    {\displaystyle \|g\|_{2}={\sqrt {{1 \over 2\pi }\int _{-\pi }^{\pi }|g(x)|^{2}\,dx}}.}
+  
+
+
+=== Convergence ===
+
+Because of the least squares property, and because of the completeness of the Fourier basis, we obtain an elementary convergence result.
+Theorem. If 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   belongs to 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        
+          [
+          
+            −
+            π
+            ,
+            π
+          
+          ]
+        
+        )
+      
+    
+    {\displaystyle L^{2}(\left[-\pi ,\pi \right])}
+  , then 
+  
+    
+      
+        
+          f
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle f_{\infty }}
+   converges to 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   in 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+        (
+        
+          [
+          
+            −
+            π
+            ,
+            π
+          
+          ]
+        
+        )
+      
+    
+    {\displaystyle L^{2}(\left[-\pi ,\pi \right])}
+  , that is,  
+  
+    
+      
+        ‖
+        
+          f
+          
+            N
+          
+        
+        −
+        f
+        
+          ‖
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \|f_{N}-f\|_{2}}
+   converges to 0 as 
+  
+    
+      
+        N
+        →
+        ∞
+      
+    
+    {\displaystyle N\rightarrow \infty }
+  .
+We have already mentioned that if 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is continuously differentiable, then  
+  
+    
+      
+        (
+        i
+        ⋅
+        n
+        )
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle (i\cdot n){\hat {f}}(n)}
+    is the nth Fourier coefficient of the derivative 
+  
+    
+      
+        
+          f
+          ′
+        
+      
+    
+    {\displaystyle f'}
+  .  It follows, essentially from the Cauchy–Schwarz inequality, that 
+  
+    
+      
+        
+          f
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle f_{\infty }}
+   is absolutely summable.  The sum of this series is a continuous function, equal to 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  , since the Fourier series converges in the mean to 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  :
+Theorem. If 
+  
+    
+      
+        f
+        ∈
+        
+          C
+          
+            1
+          
+        
+        (
+        
+          T
+        
+        )
+      
+    
+    {\displaystyle f\in C^{1}(\mathbb {T} )}
+  , then 
+  
+    
+      
+        
+          f
+          
+            ∞
+          
+        
+      
+    
+    {\displaystyle f_{\infty }}
+   converges to 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   uniformly (and hence also pointwise.)
+This result can be proven easily if 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is further assumed to be 
+  
+    
+      
+        
+          C
+          
+            2
+          
+        
+      
+    
+    {\displaystyle C^{2}}
+  , since in that case 
+  
+    
+      
+        
+          n
+          
+            2
+          
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+      
+    
+    {\displaystyle n^{2}{\hat {f}}(n)}
+   tends to zero as 
+  
+    
+      
+        n
+        →
+        ∞
+      
+    
+    {\displaystyle n\rightarrow \infty }
+  .  More generally, the Fourier series is absolutely summable, thus converges uniformly to 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  , provided that 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   satisfies a Hölder condition of order 
+  
+    
+      
+        α
+        >
+        1
+        
+          /
+        
+        2
+      
+    
+    {\displaystyle \alpha >1/2}
+  .  In the absolutely summable case, the inequality 
+  
+    
+      
+        
+          sup
+          
+            x
+          
+        
+        
+          |
+        
+        f
+        (
+        x
+        )
+        −
+        
+          f
+          
+            N
+          
+        
+        (
+        x
+        )
+        
+          |
+        
+        ≤
+        
+          ∑
+          
+            
+              |
+            
+            n
+            
+              |
+            
+            >
+            N
+          
+        
+        
+          |
+        
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        n
+        )
+        
+          |
+        
+      
+    
+    {\displaystyle \sup _{x}|f(x)-f_{N}(x)|\leq \sum _{|n|>N}|{\hat {f}}(n)|}
+    proves uniform convergence.
+Many other results concerning the convergence of Fourier series are known, ranging from the moderately simple result that the series converges at 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+   if 
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+   is differentiable at 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  , to Lennart Carleson's much more sophisticated result that the Fourier series of an 
+  
+    
+      
+        
+          L
+          
+            2
+          
+        
+      
+    
+    {\displaystyle L^{2}}
+   function actually converges almost everywhere.
+These theorems, and informal variations of them that don't specify the convergence conditions, are sometimes referred to generically as "Fourier's theorem" or "the Fourier theorem".
+
+
+=== Divergence ===
+Since Fourier series have such good convergence properties, many are often surprised by some of the negative results. For example, the Fourier series of a continuous T-periodic function need not converge pointwise. The uniform boundedness principle yields a simple non-constructive proof of this fact.
+In 1922, Andrey Kolmogorov published an article titled Une série de Fourier-Lebesgue divergente presque partout in which he gave an example of a Lebesgue-integrable function whose Fourier series diverges almost everywhere. He later constructed an example of an integrable function whose Fourier series diverges everywhere (Katznelson 1976).
+
+
+== See also ==
+ATS theorem
+Dirichlet kernel
+Discrete Fourier transform
+Fast Fourier transform
+Fejér's theorem
+Fourier analysis
+Fourier sine and cosine series
+Fourier transform
+Gibbs phenomenon
+Laurent series – the substitution q = eix transforms a Fourier series into a Laurent series, or conversely. This is used in the q-series expansion of the j-invariant.
+Multidimensional transform
+Spectral theory
+Sturm–Liouville theory
+
+
+== Notes ==
+
+
+== References ==
+
+
+=== Further reading ===
+
+
+== External links ==
+Hazewinkel, Michiel, ed. (2001) [1994], "Fourier series", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Hobson, Ernest (1911). "Fourier's Series" . Encyclopædia Britannica. 10 (11th ed.). pp. 753–758.
+Weisstein, Eric W. "Fourier Series". MathWorld.
+Joseph Fourier – A site on Fourier's life which was used for the historical section of this article at the Wayback Machine (archived December 5, 2001)This article incorporates material from example of Fourier series on PlanetMath, which is licensed under the Creative Commons Attribution/Share-Alike License.
